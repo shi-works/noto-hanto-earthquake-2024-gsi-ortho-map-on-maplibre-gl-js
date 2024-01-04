@@ -1,0 +1,395 @@
+<html>
+
+<head>
+    <title>令和6年能登半島地震 正射画像</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src='https://unpkg.com/maplibre-gl@3.6.2/dist/maplibre-gl.js'></script>
+    <link href='https://unpkg.com/maplibre-gl@3.6.2/dist/maplibre-gl.css' rel='stylesheet' />
+    <script src="https://unpkg.com/pmtiles@2.11.0/dist/index.js"></script>
+    <link href="maplibre-gl-compare.css" rel='stylesheet' />
+    <script src="maplibre-gl-compare.js"></script>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        #map {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .legend {
+            background-color: #fff;
+            border-radius: 3px;
+            bottom: 60px;
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.10);
+            font: 12px/14px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+            padding: 10px;
+            position: absolute;
+            right: 50px;
+            z-index: 1;
+            line-height: 10px;
+            height: auto;
+        }
+
+        .legend h4 {
+            margin: 0 0 10px;
+        }
+
+        .legend div span {
+            border-radius: 50%;
+            display: inline-block;
+            height: 15px;
+            margin-right: 10px;
+            width: 15px;
+            color: orangered
+        }
+
+        .square {
+            width: 15px;
+            height: 15px;
+            /*border-radius: 4px;*/
+        }
+    </style>
+</head>
+
+<body>
+    <style>
+        body {
+            overflow: hidden;
+        }
+
+        body * {
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+        .map {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .map-overlay {
+            font: bold 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+            position: absolute;
+            width: 180px;
+            bottom: 20px;
+            left: 40px;
+            padding: 10px;
+        }
+
+        .map-overlay .map-overlay-inner {
+            background-color: #fff;
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+            border-radius: 3px;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        .map-overlay label {
+            display: block;
+            margin: 0 0 0px;
+            font-size: 12px;
+            top: 100px;
+            left: 10px;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .map-overlay input {
+            background-color: transparent;
+            display: inline-block;
+            width: 100%;
+            position: relative;
+            margin: 0;
+            cursor: ew-resize;
+        }
+
+        .corner-text {
+            position: fixed;
+            top: 0;
+            padding: 10px;
+            font-size: 14px;
+            z-index: 1;
+            /* put text above other elements */
+            color: white;
+            /* make sure text is visible on top of other elements */
+            background-color: rgba(0, 0, 0, 0.5);
+            /* semi-transparent background for better visibility */
+        }
+
+        #left-corner {
+            left: 0;
+        }
+
+        #right-corner {
+            right: 0;
+        }
+    </style>
+    <div id="comparison-container">
+        <div id="left-corner" class="corner-text">被災前（全国最新写真（シームレス））</div>
+        <div id="right-corner" class="corner-text">被災後（正射画像（2024年1月2日撮影））</div>
+        <div id="before" class="map"></div>
+        <div id="after" class="map"></div>
+    </div>
+    <div class="map-overlay top">
+        <div class="map-overlay-inner">
+            <label>空中写真 不透明度: <span id="photo-slider-opacity-value">100%</span></label>
+            <input id="photo-slider-opacity" type="range" min="0" max="100" step="1" value="100">
+        </div>
+    </div>
+    <div id='legend' class='legend'>
+        <h4>凡例</h4>
+        <div class="square" style='outline: 2px solid;outline-color: rgba(255, 0, 0, 1); display: inline-block;'>
+        </div>
+        <span style="margin-left: 5px;">斜面崩壊・堆積範囲</span>
+    </div>
+    <script type="module">
+        // Terrain-RGB形式への変換モジュール
+        maplibregl.addProtocol('numpng', makeNumPngProtocol());
+        import { makeNumPngProtocol } from './numPngProtocol.js'
+
+        // addProtocolの設定
+        let protocol = new pmtiles.Protocol();
+        maplibregl.addProtocol("pmtiles", protocol.tile);
+
+        // マップを初期化
+        const beforeMap = new maplibregl.Map({
+            container: 'before',
+            style: 'skeleton.json',
+            zoom: 17.46,
+            center: [137.111127, 37.483571],
+            pitch: 77,
+            bearing: 115.4,
+            maxPitch: 85,
+            attributionControl: false,
+            hash: true,
+        });
+
+        // マップをロード
+        beforeMap.on('load', () => {
+            // 産総研 シームレス標高タイルソース
+            beforeMap.addSource("aist-dem", {
+                type: 'raster-dem',
+                tiles: [
+                    'numpng://tiles.gsj.jp/tiles/elev/mixed/{z}/{y}/{x}.png',
+                ],
+                attribution: '<a href="https://tiles.gsj.jp/tiles/elev/tiles.html" target="_blank">産業技術総合研究所 シームレス標高タイル(統合DEM)</a>',
+                tileSize: 256
+            });
+
+            // 産総研 シームレス標高タイルセット
+            beforeMap.setTerrain({ 'source': 'aist-dem', 'exaggeration': 1 });
+
+        });
+
+        // スケール表示
+        beforeMap.addControl(new maplibregl.ScaleControl({
+            maxWidth: 200,
+            unit: 'metric'
+        }));
+
+        // 3D地形コントロール
+        beforeMap.addControl(
+            new maplibregl.TerrainControl({
+                source: 'aist-dem',
+                exaggeration: 1 // 標高を強調する倍率
+            }), 'bottom-left'
+        );
+
+        // 現在位置表示
+        beforeMap.addControl(new maplibregl.GeolocateControl({
+            positionOptions: {
+                enableHighAccuracy: false
+            },
+            fitBoundsOptions: { maxZoom: 18 },
+            trackUserLocation: true,
+            showUserLocation: true
+        }), 'bottom-left');
+
+        // ズーム・回転
+        beforeMap.addControl(new maplibregl.NavigationControl(), 'bottom-left');
+
+        // Attributionを折りたたみ表示
+        beforeMap.addControl(new maplibregl.AttributionControl({
+            compact: true,
+            customAttribution: '<a href="https://twitter.com/shi__works" target="_blank">Twitter</a> | <a href="" target="_blank">Github</a>'
+        }));
+
+        // マップを初期化
+        const afterMap = new maplibregl.Map({
+            container: 'after',
+            style: 'std.json',
+            zoom: 17.46,
+            center: [137.111127, 37.483571],
+            pitch: 77,
+            bearing: 115.4,
+            maxPitch: 85,
+            attributionControl: false,
+            hash: true,
+        });
+
+        // マップをロード
+        afterMap.on('load', () => {
+            // 産総研 シームレス標高タイルソース
+            afterMap.addSource("aist-dem", {
+                type: 'raster-dem',
+                tiles: [
+                    'numpng://tiles.gsj.jp/tiles/elev/mixed/{z}/{y}/{x}.png',
+                ],
+                attribution: '<a href="https://tiles.gsj.jp/tiles/elev/tiles.html" target="_blank">産業技術総合研究所 シームレス標高タイル(統合DEM)</a>',
+                tileSize: 256
+            });
+
+            // 産総研 シームレス標高タイルセット
+            afterMap.setTerrain({ 'source': 'aist-dem', 'exaggeration': 1 });
+
+            // 令和6年能登半島地震 輪島東地区　正射画像（2024年1月2日撮影）ソース
+            afterMap.addSource("wazimahigashi", {
+                type: 'raster',
+                tiles: [
+                    'https://cyberjapandata.gsi.go.jp/xyz/20240102noto_wazimahigashi_0102do/{z}/{x}/{y}.png',
+                ],
+                attribution: '<a href="https://maps.gsi.go.jp/development/ichiran.html" target="_blank">地理院タイル</a>'
+            });
+
+            // 令和6年能登半島地震 輪島東地区　正射画像（2024年1月2日撮影）レイヤ
+            afterMap.addLayer({
+                id: "wazimahigashi",
+                type: "raster",
+                source: "wazimahigashi",
+                paint: {
+                    "raster-opacity": 1
+                }
+            });
+
+            // 令和6年能登半島地震 輪島中地区　正射画像（2024年1月2日撮影）ソース
+            afterMap.addSource("wazimanaka", {
+                type: 'raster',
+                tiles: [
+                    'https://cyberjapandata.gsi.go.jp/xyz/20240102noto_wazimanaka_0102do/{z}/{x}/{y}.png',
+                ],
+                attribution: '<a href="https://maps.gsi.go.jp/development/ichiran.html" target="_blank">地理院タイル</a>'
+            });
+
+            // 令和6年能登半島地震 輪島中地区　正射画像（2024年1月2日撮影）レイヤ
+            afterMap.addLayer({
+                id: "wazimanaka",
+                type: "raster",
+                source: "wazimanaka",
+                paint: {
+                    "raster-opacity": 1
+                }
+            });
+
+            // 令和6年能登半島地震 珠洲地区　正射画像（2024年1月2日撮影）ソース
+            afterMap.addSource("suzu", {
+                type: 'raster',
+                tiles: [
+                    'https://cyberjapandata.gsi.go.jp/xyz/20240102noto_suzu_0102do/{z}/{x}/{y}.png',
+                ],
+                attribution: '<a href="https://maps.gsi.go.jp/development/ichiran.html" target="_blank">地理院タイル</a>'
+            });
+
+            // 令和6年能登半島地震 珠洲地区　正射画像（2024年1月2日撮影）レイヤ
+            afterMap.addLayer({
+                id: "suzu",
+                type: "raster",
+                source: "suzu",
+                paint: {
+                    "raster-opacity": 1
+                }
+            });
+
+            // 斜面崩壊・堆積分布データ（斜面崩壊・堆積範囲）ソース
+            afterMap.addSource("hokai", {
+                type: "geojson",
+                data: './hokai_all_20240103_suzu-wajimaEAST.geojson',
+                attribution: '<a href="https://www.gsi.go.jp/BOUSAI/20240101_noto_earthquake.html">国土地理院ウェブサイト 令和6年(2024年)能登半島地震に関する情報（斜面崩壊・堆積分布データ）</a>'
+            });
+
+            // 斜面崩壊・堆積分布データ（斜面崩壊・堆積範囲）ラインレイヤ
+            afterMap.addLayer({
+                'id': 'hokai-line',
+                "type": "line",
+                'source': 'hokai',
+                'paint': {
+                    'line-color': '#FF0000',
+                    'line-width': 1.5
+                }
+            });
+
+        });
+
+        // Attributionを折りたたみ表示
+        afterMap.addControl(new maplibregl.AttributionControl({
+            compact: true,
+            customAttribution: '<a href="https://twitter.com/shi__works" target="_blank">Twitter</a> | <a href="https://github.com/shi-works/gsi-terrain-dem-terrain-rgb-comparison-map" target="_blank">Github</a>'
+        }));
+
+        // 3D地形コントロール
+        afterMap.addControl(
+            new maplibregl.TerrainControl({
+                source: 'aist-dem',
+                exaggeration: 1 // 標高を強調する倍率
+            }), 'bottom-right'
+        );
+
+        // 現在位置表示
+        afterMap.addControl(new maplibregl.GeolocateControl({
+            positionOptions: {
+                enableHighAccuracy: false
+            },
+            fitBoundsOptions: { maxZoom: 18 },
+            trackUserLocation: true,
+            showUserLocation: true
+        }), 'bottom-right');
+
+        // ズーム・回転
+        afterMap.addControl(new maplibregl.NavigationControl(), 'bottom-right');
+
+        var container = "#comparison-container";
+        var map = new maplibregl.Compare(beforeMap, afterMap, container, {
+        });
+
+        // スライダーで陰影起伏図の不透明度を制御
+        const photosliderOpactiy = document.getElementById('photo-slider-opacity');
+        const photosliderOpactiyValue = document.getElementById('photo-slider-opacity-value');
+
+        photosliderOpactiy.addEventListener('input', (e) => {
+            beforeMap.setPaintProperty(
+                'seamlessphoto',
+                'raster-opacity',
+                parseInt(e.target.value, 10) / 100
+            );
+            afterMap.setPaintProperty(
+                'wazimahigashi',
+                'raster-opacity',
+                parseInt(e.target.value, 10) / 100
+            );
+            afterMap.setPaintProperty(
+                'wazimanaka',
+                'raster-opacity',
+                parseInt(e.target.value, 10) / 100
+            );
+            afterMap.setPaintProperty(
+                'suzu',
+                'raster-opacity',
+                parseInt(e.target.value, 10) / 100
+            );
+            photosliderOpactiyValue.textContent = e.target.value + '%';
+        });
+
+    </script>
+</body>
+
+</html>
