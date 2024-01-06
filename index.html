@@ -157,7 +157,7 @@
         </div>
         <span style="margin-left: 5px;">津波浸水範囲</span>
         <div style="height: 5px;"></div>
-        <div class="square" style='outline: 2px solid;outline-color: rgba(0, 152, 0, 1); display: inline-block;'>
+        <div class="square" style='outline: 2px solid;outline-color: rgba(191, 0, 255, 1); display: inline-block;'>
         </div>
         <span style="margin-left: 5px;">海岸線が前進した範囲</span>
     </div>
@@ -322,7 +322,7 @@
             afterMap.addSource("hokai_all_20240103_suzu-wajimaEAST", {
                 type: "geojson",
                 data: './data/hokai_all_20240103_suzu-wajimaEAST.geojson',
-                attribution: '<a href="https://www.gsi.go.jp/BOUSAI/20240101_noto_earthquake.html">国土地理院ウェブサイト 令和6年(2024年)能登半島地震に関する情報（斜面崩壊・堆積分布データ）</a>'
+                attribution: '<a href="https://www.gsi.go.jp/BOUSAI/20240101_noto_earthquake.html">国土地理院 令和6年(2024年)能登半島地震に関する情報（斜面崩壊・堆積分布データ、空中写真判読による津波浸水域（推定））</a>'
             });
 
             // 斜面崩壊・堆積分布データ（斜面崩壊・堆積範囲）ラインレイヤ
@@ -332,7 +332,7 @@
                 'source': 'hokai_all_20240103_suzu-wajimaEAST',
                 'paint': {
                     'line-color': '#FF0000',
-                    'line-width': 1.5
+                    'line-width': 2
                 }
             });
 
@@ -340,7 +340,7 @@
             afterMap.addSource("hokai_20240104_wajimaCENTRAL", {
                 type: "geojson",
                 data: './data/hokai_20240104_wajimaCENTRAL.geojson',
-                attribution: '<a href="https://www.gsi.go.jp/BOUSAI/20240101_noto_earthquake.html">国土地理院ウェブサイト 令和6年(2024年)能登半島地震に関する情報（斜面崩壊・堆積分布データ）</a>'
+                attribution: '<a href="https://www.gsi.go.jp/BOUSAI/20240101_noto_earthquake.html">国土地理院 令和6年(2024年)能登半島地震に関する情報（斜面崩壊・堆積分布データ、空中写真判読による津波浸水域（推定））</a>'
             });
 
             // 斜面崩壊・堆積分布データ（斜面崩壊・堆積範囲）ラインレイヤ
@@ -350,18 +350,19 @@
                 'source': 'hokai_20240104_wajimaCENTRAL',
                 'paint': {
                     'line-color': '#FF0000',
-                    'line-width': 1.5
+                    'line-width': 2
                 }
             });
 
-            // 珠洲市南部 津波浸水範囲ソース
+            // 空中写真判読による津波浸水域（推定）ソース
             afterMap.addSource("suzu_tsunami", {
                 type: "geojson",
-                data: './data/Suzu_Tsunami_mapping_Ver.1.geojson',
-                attribution: '<a href="https://ajg-disaster.blogspot.com/2024/01/2024_2.html">日本地理学会 令和6年能登半島地震変動地形調査グループ</a>'
+                // data: './data/Suzu_Tsunami_mapping_Ver.1.geojson',
+                data: './data/shinsui-tsunami_noto_suzu-wajimaEAST_20240104_rev.geojson',
+                attribution: '<a href="https://www.gsi.go.jp/BOUSAI/20240101_noto_earthquake.html">国土地理院 令和6年(2024年)能登半島地震に関する情報（斜面崩壊・堆積分布データ、空中写真判読による津波浸水域（推定））</a>'
             });
 
-            // 珠洲市南部 津波浸水範囲ラインレイヤ
+            // 空中写真判読による津波浸水域（推定）ラインレイヤ
             afterMap.addLayer({
                 'id': 'suzu_tsunami-line',
                 "type": "line",
@@ -376,7 +377,7 @@
             afterMap.addSource("CL", {
                 type: "geojson",
                 data: './data/CL_NotoNE0104.geojson',
-                attribution: '<a href="https://ajg-disaster.blogspot.com/2024/01/2024_2.html">日本地理学会 令和6年能登半島地震変動地形調査グループ</a>'
+                attribution: '<a href="https://ajg-disaster.blogspot.com/2024/01/2024_2.html">日本地理学会 令和6年能登半島地震変動地形調査グループ（海岸線が前進した範囲）</a>'
             });
 
             // 海岸線が前進した範囲ラインレイヤ
@@ -385,7 +386,7 @@
                 "type": "line",
                 'source': 'CL',
                 'paint': {
-                    'line-color': '#009800',
+                    'line-color': '#BF00FF',
                     'line-width': 2
                 }
             });
