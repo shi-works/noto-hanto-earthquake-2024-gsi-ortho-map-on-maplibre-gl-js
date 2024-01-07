@@ -12,6 +12,13 @@
 				"pmtiles://https://cyberjapandata.gsi.go.jp/xyz/optimal_bvmap-v1/optimal_bvmap-v1.pmtiles/{z}/{x}/{y}"
 			],
 			"attribution": "<a href='https://github.com/gsi-cyberjapan/optimal_bvmap' target='_blank'>国土地理院最適化ベクトルタイル(標準地図風スタイル)</a>"
+		},
+		"h": {
+			"type": "raster",
+			"tiles": [
+				"https://cyberjapandata.gsi.go.jp/xyz/hillshademap/{z}/{x}/{y}.png"
+			],
+			"attribution": "<a href='https://maps.gsi.go.jp/development/ichiran.html#hillshademap' target='_blank'>地理院タイル(陰影起伏図)</a>"
 		}
 	},
 	"layers": [
@@ -39,6 +46,14 @@
 			"source-layer": "AdmArea",
 			"paint": {
 				"fill-color": "rgba(255,255,255,1)"
+			}
+		},
+		{
+			"id": "hillshade",
+			"type": "raster",
+			"source": "h",
+			"paint": {
+				"raster-opacity": 0.4
 			}
 		},
 		{
