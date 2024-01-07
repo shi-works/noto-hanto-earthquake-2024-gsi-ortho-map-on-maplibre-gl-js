@@ -59,7 +59,7 @@
 			"type": "raster",
 			"source": "s",
 			"paint": {
-				"raster-opacity": 1
+				"raster-opacity": 0.7
 			}
 		},
 		{
