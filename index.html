@@ -173,15 +173,19 @@
         <h4>凡例</h4>
         <div class="square" style='outline: 2px solid;outline-color: rgba(255, 0, 0, 1); display: inline-block;'>
         </div>
-        <span style="margin-left: 5px;">斜面崩壊・堆積範囲</span><br>
+        <span style="margin-left: 5px;">斜面崩壊・堆積範囲(1/5時点)</span><br>
         <div style="height: 5px;"></div>
         <div class="square" style='outline: 2px solid;outline-color: rgba(0, 0, 255, 1); display: inline-block;'>
         </div>
-        <span style="margin-left: 5px;">津波浸水範囲</span>
+        <span style="margin-left: 5px;">津波浸水範囲(1/2時点)</span>
         <div style="height: 5px;"></div>
         <div class="square" style='outline: 2px solid;outline-color: rgba(191, 0, 255, 1); display: inline-block;'>
         </div>
-        <span style="margin-left: 5px;">海岸線が前進した範囲</span>
+        <span style="margin-left: 5px;">海岸線が前進した範囲(空中写真)</span>
+        <div style="height: 5px;"></div>
+        <div class="square" style='outline: 2px solid;outline-color: rgba(127, 0, 255, 1); display: inline-block;'>
+        </div>
+        <span style="margin-left: 5px;">海岸線が前進した範囲(衛星画像)</span>
     </div>
     <script type="module">
         // Terrain-RGB形式への変換モジュール
@@ -501,20 +505,40 @@
                 }
             });
 
-            // 海岸線が前進した範囲ソース
-            afterMap.addSource("CL", {
+            // 海岸線が前進した範囲（空中写真）ソース
+            afterMap.addSource("Uplift", {
                 type: "geojson",
-                data: './data/CL_NotoNE0104.geojson',
+                // data: './data/CL_NotoNE0104.geojson',
+                data: './data/Uplift_mapping_NotoEQ_ver2.geojson',
                 attribution: '<a href="https://ajg-disaster.blogspot.com/2024/01/2024_2.html">日本地理学会 令和6年能登半島地震変動地形調査グループ（海岸線が前進した範囲）</a>'
             });
 
-            // 海岸線が前進した範囲ラインレイヤ
+            // 海岸線が前進した範囲（空中写真）ラインレイヤ
+            afterMap.addLayer({
+                'id': 'Uplift-line',
+                "type": "line",
+                'source': 'Uplift',
+                'paint': {
+                    'line-color': '#BF00FF',
+                    'line-width': 2
+                }
+            });
+
+            // 海岸線が前進した範囲（衛星画像）ソース
+            afterMap.addSource("CL", {
+                type: "geojson",
+                // data: './data/CL_NotoNE0104.geojson',
+                data: './data/CL_after_EQ_AxelG_Noto.geojson',
+                attribution: '<a href="https://ajg-disaster.blogspot.com/2024/01/2024_2.html">日本地理学会 令和6年能登半島地震変動地形調査グループ（海岸線が前進した範囲）</a>'
+            });
+
+            // 海岸線が前進した範囲（衛星画像）ラインレイヤ
             afterMap.addLayer({
                 'id': 'CL-line',
                 "type": "line",
                 'source': 'CL',
                 'paint': {
-                    'line-color': '#BF00FF',
+                    'line-color': '#7F00FF',
                     'line-width': 2
                 }
             });
