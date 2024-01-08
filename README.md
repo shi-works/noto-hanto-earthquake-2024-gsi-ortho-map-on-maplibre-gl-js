@@ -1,4 +1,6 @@
 # noto-hanto-earthquake-2024-gsi-ortho-map-on-maplibre-gl-js
+令和6年能登半島地震に関連して被災状況の把握を目的に公開されたデータをMapLibre GL JSで表示するデモサイトです。
+
 ## Public Website
 https://shi-works.github.io/noto-hanto-earthquake-2024-gsi-ortho-map-on-maplibre-gl-js/
 
