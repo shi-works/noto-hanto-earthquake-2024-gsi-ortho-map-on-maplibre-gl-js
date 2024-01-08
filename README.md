@@ -32,3 +32,11 @@ https://shi-works.github.io/noto-hanto-earthquake-2024-gsi-ortho-map-on-maplibre
     - 概要：http://disaster.ajg.or.jp/files/202401_Noto002.pdf
 
 - 上記の公開データのライセンス：令和6年能登半島地震変動地形調査グループ（日本地理学会）、[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/deed.ja)
+
+### 背景地図及び地形データ
+- 国土地理院 最適化ベクトルタイル
+    - 出典：https://github.com/gsi-cyberjapan/optimal_bvmap
+- 国土地理院 地理院タイル（陰影起伏図）
+    - 出典：https://maps.gsi.go.jp/development/ichiran.html#hillshademap
+- 産業技術総合研究所 シームレス標高タイル（統合DEM）
+    - 出典：https://tiles.gsj.jp/tiles/elev/tiles.html
