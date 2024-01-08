@@ -6,7 +6,7 @@ https://shi-works.github.io/noto-hanto-earthquake-2024-gsi-ortho-map-on-maplibre
 
 ## Data Source
 ### 国土地理院
-- 被災前の空中写真：全国
+- 被災前の空中写真：全国（能登半島：2010年4月～5月撮影）
     - 出典：https://maps.gsi.go.jp/development/ichiran.html#seamlessphoto
 - 被災後の空中写真（正射画像）：珠洲地区、輪島東地区、輪島中地区、20240102撮影
     - 出典：https://maps.gsi.go.jp/development/ichiran.html#t20240102noto_suzu_0102do
