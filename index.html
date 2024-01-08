@@ -165,8 +165,8 @@
     </div>
     <div class="map-overlay top">
         <div class="map-overlay-inner">
-            <label>空中写真 不透明度: <span id="photo-slider-opacity-value">70%</span></label>
-            <input id="photo-slider-opacity" type="range" min="0" max="100" step="1" value="70">
+            <label>空中写真 不透明度: <span id="photo-slider-opacity-value">100%</span></label>
+            <input id="photo-slider-opacity" type="range" min="0" max="100" step="1" value="100">
         </div>
     </div>
     <div id='legend' class='legend'>
@@ -222,7 +222,7 @@
             });
 
             // 産総研 シームレス標高タイルセット
-            beforeMap.setTerrain({ 'source': 'aist-dem', 'exaggeration': 1 });
+            // beforeMap.setTerrain({ 'source': 'aist-dem', 'exaggeration': 1 });
 
         });
 
@@ -285,7 +285,9 @@
             });
 
             // 産総研 シームレス標高タイルセット
-            afterMap.setTerrain({ 'source': 'aist-dem', 'exaggeration': 1 });
+            // afterMap.setTerrain({ 'source': 'aist-dem', 'exaggeration': 1 });
+
+            var opacity_value = 1;
 
             // 令和6年能登半島地震 珠洲地区　正射画像（2024年1月5日撮影）ソース
             afterMap.addSource("suzu-0105", {
@@ -302,7 +304,7 @@
                 type: "raster",
                 source: "suzu-0105",
                 paint: {
-                    "raster-opacity": 0.7
+                    "raster-opacity": opacity_value
                 },
                 layout: {
                     'visibility': 'none'
@@ -324,7 +326,7 @@
                 type: "raster",
                 source: "wazimanaka-0105",
                 paint: {
-                    "raster-opacity": 0.7
+                    "raster-opacity": opacity_value
                 },
                 layout: {
                     'visibility': 'none'
@@ -346,7 +348,7 @@
                 type: "raster",
                 source: "anamizu-0105",
                 paint: {
-                    "raster-opacity": 0.7
+                    "raster-opacity": opacity_value
                 },
                 layout: {
                     'visibility': 'none'
@@ -368,7 +370,7 @@
                 type: "raster",
                 source: "nanao-0105",
                 paint: {
-                    "raster-opacity": 0.7
+                    "raster-opacity": opacity_value
                 },
                 layout: {
                     'visibility': 'none'
@@ -390,7 +392,7 @@
                 type: "raster",
                 source: "suzu-0102",
                 paint: {
-                    "raster-opacity": 0.7
+                    "raster-opacity": opacity_value
                 }
             });
 
@@ -409,7 +411,7 @@
                 type: "raster",
                 source: "wazimanaka-0102",
                 paint: {
-                    "raster-opacity": 0.7
+                    "raster-opacity": opacity_value
                 }
             });
 
@@ -428,7 +430,7 @@
                 type: "raster",
                 source: "wazimahigashi-0102",
                 paint: {
-                    "raster-opacity": 0.7
+                    "raster-opacity": opacity_value
                 }
             });
 
