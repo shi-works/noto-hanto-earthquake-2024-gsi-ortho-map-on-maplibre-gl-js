@@ -29,6 +29,6 @@ https://shi-works.github.io/noto-hanto-earthquake-2024-gsi-ortho-map-on-maplibre
 ### 日本地理学会災害対応委員会
 - 海岸地形変化の検討結果（1月5日公開）
     - 出典：https://ajg-disaster.blogspot.com/
-        - 原初データ出典：[国土地理院空中写真（正射画像）](https://www.gsi.go.jp/BOUSAI/20240101_noto_earthquake.html)
+    - 概要：http://disaster.ajg.or.jp/files/202401_Noto002.pdf
 
 - 上記の公開データのライセンス：令和6年能登半島地震変動地形調査グループ（日本地理学会）、[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/deed.ja)
