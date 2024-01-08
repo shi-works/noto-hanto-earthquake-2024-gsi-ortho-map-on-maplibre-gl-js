@@ -4,6 +4,8 @@
 ## Public Website
 https://shi-works.github.io/noto-hanto-earthquake-2024-gsi-ortho-map-on-maplibre-gl-js/
 
+https://github.com/shi-works/noto-hanto-earthquake-2024-gsi-ortho-map-on-maplibre-gl-js/assets/71203808/20bb298e-a6a0-407c-bd0c-5d08c4a10f17
+
 ## Data Source
 ### 国土地理院
 - 被災前の空中写真：全国（能登半島：2010年4月～5月撮影）
