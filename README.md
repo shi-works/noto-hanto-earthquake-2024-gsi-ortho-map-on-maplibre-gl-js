@@ -31,6 +31,7 @@ https://github.com/shi-works/noto-hanto-earthquake-2024-gsi-ortho-map-on-maplibr
 ### Umbra
 - 被災後のSAR画像：20240106撮影
     - 出典：https://github.com/wtnv-lab/20240102_Noto_Earthquake_SAR_Umbra/
+    - 概要：[Umbraが公開したSAR画像](https://twitter.com/umbraspace/status/1743677139633717555?s=20)をもとに、東京大学の渡邉英徳研究室がMapTiler Engineでタイルセットを作成したものです。
 
 ### 日本地理学会災害対応委員会
 - 海岸地形変化の検討結果（1月8日公開）
