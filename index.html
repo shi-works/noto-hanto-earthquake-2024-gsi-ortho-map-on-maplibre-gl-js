@@ -173,19 +173,23 @@
     </div>
     <div id='legend' class='legend'>
         <h4>凡例</h4>
-        <div class="square" style='outline: 2px solid;outline-color: rgba(255, 0, 0, 1); display: inline-block;'>
+        <div class="square"
+            style='background-color: rgb(255, 0, 0, 0.2); outline: 2px solid;outline-color: rgba(255, 0, 0, 1); display: inline-block;'>
         </div>
         <span style="margin-left: 5px;">斜面崩壊・堆積範囲(1/5時点)</span><br>
         <div style="height: 5px;"></div>
-        <div class="square" style='outline: 2px solid;outline-color: rgba(0, 0, 255, 1); display: inline-block;'>
+        <div class="square"
+            style='background-color: rgb(0, 0, 255, 0.2); outline: 2px solid;outline-color: rgba(0, 0, 255, 1); display: inline-block;'>
         </div>
         <span style="margin-left: 5px;">津波浸水範囲(1/2時点)</span>
         <div style="height: 5px;"></div>
-        <div class="square" style='outline: 2px solid;outline-color: rgba(191, 0, 255, 1); display: inline-block;'>
+        <div class="square"
+            style='background-color: rgb(191, 0, 255, 0.2); outline: 2px solid;outline-color: rgba(191, 0, 255, 1); display: inline-block;'>
         </div>
         <span style="margin-left: 5px;">海岸線が前進した範囲(空中写真)</span>
         <div style="height: 5px;"></div>
-        <div class="square" style='outline: 2px solid;outline-color: rgba(127, 0, 255, 1); display: inline-block;'>
+        <div class="square"
+            style='background-color: rgb(127, 0, 255, 0.2); outline: 2px solid;outline-color: rgba(127, 0, 255, 1); display: inline-block;'>
         </div>
         <span style="margin-left: 5px;">海岸線が前進した範囲(衛星画像)</span>
     </div>
@@ -445,12 +449,23 @@
 
             // 斜面崩壊・堆積分布データ（珠洲地区、輪島東地区）ラインレイヤ
             afterMap.addLayer({
-                'id': 'hhokai_all_20240106_suzu-wajimaEAST-line',
+                'id': 'hokai_all_20240106_suzu-wajimaEAST-line',
                 "type": "line",
                 'source': 'hokai_all_20240106_suzu-wajimaEAST',
                 'paint': {
                     'line-color': '#FF0000',
                     'line-width': 2
+                }
+            });
+
+            // 斜面崩壊・堆積分布データ（珠洲地区、輪島東地区）ポリゴンレイヤ
+            afterMap.addLayer({
+                'id': 'hokai_all_20240106_suzu-wajimaEAST-fill',
+                "type": "fill",
+                'source': 'hokai_all_20240106_suzu-wajimaEAST',
+                'paint': {
+                    'fill-color': '#FF0000',
+                    'fill-opacity': 0.2
                 }
             });
 
@@ -472,6 +487,17 @@
                 }
             });
 
+            // 斜面崩壊・堆積分布データ（輪島中地区）ポリゴンレイヤ
+            afterMap.addLayer({
+                'id': 'hokai_all_20240106_wajimaCENTRAL-fill',
+                "type": "fill",
+                'source': 'hokai_all_20240106_wajimaCENTRAL',
+                'paint': {
+                    'fill-color': '#FF0000',
+                    'fill-opacity': 0.2
+                }
+            });
+
             // 斜面崩壊・堆積分布データ（穴水地区）ソース
             afterMap.addSource("hokai_all_20240106_anamizu", {
                 type: "geojson",
@@ -487,6 +513,17 @@
                 'paint': {
                     'line-color': '#FF0000',
                     'line-width': 2
+                }
+            });
+
+            // 斜面崩壊・堆積分布データ（穴水地区）ポリゴンレイヤ
+            afterMap.addLayer({
+                'id': 'hokai_all_20240106_anamizu-fill',
+                "type": "fill",
+                'source': 'hokai_all_20240106_anamizu',
+                'paint': {
+                    'fill-color': '#FF0000',
+                    'fill-opacity': 0.2
                 }
             });
 
@@ -509,6 +546,17 @@
                 }
             });
 
+            // 空中写真判読による津波浸水域（推定）ポリゴンレイヤ
+            afterMap.addLayer({
+                'id': 'suzu_tsunami-fill',
+                "type": "fill",
+                'source': 'suzu_tsunami',
+                'paint': {
+                    'fill-color': '#0000FF',
+                    'fill-opacity': 0.2
+                }
+            });
+
             // 海岸線が前進した範囲（空中写真）ソース
             afterMap.addSource("Uplift", {
                 type: "geojson",
@@ -528,6 +576,17 @@
                 }
             });
 
+            // 海岸線が前進した範囲（空中写真）ポリゴンレイヤ
+            afterMap.addLayer({
+                'id': 'Uplift-fill',
+                "type": "fill",
+                'source': 'Uplift',
+                'paint': {
+                    'fill-color': '#BF00FF',
+                    'fill-opacity': 0.2
+                }
+            });
+
             // 海岸線が前進した範囲（衛星画像）ソース
             afterMap.addSource("CL", {
                 type: "geojson",
@@ -544,6 +603,17 @@
                 'paint': {
                     'line-color': '#7F00FF',
                     'line-width': 2
+                }
+            });
+
+            // 海岸線が前進した範囲（衛星画像）ポリゴンレイヤ
+            afterMap.addLayer({
+                'id': 'CL-fill',
+                "type": "fill",
+                'source': 'CL',
+                'paint': {
+                    'fill-color': '#7F00FF',
+                    'fill-opacity': 0.2
                 }
             });
 
