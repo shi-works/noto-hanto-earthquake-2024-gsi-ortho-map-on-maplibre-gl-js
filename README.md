@@ -29,7 +29,7 @@ https://github.com/shi-works/noto-hanto-earthquake-2024-gsi-ortho-map-on-maplibr
 - 上記の公開データのライセンス：[国土地理院コンテンツ利用規約](https://www.gsi.go.jp/kikakuchousei/kikakuchousei40182.html)に従い、出典明示により、転載も含め使用可
 
 ### 日本地理学会災害対応委員会
-- 海岸地形変化の検討結果（1月5日公開）
+- 海岸地形変化の検討結果（1月8日公開）
     - 出典：https://ajg-disaster.blogspot.com/
     - 概要：http://disaster.ajg.or.jp/files/202401_Noto002.pdf
 
