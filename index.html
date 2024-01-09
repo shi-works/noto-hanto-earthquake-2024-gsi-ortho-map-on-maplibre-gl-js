@@ -1,7 +1,7 @@
 <html>
 
 <head>
-    <title>令和6年能登半島地震 正射画像+斜面崩壊・堆積範囲</title>
+    <title>令和6年能登半島地震 被災状況マップ（正射画像、斜面崩壊・堆積範囲、津波浸水範囲等）</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src='https://unpkg.com/maplibre-gl@3.6.2/dist/maplibre-gl.js'></script>
@@ -151,15 +151,15 @@
         }
     </style>
     <div id="select-ortho">
-        <label><b>正射画像</b></label><br>
+        <label><b>空中写真(正射画像)</b></label><br>
         <select id="ortho">
             <option value="20240102">2024年1月2日撮影</option>
             <option value="20240105">2024年1月5日撮影</option>
         </select>
     </div>
     <div id="comparison-container">
-        <div id="left-corner" class="corner-text">被災前（全国最新写真（シームレス））</div>
-        <div id="right-corner" class="corner-text">被災後（正射画像）</div>
+        <div id="left-corner" class="corner-text">被災前(全国最新写真(シームレス))</div>
+        <div id="right-corner" class="corner-text">被災後(空中写真(正射画像))</div>
         <div id="before" class="map"></div>
         <div id="after" class="map"></div>
     </div>
@@ -167,6 +167,8 @@
         <div class="map-overlay-inner">
             <label>空中写真 不透明度: <span id="photo-slider-opacity-value">100%</span></label>
             <input id="photo-slider-opacity" type="range" min="0" max="100" step="1" value="100">
+            <label>CS立体図 不透明度: <span id="cs-slider-opacity-value">100%</span></label>
+            <input id="cs-slider-opacity" type="range" min="0" max="100" step="1" value="100">
         </div>
     </div>
     <div id='legend' class='legend'>
@@ -222,7 +224,7 @@
             });
 
             // 産総研 シームレス標高タイルセット
-            // beforeMap.setTerrain({ 'source': 'aist-dem', 'exaggeration': 1 });
+            beforeMap.setTerrain({ 'source': 'aist-dem', 'exaggeration': 1 });
 
         });
 
@@ -285,7 +287,7 @@
             });
 
             // 産総研 シームレス標高タイルセット
-            // afterMap.setTerrain({ 'source': 'aist-dem', 'exaggeration': 1 });
+            afterMap.setTerrain({ 'source': 'aist-dem', 'exaggeration': 1 });
 
             var opacity_value = 1;
 
@@ -578,7 +580,7 @@
         var map = new maplibregl.Compare(beforeMap, afterMap, container, {
         });
 
-        // スライダーで陰影起伏図の不透明度を制御
+        // スライダーで空中写真の不透明度を制御
         const photosliderOpactiy = document.getElementById('photo-slider-opacity');
         const photosliderOpactiyValue = document.getElementById('photo-slider-opacity-value');
 
@@ -624,6 +626,19 @@
                 parseInt(e.target.value, 10) / 100
             );
             photosliderOpactiyValue.textContent = e.target.value + '%';
+        });
+
+        // スライダーでCS立体図の不透明度を制御
+        const cssliderOpactiy = document.getElementById('cs-slider-opacity');
+        const cssliderOpactiyValue = document.getElementById('cs-slider-opacity-value');
+
+        cssliderOpactiy.addEventListener('input', (e) => {
+            afterMap.setPaintProperty(
+                'cs-noto',
+                'raster-opacity',
+                parseInt(e.target.value, 10) / 100
+            );
+            cssliderOpactiyValue.textContent = e.target.value + '%';
         });
 
         // イベントリスナーを追加

@@ -19,6 +19,13 @@
 				"https://cyberjapandata.gsi.go.jp/xyz/hillshademap/{z}/{x}/{y}.png"
 			],
 			"attribution": "<a href='https://maps.gsi.go.jp/development/ichiran.html#hillshademap' target='_blank'>地理院タイル(陰影起伏図)</a>"
+		},
+		"cs": {
+			"type": "raster",
+			"tiles": [
+				"https://www2.ffpri.go.jp/soilmap/tile/cs_noto/{z}/{x}/{y}.png"
+			],
+			"attribution": "<a href='https://www2.ffpri.go.jp/soilmap/data-src.html' target='_blank'>森林総合研究所 CS立体図(能登(石川県))</a>"
 		}
 	},
 	"layers": [
@@ -54,6 +61,14 @@
 			"source": "h",
 			"paint": {
 				"raster-opacity": 0.4
+			}
+		},
+		{
+			"id": "cs-noto",
+			"type": "raster",
+			"source": "cs",
+			"paint": {
+				"raster-opacity": 1
 			}
 		},
 		{
