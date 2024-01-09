@@ -42,3 +42,5 @@ https://github.com/shi-works/noto-hanto-earthquake-2024-gsi-ortho-map-on-maplibr
     - 出典：https://maps.gsi.go.jp/development/ichiran.html#hillshademap
 - 産業技術総合研究所 シームレス標高タイル（統合DEM）
     - 出典：https://tiles.gsj.jp/tiles/elev/tiles.html
+- 森林総合研究所 CS立体図(能登(石川県))
+    - 出典：https://www2.ffpri.go.jp/soilmap/data-src.html
