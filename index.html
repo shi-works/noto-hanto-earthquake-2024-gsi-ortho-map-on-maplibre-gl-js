@@ -56,15 +56,15 @@
         }
 
         .toggle-button {
-    position: absolute;
-    bottom: 155px;
-    right: 50px;
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-    font-size: 15px;
-    z-index: 1000;
-}
+            position: absolute;
+            bottom: 155px;
+            right: 50px;
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+            font-size: 15px;
+            z-index: 1000;
+        }
     </style>
 </head>
 
@@ -186,16 +186,24 @@
     <button id="toggleButton" class="toggle-button">🔽</button>
     <div id='legend' class='legend'>
         <h4>凡例</h4>
-        <div class="square" style='background-color: rgb(255, 0, 0, 0.2); outline: 2px solid;outline-color: rgba(255, 0, 0, 1); display: inline-block;'></div>
+        <div class="square"
+            style='background-color: rgb(255, 0, 0, 0.2); outline: 2px solid;outline-color: rgba(255, 0, 0, 1); display: inline-block;'>
+        </div>
         <span style="margin-left: 5px;">斜面崩壊・堆積範囲(1/5時点)</span><br>
         <div style="height: 5px;"></div>
-        <div class="square" style='background-color: rgb(0, 0, 255, 0.2); outline: 2px solid;outline-color: rgba(0, 0, 255, 1); display: inline-block;'></div>
-        <span style="margin-left: 5px;">津波浸水範囲(1/2時点)</span>
+        <div class="square"
+            style='background-color: rgb(0, 0, 255, 0.2); outline: 2px solid;outline-color: rgba(0, 0, 255, 1); display: inline-block;'>
+        </div>
+        <span style="margin-left: 5px;">津波浸水範囲(1/5時点)</span>
         <div style="height: 5px;"></div>
-        <div class="square" style='background-color: rgb(191, 0, 255, 0.2); outline: 2px solid;outline-color: rgba(191, 0, 255, 1); display: inline-block;'></div>
+        <div class="square"
+            style='background-color: rgb(191, 0, 255, 0.2); outline: 2px solid;outline-color: rgba(191, 0, 255, 1); display: inline-block;'>
+        </div>
         <span style="margin-left: 5px;">海岸線が前進した範囲(空中写真)</span>
         <div style="height: 5px;"></div>
-        <div class="square" style='background-color: rgb(127, 0, 255, 0.2); outline: 2px solid;outline-color: rgba(127, 0, 255, 1); display: inline-block;'></div>
+        <div class="square"
+            style='background-color: rgb(127, 0, 255, 0.2); outline: 2px solid;outline-color: rgba(127, 0, 255, 1); display: inline-block;'>
+        </div>
         <span style="margin-left: 5px;">海岸線が前進した範囲(衛星画像)</span>
     </div>
     <script type="module">
@@ -807,7 +815,8 @@
             afterMap.addSource("suzu_tsunami", {
                 type: "geojson",
                 // data: './data/Suzu_Tsunami_mapping_Ver.1.geojson',
-                data: './data/shinsui-tsunami_noto_suzu-wajimaEAST_20240104_rev.geojson',
+                // data: './data/shinsui-tsunami_noto_suzu-wajimaEAST_20240104_rev.geojson',
+                data: './data/shinsui-tsunami-area_suzu-wajimaEAST-Re_20240109.geojson',
                 attribution: '<a href="https://www.gsi.go.jp/BOUSAI/20240101_noto_earthquake.html">国土地理院 令和6年(2024年)能登半島地震に関する情報（斜面崩壊・堆積分布データ、空中写真判読による津波浸水域（推定））</a>'
             });
 
@@ -1112,23 +1121,23 @@
             }
         }
 
-    document.addEventListener('DOMContentLoaded', (event) => {
-    const toggleButton = document.getElementById('toggleButton');
-    const legend = document.getElementById('legend');
+        document.addEventListener('DOMContentLoaded', (event) => {
+            const toggleButton = document.getElementById('toggleButton');
+            const legend = document.getElementById('legend');
 
-    toggleButton.addEventListener('click', function() {
-        if (legend.style.display === 'none') {
-            // 凡例を表示
-            legend.style.display = '';
-            toggleButton.textContent = '🔽'; // アイコンを「閉じる」状態に更新
-        } else {
-            // 凡例を隠す
-            legend.style.display = 'none';
-            toggleButton.textContent = '🔼'; // アイコンを「開く」状態に更新
-        }
-    });
+            toggleButton.addEventListener('click', function () {
+                if (legend.style.display === 'none') {
+                    // 凡例を表示
+                    legend.style.display = '';
+                    toggleButton.textContent = '🔽'; // アイコンを「閉じる」状態に更新
+                } else {
+                    // 凡例を隠す
+                    legend.style.display = 'none';
+                    toggleButton.textContent = '🔼'; // アイコンを「開く」状態に更新
+                }
+            });
 
-});
+        });
 
     </script>
 </body>
