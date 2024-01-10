@@ -65,6 +65,38 @@
             font-size: 15px;
             z-index: 1000;
         }
+
+        .legend-pop {
+            background-color: rgba(255, 255, 255, 1);
+            border-radius: 3px;
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.10);
+            font: 12px/14px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+            padding: 10px;
+            position: absolute;
+            bottom: 230px;
+            right: 10px;
+            z-index: 1;
+            line-height: 20px;
+            height: auto;
+        }
+
+        .legend-pop h4 {
+            margin: 0 0 10px;
+        }
+
+        .legend-pop div span {
+            border-radius: 50%;
+            display: inline-block;
+            height: 15px;
+            margin-right: 10px;
+            width: 15px;
+            color: orangered
+        }
+
+        .square {
+            width: 15px;
+            height: 15px;
+        }
     </style>
 </head>
 
@@ -125,6 +157,53 @@
             cursor: ew-resize;
         }
 
+        .maplibregl-popup .maplibregl-popup-content {
+            padding: 8px 10px;
+            font: 12px/14px Arial, Helvetica, sans-serif;
+            color: black;
+            background: rgba(255, 255, 255, 0.9);
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.9);
+            border-radius: 5px;
+            width: 220px;
+            height: 230px;
+            /*overflow: scroll;*/
+        }
+
+        .maplibregl-popup .maplibregl-popup-content .shinouchimei-title {
+            color: red;
+            font-size: larger;
+        }
+
+        .maplibregl-popup .maplibregl-popup-content .pop-info th {
+            width: 100px;
+        }
+
+        /* 1列目 (左側) を右寄せにする */
+        .maplibregl-popup .maplibregl-popup-content .pop-info td:nth-child(1) {
+            text-align: right;
+            width: 100px;
+            white-space: nowrap;
+            /* 折り返しを防ぐ */
+        }
+
+        /* 2列目 (右側) のセルの幅を広げる */
+        .maplibregl-popup .maplibregl-popup-content .pop-info td:nth-child(2) {
+            text-align: left;
+            width: 150px;
+            white-space: nowrap;
+            /* 折り返しを防ぐ */
+        }
+
+        .maplibregl-popup .maplibregl-popup-content .pop-info b {
+            text-align: right;
+        }
+
+        .maplibregl-popup .maplibregl-popup-content .pop-info,
+        .maplibregl-popup .maplibregl-popup-content .pop-info th,
+        .maplibregl-popup .maplibregl-popup-content .pop-info td {
+            font: 12px/14px Arial, Helvetica, sans-serif;
+        }
+
         .corner-text {
             position: fixed;
             top: 0;
@@ -160,6 +239,21 @@
             right: 10px;
             z-index: 10;
         }
+
+        #checkbox-area {
+            padding: 3px 4px;
+            font: 12px/14px Arial, Helvetica, sans-serif;
+            color: black;
+            background: white;
+            background: rgba(255, 255, 255, 1.0);
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+            border-radius: 5px;
+            width: fit-content;
+            position: absolute;
+            top: 95px;
+            right: 10px;
+            z-index: 10;
+        }
     </style>
     <div id="comparison-container">
         <div id="left-corner" class="corner-text">被災前(全国最新写真)</div>
@@ -174,6 +268,10 @@
             <option value="20240105">空中写真(2024年1月5日撮影)</option>
             <option value="20240106">SAR画像(2024年1月6日撮影)</option>
         </select>
+    </div>
+    <div id="checkbox-area">
+        <input type="checkbox" id="populationLayerCheckbox" name="populationLayer">
+        <label for="populationLayerCheckbox">令和2年100mﾒｯｼｭ人口表示</label>
     </div>
     <div class="map-overlay top">
         <div class="map-overlay-inner">
@@ -205,6 +303,21 @@
             style='background-color: rgb(127, 0, 255, 0.2); outline: 2px solid;outline-color: rgba(127, 0, 255, 1); display: inline-block;'>
         </div>
         <span style="margin-left: 5px;">海岸線が前進した範囲(衛星画像)</span>
+    </div>
+    <div id="legend-pop" style="display:none;" class='legend-pop'>
+        <h4>人口(100mﾒｯｼｭ)</h4>
+        <div class="square" style='background-color: #0000FF; display: inline-block;'>
+        </div><span style="display: inline-block; margin-left: 5px;">～10人未満</span><br>
+        <div class="square" style='background-color: #00FFFF; display: inline-block;'>
+        </div><span style="display: inline-block; margin-left: 5px;">10～20人未満</span><br>
+        <div class="square" style='background-color: #00FF00; display: inline-block;'>
+        </div><span style="display: inline-block; margin-left: 5px;">20～40人未満</span><br>
+        <div class="square" style='background-color: #FFBF00; display: inline-block;'>
+        </div><span style="display: inline-block; margin-left: 5px;">40～60人未満</span><br>
+        <div class="square" style='background-color: #FF0000; display: inline-block;'>
+        </div><span style="display: inline-block; margin-left: 5px;">60～80人未満</span><br>
+        <div class="square" style='background-color: #CB00CB; display: inline-block;'>
+        </div><span style="display: inline-block; margin-left: 5px;">80人以上</span><br>
     </div>
     <script type="module">
         // Terrain-RGB形式への変換モジュール
@@ -290,6 +403,24 @@
             attributionControl: false,
             hash: true,
         });
+
+        // 人口色分け用のフィルタ準備
+        let f1 = ["all", [">=", ['to-number', ["get", "PopT"]], 0], ["<", ['to-number', ["get", "PopT"]], 10]];
+        let f2 = ["all", [">=", ['to-number', ["get", "PopT"]], 10], ["<", ['to-number', ["get", "PopT"]], 20]];
+        let f3 = ["all", [">=", ['to-number', ["get", "PopT"]], 20], ["<", ['to-number', ["get", "PopT"]], 40]];
+        let f4 = ["all", [">=", ['to-number', ["get", "PopT"]], 40], ["<", ['to-number', ["get", "PopT"]], 60]];
+        let f5 = ["all", [">=", ['to-number', ["get", "PopT"]], 60], ["<", ['to-number', ["get", "PopT"]], 80]];
+        let f6 = ["all", [">=", ['to-number', ["get", "PopT"]], 80], ["<", ['to-number', ["get", "PopT"]], 1000000]];
+
+        // 人口色分け用色の準備
+        let colors = [
+            '#0000FF',
+            '#00FFFF',
+            '#00FF00',
+            '#FFBF00',
+            '#FF0000',
+            '#CB00CB'
+        ]
 
         // マップをロード
         afterMap.on('load', () => {
@@ -902,6 +1033,70 @@
                 }
             });
 
+            // 令和2年簡易100mメッシュ人口（石川県）ソース
+            afterMap.addSource("100m_mesh_pop2020_ishikawa", {
+                type: "vector",
+                url: "pmtiles://https://xs489works.xsrv.jp/pmtiles-data/100m_mesh_pop2020/100m_mesh_pop2020_ishikawa.pmtiles",
+                attribution: '<a href="https://gtfs-gis.jp/teikyo/index.html" target="_blank">地域・交通データ研究所 簡易100mメッシュ人口データ(2020年国勢調査ベース)</a>',
+            });
+
+            // 令和2年簡易100mメッシュ人口（石川県）レイヤ
+            afterMap.addLayer({
+                'id': '100m_mesh_pop2020_ishikawa-fill',
+                'type': 'fill-extrusion',
+                'source': '100m_mesh_pop2020_ishikawa',
+                'source-layer': "100m_mesh_pop2020_ishikawafgb",
+                'layout': {
+                    'visibility': 'none'
+                },
+                'paint': {
+                    'fill-extrusion-color': [
+                        "case",
+                        f1, colors[0],
+                        f2, colors[1],
+                        f3, colors[2],
+                        f4, colors[3],
+                        f5, colors[4],
+                        f6, colors[5],
+                        colors[5]
+                    ],
+                    'fill-extrusion-height': ["*", ['to-number', ["get", "PopT"]], 10],
+                    'fill-extrusion-opacity': 0.5
+                }
+            });
+
+            // 令和2年簡易100mメッシュ人口（富山県）ソース
+            afterMap.addSource("100m_mesh_pop2020_toyama", {
+                type: "vector",
+                url: "pmtiles://https://xs489works.xsrv.jp/pmtiles-data/100m_mesh_pop2020/100m_mesh_pop2020_toyama.pmtiles",
+                attribution: '<a href="https://gtfs-gis.jp/teikyo/kani_100m_download2020.html" target="_blank">地域・交通データ研究所 簡易100mメッシュ人口データ(2020年国勢調査ベース)</a>',
+            });
+
+            // 令和2年簡易100mメッシュ人口（富山県）レイヤ
+            afterMap.addLayer({
+                'id': '100m_mesh_pop2020_toyama-fill',
+                'type': 'fill-extrusion',
+                'source': '100m_mesh_pop2020_toyama',
+                'source-layer': "100m_mesh_pop2020_toyamafgb",
+                'layout': {
+                    'visibility': 'none'
+                },
+                'paint': {
+                    'fill-extrusion-color': [
+                        "case",
+                        f1, colors[0],
+                        f2, colors[1],
+                        f3, colors[2],
+                        f4, colors[3],
+                        f5, colors[4],
+                        f6, colors[5],
+                        colors[5]
+                    ],
+                    'fill-extrusion-height': ["*", ['to-number', ["get", "PopT"]], 10],
+                    'fill-extrusion-opacity': 0.5
+                }
+            });
+
         });
 
         // Attributionを折りたたみ表示
@@ -1121,6 +1316,7 @@
             }
         }
 
+        // 凡例の表示・非表示切り替え制御
         document.addEventListener('DOMContentLoaded', (event) => {
             const toggleButton = document.getElementById('toggleButton');
             const legend = document.getElementById('legend');
@@ -1139,6 +1335,159 @@
 
         });
 
+        // 100mメッシュ人口の表示・非表示切り替え制御
+        document.getElementById('populationLayerCheckbox').addEventListener('change', function (e) {
+            var legend = document.getElementById('legend-pop');
+            if (e.target.checked) {
+                // チェックボックスがON - レイヤーと凡例を表示
+                afterMap.setLayoutProperty('100m_mesh_pop2020_ishikawa-fill', 'visibility', 'visible');
+                afterMap.setLayoutProperty('100m_mesh_pop2020_toyama-fill', 'visibility', 'visible');
+                legend.style.display = 'block';
+            } else {
+                // チェックボックスがOFF - レイヤーと凡例を非表示
+                afterMap.setLayoutProperty('100m_mesh_pop2020_ishikawa-fill', 'visibility', 'none');
+                afterMap.setLayoutProperty('100m_mesh_pop2020_toyama-fill', 'visibility', 'none');
+                legend.style.display = 'none';
+            }
+        });
+
+        // 100mメッシュ人口（石川県）のポップアップ表示
+        afterMap.on('click', '100m_mesh_pop2020_ishikawa-fill', (e) => {
+            var coordinates = e.features[0].geometry.coordinates[0]; // ポリゴンの頂点の配列
+            var lngSum = 0, latSum = 0;
+
+            coordinates.forEach(coord => {
+                lngSum += coord[0]; // 経度の合計
+                latSum += coord[1]; // 緯度の合計
+            });
+
+            var lng = lngSum / coordinates.length; // 経度の平均
+            var lat = latSum / coordinates.length; // 緯度の平均
+
+            var MESH_CODE = e.features[0].properties['MESH_CODE'];
+            var Shicode = e.features[0].properties['Shicode'];
+            var PopT = e.features[0].properties['PopT'];
+            var Pop0_14 = e.features[0].properties['Pop0_14'];
+            var Pop15_64 = e.features[0].properties['Pop15_64'];
+            var Pop65over = e.features[0].properties['Pop65over'];
+            var Pop75over = e.features[0].properties['Pop75over'];
+            var Pop85over = e.features[0].properties['Pop85over'];
+
+            new maplibregl.Popup()
+                .setLngLat(e.lngLat)
+                .setHTML(
+                    '<table class="pop-info">' +
+                    '<tr>' +
+                    '<th></th>' +
+                    '<th></th>' +
+                    '</tr>' +
+                    '<tr>' +
+                    '<td>メッシュコード：</td>' +
+                    '<td><b>' + MESH_CODE + '</b></td>' +
+                    '</tr>' +
+                    '<tr>' +
+                    '<td>市区町村コード：</td>' +
+                    '<td><b>' + Shicode + '</b></td>' +
+                    '</tr>' +
+                    '<tr>' +
+                    '<td>総人口：</td>' +
+                    '<td><b>' + PopT + '人' + '</b></td>' +
+                    '</tr>' +
+                    '<tr>' +
+                    '<td>0～14歳人口：</td>' +
+                    '<td><b>' + Pop0_14 + '人' + '</b></td>' +
+                    '</tr>' +
+                    '<tr>' +
+                    '<td>15～64歳人口：</td>' +
+                    '<td><b>' + Pop15_64 + '人' + '</b></td>' +
+                    '</tr>' +
+                    '<tr>' +
+                    '<td>65歳以上人口：</td>' +
+                    '<td><b>' + Pop65over + '人' + '</b></td>' +
+                    '</tr>' +
+                    '<tr>' +
+                    '<td>75歳以上人口：</td>' +
+                    '<td><b>' + Pop75over + '人' + '</b></td>' +
+                    '</tr>' +
+                    '<tr>' +
+                    '<td>85歳以上人口：</td>' +
+                    '<td><b>' + Pop85over + '人' + '</b></td>' +
+                    '</tr>' +
+                    '</table>' +
+                    '※このデータは、簡易な方法で人口を按分したものであり、当該100mメッシュの実際の人口を示しているものではありません。' + '<br>' +
+                    '<a href="https://www.google.com/maps?q=' + lat + "," + lng + "&hl=ja" + '" target="_blank" class="google-maps-link">🌎Google Maps</a>'
+                )
+                .addTo(afterMap);
+        });
+
+        // 100mメッシュ人口（富山県）のポップアップ表示
+        afterMap.on('click', '100m_mesh_pop2020_toyama-fill', (e) => {
+            var coordinates = e.features[0].geometry.coordinates[0]; // ポリゴンの頂点の配列
+            var lngSum = 0, latSum = 0;
+
+            coordinates.forEach(coord => {
+                lngSum += coord[0]; // 経度の合計
+                latSum += coord[1]; // 緯度の合計
+            });
+
+            var lng = lngSum / coordinates.length; // 経度の平均
+            var lat = latSum / coordinates.length; // 緯度の平均
+
+            var MESH_CODE = e.features[0].properties['MESH_CODE'];
+            var Shicode = e.features[0].properties['Shicode'];
+            var PopT = e.features[0].properties['PopT'];
+            var Pop0_14 = e.features[0].properties['Pop0_14'];
+            var Pop15_64 = e.features[0].properties['Pop15_64'];
+            var Pop65over = e.features[0].properties['Pop65over'];
+            var Pop75over = e.features[0].properties['Pop75over'];
+            var Pop85over = e.features[0].properties['Pop85over'];
+
+            new maplibregl.Popup()
+                .setLngLat(e.lngLat)
+                .setHTML(
+                    '<table class="pop-info">' +
+                    '<tr>' +
+                    '<th></th>' +
+                    '<th></th>' +
+                    '</tr>' +
+                    '<tr>' +
+                    '<td>メッシュコード：</td>' +
+                    '<td><b>' + MESH_CODE + '</b></td>' +
+                    '</tr>' +
+                    '<tr>' +
+                    '<td>市区町村コード：</td>' +
+                    '<td><b>' + Shicode + '</b></td>' +
+                    '</tr>' +
+                    '<tr>' +
+                    '<td>総人口：</td>' +
+                    '<td><b>' + PopT + '人' + '</b></td>' +
+                    '</tr>' +
+                    '<tr>' +
+                    '<td>0～14歳人口：</td>' +
+                    '<td><b>' + Pop0_14 + '人' + '</b></td>' +
+                    '</tr>' +
+                    '<tr>' +
+                    '<td>15～64歳人口：</td>' +
+                    '<td><b>' + Pop15_64 + '人' + '</b></td>' +
+                    '</tr>' +
+                    '<tr>' +
+                    '<td>65歳以上人口：</td>' +
+                    '<td><b>' + Pop65over + '人' + '</b></td>' +
+                    '</tr>' +
+                    '<tr>' +
+                    '<td>75歳以上人口：</td>' +
+                    '<td><b>' + Pop75over + '人' + '</b></td>' +
+                    '</tr>' +
+                    '<tr>' +
+                    '<td>85歳以上人口：</td>' +
+                    '<td><b>' + Pop85over + '人' + '</b></td>' +
+                    '</tr>' +
+                    '</table>' +
+                    '※このデータは、簡易な方法で人口を按分したものであり、当該100mメッシュの実際の人口を示しているものではありません。' + '<br>' +
+                    '<a href="https://www.google.com/maps?q=' + lat + "," + lng + "&hl=ja" + '" target="_blank" class="google-maps-link">🌎Google Maps</a>'
+                )
+                .addTo(afterMap);
+        });
     </script>
 </body>
 
