@@ -28,10 +28,12 @@ https://github.com/shi-works/noto-hanto-earthquake-2024-gsi-ortho-map-on-maplibr
 
 - 上記の公開データのライセンス：[国土地理院コンテンツ利用規約](https://www.gsi.go.jp/kikakuchousei/kikakuchousei40182.html)に従い、出典明示により、転載も含め使用可
 
-### Umbra
+### 東京大学渡邉英徳研究室
 - 被災後のSAR画像：20240106撮影
     - 出典：https://github.com/wtnv-lab/20240102_Noto_Earthquake_SAR_Umbra/
-    - 概要：東京大学の渡邉英徳研究室が[Umbraが公開した合成開口レーダー（SAR）画像](https://twitter.com/umbraspace/status/1743677139633717555?s=20)をMapTiler Engineを用いて作成したタイルセットです。
+    - 概要：[Umbra Open Data Program](https://umbra.space/open-data)にて公開されている[Noto Peninsula Earthquake](http://umbra-open-data-catalog.s3-website.us-west-2.amazonaws.com/?prefix=sar-data/tasks/ad%20hoc/Noto%20Peninsula%20Earthquake/)を、東京大学渡邉英徳研究室にてXYZタイルに変換したものです。
+
+- 上記の公開データのライセンス：[Umbra Open Data Program](https://umbra.space/open-data)、[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/deed.ja)
 
 ### 日本地理学会災害対応委員会
 - 海岸地形変化の検討結果（1月8日公開）
