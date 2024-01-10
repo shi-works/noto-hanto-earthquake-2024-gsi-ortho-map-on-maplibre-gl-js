@@ -942,8 +942,8 @@
                 }
             });
 
-            // 空中写真判読による津波浸水域（推定）ソース
-            afterMap.addSource("suzu_tsunami", {
+            // 空中写真判読による津波浸水域（推定）（珠洲地区、輪島東地区）ソース
+            afterMap.addSource("tsunami_suzu-wajimaEAST", {
                 type: "geojson",
                 // data: './data/Suzu_Tsunami_mapping_Ver.1.geojson',
                 // data: './data/shinsui-tsunami_noto_suzu-wajimaEAST_20240104_rev.geojson',
@@ -951,22 +951,80 @@
                 attribution: '<a href="https://www.gsi.go.jp/BOUSAI/20240101_noto_earthquake.html">国土地理院 令和6年(2024年)能登半島地震に関する情報（斜面崩壊・堆積分布データ、空中写真判読による津波浸水域（推定））</a>'
             });
 
-            // 空中写真判読による津波浸水域（推定）ラインレイヤ
+            // 空中写真判読による津波浸水域（推定）（珠洲地区、輪島東地区）ラインレイヤ
             afterMap.addLayer({
-                'id': 'suzu_tsunami-line',
+                'id': 'tsunami_suzu-wajimaEAST-line',
                 "type": "line",
-                'source': 'suzu_tsunami',
+                'source': 'tsunami_suzu-wajimaEAST',
                 'paint': {
                     'line-color': '#0000FF',
                     'line-width': 2
                 }
             });
 
-            // 空中写真判読による津波浸水域（推定）ポリゴンレイヤ
+            // 空中写真判読による津波浸水域（推定）（珠洲地区、輪島東地区）ポリゴンレイヤ
             afterMap.addLayer({
-                'id': 'suzu_tsunami-fill',
+                'id': 'tsunami_suzu-wajimaEAST-fill',
                 "type": "fill",
-                'source': 'suzu_tsunami',
+                'source': 'tsunami_suzu-wajimaEAST',
+                'paint': {
+                    'fill-color': '#0000FF',
+                    'fill-opacity': 0.2
+                }
+            });
+
+            // 空中写真判読による津波浸水域（推定）（穴水地区）ソース
+            afterMap.addSource("tsunami_anamizu", {
+                type: "geojson",
+                data: './data/shinsui-tsunami-area_anamizu_20240110.geojson',
+                attribution: '<a href="https://www.gsi.go.jp/BOUSAI/20240101_noto_earthquake.html">国土地理院 令和6年(2024年)能登半島地震に関する情報（斜面崩壊・堆積分布データ、空中写真判読による津波浸水域（推定））</a>'
+            });
+
+            // 空中写真判読による津波浸水域（推定）（穴水地区）ラインレイヤ
+            afterMap.addLayer({
+                'id': 'tsunami_anamizu-line',
+                "type": "line",
+                'source': 'tsunami_anamizu',
+                'paint': {
+                    'line-color': '#0000FF',
+                    'line-width': 2
+                }
+            });
+
+            // 空中写真判読による津波浸水域（推定）（穴水地区）ポリゴンレイヤ
+            afterMap.addLayer({
+                'id': 'tsunami_anamizu-fill',
+                "type": "fill",
+                'source': 'tsunami_anamizu',
+                'paint': {
+                    'fill-color': '#0000FF',
+                    'fill-opacity': 0.2
+                }
+            });
+
+            // 空中写真判読による津波浸水域（推定）（七尾地区）ソース
+            afterMap.addSource("tsunami_nanao", {
+                type: "geojson",
+                data: './data/shinsui-tsunami-area_nanao_20240110.geojson',
+                attribution: '<a href="https://www.gsi.go.jp/BOUSAI/20240101_noto_earthquake.html">国土地理院 令和6年(2024年)能登半島地震に関する情報（斜面崩壊・堆積分布データ、空中写真判読による津波浸水域（推定））</a>'
+            });
+
+            // 空中写真判読による津波浸水域（推定）（七尾地区）ラインレイヤ
+            afterMap.addLayer({
+                'id': 'tsunami_nanao-line',
+                "type": "line",
+                'source': 'tsunami_nanao',
+                'paint': {
+                    'line-color': '#0000FF',
+                    'line-width': 2
+                }
+            });
+
+            // 空中写真判読による津波浸水域（推定）（七尾地区）ポリゴンレイヤ
+            afterMap.addLayer({
+                'id': 'tsunami_nanao-fill',
+                "type": "fill",
+                'source': 'tsunami_nanao',
                 'paint': {
                     'fill-color': '#0000FF',
                     'fill-opacity': 0.2
