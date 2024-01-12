@@ -4,7 +4,7 @@
 ## Public Website
 https://shi-works.github.io/noto-hanto-earthquake-2024-gsi-ortho-map-on-maplibre-gl-js/
 
-https://github.com/shi-works/noto-hanto-earthquake-2024-gsi-ortho-map-on-maplibre-gl-js/assets/71203808/caefa745-b98a-4ed8-8067-885788dcbb1a
+https://github.com/shi-works/noto-hanto-earthquake-2024-gsi-ortho-map-on-maplibre-gl-js/assets/71203808/c5c9be77-e79e-4c31-abba-f9abc0362def
 
 ## Data Source
 ### 国土地理院
