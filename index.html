@@ -1078,6 +1078,35 @@
                 }
             });
 
+            // 斜面崩壊・堆積分布データ（輪島西地区）ソース
+            afterMap.addSource("hokai_all_20240112_wajimaWEST", {
+                type: "geojson",
+                data: './data/hokai_all_20240112_wajimaWEST.geojson',
+                attribution: '<a href="https://www.gsi.go.jp/BOUSAI/20240101_noto_earthquake.html">国土地理院 令和6年(2024年)能登半島地震に関する情報（斜面崩壊・堆積分布データ、空中写真判読による津波浸水域（推定））</a>'
+            });
+
+            // 斜面崩壊・堆積分布データ（輪島西地区）ラインレイヤ
+            afterMap.addLayer({
+                'id': 'hokai_all_20240112_wajimaWEST-line',
+                "type": "line",
+                'source': 'hokai_all_20240112_wajimaWEST',
+                'paint': {
+                    'line-color': '#FF0000',
+                    'line-width': 2
+                }
+            });
+
+            // 斜面崩壊・堆積分布データ（輪島西地区）ポリゴンレイヤ
+            afterMap.addLayer({
+                'id': 'hokai_all_20240112_wajimaWEST-fill',
+                "type": "fill",
+                'source': 'hokai_all_20240112_wajimaWEST',
+                'paint': {
+                    'fill-color': '#FF0000',
+                    'fill-opacity': 0.2
+                }
+            });
+
             // 空中写真判読による津波浸水域（推定）（珠洲地区、輪島東地区）ソース
             afterMap.addSource("tsunami_suzu-wajimaEAST", {
                 type: "geojson",
