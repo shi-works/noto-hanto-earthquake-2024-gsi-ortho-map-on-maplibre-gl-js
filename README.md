@@ -63,5 +63,5 @@ https://github.com/shi-works/noto-hanto-earthquake-2024-gsi-ortho-map-on-maplibr
 - 孤立集落人数データ（石川県）（GeoJSON形式）
     - 出典：https://x.com/GISPHN/status/1745321675393298538?s=20
         - 原初データ出典：[石川県災害対策本部員会議資料](https://www.pref.ishikawa.lg.jp/saigai/202401jishin-taisakuhonbu.html#honbu)
-    - 概要：堀池様（[@GISPHN](https://twitter.com/GISPHN)）が石川県災害対策本部員会議資料の孤立集落の地区名と人数をGeoJSON形式で作成したデータです。
+    - 概要：堀池様（[@GISPHN](https://twitter.com/GISPHN)）が石川県災害対策本部員会議資料の孤立集落の区域と人数をGeoJSON形式で作成したデータです。
     - 作成方法：https://g-cham.carrd.co/#news10
