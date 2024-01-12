@@ -165,7 +165,7 @@
             box-shadow: 0 0 15px rgba(0, 0, 0, 0.9);
             border-radius: 5px;
             width: 220px;
-            height: 230px;
+            height: 240px;
             /*overflow: scroll;*/
         }
 
@@ -271,7 +271,9 @@
     </div>
     <div id="checkbox-area">
         <input type="checkbox" id="populationLayerCheckbox" name="populationLayer">
-        <label for="populationLayerCheckbox">令和2年100mﾒｯｼｭ人口表示</label>
+        <label for="populationLayerCheckbox">令和2年100mﾒｯｼｭ人口表示</label><br>
+        <input type="checkbox" id="IsolatedAreaLayerCheckbox" name="populationLayer">
+        <label for="IsolatedAreaLayerCheckbox">孤立集落人数表示(1/10時点)</label>
     </div>
     <div class="map-overlay top">
         <div class="map-overlay-inner">
@@ -287,12 +289,12 @@
         <div class="square"
             style='background-color: rgb(255, 0, 0, 0.2); outline: 2px solid;outline-color: rgba(255, 0, 0, 1); display: inline-block;'>
         </div>
-        <span style="margin-left: 5px;">斜面崩壊・堆積範囲(1/5時点)</span><br>
+        <span style="margin-left: 5px;">斜面崩壊・堆積範囲(1/9更新)</span><br>
         <div style="height: 5px;"></div>
         <div class="square"
             style='background-color: rgb(0, 0, 255, 0.2); outline: 2px solid;outline-color: rgba(0, 0, 255, 1); display: inline-block;'>
         </div>
-        <span style="margin-left: 5px;">津波浸水範囲(1/5時点)</span>
+        <span style="margin-left: 5px;">津波浸水範囲(1/11更新)</span>
         <div style="height: 5px;"></div>
         <div class="square"
             style='background-color: rgb(191, 0, 255, 0.2); outline: 2px solid;outline-color: rgba(191, 0, 255, 1); display: inline-block;'>
@@ -395,6 +397,7 @@
         const afterMap = new maplibregl.Map({
             container: 'after',
             style: 'std_a.json',
+            // style: 'https://tile.openstreetmap.jp/styles/maptiler-basic-ja/style.json',
             zoom: 10.16,
             center: [137.0474, 37.3225],
             pitch: 0,
@@ -405,21 +408,43 @@
         });
 
         // 人口色分け用のフィルタ準備
-        let f1 = ["all", [">=", ['to-number', ["get", "PopT"]], 0], ["<", ['to-number', ["get", "PopT"]], 10]];
-        let f2 = ["all", [">=", ['to-number', ["get", "PopT"]], 10], ["<", ['to-number', ["get", "PopT"]], 20]];
-        let f3 = ["all", [">=", ['to-number', ["get", "PopT"]], 20], ["<", ['to-number', ["get", "PopT"]], 40]];
-        let f4 = ["all", [">=", ['to-number', ["get", "PopT"]], 40], ["<", ['to-number', ["get", "PopT"]], 60]];
-        let f5 = ["all", [">=", ['to-number', ["get", "PopT"]], 60], ["<", ['to-number', ["get", "PopT"]], 80]];
-        let f6 = ["all", [">=", ['to-number', ["get", "PopT"]], 80], ["<", ['to-number', ["get", "PopT"]], 1000000]];
+        let p1 = ["all", [">=", ['to-number', ["get", "PopT"]], 0], ["<", ['to-number', ["get", "PopT"]], 10]];
+        let p2 = ["all", [">=", ['to-number', ["get", "PopT"]], 10], ["<", ['to-number', ["get", "PopT"]], 20]];
+        let p3 = ["all", [">=", ['to-number', ["get", "PopT"]], 20], ["<", ['to-number', ["get", "PopT"]], 40]];
+        let p4 = ["all", [">=", ['to-number', ["get", "PopT"]], 40], ["<", ['to-number', ["get", "PopT"]], 60]];
+        let p5 = ["all", [">=", ['to-number', ["get", "PopT"]], 60], ["<", ['to-number', ["get", "PopT"]], 80]];
+        let p6 = ["all", [">=", ['to-number', ["get", "PopT"]], 80], ["<", ['to-number', ["get", "PopT"]], 1000000]];
 
         // 人口色分け用色の準備
-        let colors = [
+        let pop_colors = [
             '#0000FF',
             '#00FFFF',
             '#00FF00',
             '#FFBF00',
             '#FF0000',
             '#CB00CB'
+        ]
+
+        // 孤立集落人数色分け用のフィルタ準備
+        let i1 = ["all", [">=", ['to-number', ["get", "number"]], 0], ["<", ['to-number', ["get", "number"]], 1]];
+        let i2 = ["all", [">=", ['to-number', ["get", "number"]], 1], ["<", ['to-number', ["get", "number"]], 50]];
+        let i3 = ["all", [">=", ['to-number', ["get", "number"]], 50], ["<", ['to-number', ["get", "number"]], 100]];
+        let i4 = ["all", [">=", ['to-number', ["get", "number"]], 100], ["<", ['to-number', ["get", "number"]], 200]];
+        let i5 = ["all", [">=", ['to-number', ["get", "number"]], 200], ["<", ['to-number', ["get", "number"]], 300]];
+        let i6 = ["all", [">=", ['to-number', ["get", "number"]], 300], ["<", ['to-number', ["get", "number"]], 400]];
+        let i7 = ["all", [">=", ['to-number', ["get", "number"]], 400], ["<", ['to-number', ["get", "number"]], 500]];
+        let i8 = ["all", [">=", ['to-number', ["get", "number"]], 500], ["<", ['to-number', ["get", "number"]], 1000000]];
+
+        // 孤立集落人数色分け用色の準備
+        let isolated_colors = [
+            '#E5CCFF',
+            '#CC99FF',
+            '#B265FF',
+            '#9932FF',
+            '#7F00FF',
+            '#6500CB',
+            '#4C0098',
+            '#320065',
         ]
 
         // マップをロード
@@ -1091,6 +1116,52 @@
                 }
             });
 
+            // 石川県 孤立集落人数ポリゴンソース
+            afterMap.addSource("Number_of_isolated_area", {
+                type: "geojson",
+                data: './data/Number_of_isolated_area_EPSG4326.geojson',
+                attribution: '<a href="https://www.pref.ishikawa.lg.jp/saigai/202401jishin-taisakuhonbu.html#honbu" target="_blank">石川県 災害対策本部員会議資料（孤立集落人数 1月10日）</a>',
+            });
+
+            // 石川県 孤立集落人数ポリゴンレイヤ
+            afterMap.addLayer({
+                'id': 'Number_of_isolated_area-fill',
+                'type': 'fill',
+                'source': 'Number_of_isolated_area',
+                'layout': {
+                    'visibility': 'none'
+                },
+                'paint': {
+                    'fill-color': [
+                        "case",
+                        i1, isolated_colors[0],
+                        i2, isolated_colors[1],
+                        i3, isolated_colors[2],
+                        i4, isolated_colors[3],
+                        i5, isolated_colors[4],
+                        i6, isolated_colors[5],
+                        i7, isolated_colors[6],
+                        i8, isolated_colors[7],
+                        isolated_colors[7]
+                    ],
+                    'fill-opacity': 0.5
+                }
+            });
+
+            // 石川県 孤立集落人数ラインレイヤ
+            afterMap.addLayer({
+                'id': 'Number_of_isolated_area-line',
+                'type': 'line',
+                'source': 'Number_of_isolated_area',
+                'layout': {
+                    'visibility': 'none'
+                },
+                'paint': {
+                    'line-color': '#FFFFFF',
+                    'line-width': 2
+                }
+            });
+
             // 令和2年簡易100mメッシュ人口（石川県）ソース
             afterMap.addSource("100m_mesh_pop2020_ishikawa", {
                 type: "vector",
@@ -1110,13 +1181,13 @@
                 'paint': {
                     'fill-extrusion-color': [
                         "case",
-                        f1, colors[0],
-                        f2, colors[1],
-                        f3, colors[2],
-                        f4, colors[3],
-                        f5, colors[4],
-                        f6, colors[5],
-                        colors[5]
+                        p1, pop_colors[0],
+                        p2, pop_colors[1],
+                        p3, pop_colors[2],
+                        p4, pop_colors[3],
+                        p5, pop_colors[4],
+                        p6, pop_colors[5],
+                        pop_colors[5]
                     ],
                     'fill-extrusion-height': ["*", ['to-number', ["get", "PopT"]], 10],
                     'fill-extrusion-opacity': 0.5
@@ -1142,16 +1213,47 @@
                 'paint': {
                     'fill-extrusion-color': [
                         "case",
-                        f1, colors[0],
-                        f2, colors[1],
-                        f3, colors[2],
-                        f4, colors[3],
-                        f5, colors[4],
-                        f6, colors[5],
-                        colors[5]
+                        p1, pop_colors[0],
+                        p2, pop_colors[1],
+                        p3, pop_colors[2],
+                        p4, pop_colors[3],
+                        p5, pop_colors[4],
+                        p6, pop_colors[5],
+                        pop_colors[5]
                     ],
                     'fill-extrusion-height': ["*", ['to-number', ["get", "PopT"]], 10],
                     'fill-extrusion-opacity': 0.5
+                }
+            });
+
+            // 石川県 孤立集落人数重心ソース
+            afterMap.addSource("Number_of_isolated_area_centroid", {
+                type: "geojson",
+                data: './data/Number_of_isolated_area_centroid_EPSG4326.geojson',
+                attribution: '<a href="https://www.pref.ishikawa.lg.jp/saigai/202401jishin-taisakuhonbu.html#honbu" target="_blank">石川県 災害対策本部員会議資料（孤立集落人数 1月10日時点）</a>',
+            });
+
+            // 石川県 孤立集落人数ラベルレイヤ
+            afterMap.addLayer({
+                id: 'Number_of_isolated_area_centroid-label',
+                type: 'symbol',
+                source: 'Number_of_isolated_area_centroid',
+                layout: {
+                    'text-field': ['get', '孤立集落名'],
+                    // 'text-field': ['get', '孤立集落人数'],
+                    'text-font': ['Open Sans Bold', 'Arial Unicode MS Bold'],
+                    'text-size': 14,
+                    'text-anchor': 'top',
+                    'symbol-placement': 'point',
+                    'text-allow-overlap': true,
+                    'symbol-spacing': 1000,
+                    'visibility': 'none'
+                },
+                paint: {
+                    'text-color': "rgba(0, 0, 0, 1)",
+                    'text-halo-blur': 1,
+                    'text-halo-color': 'rgba(255, 255, 255, 1)',
+                    'text-halo-width': 2
                 }
             });
 
@@ -1409,6 +1511,21 @@
             }
         });
 
+        // 孤立集落人数の表示・非表示切り替え制御
+        document.getElementById('IsolatedAreaLayerCheckbox').addEventListener('change', function (e) {
+            if (e.target.checked) {
+                // チェックボックスがON - レイヤーを表示
+                afterMap.setLayoutProperty('Number_of_isolated_area-fill', 'visibility', 'visible');
+                afterMap.setLayoutProperty('Number_of_isolated_area-line', 'visibility', 'visible');
+                afterMap.setLayoutProperty('Number_of_isolated_area_centroid-label', 'visibility', 'visible');
+            } else {
+                // チェックボックスがOFF - レイヤーを非表示
+                afterMap.setLayoutProperty('Number_of_isolated_area-fill', 'visibility', 'none');
+                afterMap.setLayoutProperty('Number_of_isolated_area-line', 'visibility', 'none');
+                afterMap.setLayoutProperty('Number_of_isolated_area_centroid-label', 'visibility', 'none');
+            }
+        });
+
         // 100mメッシュ人口（石川県）のポップアップ表示
         afterMap.on('click', '100m_mesh_pop2020_ishikawa-fill', (e) => {
             var coordinates = e.features[0].geometry.coordinates[0]; // ポリゴンの頂点の配列
@@ -1434,6 +1551,7 @@
             new maplibregl.Popup()
                 .setLngLat(e.lngLat)
                 .setHTML(
+                    '<div style="solid #000; font-size: 1.2em; color: #0065CB;"><strong>簡易100mメッシュ人口</strong></div>' +
                     '<table class="pop-info">' +
                     '<tr>' +
                     '<th></th>' +
@@ -1503,6 +1621,7 @@
             new maplibregl.Popup()
                 .setLngLat(e.lngLat)
                 .setHTML(
+                    '<div style="solid #000; font-size: 1.2em; color: #0065CB;"><strong>簡易100mメッシュ人口</strong></div>' +
                     '<table class="pop-info">' +
                     '<tr>' +
                     '<th></th>' +
@@ -1543,6 +1662,64 @@
                     '</table>' +
                     '※このデータは、簡易な方法で人口を按分したものであり、当該100mメッシュの実際の人口を示しているものではありません。' + '<br>' +
                     '<a href="https://www.google.com/maps?q=' + lat + "," + lng + "&hl=ja" + '" target="_blank" class="google-maps-link">🌎Google Maps</a>'
+                )
+                .addTo(afterMap);
+        });
+
+        // 孤立集落人数のポップアップ表示
+        afterMap.on('click', 'Number_of_isolated_area-fill', (e) => {
+            var cityname = e.features[0].properties['自治体'];
+            var syuurakuname = e.features[0].properties['孤立集落名'];
+            var yomigana = e.features[0].properties['ヨミガナ'];
+            var number_0107 = e.features[0].properties['人数_1/7_15時現在'];
+            var number_0108 = e.features[0].properties['人数_1/8_15時現在'];
+            var number_0109 = e.features[0].properties['人数_1/9_15時現在'];
+            var number_0110 = e.features[0].properties['人数_1/10_15時現在'];
+
+            if (number_0107 === undefined) { number_0107 = "-" };
+            if (number_0108 === undefined) { number_0108 = "-" };
+            if (number_0109 === undefined) { number_0109 = "-" };
+            if (number_0110 === undefined) { number_0110 = "-" };
+
+            new maplibregl.Popup()
+                .setLngLat(e.lngLat)
+                .setHTML(
+                    '<div style="solid #000; font-size: 1.2em; color: #CB0065;"><strong>孤立集落人数</strong></div>' +
+                    '<table class="pop-info">' +
+                    '<tr>' +
+                    '<th></th>' +
+                    '<th></th>' +
+                    '</tr>' +
+                    '<tr>' +
+                    '<td>自治体：</td>' +
+                    '<td><b>' + cityname + '</b></td>' +
+                    '</tr>' +
+                    '<tr>' +
+                    '<td>孤立集落名：</td>' +
+                    '<td><b>' + syuurakuname + '</b></td>' +
+                    '</tr>' +
+                    '<tr>' +
+                    '<td>読み仮名：</td>' +
+                    '<td><b>' + yomigana + '</b></td>' +
+                    '</tr>' +
+                    '<tr>' +
+                    '<td>孤立集落人数(1/7_15時現在)：</td>' +
+                    '<td><b>' + number_0107 + '人' + '</b></td>' +
+                    '</tr>' +
+                    '<tr>' +
+                    '<td>孤立集落人数(1/8_15時現在)：</td>' +
+                    '<td><b>' + number_0108 + '人' + '</b></td>' +
+                    '</tr>' +
+                    '<tr>' +
+                    '<td>孤立集落人数(1/9_15時現在)：</td>' +
+                    '<td><b>' + number_0109 + '人' + '</b></td>' +
+                    '</tr>' +
+                    '<tr>' +
+                    '<td>孤立集落人数(1/10_15時現在)：</td>' +
+                    '<td><b>' + number_0110 + '人' + '</b></td>' +
+                    '</tr>' +
+                    '</table>' +
+                    '出典）' + '<a href="https://www.pref.ishikawa.lg.jp/saigai/202401jishin-taisakuhonbu.html#honbu">石川県 災害対策本部員会議資料（1月10日）</a>'
                 )
                 .addTo(afterMap);
         });
