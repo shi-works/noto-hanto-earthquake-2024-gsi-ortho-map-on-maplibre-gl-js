@@ -509,20 +509,20 @@
 
             var opacity_value = 1;
 
-            // 令和6年能登半島地震 輪島西地区　正射画像（2024年1月11日撮影）ソース
-            afterMap.addSource("wazimanishi-0111", {
+            // 令和6年能登半島地震 輪島中地区　正射画像（2024年1月11日撮影）ソース
+            afterMap.addSource("wazimanaka-0111", {
                 type: 'raster',
                 tiles: [
-                    'https://maps.gsi.go.jp/xyz/20240102noto_wazimanishi_0111do/{z}/{x}/{y}.png',
+                    'https://maps.gsi.go.jp/xyz/20240102noto_wazimanaka_0111do/{z}/{x}/{y}.png',
                 ],
                 attribution: '<a href="https://maps.gsi.go.jp/development/ichiran.html" target="_blank">地理院タイル</a>'
             });
 
-            // 令和6年能登半島地震 輪島西地区　正射画像（2024年1月11日撮影）レイヤ
+            // 令和6年能登半島地震 輪島中地区　正射画像（2024年1月11日撮影）レイヤ
             afterMap.addLayer({
-                id: "wazimanishi-0111",
+                id: "wazimanaka-0111",
                 type: "raster",
-                source: "wazimanishi-0111",
+                source: "wazimanaka-0111",
                 paint: {
                     "raster-opacity": opacity_value
                 },
@@ -553,20 +553,42 @@
                 }
             });
 
-            // 令和6年能登半島地震 珠洲地区　正射画像（2024年1月5日撮影）ソース
-            afterMap.addSource("suzu-0105", {
+            // 令和6年能登半島地震 輪島西地区　正射画像（2024年1月11日撮影）ソース
+            afterMap.addSource("wazimanishi-0111", {
                 type: 'raster',
                 tiles: [
-                    'https://cyberjapandata.gsi.go.jp/xyz/20240102_noto_suzu_0105do/{z}/{x}/{y}.png',
+                    'https://maps.gsi.go.jp/xyz/20240102noto_wazimanishi_0111do/{z}/{x}/{y}.png',
                 ],
                 attribution: '<a href="https://maps.gsi.go.jp/development/ichiran.html" target="_blank">地理院タイル</a>'
             });
 
-            // 和6年能登半島地震 珠洲地区　正射画像（2024年1月5日撮影）レイヤ
+            // 令和6年能登半島地震 輪島西地区　正射画像（2024年1月11日撮影）レイヤ
             afterMap.addLayer({
-                id: "suzu-0105",
+                id: "wazimanishi-0111",
                 type: "raster",
-                source: "suzu-0105",
+                source: "wazimanishi-0111",
+                paint: {
+                    "raster-opacity": opacity_value
+                },
+                layout: {
+                    'visibility': 'none'
+                }
+            });
+
+            // 令和6年能登半島地震 七尾地区　正射画像（2024年1月5日撮影）ソース
+            afterMap.addSource("nanao-0105", {
+                type: 'raster',
+                tiles: [
+                    'https://cyberjapandata.gsi.go.jp/xyz/20240102_noto_nanao_0105do/{z}/{x}/{y}.png',
+                ],
+                attribution: '<a href="https://maps.gsi.go.jp/development/ichiran.html" target="_blank">地理院タイル</a>'
+            });
+
+            // 令和6年能登半島地震 七尾地区　正射画像（2024年1月5日撮影）レイヤ
+            afterMap.addLayer({
+                id: "nanao-0105",
+                type: "raster",
+                source: "nanao-0105",
                 paint: {
                     "raster-opacity": opacity_value
                 },
@@ -619,44 +641,25 @@
                 }
             });
 
-            // 令和6年能登半島地震 七尾地区　正射画像（2024年1月5日撮影）ソース
-            afterMap.addSource("nanao-0105", {
+            // 令和6年能登半島地震 珠洲地区　正射画像（2024年1月5日撮影）ソース
+            afterMap.addSource("suzu-0105", {
                 type: 'raster',
                 tiles: [
-                    'https://cyberjapandata.gsi.go.jp/xyz/20240102_noto_nanao_0105do/{z}/{x}/{y}.png',
+                    'https://cyberjapandata.gsi.go.jp/xyz/20240102_noto_suzu_0105do/{z}/{x}/{y}.png',
                 ],
                 attribution: '<a href="https://maps.gsi.go.jp/development/ichiran.html" target="_blank">地理院タイル</a>'
             });
 
-            // 令和6年能登半島地震 七尾地区　正射画像（2024年1月5日撮影）レイヤ
+            // 和6年能登半島地震 珠洲地区　正射画像（2024年1月5日撮影）レイヤ
             afterMap.addLayer({
-                id: "nanao-0105",
+                id: "suzu-0105",
                 type: "raster",
-                source: "nanao-0105",
+                source: "suzu-0105",
                 paint: {
                     "raster-opacity": opacity_value
                 },
                 layout: {
                     'visibility': 'none'
-                }
-            });
-
-            // 令和6年能登半島地震 珠洲地区　正射画像（2024年1月2日撮影）ソース
-            afterMap.addSource("suzu-0102", {
-                type: 'raster',
-                tiles: [
-                    'https://cyberjapandata.gsi.go.jp/xyz/20240102noto_suzu_0102do/{z}/{x}/{y}.png',
-                ],
-                attribution: '<a href="https://maps.gsi.go.jp/development/ichiran.html" target="_blank">地理院タイル</a>'
-            });
-
-            // 令和6年能登半島地震 珠洲地区　正射画像（2024年1月2日撮影）レイヤ
-            afterMap.addLayer({
-                id: "suzu-0102",
-                type: "raster",
-                source: "suzu-0102",
-                paint: {
-                    "raster-opacity": opacity_value
                 }
             });
 
@@ -674,6 +677,25 @@
                 id: "wazimanaka-0102",
                 type: "raster",
                 source: "wazimanaka-0102",
+                paint: {
+                    "raster-opacity": opacity_value
+                }
+            });
+
+            // 令和6年能登半島地震 珠洲地区　正射画像（2024年1月2日撮影）ソース
+            afterMap.addSource("suzu-0102", {
+                type: 'raster',
+                tiles: [
+                    'https://cyberjapandata.gsi.go.jp/xyz/20240102noto_suzu_0102do/{z}/{x}/{y}.png',
+                ],
+                attribution: '<a href="https://maps.gsi.go.jp/development/ichiran.html" target="_blank">地理院タイル</a>'
+            });
+
+            // 令和6年能登半島地震 珠洲地区　正射画像（2024年1月2日撮影）レイヤ
+            afterMap.addLayer({
+                id: "suzu-0102",
+                type: "raster",
+                source: "suzu-0102",
                 paint: {
                     "raster-opacity": opacity_value
                 }
@@ -1426,6 +1448,11 @@
                 parseInt(e.target.value, 10) / 100
             );
             afterMap.setPaintProperty(
+                'wazimanaka-0111',
+                'raster-opacity',
+                parseInt(e.target.value, 10) / 100
+            );
+            afterMap.setPaintProperty(
                 'wazimanishi-0111',
                 'raster-opacity',
                 parseInt(e.target.value, 10) / 100
@@ -1524,6 +1551,7 @@
                 afterMap.setLayoutProperty('anamizu-0105', 'visibility', 'none');
                 afterMap.setLayoutProperty('wazimanaka-0105', 'visibility', 'none');
                 afterMap.setLayoutProperty('suzu-0105', 'visibility', 'none');
+                afterMap.setLayoutProperty('wazimanaka-0111', 'visibility', 'none');
                 afterMap.setLayoutProperty('wazimanishi-0111', 'visibility', 'none');
                 afterMap.setLayoutProperty('anamizu-0111', 'visibility', 'none');
                 afterMap.setLayoutProperty('2024-01-06-00-17-46_UMBRA-06_GEC', 'visibility', 'none');
@@ -1545,6 +1573,7 @@
                 afterMap.setLayoutProperty('anamizu-0105', 'visibility', 'visible');
                 afterMap.setLayoutProperty('wazimanaka-0105', 'visibility', 'visible');
                 afterMap.setLayoutProperty('suzu-0105', 'visibility', 'visible');
+                afterMap.setLayoutProperty('wazimanaka-0111', 'visibility', 'none');
                 afterMap.setLayoutProperty('wazimanishi-0111', 'visibility', 'none');
                 afterMap.setLayoutProperty('anamizu-0111', 'visibility', 'none');
                 afterMap.setLayoutProperty('2024-01-06-00-17-46_UMBRA-06_GEC', 'visibility', 'none');
@@ -1566,6 +1595,7 @@
                 afterMap.setLayoutProperty('anamizu-0105', 'visibility', 'none');
                 afterMap.setLayoutProperty('wazimanaka-0105', 'visibility', 'none');
                 afterMap.setLayoutProperty('suzu-0105', 'visibility', 'none');
+                afterMap.setLayoutProperty('wazimanaka-0111', 'visibility', 'visible');
                 afterMap.setLayoutProperty('wazimanishi-0111', 'visibility', 'visible');
                 afterMap.setLayoutProperty('anamizu-0111', 'visibility', 'visible');
                 afterMap.setLayoutProperty('2024-01-06-00-17-46_UMBRA-06_GEC', 'visibility', 'none');
@@ -1587,6 +1617,7 @@
                 afterMap.setLayoutProperty('anamizu-0105', 'visibility', 'none');
                 afterMap.setLayoutProperty('wazimanaka-0105', 'visibility', 'none');
                 afterMap.setLayoutProperty('suzu-0105', 'visibility', 'none');
+                afterMap.setLayoutProperty('wazimanaka-0111', 'visibility', 'none');
                 afterMap.setLayoutProperty('wazimanishi-0111', 'visibility', 'none');
                 afterMap.setLayoutProperty('anamizu-0111', 'visibility', 'none');
                 afterMap.setLayoutProperty('2024-01-06-00-17-46_UMBRA-06_GEC', 'visibility', 'visible');
