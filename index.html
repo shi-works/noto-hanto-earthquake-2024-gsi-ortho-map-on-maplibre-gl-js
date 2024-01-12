@@ -300,7 +300,7 @@
         <div class="square"
             style='background-color: rgb(0, 0, 255, 0.2); outline: 2px solid;outline-color: rgba(0, 0, 255, 1); display: inline-block;'>
         </div>
-        <span style="margin-left: 5px;">津波浸水範囲(1/11更新)</span>
+        <span style="margin-left: 5px;">津波浸水範囲(1/12更新)</span>
         <div style="height: 5px;"></div>
         <div class="square"
             style='background-color: rgb(191, 0, 255, 0.2); outline: 2px solid;outline-color: rgba(191, 0, 255, 1); display: inline-block;'>
@@ -513,7 +513,7 @@
             afterMap.addSource("wazimanaka-0111", {
                 type: 'raster',
                 tiles: [
-                    'https://maps.gsi.go.jp/xyz/20240102noto_wazimanaka_0111do/{z}/{x}/{y}.png',
+                    'https://cyberjapandata.gsi.go.jp/xyz/20240102noto_wazimanaka_0111do/{z}/{x}/{y}.png',
                 ],
                 attribution: '<a href="https://maps.gsi.go.jp/development/ichiran.html" target="_blank">地理院タイル</a>'
             });
@@ -535,7 +535,7 @@
             afterMap.addSource("anamizu-0111", {
                 type: 'raster',
                 tiles: [
-                    'https://maps.gsi.go.jp/xyz/20240102noto_anamizu_0111do/{z}/{x}/{y}.png',
+                    'https://cyberjapandata.gsi.go.jp/xyz/20240102noto_anamizu_0111do/{z}/{x}/{y}.png',
                 ],
                 attribution: '<a href="https://maps.gsi.go.jp/development/ichiran.html" target="_blank">地理院タイル</a>'
             });
@@ -557,7 +557,7 @@
             afterMap.addSource("wazimanishi-0111", {
                 type: 'raster',
                 tiles: [
-                    'https://maps.gsi.go.jp/xyz/20240102noto_wazimanishi_0111do/{z}/{x}/{y}.png',
+                    'https://cyberjapandata.gsi.go.jp/xyz/20240102noto_wazimanishi_0111do/{z}/{x}/{y}.png',
                 ],
                 attribution: '<a href="https://maps.gsi.go.jp/development/ichiran.html" target="_blank">地理院タイル</a>'
             });
@@ -1162,6 +1162,35 @@
                 'id': 'tsunami_nanao-fill',
                 "type": "fill",
                 'source': 'tsunami_nanao',
+                'paint': {
+                    'fill-color': '#0000FF',
+                    'fill-opacity': 0.2
+                }
+            });
+
+            // 空中写真判読による津波浸水域（推定）（輪島西地区）ソース
+            afterMap.addSource("tsunami_wajimaWEST", {
+                type: "geojson",
+                data: './data/shinsui-tsunami-area_wajimaWEST_20240112.geojson',
+                attribution: '<a href="https://www.gsi.go.jp/BOUSAI/20240101_noto_earthquake.html">国土地理院 令和6年(2024年)能登半島地震に関する情報（斜面崩壊・堆積分布データ、空中写真判読による津波浸水域（推定））</a>'
+            });
+
+            // 空中写真判読による津波浸水域（推定）（輪島西地区）ラインレイヤ
+            afterMap.addLayer({
+                'id': 'tsunami_wajimaWEST-line',
+                "type": "line",
+                'source': 'tsunami_wajimaWEST',
+                'paint': {
+                    'line-color': '#0000FF',
+                    'line-width': 2
+                }
+            });
+
+            // 空中写真判読による津波浸水域（推定）（輪島西地区）ポリゴンレイヤ
+            afterMap.addLayer({
+                'id': 'tsunami_wajimaWEST-fill',
+                "type": "fill",
+                'source': 'tsunami_wajimaWEST',
                 'paint': {
                     'fill-color': '#0000FF',
                     'fill-opacity': 0.2
