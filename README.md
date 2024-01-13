@@ -79,4 +79,4 @@ https://github.com/shi-works/noto-hanto-earthquake-2024-gsi-ortho-map-on-maplibr
     - 出典：https://github.com/raokiey/R06-Noto-Peninsula-EQ-open-shelter-Nanao
         - 原初データ出典：[七尾市 避難所一覧/開設中の避難所状況](https://www.city.nanao.lg.jp/bosai/mail/202401021200.html)、[石川県 指定緊急避難所一覧](https://www.pref.ishikawa.lg.jp/opendata/shakaikiban_index.html)、[七尾市 10_指定緊急避難所施設一覧](https://www.city.nanao.lg.jp/koho/shise/koho/opendata/index.html)
     - 概要：石川県七尾市のWebサイトにて公開されている[開設中の避難所情報](https://www.city.nanao.lg.jp/bosai/mail/202401021200.html)を、[ぴっかりん（@ra0kley）](https://twitter.com/ra0kley)様が石川県および七尾市が公開しているオープンデータをもとに位置情報などを付加して、GISデータ化したものです。
-    - ライセンス：[@ra0kley](https://twitter.com/ra0kley),[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)
+    - ライセンス：[@ra0kley](https://twitter.com/ra0kley)、[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)
