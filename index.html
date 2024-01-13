@@ -7,6 +7,7 @@
     <script src='https://unpkg.com/maplibre-gl@3.6.2/dist/maplibre-gl.js'></script>
     <link href='https://unpkg.com/maplibre-gl@3.6.2/dist/maplibre-gl.css' rel='stylesheet' />
     <script src="https://unpkg.com/pmtiles@2.11.0/dist/index.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/proj4js/2.7.2/proj4.js"></script>
     <link href="maplibre-gl-compare.css" rel='stylesheet' />
     <script src="maplibre-gl-compare.js"></script>
     <!--
@@ -169,8 +170,8 @@
             background: rgba(255, 255, 255, 0.9);
             box-shadow: 0 0 15px rgba(0, 0, 0, 0.9);
             border-radius: 5px;
-            width: 250px;
-            height: 240px;
+            width: 280px;
+            height: 260px;
             /*overflow: scroll;*/
         }
 
@@ -277,9 +278,13 @@
     </div>
     <div id="checkbox-area">
         <input type="checkbox" id="populationLayerCheckbox" name="populationLayer">
-        <label for="populationLayerCheckbox">令和2年100mﾒｯｼｭ人口表示</label><br>
+        <label for="populationLayerCheckbox">令和2年100mﾒｯｼｭ人口(石川県・富山県)</label><br>
+        <!--
         <input type="checkbox" id="IsolatedAreaLayerCheckbox" name="populationLayer">
-        <label for="IsolatedAreaLayerCheckbox">孤立集落人数表示(1/10時点)</label>
+        <label for="IsolatedAreaLayerCheckbox">石川県孤立集落人数(1/10時点)</label><br>
+        -->
+        <input type="checkbox" id="OpenShelterNanaoshiLayerCheckbox" name="populationLayer">
+        <label for="OpenShelterNanaoshiLayerCheckbox">石川県七尾市避難所開設情報</label>
     </div>
     <div class="map-overlay top">
         <div class="map-overlay-inner">
@@ -1320,6 +1325,7 @@
                 }
             });
 
+            /*
             // 石川県 孤立集落人数ポリゴンソース
             afterMap.addSource("Number_of_isolated_area", {
                 type: "geojson",
@@ -1365,6 +1371,7 @@
                     'line-width': 2
                 }
             });
+            */
 
             // 令和2年簡易100mメッシュ人口（石川県）ソース
             afterMap.addSource("100m_mesh_pop2020_ishikawa", {
@@ -1462,6 +1469,102 @@
             });
 
         });
+
+        // 石川県七尾市避難所開設情報
+
+        // PNGソース追加
+        afterMap.loadImage('./img/skhb.png',
+            function (error, image) {
+                if (error) throw error;
+                afterMap.addImage('skhb', image);
+            }
+        );
+
+        // EPSG:6675の定義を追加（カスタム定義が必要）
+        proj4.defs("EPSG:6675", "+proj=tmerc +lat_0=36 +lon_0=137.16666666666666 +k=1 +x_0=0 +y_0=0 +ellps=GRS80 +units=m +no_defs");
+
+        // 指定されたURLからGeoJSONを取得し、座標変換を行う
+        fetch('https://raokiey.github.io/R06-Noto-Peninsula-EQ-open-shelter-Nanao/data/latest/open_shelter_Nanao-shi.geojson')
+            .then(response => response.json())
+            .then(geojson => {
+                geojson.features.forEach(feature => {
+                    if (feature.geometry.type === "Point") {
+                        feature.geometry.coordinates = proj4("EPSG:6675", "EPSG:4326", feature.geometry.coordinates);
+                    }
+                });
+
+                // 変換されたGeoJSONをマップに表示
+                afterMap.on('load', function () {
+                    afterMap.addSource('open_shelter_Nanao-shi', {
+                        type: 'geojson',
+                        data: geojson,
+                        attribution: '<a href="https://www.city.nanao.lg.jp/bosai/mail/202401021200.html" target="_blank">石川県七尾市Webサイト 開設中の避難所情報</a>',
+                    });
+
+                    /*
+                    // 七尾市避難所開設情報サークルレイヤ
+                    afterMap.addLayer({
+                        id: 'open_shelter_Nanao-shi-circle',
+                        type: 'circle',
+                        source: 'open_shelter_Nanao-shi',
+                        'layout': {
+                            'visibility': 'none'
+                        },
+                        paint: {
+                            'circle-radius': 10,
+                            'circle-color': '#B42222'
+                        }
+                    });
+                    */
+
+                    // 七尾市避難所開設情報シンボルレイヤ
+                    afterMap.addLayer({
+                        'id': 'open_shelter_Nanao-shi-symbol',
+                        "type": "symbol",
+                        'source': 'open_shelter_Nanao-shi',
+                        minzoom: 1,
+                        maxzoom: 23,
+                        "layout": {
+                            "icon-image": 'skhb',
+                            "icon-size": [
+                                'interpolate',
+                                ['linear'],
+                                ['zoom'],
+                                1, 0.1,  // ズームレベル1でサイズは0.1
+                                12, 0.75  // ズームレベル12でサイズは0.75
+                            ],
+                            "icon-allow-overlap": true, // シンボルの重なりを許可
+                            'visibility': 'none'
+                        }
+                    });
+
+                    // 七尾市避難所開設情報ラベルレイヤ
+                    afterMap.addLayer({
+                        id: 'open_shelter_Nanao-shi-label',
+                        type: 'symbol',
+                        source: 'open_shelter_Nanao-shi',
+                        minzoom: 13,
+                        maxzoom: 23,
+                        layout: {
+                            'text-field': ['get', '名称'],
+                            'text-font': ['Open Sans Semibold', 'Arial Unicode MS Bold'],
+                            'text-size': 12,
+                            'text-offset': [0, 2],
+                            'text-allow-overlap': true,
+                            'text-ignore-placement': false,
+                            'text-max-width': 20,  // テキストが折り返される前の最大幅を設定
+                            'visibility': 'none'
+                        },
+                        paint: {
+                            'text-color': 'rgba(0, 0, 0, 1)',
+                            'text-halo-blur': 1,
+                            'text-halo-color': 'rgba(255, 255, 255, 1)',
+                            'text-halo-width': 2
+                        }
+                    });
+
+                });
+            });
 
         // Attributionを折りたたみ表示
         afterMap.addControl(new maplibregl.AttributionControl({
@@ -1761,6 +1864,7 @@
             }
         });
 
+        /*
         // 孤立集落人数の表示・非表示切り替え制御
         document.getElementById('IsolatedAreaLayerCheckbox').addEventListener('change', function (e) {
             if (e.target.checked) {
@@ -1773,6 +1877,22 @@
                 afterMap.setLayoutProperty('Number_of_isolated_area-fill', 'visibility', 'none');
                 afterMap.setLayoutProperty('Number_of_isolated_area-line', 'visibility', 'none');
                 afterMap.setLayoutProperty('Number_of_isolated_area_centroid-label', 'visibility', 'none');
+            }
+        });
+        */
+
+        // 七尾市避難所開設情報の表示・非表示切り替え制御
+        document.getElementById('OpenShelterNanaoshiLayerCheckbox').addEventListener('change', function (e) {
+            if (e.target.checked) {
+                // チェックボックスがON - レイヤーを表示
+                // afterMap.setLayoutProperty('open_shelter_Nanao-shi-circle', 'visibility', 'visible');
+                afterMap.setLayoutProperty('open_shelter_Nanao-shi-symbol', 'visibility', 'visible');
+                afterMap.setLayoutProperty('open_shelter_Nanao-shi-label', 'visibility', 'visible');
+            } else {
+                // チェックボックスがOFF - レイヤーを非表示
+                // afterMap.setLayoutProperty('open_shelter_Nanao-shi-circle', 'visibility', 'none');
+                afterMap.setLayoutProperty('open_shelter_Nanao-shi-symbol', 'visibility', 'none');
+                afterMap.setLayoutProperty('open_shelter_Nanao-shi-label', 'visibility', 'none');
             }
         });
 
@@ -1841,7 +1961,8 @@
                     '</tr>' +
                     '</table>' +
                     '※このデータは、簡易な方法で人口を按分したものであり、当該100mメッシュの実際の人口を示しているものではありません。' + '<br>' +
-                    '<a href="https://www.google.com/maps?q=' + lat + "," + lng + "&hl=ja" + '" target="_blank" class="google-maps-link">🌎Google Maps</a>'
+                    '<a href=\https://www.google.com/maps?q=' + lat + "," + lng + "&hl=ja' target='_blank'>🌎Google Maps</a>" + ' ' +
+                    '<a href=\https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=' + lat + "," + lng + "&hl=ja' target='_blank'>📷Street View</a>"
                 )
                 .addTo(afterMap);
         });
@@ -1911,11 +2032,13 @@
                     '</tr>' +
                     '</table>' +
                     '※このデータは、簡易な方法で人口を按分したものであり、当該100mメッシュの実際の人口を示しているものではありません。' + '<br>' +
-                    '<a href="https://www.google.com/maps?q=' + lat + "," + lng + "&hl=ja" + '" target="_blank" class="google-maps-link">🌎Google Maps</a>'
+                    '<a href=\https://www.google.com/maps?q=' + lat + "," + lng + "&hl=ja' target='_blank'>🌎Google Maps</a>" + ' ' +
+                    '<a href=\https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=' + lat + "," + lng + "&hl=ja' target='_blank'>📷Street View</a>"
                 )
                 .addTo(afterMap);
         });
 
+        /*
         // 孤立集落人数のポップアップ表示
         afterMap.on('click', 'Number_of_isolated_area-fill', (e) => {
             var cityname = e.features[0].properties['自治体'];
@@ -1970,6 +2093,107 @@
                     '</tr>' +
                     '</table>' +
                     '出典）' + '<a href="https://www.pref.ishikawa.lg.jp/saigai/202401jishin-taisakuhonbu.html#honbu">石川県 災害対策本部員会議資料（1月10日）</a>'
+                )
+                .addTo(afterMap);
+        });
+        */
+
+        // 七尾市避難所開設情報のポップアップ表示
+        afterMap.on('click', 'open_shelter_Nanao-shi-symbol', (e) => {
+            var chiku = e.features[0].properties['地区'];
+            var name = e.features[0].properties['名称'];
+            var number = e.features[0].properties['人数'];
+            var time = e.features[0].properties['時点'];
+            var address = e.features[0].properties['所在地_連結表記'];
+            var lat = e.features[0].properties['緯度'];
+            var lng = e.features[0].properties['経度'];
+            var elevation = e.features[0].properties['標高'];
+            var tel = e.features[0].properties['電話番号'];
+            var capacity = e.features[0].properties['想定収容人数'];
+            var target_town_council = e.features[0].properties['対象となる町会・自治会'];
+
+            /*
+            var SyubetuIds = ["災害種別_洪水", "災害種別_崖崩れ、土石流及び地滑り", "災害種別_高潮", "災害種別_地震", "災害種別_津波", "災害種別_大規模な火事", "災害種別_内水氾濫", "災害種別_火山現象"];
+            var SyubetuMei = ''
+            for (var j = 0; j < SyubetuIds.length; j++) {
+                if (e.features[0].properties[SyubetuIds[j]] === 1) {
+                    SyubetuMei += SyubetuIds[j] + "　"
+                }
+            }
+            */
+            if (chiku === undefined) { chiku = "-" };
+            if (name === undefined) { name = "-" };
+            if (number === undefined) { number = "-" };
+            if (time === undefined) { time = "-" };
+            if (address === undefined) { address = "-" };
+            if (elevation === undefined) { elevation = "-" };
+            if (tel === undefined) { tel = "-" };
+            if (capacity === undefined) { capacity = "-" };
+            if (target_town_council === undefined) { target_town_council = "-" };
+
+            new maplibregl.Popup()
+                .setLngLat(e.lngLat)
+                .setHTML(
+                    /*
+                    '<div style="solid #000; font-size: 1.2em; color: #017356;"><strong>七尾市避難所開設情報</strong></div>' +
+                    */
+                    '<div style="solid #000; font-size: 1.2em; color: #017356;"><strong>' + '<a href=https://www.city.nanao.lg.jp/bosai/mail/202401021200.html>' + '七尾市避難所開設情報' + '</a>' + '</strong></div>' +
+                    '<table class="pop-info">' +
+                    '<tr>' +
+                    '<th></th>' +
+                    '<th></th>' +
+                    '</tr>' +
+                    '<tr>' +
+                    '<td>地区：</td>' +
+                    '<td><b>' + chiku + '</b></td>' +
+                    '</tr>' +
+                    '<tr>' +
+                    '<td>名称：</td>' +
+                    '<td><b>' + name + '</b></td>' +
+                    '</tr>' +
+                    '<tr>' +
+                    '<td>人数：</td>' +
+                    '<td><b>' + number + '人' + '</b></td>' +
+                    '</tr>' +
+                    '<tr>' +
+                    '<td>時点：</td>' +
+                    '<td><b>' + time + '</b></td>' +
+                    '</tr>' +
+                    '<tr>' +
+                    '<td>所在地：</td>' +
+                    '<td><b>' + address + '</b></td>' +
+                    '</tr>' +
+                    /*
+                    '<tr>' +
+                    '<td>緯度・経度：</td>' +
+                    '<td><b>' + lat + ',' + lng + '</b></td>' +
+                    '</tr>' +
+                    */
+                    '<tr>' +
+                    '<td>標高：</td>' +
+                    '<td><b>' + elevation + 'm' + '</b></td>' +
+                    '</tr>' +
+                    '<tr>' +
+                    '<td>電話番号：</td>' +
+                    '<td><b>' + tel + '</b></td>' +
+                    '</tr>' +
+                    /*
+                    '<tr>' +
+                    '<td>対応している：<br>災害の種別</td>' +
+                    '<td><b>' + SyubetuMei + '</b></td>' +
+                    '</tr>' +
+                    */
+                    '<tr>' +
+                    '<td>想定収容：<br>人数</td>' +
+                    '<td><b>' + capacity + '</b></td>' +
+                    '</tr>' +
+                    '<tr>' +
+                    '<td>対象となる：<br>町会・自治会</td>' +
+                    '<td><b>' + target_town_council + '</b></td>' +
+                    '</tr>' +
+                    '</table>' +
+                    '<b>' + '※最新かつ詳細の状況などは必ず当該市町村にご確認ください。' + '</b>' + '<br>' +
+                    '<a href=\https://www.google.com/maps?q=' + lat + "," + lng + "&hl=ja' target='_blank'>🌎Google Maps</a>"
                 )
                 .addTo(afterMap);
         });
