@@ -311,6 +311,11 @@
             style='background-color: rgb(127, 0, 255, 0.2); outline: 2px solid;outline-color: rgba(127, 0, 255, 1); display: inline-block;'>
         </div>
         <span style="margin-left: 5px;">海岸線が前進した範囲(衛星画像)</span>
+        <div style="height: 5px;"></div>
+        <div class="square"
+            style='background-color: rgb(255, 127, 0, 0.2); outline: 2px solid;outline-color: rgba(255, 127, 0, 1); display: inline-block;'>
+        </div>
+        <span style="margin-left: 5px;">火災焼失範囲(輪島市中心)</span>
     </div>
     <div id="legend-pop" style="display:none;" class='legend-pop'>
         <h4>人口(100mﾒｯｼｭ)</h4>
@@ -966,7 +971,7 @@
             afterMap.addSource("hokai_all_20240106_suzu-wajimaEAST", {
                 type: "geojson",
                 data: './data/hokai_all_20240106_suzu-wajimaEAST.geojson',
-                attribution: '<a href="https://www.gsi.go.jp/BOUSAI/20240101_noto_earthquake.html">国土地理院 令和6年(2024年)能登半島地震に関する情報（斜面崩壊・堆積分布データ、空中写真判読による津波浸水域（推定））</a>'
+                attribution: '<a href="https://www.gsi.go.jp/BOUSAI/20240101_noto_earthquake.html">国土地理院 令和6年(2024年)能登半島地震に関する情報（斜面崩壊・堆積分布データ、津波浸水域、輪島市中心の火災焼失範囲）</a>'
             });
 
             // 斜面崩壊・堆積分布データ（珠洲地区、輪島東地区）ラインレイヤ
@@ -995,7 +1000,7 @@
             afterMap.addSource("hokai_all_20240106_wajimaCENTRAL", {
                 type: "geojson",
                 data: './data/hokai_all_20240106_wajimaCENTRAL.geojson',
-                attribution: '<a href="https://www.gsi.go.jp/BOUSAI/20240101_noto_earthquake.html">国土地理院 令和6年(2024年)能登半島地震に関する情報（斜面崩壊・堆積分布データ、空中写真判読による津波浸水域（推定））</a>'
+                attribution: '<a href="https://www.gsi.go.jp/BOUSAI/20240101_noto_earthquake.html">国土地理院 令和6年(2024年)能登半島地震に関する情報（斜面崩壊・堆積分布データ、津波浸水域、輪島市中心の火災焼失範囲）</a>'
             });
 
             // 斜面崩壊・堆積分布データ（輪島中地区）ラインレイヤ
@@ -1024,7 +1029,7 @@
             afterMap.addSource("hokai_all_20240106_anamizu", {
                 type: "geojson",
                 data: './data/hokai_all_20240106_anamizu.geojson',
-                attribution: '<a href="https://www.gsi.go.jp/BOUSAI/20240101_noto_earthquake.html">国土地理院 令和6年(2024年)能登半島地震に関する情報（斜面崩壊・堆積分布データ、空中写真判読による津波浸水域（推定））</a>'
+                attribution: '<a href="https://www.gsi.go.jp/BOUSAI/20240101_noto_earthquake.html">国土地理院 令和6年(2024年)能登半島地震に関する情報（斜面崩壊・堆積分布データ、津波浸水域、輪島市中心の火災焼失範囲）</a>'
             });
 
             // 斜面崩壊・堆積分布データ（穴水地区）ラインレイヤ
@@ -1053,7 +1058,7 @@
             afterMap.addSource("hokai_all_20240109_nanao", {
                 type: "geojson",
                 data: './data/hokai_all_20240109_nanao.geojson',
-                attribution: '<a href="https://www.gsi.go.jp/BOUSAI/20240101_noto_earthquake.html">国土地理院 令和6年(2024年)能登半島地震に関する情報（斜面崩壊・堆積分布データ、空中写真判読による津波浸水域（推定））</a>'
+                attribution: '<a href="https://www.gsi.go.jp/BOUSAI/20240101_noto_earthquake.html">国土地理院 令和6年(2024年)能登半島地震に関する情報（斜面崩壊・堆積分布データ、津波浸水域、輪島市中心の火災焼失範囲）</a>'
             });
 
             // 斜面崩壊・堆積分布データ（七尾地区）ラインレイヤ
@@ -1082,7 +1087,7 @@
             afterMap.addSource("hokai_all_20240112_wajimaWEST", {
                 type: "geojson",
                 data: './data/hokai_all_20240112_wajimaWEST.geojson',
-                attribution: '<a href="https://www.gsi.go.jp/BOUSAI/20240101_noto_earthquake.html">国土地理院 令和6年(2024年)能登半島地震に関する情報（斜面崩壊・堆積分布データ、空中写真判読による津波浸水域（推定））</a>'
+                attribution: '<a href="https://www.gsi.go.jp/BOUSAI/20240101_noto_earthquake.html">国土地理院 令和6年(2024年)能登半島地震に関する情報（斜面崩壊・堆積分布データ、津波浸水域、輪島市中心の火災焼失範囲）</a>'
             });
 
             // 斜面崩壊・堆積分布データ（輪島西地区）ラインレイヤ
@@ -1114,7 +1119,7 @@
                 // data: './data/shinsui-tsunami_noto_suzu-wajimaEAST_20240104_rev.geojson',
                 // data: './data/shinsui-tsunami-area_suzu-wajimaEAST-Re_20240109.geojson',
                 data: './data/shinsui-tsunami-area_suzu-wajimaEAST-Re2_20240110.geojson',
-                attribution: '<a href="https://www.gsi.go.jp/BOUSAI/20240101_noto_earthquake.html">国土地理院 令和6年(2024年)能登半島地震に関する情報（斜面崩壊・堆積分布データ、空中写真判読による津波浸水域（推定））</a>'
+                attribution: '<a href="https://www.gsi.go.jp/BOUSAI/20240101_noto_earthquake.html">国土地理院 令和6年(2024年)能登半島地震に関する情報（斜面崩壊・堆積分布データ、津波浸水域、輪島市中心の火災焼失範囲）</a>'
             });
 
             // 空中写真判読による津波浸水域（推定）（珠洲地区、輪島東地区）ラインレイヤ
@@ -1143,7 +1148,7 @@
             afterMap.addSource("tsunami_anamizu", {
                 type: "geojson",
                 data: './data/shinsui-tsunami-area_anamizu_20240110.geojson',
-                attribution: '<a href="https://www.gsi.go.jp/BOUSAI/20240101_noto_earthquake.html">国土地理院 令和6年(2024年)能登半島地震に関する情報（斜面崩壊・堆積分布データ、空中写真判読による津波浸水域（推定））</a>'
+                attribution: '<a href="https://www.gsi.go.jp/BOUSAI/20240101_noto_earthquake.html">国土地理院 令和6年(2024年)能登半島地震に関する情報（斜面崩壊・堆積分布データ、津波浸水域、輪島市中心の火災焼失範囲）</a>'
             });
 
             // 空中写真判読による津波浸水域（推定）（穴水地区）ラインレイヤ
@@ -1172,7 +1177,7 @@
             afterMap.addSource("tsunami_nanao", {
                 type: "geojson",
                 data: './data/shinsui-tsunami-area_nanao_20240110.geojson',
-                attribution: '<a href="https://www.gsi.go.jp/BOUSAI/20240101_noto_earthquake.html">国土地理院 令和6年(2024年)能登半島地震に関する情報（斜面崩壊・堆積分布データ、空中写真判読による津波浸水域（推定））</a>'
+                attribution: '<a href="https://www.gsi.go.jp/BOUSAI/20240101_noto_earthquake.html">国土地理院 令和6年(2024年)能登半島地震に関する情報（斜面崩壊・堆積分布データ、津波浸水域、輪島市中心の火災焼失範囲）</a>'
             });
 
             // 空中写真判読による津波浸水域（推定）（七尾地区）ラインレイヤ
@@ -1201,7 +1206,7 @@
             afterMap.addSource("tsunami_wajimaWEST", {
                 type: "geojson",
                 data: './data/shinsui-tsunami-area_wajimaWEST_20240112.geojson',
-                attribution: '<a href="https://www.gsi.go.jp/BOUSAI/20240101_noto_earthquake.html">国土地理院 令和6年(2024年)能登半島地震に関する情報（斜面崩壊・堆積分布データ、空中写真判読による津波浸水域（推定））</a>'
+                attribution: '<a href="https://www.gsi.go.jp/BOUSAI/20240101_noto_earthquake.html">国土地理院 令和6年(2024年)能登半島地震に関する情報（斜面崩壊・堆積分布データ、津波浸水域、輪島市中心の火災焼失範囲）</a>'
             });
 
             // 空中写真判読による津波浸水域（推定）（輪島西地区）ラインレイヤ
@@ -1282,6 +1287,35 @@
                 'source': 'CL',
                 'paint': {
                     'fill-color': '#7F00FF',
+                    'fill-opacity': 0.2
+                }
+            });
+
+            // 空中写真等の画像判読による輪島市中心の火災焼失範囲（推定）ソース
+            afterMap.addSource("fire_wajima", {
+                type: "geojson",
+                data: './data/20240112_輪島市火災範囲（推定）.geojson',
+                attribution: '<a href="https://www.gsi.go.jp/BOUSAI/20240101_noto_earthquake.html">国土地理院 令和6年(2024年)能登半島地震に関する情報（斜面崩壊・堆積分布データ、津波浸水域、輪島市中心の火災焼失範囲）</a>'
+            });
+
+            // 空中写真等の画像判読による輪島市中心の火災焼失範囲（推定）ラインレイヤ
+            afterMap.addLayer({
+                'id': 'fire_wajima-line',
+                "type": "line",
+                'source': 'fire_wajima',
+                'paint': {
+                    'line-color': '#FF7F00',
+                    'line-width': 2
+                }
+            });
+
+            // 空中写真等の画像判読による輪島市中心の火災焼失範囲（推定）ポリゴンレイヤ
+            afterMap.addLayer({
+                'id': 'fire_wajima-fill',
+                "type": "fill",
+                'source': 'fire_wajima',
+                'paint': {
+                    'fill-color': '#FF7F00',
                     'fill-opacity': 0.2
                 }
             });
