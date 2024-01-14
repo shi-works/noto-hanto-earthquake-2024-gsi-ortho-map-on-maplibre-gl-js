@@ -1,0 +1,25 @@
+name: Update GeoJSON
+
+on:
+  schedule:
+    - cron: '0 * * * *' # 毎時0分に実行
+
+jobs:
+  update-geojson:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+
+      - name: Download GeoJSON
+        run: |
+          curl -o data/mlt/before_after.geojson https://www.mlit.go.jp/road/r6noto/map/json/before_after.geojson
+
+      - name: Commit and Push
+        run: |
+          git config --global user.email "y.shiwaku.5519@gmail.com"
+          git config --global user.name "shi-works"
+          git add data/mlt/before_after.geojson
+          git commit -m "Update GeoJSON"
+          git push
