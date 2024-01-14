@@ -678,31 +678,6 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "㉒輪島市稲船町",
-        "路線名": "国道249号",
-        "被災規模": "大",
-        "_markerType": "Icon",
-        "_iconUrl": "https://www.jartic-ri2maps.org/symbols/092.png",
-        "_iconSize": [
-          20,
-          20
-        ],
-        "_iconAnchor": [
-          10,
-          10
-        ]
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          136.931555,
-          37.397198
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
         "name": "復旧済（国道249号）",
         "路線名": "国道249号",
         "地名（推定）": "輪島市塚田町",
@@ -1522,6 +1497,31 @@
         "coordinates": [
           137.119589,
           37.43367
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "復旧済（国道249号）",
+        "路線名": "国道249号",
+        "地名（推定）": "輪島市稲舟町",
+        "_markerType": "Icon",
+        "_iconUrl": "https://www.jartic-ri2maps.org/symbols/699.png",
+        "_iconSize": [
+          20,
+          20
+        ],
+        "_iconAnchor": [
+          10,
+          10
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.931555,
+          37.397194
         ]
       }
     }

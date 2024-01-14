@@ -158,31 +158,6 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "到達地点（国道249号）",
-        "路線名": "国道249号",
-        "地名（推定）": "輪島市門前町浦上",
-        "_markerType": "Icon",
-        "_iconUrl": "https://www.jartic-ri2maps.org/symbols/319.png",
-        "_iconSize": [
-          30,
-          30
-        ],
-        "_iconAnchor": [
-          15,
-          15
-        ]
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          136.802273,
-          37.313929
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
         "name": "到達地点（石川県道285号）",
         "路線名": "石川県道285号（高屋井田線）",
         "地名（推定）": "珠洲市馬緤町",
@@ -235,7 +210,7 @@
       "properties": {
         "name": "到達地点（国道249号）",
         "路線名": "国道249号",
-        "地名（推定）": "輪島市大野町",
+        "地名（推定）": "輪島市惣領町",
         "_markerType": "Icon",
         "_iconUrl": "https://www.jartic-ri2maps.org/symbols/319.png",
         "_iconSize": [
@@ -250,8 +225,56 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          136.935246,
-          37.396099
+          136.952187,
+          37.402875
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "到達地点（国道249号）",
+        "路線名": "国道249号",
+        "地名（推定）": "輪島市門前町浦上",
+        "_markerType": "Icon",
+        "_iconUrl": "https://www.jartic-ri2maps.org/symbols/319.png",
+        "_iconSize": [
+          30,
+          30
+        ],
+        "_iconAnchor": [
+          15,
+          15
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.818849,
+          37.325004
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "沿岸部への到達地点8（輪島市七浦）",
+        "_markerType": "Icon",
+        "_iconUrl": "https://www.jartic-ri2maps.org/symbols/087.png",
+        "_iconSize": [
+          40,
+          40
+        ],
+        "_iconAnchor": [
+          20,
+          20
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.749616,
+          37.343379
         ]
       }
     },
