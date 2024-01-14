@@ -1,0 +1,420 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "到達地点（国道249号）",
+        "路線名": "国道249号",
+        "地名（推定）": "輪島市里町",
+        "_markerType": "Icon",
+        "_iconUrl": "https://www.jartic-ri2maps.org/symbols/319.png",
+        "_iconSize": [
+          30,
+          30
+        ],
+        "_iconAnchor": [
+          15,
+          15
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.032106,
+          37.434369
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "到達地点（石川県道40号）",
+        "路線名": "石川県道40号（珠洲里線）",
+        "地名（推定）": "輪島市町野町鈴屋",
+        "_markerType": "Icon",
+        "_iconUrl": "https://www.jartic-ri2maps.org/symbols/319.png",
+        "_iconSize": [
+          30,
+          30
+        ],
+        "_iconAnchor": [
+          15,
+          15
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.10429,
+          37.429938
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "到達地点（国道249号）",
+        "路線名": "国道249号",
+        "地名（推定）": "珠洲市清水町",
+        "細別": "",
+        "メモ①": "",
+        "メモ②": "",
+        "メモ③": "",
+        "_markerType": "Icon",
+        "_iconUrl": "https://www.jartic-ri2maps.org/symbols/319.png",
+        "_iconSize": [
+          30,
+          30
+        ],
+        "_iconAnchor": [
+          15,
+          15
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.117465,
+          37.486573
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "到達地点（石川県道38号）",
+        "路線名": "石川県道38号（輪島浦上線）",
+        "地名（推定）": "輪島市上山町",
+        "_markerType": "Icon",
+        "_iconUrl": "https://www.jartic-ri2maps.org/symbols/319.png",
+        "_iconSize": [
+          30,
+          30
+        ],
+        "_iconAnchor": [
+          15,
+          15
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.794806,
+          37.341161
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "到達地点（国道249号）",
+        "路線名": "国道249号",
+        "地名（推定）": "輪島市縄又町",
+        "_markerType": "Icon",
+        "_iconUrl": "https://www.jartic-ri2maps.org/symbols/319.png",
+        "_iconSize": [
+          30,
+          30
+        ],
+        "_iconAnchor": [
+          15,
+          15
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.83742,
+          37.341161
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "到達地点（国道249号）",
+        "路線名": "国道249号",
+        "地名（推定）": "輪島市名舟町",
+        "_markerType": "Icon",
+        "_iconUrl": "https://www.jartic-ri2maps.org/symbols/319.png",
+        "_iconSize": [
+          30,
+          30
+        ],
+        "_iconAnchor": [
+          15,
+          15
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.014318,
+          37.431779
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "到達地点（国道249号）",
+        "路線名": "国道249号",
+        "地名（推定）": "輪島市門前町浦上",
+        "_markerType": "Icon",
+        "_iconUrl": "https://www.jartic-ri2maps.org/symbols/319.png",
+        "_iconSize": [
+          30,
+          30
+        ],
+        "_iconAnchor": [
+          15,
+          15
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.802273,
+          37.313929
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "到達地点（石川県道285号）",
+        "路線名": "石川県道285号（高屋井田線）",
+        "地名（推定）": "珠洲市馬緤町",
+        "_markerType": "Icon",
+        "_iconUrl": "https://www.jartic-ri2maps.org/symbols/319.png",
+        "_iconSize": [
+          30,
+          30
+        ],
+        "_iconAnchor": [
+          15,
+          15
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.230396,
+          37.485892
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "到達地点（石川県道40号）",
+        "路線名": "石川県道40号（珠洲里線）",
+        "地名（推定）": "珠洲市若山町上山",
+        "_markerType": "Icon",
+        "_iconUrl": "https://www.jartic-ri2maps.org/symbols/319.png",
+        "_iconSize": [
+          30,
+          30
+        ],
+        "_iconAnchor": [
+          15,
+          15
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.131047,
+          37.439395
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "到達地点（国道249号）",
+        "路線名": "国道249号",
+        "地名（推定）": "輪島市大野町",
+        "_markerType": "Icon",
+        "_iconUrl": "https://www.jartic-ri2maps.org/symbols/319.png",
+        "_iconSize": [
+          30,
+          30
+        ],
+        "_iconAnchor": [
+          15,
+          15
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.935246,
+          37.396099
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "沿岸部への到達点７（海上より：輪島市町野町）",
+        "_markerType": "Icon",
+        "_iconUrl": "https://www.jartic-ri2maps.org/symbols/087.png",
+        "_iconSize": [
+          40,
+          40
+        ],
+        "_iconAnchor": [
+          20,
+          20
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.068691,
+          37.458508
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "沿岸部への到達点３（輪島市町野町）",
+        "_markerType": "Icon",
+        "_iconUrl": "https://www.jartic-ri2maps.org/symbols/087.png",
+        "_iconSize": [
+          40,
+          40
+        ],
+        "_iconAnchor": [
+          20,
+          20
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.07294,
+          37.452972
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "沿岸部への到達点２（輪島市名舟町）",
+        "_markerType": "Icon",
+        "_iconUrl": "https://www.jartic-ri2maps.org/symbols/087.png",
+        "_iconSize": [
+          40,
+          40
+        ],
+        "_iconAnchor": [
+          20,
+          20
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.027911,
+          37.432273
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "沿岸部への到達点６（珠洲市大谷町）",
+        "_markerType": "Icon",
+        "_iconUrl": "https://www.jartic-ri2maps.org/symbols/087.png",
+        "_iconSize": [
+          40,
+          40
+        ],
+        "_iconAnchor": [
+          20,
+          20
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.17437,
+          37.500908
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "沿岸部への到達点４（珠洲市笹波町）",
+        "_markerType": "Icon",
+        "_iconUrl": "https://www.jartic-ri2maps.org/symbols/087.png",
+        "_iconSize": [
+          40,
+          40
+        ],
+        "_iconAnchor": [
+          20,
+          20
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.224506,
+          37.51473
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "沿岸部への到達点５（珠洲市三崎町）",
+        "_markerType": "Icon",
+        "_iconUrl": "https://www.jartic-ri2maps.org/symbols/087.png",
+        "_iconSize": [
+          40,
+          40
+        ],
+        "_iconAnchor": [
+          20,
+          20
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.339594,
+          37.484598
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "沿岸部への到達点（輪島）",
+        "_markerType": "Icon",
+        "_iconUrl": "https://www.jartic-ri2maps.org/symbols/087.png",
+        "_iconSize": [
+          40,
+          40
+        ],
+        "_iconAnchor": [
+          20,
+          20
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.904647,
+          37.39367
+        ]
+      }
+    }
+  ]
+}
