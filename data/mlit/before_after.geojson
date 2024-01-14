@@ -1,0 +1,466 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "国道249号輪島市門前町浦上付近",
+        "啓開前": "<img width=\"100%\" src=\"./img/before_after/240112_R249_urakami.jpg\">",
+        "啓開後": "<img width=\"100%\" src=\"./img/before_after/240113_R249_urakami.jpg\">",
+        "_markerType": "Icon",
+        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/482.png",
+        "_iconSize": [
+          30,
+          30
+        ],
+        "_iconAnchor": [
+          15,
+          15
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.803302764892,
+          37.3150896676781,
+          49.8
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "国道249号輪島市稲舟町付近",
+        "啓開前": "<img width=\"100%\" src=\"./img/before_after/240112_R249_inabune.jpg\">",
+        "啓開後": "<img width=\"100%\" src=\"./img/before_after/240113_R249_inabune.jpg\">",
+        "_markerType": "Icon",
+        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/482.png",
+        "_iconSize": [
+          30,
+          30
+        ],
+        "_iconAnchor": [
+          15,
+          15
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.93158,
+          37.397244,
+          22.4
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "(主)珠洲里線珠洲市若山町上山付近",
+        "啓開前": "<img width=\"100%\" src=\"./img/before_after/240110_R249_kamiyama.png\">",
+        "啓開後": "<img width=\"100%\" src=\"./img/before_after/240111_R249_kamiyama.jpg\">",
+        "_markerType": "Icon",
+        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/482.png",
+        "_iconSize": [
+          30,
+          30
+        ],
+        "_iconAnchor": [
+          15,
+          15
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.165712,
+          37.451461,
+          137
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "国道249号輪島市稲屋付近",
+        "啓開前": "<img width=\"100%\" src=\"./img/before_after/240102_R249_toya.png\">",
+        "啓開後": "<img width=\"100%\" src=\"./img/before_after/240107_R249_toya.png\">",
+        "_markerType": "Icon",
+        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/482.png",
+        "_iconSize": [
+          30,
+          30
+        ],
+        "_iconAnchor": [
+          15,
+          15
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.882447,
+          37.377209,
+          14.2
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "国道249号輪島市名舟町付近",
+        "啓開前": "<img width=\"100%\" src=\"./img/before_after/240106_R249_nafune.png\">",
+        "啓開後": "<img width=\"100%\" src=\"./img/before_after/240107_R249_nafune.png\">",
+        "_markerType": "Icon",
+        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/482.png",
+        "_iconSize": [
+          30,
+          30
+        ],
+        "_iconAnchor": [
+          15,
+          15
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.017272,
+          37.432867,
+          4
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "国道249号輪島市尊利地町付近",
+        "啓開前": "<img width=\"100%\" src=\"./img/before_after/240106_R249_soriji.png\">",
+        "啓開後": "<img width=\"100%\" src=\"./img/before_after/240107_R249_soriji.png\">",
+        "_markerType": "Icon",
+        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/482.png",
+        "_iconSize": [
+          30,
+          30
+        ],
+        "_iconAnchor": [
+          15,
+          15
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.028494,
+          37.432383,
+          7.2
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "県道272号珠洲市大谷町付近",
+        "啓開前": "<img width=\"100%\" src=\"./img/before_after/240109_K272_otani.png\">",
+        "啓開後": "<img width=\"100%\" src=\"./img/before_after/240110_K272_otani.png\">",
+        "_markerType": "Icon",
+        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/482.png",
+        "_iconSize": [
+          30,
+          30
+        ],
+        "_iconAnchor": [
+          15,
+          15
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.172572,
+          37.482732,
+          65
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "県道272号珠洲市大谷町付近",
+        "啓開前": "<img width=\"100%\" src=\"./img/before_after/240110_K272_otani2.png\">",
+        "啓開後": "<img width=\"100%\" src=\"./img/before_after/240111_K272_otani2.png\">",
+        "_markerType": "Icon",
+        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/482.png",
+        "_iconSize": [
+          30,
+          30
+        ],
+        "_iconAnchor": [
+          15,
+          15
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.170855,
+          37.495789,
+          12.2
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "県道40号珠洲市若山町宇都山",
+        "啓開前": "<img width=\"100%\" src=\"./img/before_after/240109_K40_utsuyama.png\">",
+        "啓開後": "<img width=\"100%\" src=\"./img/before_after/240110_K40_utsuyama.png\">",
+        "_markerType": "Icon",
+        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/482.png",
+        "_iconSize": [
+          30,
+          30
+        ],
+        "_iconAnchor": [
+          15,
+          15
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.139357,
+          37.443362,
+          168
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "県道277号珠洲市里町付近",
+        "啓開前": "<img width=\"100%\" src=\"./img/before_after/240106_K277_sato.png\">",
+        "啓開後": "<img width=\"100%\" src=\"./img/before_after/240110_K277_sato.png\">",
+        "_markerType": "Icon",
+        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/482.png",
+        "_iconSize": [
+          30,
+          30
+        ],
+        "_iconAnchor": [
+          15,
+          15
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.039098,
+          37.424718,
+          26
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "県道285号珠洲市若山町鈴内付近",
+        "啓開前": "<img width=\"100%\" src=\"./img/before_after/240106_K285_suzunai.png\">",
+        "啓開後": "<img width=\"100%\" src=\"./img/before_after/240110_K285_suzunai.png\">",
+        "_markerType": "Icon",
+        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/482.png",
+        "_iconSize": [
+          30,
+          30
+        ],
+        "_iconAnchor": [
+          15,
+          15
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.247599,
+          37.46719,
+          22
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "国道249号輪島市門前町浦上付近",
+        "啓開前": "<img width=\"100%\" src=\"./img/before_after/240102_R249_urakami2.png\">",
+        "啓開後": "<img width=\"100%\" src=\"./img/before_after/240107_R249_urakami2.png\">",
+        "_markerType": "Icon",
+        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/482.png",
+        "_iconSize": [
+          30,
+          30
+        ],
+        "_iconAnchor": [
+          15,
+          15
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.803262,
+          37.314787
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "国道249号輪島市縄又付近",
+        "啓開前": "<img width=\"100%\" src=\"./img/before_after/240112_R249_nawamata.png\">",
+        "啓開後": "<img width=\"100%\" src=\"./img/before_after/240113_R249_nawamata.png\">",
+        "_markerType": "Icon",
+        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/482.png",
+        "_iconSize": [
+          30,
+          30
+        ],
+        "_iconAnchor": [
+          15,
+          15
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.830521,
+          37.341134
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "国道249号輪島市稲舟町付近",
+        "啓開前": "<img width=\"100%\" src=\"./img/before_after/240105_R249_inabune2.png\">",
+        "啓開後": "<img width=\"100%\" src=\"./img/before_after/240105_R249_inabune2-2.png\">",
+        "_markerType": "Icon",
+        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/482.png",
+        "_iconSize": [
+          30,
+          30
+        ],
+        "_iconAnchor": [
+          15,
+          15
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.926016,
+          37.395066
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "国道249号輪島市稲舟町付近",
+        "啓開前": "<img width=\"100%\" src=\"./img/before_after/240105_R249_inabune3.png\">",
+        "啓開後": "<img width=\"100%\" src=\"./img/before_after/240113_R249_inabune3.png\">",
+        "_markerType": "Icon",
+        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/482.png",
+        "_iconSize": [
+          30,
+          30
+        ],
+        "_iconAnchor": [
+          15,
+          15
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.92877,
+          37.396021
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "国道249号輪島市名舟付近",
+        "啓開前": "<img width=\"100%\" src=\"./img/before_after/240107_R249_nafune2.png\">",
+        "啓開後": "<img width=\"100%\" src=\"./img/before_after/240107_R249_nafune2-2.png\">",
+        "_markerType": "Icon",
+        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/482.png",
+        "_iconSize": [
+          30,
+          30
+        ],
+        "_iconAnchor": [
+          15,
+          15
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.019432,
+          37.432797
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "国道249号輪島市名舟付近",
+        "啓開前": "<img width=\"100%\" src=\"./img/before_after/240107_R249_nafune3.png\">",
+        "啓開後": "<img width=\"100%\" src=\"./img/before_after/240107_R249_nafune3-2.png\">",
+        "_markerType": "Icon",
+        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/482.png",
+        "_iconSize": [
+          30,
+          30
+        ],
+        "_iconAnchor": [
+          15,
+          15
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.018349,
+          37.432969
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "県道38号輪島市上山付近",
+        "啓開前": "<img width=\"100%\" src=\"./img/before_after/240109_K38_kamiyama.png\">",
+        "啓開後": "<img width=\"100%\" src=\"./img/before_after/240109_K38_kamiyama-2.png\">",
+        "_markerType": "Icon",
+        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/482.png",
+        "_iconSize": [
+          30,
+          30
+        ],
+        "_iconAnchor": [
+          15,
+          15
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.794894,
+          37.340972
+        ]
+      }
+    }
+  ]
+}

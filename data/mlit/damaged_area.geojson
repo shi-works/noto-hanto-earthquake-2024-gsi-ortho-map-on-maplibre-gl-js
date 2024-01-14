@@ -1,0 +1,1529 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "復旧済（国道249号）",
+        "路線名": "国道249号",
+        "地名（推定）": "志賀町草江",
+        "_markerType": "Icon",
+        "_iconUrl": "https://www.jartic-ri2maps.org/symbols/699.png",
+        "_iconSize": [
+          20,
+          20
+        ],
+        "_iconAnchor": [
+          10,
+          10
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.716528,
+          37.160727
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "復旧済（国道249号）",
+        "路線名": "国道249号",
+        "地名（推定）": "志賀町富来七海",
+        "_markerType": "Icon",
+        "_iconUrl": "https://www.jartic-ri2maps.org/symbols/699.png",
+        "_iconSize": [
+          20,
+          20
+        ],
+        "_iconAnchor": [
+          10,
+          10
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.728587,
+          37.125286
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "復旧済（国道249号七尾田鶴浜バイパス）",
+        "路線名": "国道249号七尾田鶴浜バイパス",
+        "地名（推定）": "七尾市垣吉町",
+        "_markerType": "Icon",
+        "_iconUrl": "https://www.jartic-ri2maps.org/symbols/699.png",
+        "_iconSize": [
+          20,
+          20
+        ],
+        "_iconAnchor": [
+          10,
+          10
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.903381,
+          37.057985
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "復旧済（国道249号七尾田鶴浜バイパス）",
+        "路線名": "国道249号",
+        "地名（推定）": "七尾市奥原町",
+        "_markerType": "Icon",
+        "_iconUrl": "https://www.jartic-ri2maps.org/symbols/699.png",
+        "_iconSize": [
+          20,
+          20
+        ],
+        "_iconAnchor": [
+          10,
+          10
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.921942,
+          37.057711
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "復旧済（国道249号）",
+        "路線名": "国道249号",
+        "地名（推定）": "七尾市中島町小牧",
+        "_markerType": "Icon",
+        "_iconUrl": "https://www.jartic-ri2maps.org/symbols/699.png",
+        "_iconSize": [
+          20,
+          20
+        ],
+        "_iconAnchor": [
+          10,
+          10
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.871924,
+          37.143505
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "㉞猿山崎",
+        "被災規模": "大",
+        "_markerType": "Icon",
+        "_iconUrl": "https://www.jartic-ri2maps.org/symbols/092.png",
+        "_iconSize": [
+          20,
+          20
+        ],
+        "_iconAnchor": [
+          10,
+          10
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.726978,
+          37.30153
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "㉝門前町浦上３",
+        "路線名": "国道249号",
+        "被災規模": "大",
+        "_markerType": "Icon",
+        "_iconUrl": "https://www.jartic-ri2maps.org/symbols/092.png",
+        "_iconSize": [
+          20,
+          20
+        ],
+        "_iconAnchor": [
+          10,
+          10
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.802101,
+          37.313912
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "㉜門前町浦上２",
+        "路線名": "国道249号",
+        "被災規模": "大",
+        "_markerType": "Icon",
+        "_iconUrl": "https://www.jartic-ri2maps.org/symbols/092.png",
+        "_iconSize": [
+          20,
+          20
+        ],
+        "_iconAnchor": [
+          10,
+          10
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.804236,
+          37.315354
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "㉛門前町浦上１",
+        "路線名": "国道249号",
+        "被災規模": "大",
+        "_markerType": "Icon",
+        "_iconUrl": "https://www.jartic-ri2maps.org/symbols/092.png",
+        "_iconSize": [
+          20,
+          20
+        ],
+        "_iconAnchor": [
+          10,
+          10
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.806071,
+          37.317428
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "㉙中屋２",
+        "路線名": "国道249号",
+        "被災規模": "大",
+        "_markerType": "Icon",
+        "_iconUrl": "https://www.jartic-ri2maps.org/symbols/092.png",
+        "_iconSize": [
+          20,
+          20
+        ],
+        "_iconAnchor": [
+          10,
+          10
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.811736,
+          37.321796
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "㉚中屋１",
+        "路線名": "国道249号",
+        "被災規模": "小～中",
+        "_markerType": "Icon",
+        "_iconUrl": "https://www.jartic-ri2maps.org/symbols/096.png",
+        "_iconSize": [
+          20,
+          20
+        ],
+        "_iconAnchor": [
+          10,
+          10
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.813817,
+          37.322598
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "㉘門前町２",
+        "路線名": "国道249号",
+        "被災規模": "大",
+        "_markerType": "Icon",
+        "_iconUrl": "https://www.jartic-ri2maps.org/symbols/092.png",
+        "_iconSize": [
+          20,
+          20
+        ],
+        "_iconAnchor": [
+          10,
+          10
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.826906,
+          37.3396
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "㉗門前町１",
+        "路線名": "国道249号",
+        "被災規模": "大",
+        "_markerType": "Icon",
+        "_iconUrl": "https://www.jartic-ri2maps.org/symbols/092.png",
+        "_iconSize": [
+          20,
+          20
+        ],
+        "_iconAnchor": [
+          10,
+          10
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.83182,
+          37.341468
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "㉖縄又町",
+        "路線名": "国道249号",
+        "被災規模": "小～中",
+        "_markerType": "Icon",
+        "_iconUrl": "https://www.jartic-ri2maps.org/symbols/096.png",
+        "_iconSize": [
+          20,
+          20
+        ],
+        "_iconAnchor": [
+          10,
+          10
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.844147,
+          37.342816
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "復旧済（国道249号）",
+        "路線名": "国道249号",
+        "地名（推定）": "輪島市縄又町",
+        "_markerType": "Icon",
+        "_iconUrl": "https://www.jartic-ri2maps.org/symbols/699.png",
+        "_iconSize": [
+          20,
+          20
+        ],
+        "_iconAnchor": [
+          10,
+          10
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.854286,
+          37.346552
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "㉟上大沢",
+        "路線名": "石川県道38号（輪島浦上線）",
+        "被災規模": "大",
+        "_markerType": "Icon",
+        "_iconUrl": "https://www.jartic-ri2maps.org/symbols/092.png",
+        "_iconSize": [
+          20,
+          20
+        ],
+        "_iconAnchor": [
+          10,
+          10
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.783733,
+          37.36852
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "㊱アタケ岬",
+        "路線名": "石川県道38号（輪島浦上線）",
+        "被災規模": "大",
+        "_markerType": "Icon",
+        "_iconUrl": "https://www.jartic-ri2maps.org/symbols/092.png",
+        "_iconSize": [
+          20,
+          20
+        ],
+        "_iconAnchor": [
+          10,
+          10
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.792985,
+          37.377061
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "㊲白山神社",
+        "路線名": "石川県道38号（輪島浦上線）",
+        "被災規模": "大",
+        "_markerType": "Icon",
+        "_iconUrl": "https://www.jartic-ri2maps.org/symbols/092.png",
+        "_iconSize": [
+          20,
+          20
+        ],
+        "_iconAnchor": [
+          10,
+          10
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.814375,
+          37.382571
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "㊳夫婦岩展望台",
+        "路線名": "石川県道38号（輪島浦上線）",
+        "被災規模": "大",
+        "_markerType": "Icon",
+        "_iconUrl": "https://www.jartic-ri2maps.org/symbols/092.png",
+        "_iconSize": [
+          20,
+          20
+        ],
+        "_iconAnchor": [
+          10,
+          10
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.824617,
+          37.38656
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "㊴三ッ岩岬",
+        "路線名": "石川県道38号（輪島浦上線）",
+        "被災規模": "大",
+        "_markerType": "Icon",
+        "_iconUrl": "https://www.jartic-ri2maps.org/symbols/092.png",
+        "_iconSize": [
+          20,
+          20
+        ],
+        "_iconAnchor": [
+          10,
+          10
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.833193,
+          37.390175
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "㊵三ッ岩岬",
+        "路線名": "石川県道38号（輪島浦上線）",
+        "被災規模": "大",
+        "_markerType": "Icon",
+        "_iconUrl": "https://www.jartic-ri2maps.org/symbols/092.png",
+        "_iconSize": [
+          20,
+          20
+        ],
+        "_iconAnchor": [
+          10,
+          10
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.838601,
+          37.393414
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "㊶ゾウゾウ鼻",
+        "路線名": "石川県道38号（輪島浦上線）",
+        "被災規模": "大",
+        "_markerType": "Icon",
+        "_iconUrl": "https://www.jartic-ri2maps.org/symbols/092.png",
+        "_iconSize": [
+          20,
+          20
+        ],
+        "_iconAnchor": [
+          10,
+          10
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.843772,
+          37.398809
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "㊷光浦トンネル西側",
+        "路線名": "石川県道38号（輪島浦上線）",
+        "被災規模": "大",
+        "_markerType": "Icon",
+        "_iconUrl": "https://www.jartic-ri2maps.org/symbols/092.png",
+        "_iconSize": [
+          20,
+          20
+        ],
+        "_iconAnchor": [
+          10,
+          10
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.862934,
+          37.403829
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "㉓稲屋町１",
+        "路線名": "国道249号",
+        "被災規模": "小～中",
+        "_markerType": "Icon",
+        "_iconUrl": "https://www.jartic-ri2maps.org/symbols/096.png",
+        "_iconSize": [
+          20,
+          20
+        ],
+        "_iconAnchor": [
+          10,
+          10
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.882288,
+          37.377063
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "㉔稲屋町２",
+        "路線名": "国道249号",
+        "被災規模": "小～中",
+        "_markerType": "Icon",
+        "_iconUrl": "https://www.jartic-ri2maps.org/symbols/096.png",
+        "_iconSize": [
+          20,
+          20
+        ],
+        "_iconAnchor": [
+          10,
+          10
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.881967,
+          37.376586
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "㉕稲屋町３",
+        "路線名": "国道249号",
+        "被災規模": "小～中",
+        "_markerType": "Icon",
+        "_iconUrl": "https://www.jartic-ri2maps.org/symbols/096.png",
+        "_iconSize": [
+          20,
+          20
+        ],
+        "_iconAnchor": [
+          10,
+          10
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.879456,
+          37.373781
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "復旧済（国道249号）",
+        "路線名": "国道249号",
+        "地名（推定）": "輪島市中段町",
+        "_markerType": "Icon",
+        "_iconUrl": "https://www.jartic-ri2maps.org/symbols/699.png",
+        "_iconSize": [
+          20,
+          20
+        ],
+        "_iconAnchor": [
+          10,
+          10
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.891773,
+          37.387566
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "復旧済（国道249号）",
+        "路線名": "国道249号",
+        "地名（推定）": "輪島市塚田町",
+        "_markerType": "Icon",
+        "_iconUrl": "https://www.jartic-ri2maps.org/symbols/699.png",
+        "_iconSize": [
+          20,
+          20
+        ],
+        "_iconAnchor": [
+          10,
+          10
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.916513,
+          37.394403
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "⑲打越１",
+        "路線名": "国道249号",
+        "被災規模": "小～中",
+        "_markerType": "Icon",
+        "_iconUrl": "https://www.jartic-ri2maps.org/symbols/096.png",
+        "_iconSize": [
+          20,
+          20
+        ],
+        "_iconAnchor": [
+          10,
+          10
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.9674,
+          37.410886
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "⑳打越２",
+        "路線名": "国道249号",
+        "被災規模": "小～中",
+        "_markerType": "Icon",
+        "_iconUrl": "https://www.jartic-ri2maps.org/symbols/096.png",
+        "_iconSize": [
+          20,
+          20
+        ],
+        "_iconAnchor": [
+          10,
+          10
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.965491,
+          37.411363
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "㉑打越３",
+        "路線名": "国道249号",
+        "被災規模": "小～中",
+        "_markerType": "Icon",
+        "_iconUrl": "https://www.jartic-ri2maps.org/symbols/096.png",
+        "_iconSize": [
+          20,
+          20
+        ],
+        "_iconAnchor": [
+          10,
+          10
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.964386,
+          37.411039
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "⑱大谷内",
+        "路線名": "国道249号",
+        "被災規模": "小～中",
+        "_markerType": "Icon",
+        "_iconUrl": "https://www.jartic-ri2maps.org/symbols/096.png",
+        "_iconSize": [
+          20,
+          20
+        ],
+        "_iconAnchor": [
+          10,
+          10
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.970651,
+          37.410519
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "⑰道の駅千枚田",
+        "路線名": "国道249号",
+        "被災規模": "小～中",
+        "_markerType": "Icon",
+        "_iconUrl": "https://www.jartic-ri2maps.org/symbols/096.png",
+        "_iconSize": [
+          20,
+          20
+        ],
+        "_iconAnchor": [
+          10,
+          10
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.998096,
+          37.424187
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "⑯千枚田２",
+        "路線名": "国道249号",
+        "被災規模": "小～中",
+        "_markerType": "Icon",
+        "_iconUrl": "https://www.jartic-ri2maps.org/symbols/096.png",
+        "_iconSize": [
+          20,
+          20
+        ],
+        "_iconAnchor": [
+          10,
+          10
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.000263,
+          37.425108
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "⑮千枚田１",
+        "路線名": "国道249号",
+        "被災規模": "小～中",
+        "_markerType": "Icon",
+        "_iconUrl": "https://www.jartic-ri2maps.org/symbols/096.png",
+        "_iconSize": [
+          20,
+          20
+        ],
+        "_iconAnchor": [
+          10,
+          10
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.001153,
+          37.42636
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "⑬名舟海岸３",
+        "路線名": "国道249号",
+        "被災規模": "大",
+        "_markerType": "Icon",
+        "_iconUrl": "https://www.jartic-ri2maps.org/symbols/092.png",
+        "_iconSize": [
+          20,
+          20
+        ],
+        "_iconAnchor": [
+          10,
+          10
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.0042,
+          37.42809
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "⑭名舟海岸２",
+        "路線名": "国道249号",
+        "被災規模": "小～中",
+        "_markerType": "Icon",
+        "_iconUrl": "https://www.jartic-ri2maps.org/symbols/096.png",
+        "_iconSize": [
+          20,
+          20
+        ],
+        "_iconAnchor": [
+          10,
+          10
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.012472,
+          37.430876
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "⑫名舟海岸１",
+        "路線名": "国道249号",
+        "被災規模": "小～中",
+        "_markerType": "Icon",
+        "_iconUrl": "https://www.jartic-ri2maps.org/symbols/096.png",
+        "_iconSize": [
+          20,
+          20
+        ],
+        "_iconAnchor": [
+          10,
+          10
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.013969,
+          37.431438
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "⑪尊利地町",
+        "路線名": "国道249号",
+        "被災規模": "小～中",
+        "_markerType": "Icon",
+        "_iconUrl": "https://www.jartic-ri2maps.org/symbols/096.png",
+        "_iconSize": [
+          20,
+          20
+        ],
+        "_iconAnchor": [
+          10,
+          10
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.028683,
+          37.432367
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "⑩三ッ子浜",
+        "路線名": "国道249号",
+        "被災規模": "大",
+        "_markerType": "Icon",
+        "_iconUrl": "https://www.jartic-ri2maps.org/symbols/092.png",
+        "_iconSize": [
+          20,
+          20
+        ],
+        "_iconAnchor": [
+          10,
+          10
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.032181,
+          37.434479
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "⑨三ッ子浜",
+        "路線名": "国道249号",
+        "被災規模": "大",
+        "_markerType": "Icon",
+        "_iconUrl": "https://www.jartic-ri2maps.org/symbols/092.png",
+        "_iconSize": [
+          20,
+          20
+        ],
+        "_iconAnchor": [
+          10,
+          10
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.038608,
+          37.439054
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "⑧三ッ子浜",
+        "路線名": "国道249号",
+        "被災規模": "大",
+        "_markerType": "Icon",
+        "_iconUrl": "https://www.jartic-ri2maps.org/symbols/092.png",
+        "_iconSize": [
+          20,
+          20
+        ],
+        "_iconAnchor": [
+          10,
+          10
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.042363,
+          37.441627
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "⑦三ッ子浜",
+        "路線名": "国道249号",
+        "被災規模": "大",
+        "_markerType": "Icon",
+        "_iconUrl": "https://www.jartic-ri2maps.org/symbols/092.png",
+        "_iconSize": [
+          20,
+          20
+        ],
+        "_iconAnchor": [
+          10,
+          10
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.047191,
+          37.445698
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "⑥輪島市巻坂地区",
+        "路線名": "国道249号",
+        "被災規模": "大",
+        "_markerType": "Icon",
+        "_iconUrl": "https://www.jartic-ri2maps.org/symbols/092.png",
+        "_iconSize": [
+          20,
+          20
+        ],
+        "_iconAnchor": [
+          10,
+          10
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.049261,
+          37.448211
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "⑤逢坂トンネル西坑口",
+        "路線名": "国道249号",
+        "被災規模": "大",
+        "_markerType": "Icon",
+        "_iconUrl": "https://www.jartic-ri2maps.org/symbols/092.png",
+        "_iconSize": [
+          20,
+          20
+        ],
+        "_iconAnchor": [
+          10,
+          10
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.09325,
+          37.474279
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "④逢坂トンネル東坑口",
+        "路線名": "国道249号",
+        "被災規模": "大",
+        "_markerType": "Icon",
+        "_iconUrl": "https://www.jartic-ri2maps.org/symbols/092.png",
+        "_iconSize": [
+          20,
+          20
+        ],
+        "_iconAnchor": [
+          10,
+          10
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.101865,
+          37.479669
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "③中田浜",
+        "路線名": "国道249号",
+        "被災規模": "大",
+        "_markerType": "Icon",
+        "_iconUrl": "https://www.jartic-ri2maps.org/symbols/092.png",
+        "_iconSize": [
+          20,
+          20
+        ],
+        "_iconAnchor": [
+          10,
+          10
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.10606,
+          37.480001
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "②道の駅すず塩田村",
+        "路線名": "国道249号",
+        "被災規模": "小～中",
+        "_markerType": "Icon",
+        "_iconUrl": "https://www.jartic-ri2maps.org/symbols/092.png",
+        "_iconSize": [
+          20,
+          20
+        ],
+        "_iconAnchor": [
+          10,
+          10
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.117089,
+          37.48648
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "⓪-2赤神",
+        "路線名": "国道249号",
+        "被災規模": "大",
+        "_markerType": "Icon",
+        "_iconUrl": "https://www.jartic-ri2maps.org/symbols/092.png",
+        "_iconSize": [
+          20,
+          20
+        ],
+        "_iconAnchor": [
+          10,
+          10
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.180239,
+          37.497163
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "⓪-1赤神",
+        "路線名": "国道249号",
+        "被災規模": "大",
+        "_markerType": "Icon",
+        "_iconUrl": "https://www.jartic-ri2maps.org/symbols/092.png",
+        "_iconSize": [
+          20,
+          20
+        ],
+        "_iconAnchor": [
+          10,
+          10
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.182546,
+          37.498653
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "大谷トンネル",
+        "路線名": "国道249号",
+        "被災規模": "大",
+        "_markerType": "Icon",
+        "_iconUrl": "https://www.jartic-ri2maps.org/symbols/092.png",
+        "_iconSize": [
+          20,
+          20
+        ],
+        "_iconAnchor": [
+          10,
+          10
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.199798,
+          37.478792
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "復旧済（国道249号）",
+        "路線名": "国道249号",
+        "地名（推定）": "珠洲市若山町宇都山",
+        "_markerType": "Icon",
+        "_iconUrl": "https://www.jartic-ri2maps.org/symbols/699.png",
+        "_iconSize": [
+          20,
+          20
+        ],
+        "_iconAnchor": [
+          10,
+          10
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.20881,
+          37.468659
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "復旧済（国道249号）",
+        "路線名": "国道249号",
+        "地名（推定）": "珠洲市若山町大坊",
+        "_markerType": "Icon",
+        "_iconUrl": "https://www.jartic-ri2maps.org/symbols/699.png",
+        "_iconSize": [
+          20,
+          20
+        ],
+        "_iconAnchor": [
+          10,
+          10
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.21499,
+          37.462528
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "㊸獅子岩",
+        "路線名": "石川県道28号（大谷狼煙飯田線）",
+        "被災規模": "大",
+        "_markerType": "Icon",
+        "_iconUrl": "https://www.jartic-ri2maps.org/symbols/092.png",
+        "_iconSize": [
+          20,
+          20
+        ],
+        "_iconAnchor": [
+          10,
+          10
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.254225,
+          37.524678
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "①赤神",
+        "路線名": "石川県道28号（大谷狼煙飯田線）",
+        "被災規模": "小～中",
+        "_markerType": "Icon",
+        "_iconUrl": "https://www.jartic-ri2maps.org/symbols/096.png",
+        "_iconSize": [
+          20,
+          20
+        ],
+        "_iconAnchor": [
+          10,
+          10
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.18791,
+          37.501793
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "㊹獅子岩",
+        "路線名": "石川県道28号（大谷狼煙飯田線）",
+        "被災規模": "小～中",
+        "_markerType": "Icon",
+        "_iconUrl": "https://www.jartic-ri2maps.org/symbols/096.png",
+        "_iconSize": [
+          20,
+          20
+        ],
+        "_iconAnchor": [
+          10,
+          10
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.25739,
+          37.525307
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "㊺狼煙町横山",
+        "路線名": "石川県道28号（大谷狼煙飯田線）",
+        "被災規模": "小～中",
+        "_markerType": "Icon",
+        "_iconUrl": "https://www.jartic-ri2maps.org/symbols/096.png",
+        "_iconSize": [
+          20,
+          20
+        ],
+        "_iconAnchor": [
+          10,
+          10
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.307032,
+          37.523916
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "㊻道の駅狼煙 西側",
+        "路線名": "石川県道28号（大谷狼煙飯田線）",
+        "被災規模": "小～中",
+        "_markerType": "Icon",
+        "_iconUrl": "https://www.jartic-ri2maps.org/symbols/096.png",
+        "_iconSize": [
+          20,
+          20
+        ],
+        "_iconAnchor": [
+          10,
+          10
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.319746,
+          37.525667
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "㊼折戸町日置",
+        "路線名": "石川県道52号（折戸飯田線）",
+        "被災規模": "大",
+        "_markerType": "Icon",
+        "_iconUrl": "https://www.jartic-ri2maps.org/symbols/092.png",
+        "_iconSize": [
+          20,
+          20
+        ],
+        "_iconAnchor": [
+          10,
+          10
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.279924,
+          37.5212
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "町野町寺山",
+        "路線名": "石川県道40号（珠洲里線）",
+        "被災規模": "大",
+        "_markerType": "Icon",
+        "_iconUrl": "https://www.jartic-ri2maps.org/symbols/092.png",
+        "_iconSize": [
+          20,
+          20
+        ],
+        "_iconAnchor": [
+          10,
+          10
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.119589,
+          37.43367
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "復旧済（国道249号）",
+        "路線名": "国道249号",
+        "地名（推定）": "輪島市稲舟町",
+        "_markerType": "Icon",
+        "_iconUrl": "https://www.jartic-ri2maps.org/symbols/699.png",
+        "_iconSize": [
+          20,
+          20
+        ],
+        "_iconAnchor": [
+          10,
+          10
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.931555,
+          37.397194
+        ]
+      }
+    }
+  ]
+}
