@@ -3,6 +3,7 @@ name: Update GeoJSON
 on:
   schedule:
     - cron: '0 * * * *' # 毎時0分に実行
+  workflow_dispatch:
 
 jobs:
   update-geojson:
