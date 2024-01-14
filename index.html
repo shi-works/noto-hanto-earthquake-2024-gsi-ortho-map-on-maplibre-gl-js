@@ -61,7 +61,7 @@
             /*border-radius: 4px;*/
         }
 
-        .toggle-button {
+        .toggle-button-1 {
             position: absolute;
             bottom: 175px;
             right: 50px;
@@ -102,6 +102,38 @@
         .square {
             width: 15px;
             height: 15px;
+        }
+
+        .legend-road {
+            position: absolute;
+            top: 195px;
+            right: 10px;
+            z-index: 1;
+            background: white;
+            padding: 5px;
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+            width: fit-content;
+        }
+
+        .image-container {
+            display: flex;
+            justify-content: center;
+        }
+
+        .legend-road img {
+            width: 370px;
+            height: 200px;
+        }
+
+        .toggle-button-2 {
+            position: absolute;
+            top: 200px;
+            right: 20px;
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+            font-size: 15px;
+            z-index: 1000;
         }
     </style>
 </head>
@@ -210,6 +242,67 @@
             font: 12px/14px Arial, Helvetica, sans-serif;
         }
 
+        .custom-before-after-popup .maplibregl-popup-content {
+            padding: 12px 15px;
+            font: 14px/16px Arial, Helvetica, sans-serif;
+            color: #333;
+            background: rgba(255, 255, 255, 0.9);
+            box-shadow: 0 1px 6px rgba(0, 0, 0, 0.75);
+            border-radius: 8px;
+            width: 250px;
+            height: 450px;
+            overflow-y: auto;
+        }
+
+        .custom-before-after-popup .maplibregl-popup-content .popup-image {
+            max-width: 100%;
+            max-height: 180px;
+            /* 画像の最大高さを設定 */
+            height: auto;
+        }
+
+        .custom-damaged-area-popup .maplibregl-popup-content {
+            padding: 12px 15px;
+            font: 14px/16px Arial, Helvetica, sans-serif;
+            color: #333;
+            background: rgba(255, 255, 255, 0.9);
+            box-shadow: 0 1px 6px rgba(0, 0, 0, 0.75);
+            border-radius: 8px;
+            width: 270px;
+            height: 50px;
+            overflow-y: auto;
+        }
+
+        .custom-damage-situation-aerial-photography-popup .maplibregl-popup-content {
+            padding: 12px 15px;
+            font: 14px/16px Arial, Helvetica, sans-serif;
+            color: #333;
+            background: rgba(255, 255, 255, 0.9);
+            box-shadow: 0 1px 6px rgba(0, 0, 0, 0.75);
+            border-radius: 8px;
+            width: 250px;
+            height: 250px;
+            overflow-y: auto;
+        }
+
+        .custom-damage-situation-aerial-photography-popup .maplibregl-popup-content .popup-image {
+            max-width: 100%;
+            max-height: 180px;
+            height: auto;
+        }
+
+        .custom-recovery-point-popup .maplibregl-popup-content {
+            padding: 12px 15px;
+            font: 14px/16px Arial, Helvetica, sans-serif;
+            color: #333;
+            background: rgba(255, 255, 255, 0.9);
+            box-shadow: 0 1px 6px rgba(0, 0, 0, 0.75);
+            border-radius: 8px;
+            width: 300px;
+            height: 60px;
+            overflow-y: auto;
+        }
+
         .corner-text {
             position: fixed;
             top: 0;
@@ -277,22 +370,26 @@
         </select>
     </div>
     <div id="checkbox-area">
-        <input type="checkbox" id="populationLayerCheckbox" name="populationLayer">
+        <input type="checkbox" id="RoadRestorationVisualizationLayerCheckbox">
+        <label for="RoadRestorationVisualizationLayerCheckbox">国土交通省 道路復旧見える化マップ</label><br>
+        <input type="checkbox" id="populationLayerCheckbox">
         <label for="populationLayerCheckbox">令和2年100mﾒｯｼｭ人口(石川県・富山県)</label><br>
-        <input type="checkbox" id="IsolatedAreaLayerCheckbox" name="populationLayer">
+        <input type="checkbox" id="IsolatedAreaLayerCheckbox">
         <label for="IsolatedAreaLayerCheckbox">石川県孤立集落人数(1/13時点)</label><br>
-        <input type="checkbox" id="OpenShelterNanaoshiLayerCheckbox" name="populationLayer">
+        <input type="checkbox" id="OpenShelterNanaoshiLayerCheckbox">
         <label for="OpenShelterNanaoshiLayerCheckbox">石川県七尾市避難所開設情報</label>
     </div>
     <div class="map-overlay top">
         <div class="map-overlay-inner">
             <label>空中写真・SAR画像 不透明度: <span id="photo-slider-opacity-value">100%</span></label>
             <input id="photo-slider-opacity" type="range" min="0" max="100" step="1" value="100">
+            <!--
             <label>CS立体図 不透明度: <span id="cs-slider-opacity-value">100%</span></label>
             <input id="cs-slider-opacity" type="range" min="0" max="100" step="1" value="100">
+            -->
         </div>
     </div>
-    <button id="toggleButton" class="toggle-button">🔽</button>
+    <button id="toggle-button-1" class="toggle-button-1">🔽</button>
     <div id='legend' class='legend'>
         <h4>凡例</h4>
         <div class="square"
@@ -334,6 +431,13 @@
         </div><span style="display: inline-block; margin-left: 5px;">60～80人未満</span><br>
         <div class="square" style='background-color: #CB00CB; display: inline-block;'>
         </div><span style="display: inline-block; margin-left: 5px;">80人以上</span><br>
+    </div>
+    <button id="toggle-button-2" style="display:none;" class="toggle-button-2">🔽</button>
+    <div id="legend-road" style="display:none;" class="legend-road">
+        <div class="image-container">
+            <img src="https://shi-works.github.io/noto-hanto-earthquake-2024-gsi-ortho-map-on-maplibre-gl-js/data/mlt/img/usage_guide.png"
+                id="legend-road-image">
+        </div>
     </div>
     <script type="module">
         // Terrain-RGB形式への変換モジュール
@@ -1464,6 +1568,266 @@
                 }
             });
 
+            // 国土交通省 道路復旧見える化マップ
+
+            // 緊急復旧済み区間ソース
+            afterMap.addSource("emergency_restored_section", {
+                type: "geojson",
+                data: 'https://shi-works.github.io/noto-hanto-earthquake-2024-gsi-ortho-map-on-maplibre-gl-js/data/mlt/emergency_restored_section.geojson',
+                attribution: '<a href="https://www.mlit.go.jp/road/r6noto/index2.html" target="_blank">令和6年能登半島地震 道路復旧見える化マップ(国土交通省)</a>',
+            });
+
+            // 緊急復旧済み区間ラインレイヤ
+            afterMap.addLayer({
+                'id': 'emergency_restored_section-line',
+                "type": "line",
+                'source': 'emergency_restored_section',
+                minzoom: 1,
+                maxzoom: 23,
+                layout: {
+                    'visibility': 'none'
+                },
+                paint: {
+                    'line-color': [
+                        'match',
+                        ['get', '_color'],
+                        '#0000ff', '#0000ff',
+                        '#990000', '#990000',
+                        '#6aa84f', '#6aa84f',
+                        '#ff00ff', '#ff00ff',
+                        '#000000', '#000000',
+                        '#656565'
+                    ],
+                    'line-width': 8,
+                    'line-opacity': 0.6
+                }
+            });
+
+            // ETC2.0速度データ(平均速度)ソース
+            afterMap.addSource("ETC2.0_speed_data", {
+                type: "geojson",
+                data: 'https://shi-works.github.io/noto-hanto-earthquake-2024-gsi-ortho-map-on-maplibre-gl-js/data/mlt/ETC2.0_speed_data.geojson',
+                attribution: '<a href="https://www.mlit.go.jp/road/r6noto/index2.html" target="_blank">令和6年能登半島地震 道路復旧見える化マップ(国土交通省)</a>',
+            });
+
+            // ETC2.0速度データ(平均速度)ラインレイヤ
+            afterMap.addLayer({
+                'id': 'ETC2.0_speed_data-line',
+                "type": "line",
+                'source': 'ETC2.0_speed_data',
+                minzoom: 1,
+                maxzoom: 23,
+                layout: {
+                    'visibility': 'none'
+                },
+                paint: {
+                    'line-color': [
+                        'match',
+                        ['get', '_color'],
+                        '#ff0000', '#ff0000',
+                        '#ff9900', '#ff9900',
+                        '#00ff00', '#00ff00',
+                        '#0000ff', '#0000ff',
+                        '#656565'
+                    ],
+                    'line-width': 4
+                }
+            });
+
+            // 啓開前・啓開後比較箇所ソース
+            afterMap.addSource("before_after", {
+                type: "geojson",
+                data: 'https://shi-works.github.io/noto-hanto-earthquake-2024-gsi-ortho-map-on-maplibre-gl-js/data/mlt/before_after.geojson',
+                attribution: '<a href="https://www.mlit.go.jp/road/r6noto/index2.html" target="_blank">令和6年能登半島地震 道路復旧見える化マップ(国土交通省)</a>',
+            });
+
+            // PNGソース追加
+            afterMap.loadImage('https://maps.gsi.go.jp/portal/sys/v4/symbols/482.png',
+                function (error, image) {
+                    if (error) throw error;
+                    afterMap.addImage('before_after_symbol', image);
+                }
+            );
+
+            // 啓開前・啓開後比較箇所シンボルレイヤ
+            afterMap.addLayer({
+                'id': 'before_after-symbol',
+                "type": "symbol",
+                'source': 'before_after',
+                minzoom: 1,
+                maxzoom: 23,
+                "layout": {
+                    "icon-image": 'before_after_symbol',
+                    "icon-size": [
+                        'interpolate',
+                        ['linear'],
+                        ['zoom'],
+                        1, 0.1,  // ズームレベル1でサイズは0.1
+                        12, 1.2  // ズームレベル12でサイズは1.2
+                    ],
+                    "icon-allow-overlap": true, // シンボルの重なりを許可
+                    'visibility': 'none'
+                }
+            });
+
+            // 復旧到達地点ソース
+            afterMap.addSource("recovery_point", {
+                type: "geojson",
+                data: 'https://shi-works.github.io/noto-hanto-earthquake-2024-gsi-ortho-map-on-maplibre-gl-js/data/mlt/recovery_point.geojson',
+                attribution: '<a href="https://www.mlit.go.jp/road/r6noto/index2.html" target="_blank">令和6年能登半島地震 道路復旧見える化マップ(国土交通省)</a>',
+            });
+
+            // PNGソース（沿岸部への到達点）追加
+            afterMap.loadImage('https://shi-works.github.io/noto-hanto-earthquake-2024-gsi-ortho-map-on-maplibre-gl-js/data/mlt/img/087.png',
+                function (error, image) {
+                    if (error) throw error;
+                    afterMap.addImage('recovery_point_087', image);
+                }
+            );
+
+            // PNGソース（復旧業者到達地点）追加
+            afterMap.loadImage('https://shi-works.github.io/noto-hanto-earthquake-2024-gsi-ortho-map-on-maplibre-gl-js/data/mlt/img/319.png',
+                function (error, image) {
+                    if (error) throw error;
+                    afterMap.addImage('recovery_point_319', image);
+                }
+            );
+
+            // 復旧到達地点シンボルレイヤ
+            afterMap.addLayer({
+                'id': 'recovery_point-symbol',
+                "type": "symbol",
+                'source': 'recovery_point',
+                minzoom: 1,
+                maxzoom: 23,
+                "layout": {
+                    'icon-image': 'recovery_point_087',
+                    'icon-image': [
+                        'match',
+                        ['get', '_iconUrl'],
+                        'https://www.jartic-ri2maps.org/symbols/087.png', 'recovery_point_087',
+                        'https://www.jartic-ri2maps.org/symbols/319.png', 'recovery_point_319',
+                        'recovery_point_087'
+                    ],
+                    "icon-size": [
+                        'interpolate',
+                        ['linear'],
+                        ['zoom'],
+                        1, 0.1,  // ズームレベル1でサイズは0.1
+                        12, 1.2  // ズームレベル12でサイズは1.2
+                    ],
+                    "icon-allow-overlap": true, // シンボルの重なりを許可
+                    'visibility': 'none'
+                }
+            });
+
+            // 主な被災箇所ソース
+            afterMap.addSource("damaged_area", {
+                type: "geojson",
+                data: 'https://shi-works.github.io/noto-hanto-earthquake-2024-gsi-ortho-map-on-maplibre-gl-js/data/mlt/damaged_area.geojson',
+                attribution: '<a href="https://www.mlit.go.jp/road/r6noto/index2.html" target="_blank">令和6年能登半島地震 道路復旧見える化マップ(国土交通省)</a>',
+            });
+
+            // PNGソース（被害規模 大）追加
+            afterMap.loadImage('https://shi-works.github.io/noto-hanto-earthquake-2024-gsi-ortho-map-on-maplibre-gl-js/data/mlt/img/092.png',
+                function (error, image) {
+                    if (error) throw error;
+                    afterMap.addImage('damaged_area_092', image);
+                }
+            );
+
+            // PNGソース（被害規模 小～中程度）追加
+            afterMap.loadImage('https://shi-works.github.io/noto-hanto-earthquake-2024-gsi-ortho-map-on-maplibre-gl-js/data/mlt/img/096.png',
+                function (error, image) {
+                    if (error) throw error;
+                    afterMap.addImage('damaged_area_096', image);
+                }
+            );
+
+            // PNGソース（復旧済（緊急復旧含む））追加
+            afterMap.loadImage('https://shi-works.github.io/noto-hanto-earthquake-2024-gsi-ortho-map-on-maplibre-gl-js/data/mlt/img/699.png',
+                function (error, image) {
+                    if (error) throw error;
+                    afterMap.addImage('damaged_area_699', image);
+                }
+            );
+
+            // 主な被災箇所シンボルレイヤ
+            afterMap.addLayer({
+                'id': 'damaged_area-symbol',
+                "type": "symbol",
+                'source': 'damaged_area',
+                minzoom: 1,
+                maxzoom: 23,
+                "layout": {
+                    'icon-image': [
+                        'match',
+                        ['get', '被災規模'],
+                        '大', 'damaged_area_092',
+                        '小～中', 'damaged_area_096',
+                        'NULL', 'damaged_area_699',
+                        'damaged_area_699'
+                    ],
+                    "icon-size": [
+                        'interpolate',
+                        ['linear'],
+                        ['zoom'],
+                        1, 0.1,  // ズームレベル1でサイズは0.1
+                        12, 1.2  // ズームレベル12でサイズは1.2
+                    ],
+                    "icon-allow-overlap": true, // シンボルの重なりを許可
+                    'visibility': 'none'
+                }
+            });
+
+            // 被災状況（空撮）ソース
+            afterMap.addSource("damage_situation_aerial_photography", {
+                type: "geojson",
+                data: 'https://shi-works.github.io/noto-hanto-earthquake-2024-gsi-ortho-map-on-maplibre-gl-js/data/mlt/damage_situation_aerial_photography.geojson',
+                attribution: '<a href="https://www.mlit.go.jp/road/r6noto/index2.html" target="_blank">令和6年能登半島地震 道路復旧見える化マップ(国土交通省)</a>',
+            });
+
+            // PNGソース追加
+            afterMap.loadImage('https://maps.gsi.go.jp/portal/sys/v4/symbols/186.png',
+                function (error, image) {
+                    if (error) throw error;
+                    afterMap.addImage('damage_situation_aerial_photography_186', image);
+                }
+            );
+
+            // 被災状況（空撮）シンボルレイヤ
+            afterMap.addLayer({
+                'id': 'damage_situation_aerial_photography-symbol',
+                "type": "symbol",
+                'source': 'damage_situation_aerial_photography',
+                minzoom: 1,
+                maxzoom: 23,
+                "layout": {
+                    'icon-image': 'damage_situation_aerial_photography_186',
+                    "icon-size": [
+                        'interpolate',
+                        ['linear'],
+                        ['zoom'],
+                        1, 0.1,  // ズームレベル1でサイズは0.1
+                        12, 1.2  // ズームレベル12でサイズは1.2
+                    ],
+                    "icon-allow-overlap": true, // シンボルの重なりを許可
+                    'visibility': 'none',
+                    'icon-rotate': [
+                        'match',
+                        ['get', '_iconUrl'],
+                        'https://maps.gsi.go.jp/portal/sys/v4/symbols/181.png', 180 - 45,
+                        'https://maps.gsi.go.jp/portal/sys/v4/symbols/182.png', 180,
+                        'https://maps.gsi.go.jp/portal/sys/v4/symbols/183.png', 180 + 45,
+                        'https://maps.gsi.go.jp/portal/sys/v4/symbols/184.png', 270,
+                        'https://maps.gsi.go.jp/portal/sys/v4/symbols/185.png', 180 + 135,
+                        'https://maps.gsi.go.jp/portal/sys/v4/symbols/186.png', 0,
+                        'https://maps.gsi.go.jp/portal/sys/v4/symbols/187.png', 180 + 225,
+                        90 // デフォルト値
+                    ]
+                }
+            });
+
         });
 
         // 石川県七尾市避難所開設情報
@@ -1711,6 +2075,7 @@
             photosliderOpactiyValue.textContent = e.target.value + '%';
         });
 
+        /*
         // スライダーでCS立体図の不透明度を制御
         const cssliderOpactiy = document.getElementById('cs-slider-opacity');
         const cssliderOpactiyValue = document.getElementById('cs-slider-opacity-value');
@@ -1723,6 +2088,7 @@
             );
             cssliderOpactiyValue.textContent = e.target.value + '%';
         });
+        */
 
         // イベントリスナーを追加
         document.addEventListener('DOMContentLoaded', () => {
@@ -1827,9 +2193,65 @@
 
         // 凡例の表示・非表示切り替え制御
         document.addEventListener('DOMContentLoaded', (event) => {
-            const toggleButton = document.getElementById('toggleButton');
+            const toggleButton = document.getElementById('toggle-button-1');
             const legend = document.getElementById('legend');
 
+            toggleButton.addEventListener('click', function () {
+                if (legend.style.display === 'none') {
+                    // 凡例を表示
+                    legend.style.display = '';
+                    toggleButton.textContent = '🔽'; // アイコンを「閉じる」状態に更新
+                } else {
+                    // 凡例を隠す
+                    legend.style.display = 'none';
+                    toggleButton.textContent = '🔼'; // アイコンを「開く」状態に更新
+                }
+            });
+
+        });
+
+        // 国土交通省 道路復旧見える化マップの表示・非表示切り替え制御
+        document.getElementById('RoadRestorationVisualizationLayerCheckbox').addEventListener('change', function (e) {
+            var legend_road = document.getElementById('legend-road');
+            var legend_button = document.getElementById('toggle-button-2');
+            if (e.target.checked) {
+                // チェックボックスがON - レイヤーと凡例を表示
+                afterMap.setLayoutProperty('emergency_restored_section-line', 'visibility', 'visible');
+                afterMap.setLayoutProperty('ETC2.0_speed_data-line', 'visibility', 'visible');
+                afterMap.setLayoutProperty('before_after-symbol', 'visibility', 'visible');
+                afterMap.setLayoutProperty('recovery_point-symbol', 'visibility', 'visible');
+                afterMap.setLayoutProperty('damaged_area-symbol', 'visibility', 'visible');
+                afterMap.setLayoutProperty('damage_situation_aerial_photography-symbol', 'visibility', 'visible');
+                legend_road.style.display = 'block';
+                legend_button.style.display = 'block';
+            } else {
+                // チェックボックスがOFF - レイヤーと凡例を非表示
+                afterMap.setLayoutProperty('emergency_restored_section-line', 'visibility', 'none');
+                afterMap.setLayoutProperty('ETC2.0_speed_data-line', 'visibility', 'none');
+                afterMap.setLayoutProperty('before_after-symbol', 'visibility', 'none');
+                afterMap.setLayoutProperty('recovery_point-symbol', 'visibility', 'none');
+                afterMap.setLayoutProperty('damaged_area-symbol', 'visibility', 'none');
+                afterMap.setLayoutProperty('damage_situation_aerial_photography-symbol', 'visibility', 'none');
+                legend_road.style.display = 'none';
+                legend_button.style.display = 'none';
+            }
+        });
+
+        // 凡例をクリックした時に新しいウィンドウで開く関数
+        function openImageInNewWindow() {
+            var imageUrl = document.getElementById('legend-road-image').src;
+            window.open(imageUrl, '_blank');
+        }
+
+        // DOMが完全にロードされた後にイベントリスナーを設定
+        window.addEventListener('DOMContentLoaded', (event) => {
+            document.getElementById('legend-road-image').addEventListener('click', openImageInNewWindow);
+        });
+
+        // 凡例（道路復旧見える化マップ）の表示・非表示切り替え制御
+        document.addEventListener('DOMContentLoaded', (event) => {
+            const toggleButton = document.getElementById('toggle-button-2');
+            const legend = document.getElementById('legend-road');
             toggleButton.addEventListener('click', function () {
                 if (legend.style.display === 'none') {
                     // 凡例を表示
@@ -2207,6 +2629,109 @@
                 )
                 .addTo(afterMap);
         });
+
+        // 啓開前・啓開後比較箇所ポップアップ表示
+        afterMap.on('click', 'before_after-symbol', async (e) => {
+            var lng = e.features[0].geometry.coordinates[0];
+            var lat = e.features[0].geometry.coordinates[1];
+            var name = e.features[0].properties['name'];
+
+            // ベースURL
+            var baseUrl = "https://www.mlit.go.jp/road/r6noto/map";
+
+            // '啓開前''啓開後'の値からファイル名を抽出
+            var beforeValue = e.features[0].properties['啓開前'];
+            var beforefilename = beforeValue.match(/src=\"\.\/img\/before_after\/(.*?)\"/)[1];
+
+            var afterValue = e.features[0].properties['啓開後'];
+            var afterfilename = afterValue.match(/src=\"\.\/img\/before_after\/(.*?)\"/)[1];
+
+            // 完全なURLを生成
+            var imageBeforeUrl = baseUrl + "/img/before_after/" + beforefilename;
+            var imageAfterUrl = baseUrl + "/img/before_after/" + afterfilename;
+
+            new maplibregl.Popup({ className: 'custom-before-after-popup' })
+                .setLngLat(e.lngLat)
+                .setHTML(
+                    '<div style="border-bottom:1px solid #000;"><strong>name:' + name + '</strong></div>' +
+                    '啓開前：' + '<br>' +
+                    '<div><a href="' + imageBeforeUrl + '" target="_blank"><img class="popup-image" src="' + imageBeforeUrl + '" alt="画像"></a></div>' +
+                    '啓開後：' + '<br>' +
+                    '<div><a href="' + imageAfterUrl + '" target="_blank"><img class="popup-image" src="' + imageAfterUrl + '" alt="画像"></a></div>' +
+                    '<div><a href="https://www.google.com/maps?q=' + lat + ',' + lng + '&hl=ja" target="_blank">🌎Google Maps</a></div>' +
+                    '<div><a href="https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=' + lat + ',' + lng + '&hl=ja" target="_blank">📷Street View</a></div>'
+                )
+                .addTo(afterMap);
+        });
+
+        // 主な被災箇所ポップアップ表示
+        afterMap.on('click', 'damaged_area-symbol', async (e) => {
+            var lng = e.features[0].geometry.coordinates[0];
+            var lat = e.features[0].geometry.coordinates[1];
+            var name = e.features[0].properties['name'];
+            var rosen = e.features[0].properties['路線名'];
+            var damaged = e.features[0].properties['被災規模'];
+            var chimei = e.features[0].properties['地名（推定）'];
+
+            if (damaged === '大' || damaged === '小～中') {
+                new maplibregl.Popup({ className: 'custom-damaged-area-popup' })
+                    .setLngLat(e.lngLat)
+                    .setHTML(
+                        '<div style="border-bottom:1px solid #000;"><strong>name:' + name + '</strong></div>' +
+                        '路線名：' + rosen + '<br>' +
+                        '被災規模：' + damaged
+                    )
+                    .addTo(afterMap);
+            } else if (damaged === undefined) {
+                new maplibregl.Popup({ className: 'custom-damaged-area-popup' })
+                    .setLngLat(e.lngLat)
+                    .setHTML(
+                        '<div style="border-bottom:1px solid #000;"><strong>name:' + name + '</strong></div>' +
+                        '路線名：' + rosen + '<br>' +
+                        '地名（推定）：' + chimei
+                    )
+                    .addTo(afterMap);
+            }
+        });
+
+        // 被災状況（空撮）ポップアップ表示
+        afterMap.on('click', 'damage_situation_aerial_photography-symbol', async (e) => {
+            var lng = e.features[0].geometry.coordinates[0];
+            var lat = e.features[0].geometry.coordinates[1];
+            var name = e.features[0].properties['name'];
+            var view = e.features[0].properties['view'];
+
+            // ベースURL
+            var baseUrl = "https://www.mlit.go.jp/road/r6noto/map/img/kuusatsu/";
+            var imageUrl = baseUrl + name + '.jpg'
+
+            new maplibregl.Popup({ className: 'custom-damage-situation-aerial-photography-popup' })
+                .setLngLat(e.lngLat)
+                .setHTML(
+                    '<div style="border-bottom:1px solid #000;"><strong>name:' + name + '</strong></div>' +
+                    '被災状況(空撮)：' + '<br>' +
+                    '<div><a href="' + imageUrl + '" target="_blank"><img class="popup-image" src="' + imageUrl + '" alt="画像"></a></div>' +
+                    '<div><a href="https://www.google.com/maps?q=' + lat + ',' + lng + '&hl=ja" target="_blank">🌎Google Maps</a></div>'
+                )
+                .addTo(afterMap);
+        });
+
+        // 復旧到達地点ポップアップ表示
+        afterMap.on('click', 'recovery_point-symbol', async (e) => {
+            var lng = e.features[0].geometry.coordinates[0];
+            var lat = e.features[0].geometry.coordinates[1];
+            var name = e.features[0].properties['name'];
+
+            new maplibregl.Popup({ className: 'custom-recovery-point-popup' })
+                .setLngLat(e.lngLat)
+                .setHTML(
+                    '<div style="border-bottom:1px solid #000;"><strong>name:' + name + '</strong></div>' +
+                    '<div><a href="https://www.google.com/maps?q=' + lat + ',' + lng + '&hl=ja" target="_blank">🌎Google Maps</a></div>' +
+                    '<div><a href="https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=' + lat + ',' + lng + '&hl=ja" target="_blank">📷Street View</a></div>'
+                )
+                .addTo(afterMap);
+        });
+
     </script>
 </body>
 
