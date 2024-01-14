@@ -435,7 +435,7 @@
     <button id="toggle-button-2" style="display:none;" class="toggle-button-2">🔽</button>
     <div id="legend-road" style="display:none;" class="legend-road">
         <div class="image-container">
-            <img src="https://shi-works.github.io/noto-hanto-earthquake-2024-gsi-ortho-map-on-maplibre-gl-js/data/mlt/img/usage_guide.png"
+            <img src="https://shi-works.github.io/noto-hanto-earthquake-2024-gsi-ortho-map-on-maplibre-gl-js/data/mlit/img/usage_guide.png"
                 id="legend-road-image">
         </div>
     </div>
@@ -1573,7 +1573,7 @@
             // 緊急復旧済み区間ソース
             afterMap.addSource("emergency_restored_section", {
                 type: "geojson",
-                data: 'https://shi-works.github.io/noto-hanto-earthquake-2024-gsi-ortho-map-on-maplibre-gl-js/data/mlt/emergency_restored_section.geojson',
+                data: 'https://shi-works.github.io/noto-hanto-earthquake-2024-gsi-ortho-map-on-maplibre-gl-js/data/mlit/emergency_restored_section.geojson',
                 attribution: '<a href="https://www.mlit.go.jp/road/r6noto/index2.html" target="_blank">令和6年能登半島地震 道路復旧見える化マップ(国土交通省)</a>',
             });
 
@@ -1606,7 +1606,7 @@
             // ETC2.0速度データ(平均速度)ソース
             afterMap.addSource("ETC2.0_speed_data", {
                 type: "geojson",
-                data: 'https://shi-works.github.io/noto-hanto-earthquake-2024-gsi-ortho-map-on-maplibre-gl-js/data/mlt/ETC2.0_speed_data.geojson',
+                data: 'https://shi-works.github.io/noto-hanto-earthquake-2024-gsi-ortho-map-on-maplibre-gl-js/data/mlit/ETC2.0_speed_data.geojson',
                 attribution: '<a href="https://www.mlit.go.jp/road/r6noto/index2.html" target="_blank">令和6年能登半島地震 道路復旧見える化マップ(国土交通省)</a>',
             });
 
@@ -1637,7 +1637,7 @@
             // 啓開前・啓開後比較箇所ソース
             afterMap.addSource("before_after", {
                 type: "geojson",
-                data: 'https://shi-works.github.io/noto-hanto-earthquake-2024-gsi-ortho-map-on-maplibre-gl-js/data/mlt/before_after.geojson',
+                data: 'https://shi-works.github.io/noto-hanto-earthquake-2024-gsi-ortho-map-on-maplibre-gl-js/data/mlit/before_after.geojson',
                 attribution: '<a href="https://www.mlit.go.jp/road/r6noto/index2.html" target="_blank">令和6年能登半島地震 道路復旧見える化マップ(国土交通省)</a>',
             });
 
@@ -1673,12 +1673,12 @@
             // 復旧到達地点ソース
             afterMap.addSource("recovery_point", {
                 type: "geojson",
-                data: 'https://shi-works.github.io/noto-hanto-earthquake-2024-gsi-ortho-map-on-maplibre-gl-js/data/mlt/recovery_point.geojson',
+                data: 'https://shi-works.github.io/noto-hanto-earthquake-2024-gsi-ortho-map-on-maplibre-gl-js/data/mlit/recovery_point.geojson',
                 attribution: '<a href="https://www.mlit.go.jp/road/r6noto/index2.html" target="_blank">令和6年能登半島地震 道路復旧見える化マップ(国土交通省)</a>',
             });
 
             // PNGソース（沿岸部への到達点）追加
-            afterMap.loadImage('https://shi-works.github.io/noto-hanto-earthquake-2024-gsi-ortho-map-on-maplibre-gl-js/data/mlt/img/087.png',
+            afterMap.loadImage('https://shi-works.github.io/noto-hanto-earthquake-2024-gsi-ortho-map-on-maplibre-gl-js/data/mlit/img/087.png',
                 function (error, image) {
                     if (error) throw error;
                     afterMap.addImage('recovery_point_087', image);
@@ -1686,7 +1686,7 @@
             );
 
             // PNGソース（復旧業者到達地点）追加
-            afterMap.loadImage('https://shi-works.github.io/noto-hanto-earthquake-2024-gsi-ortho-map-on-maplibre-gl-js/data/mlt/img/319.png',
+            afterMap.loadImage('https://shi-works.github.io/noto-hanto-earthquake-2024-gsi-ortho-map-on-maplibre-gl-js/data/mlit/img/319.png',
                 function (error, image) {
                     if (error) throw error;
                     afterMap.addImage('recovery_point_319', image);
@@ -1724,12 +1724,12 @@
             // 主な被災箇所ソース
             afterMap.addSource("damaged_area", {
                 type: "geojson",
-                data: 'https://shi-works.github.io/noto-hanto-earthquake-2024-gsi-ortho-map-on-maplibre-gl-js/data/mlt/damaged_area.geojson',
+                data: 'https://shi-works.github.io/noto-hanto-earthquake-2024-gsi-ortho-map-on-maplibre-gl-js/data/mlit/damaged_area.geojson',
                 attribution: '<a href="https://www.mlit.go.jp/road/r6noto/index2.html" target="_blank">令和6年能登半島地震 道路復旧見える化マップ(国土交通省)</a>',
             });
 
             // PNGソース（被害規模 大）追加
-            afterMap.loadImage('https://shi-works.github.io/noto-hanto-earthquake-2024-gsi-ortho-map-on-maplibre-gl-js/data/mlt/img/092.png',
+            afterMap.loadImage('https://shi-works.github.io/noto-hanto-earthquake-2024-gsi-ortho-map-on-maplibre-gl-js/data/mlit/img/092.png',
                 function (error, image) {
                     if (error) throw error;
                     afterMap.addImage('damaged_area_092', image);
@@ -1737,7 +1737,7 @@
             );
 
             // PNGソース（被害規模 小～中程度）追加
-            afterMap.loadImage('https://shi-works.github.io/noto-hanto-earthquake-2024-gsi-ortho-map-on-maplibre-gl-js/data/mlt/img/096.png',
+            afterMap.loadImage('https://shi-works.github.io/noto-hanto-earthquake-2024-gsi-ortho-map-on-maplibre-gl-js/data/mlit/img/096.png',
                 function (error, image) {
                     if (error) throw error;
                     afterMap.addImage('damaged_area_096', image);
@@ -1745,7 +1745,7 @@
             );
 
             // PNGソース（復旧済（緊急復旧含む））追加
-            afterMap.loadImage('https://shi-works.github.io/noto-hanto-earthquake-2024-gsi-ortho-map-on-maplibre-gl-js/data/mlt/img/699.png',
+            afterMap.loadImage('https://shi-works.github.io/noto-hanto-earthquake-2024-gsi-ortho-map-on-maplibre-gl-js/data/mlit/img/699.png',
                 function (error, image) {
                     if (error) throw error;
                     afterMap.addImage('damaged_area_699', image);
@@ -1783,7 +1783,7 @@
             // 被災状況（空撮）ソース
             afterMap.addSource("damage_situation_aerial_photography", {
                 type: "geojson",
-                data: 'https://shi-works.github.io/noto-hanto-earthquake-2024-gsi-ortho-map-on-maplibre-gl-js/data/mlt/damage_situation_aerial_photography.geojson',
+                data: 'https://shi-works.github.io/noto-hanto-earthquake-2024-gsi-ortho-map-on-maplibre-gl-js/data/mlit/damage_situation_aerial_photography.geojson',
                 attribution: '<a href="https://www.mlit.go.jp/road/r6noto/index2.html" target="_blank">令和6年能登半島地震 道路復旧見える化マップ(国土交通省)</a>',
             });
 
