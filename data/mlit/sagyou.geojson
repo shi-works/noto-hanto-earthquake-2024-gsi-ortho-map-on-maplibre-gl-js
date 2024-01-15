@@ -255,7 +255,7 @@
       "type": "Feature",
       "properties": {
         "name": "深見海岸からの資機材陸揚げ",
-        "啓開作業等": "<img width=\"100%\" src=\"./img/sagyou/240114_R249_fukamikaigan.png\">",
+        "啓開作業等": "<img width=\"100%\" src=\"./img/sagyou/240114_R249_fukamikaigan.png\"><iframe width="949" height="534" src="https://www.youtube.com/embed/oH3L-2oW7Nw" title="陸路でアクセス困難な地点に海上から資機材搬入【令和6年能登半島地震　被災状況調査】" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>",
         "_markerType": "Icon",
         "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/494.png",
         "_iconSize": [
