@@ -255,7 +255,7 @@
       "type": "Feature",
       "properties": {
         "name": "深見海岸からの資機材陸揚げ",
-        "啓開作業等": "<img width=\"100%\" src=\"./img/sagyou/240114_R249_fukamikaigan.png\"><iframe width="949" height="534" src="https://www.youtube.com/embed/oH3L-2oW7Nw" title="陸路でアクセス困難な地点に海上から資機材搬入【令和6年能登半島地震　被災状況調査】" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>",
+        "啓開作業等": "<iframe width=\"949\" height=\"534\" src=\"https://www.youtube.com/embed/oH3L-2oW7Nw\" title=\"陸路でアクセス困難な地点に海上から資機材搬入【令和6年能登半島地震　被災状況調査】\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen></iframe>",
         "_markerType": "Icon",
         "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/494.png",
         "_iconSize": [
@@ -279,7 +279,7 @@
       "type": "Feature",
       "properties": {
         "name": "立ち入り規制箇所へのヘリでの調査",
-        "啓開作業等": "<iframe width=\"930\" height=\"523\" src=\"https://www.youtube.com/embed/sbwjAE-3scg\" title=\"陸路から到達できない地点の被害状況を調査【#令和6年能登半島地震　被災状況調査】\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen></iframe>",
+        "啓開作業等": "<iframe width=\"100%\" src=\"https://www.youtube.com/embed/sbwjAE-3scg\" title=\"陸路から到達できない地点の被害状況を調査【#令和6年能登半島地震　被災状況調査】\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen></iframe>",
         "_markerType": "Icon",
         "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/570.png",
         "_iconSize": [
@@ -303,7 +303,7 @@
       "type": "Feature",
       "properties": {
         "name": "国道249号輪島市門前町浦上の道路啓開作業",
-        "啓開作業等": "<iframe width=\"912\" height=\"513\" src=\"https://www.youtube.com/embed/gHBg1C3Sc8w\" title=\"国道249号輪島市門前町浦上の緊急復旧（道路啓開）作業【#令和6年能登半島地震　道路啓開】\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen></iframe>",
+        "啓開作業等": "<iframe width=\"100%\" src=\"https://www.youtube.com/embed/gHBg1C3Sc8w\" title=\"国道249号輪島市門前町浦上の緊急復旧（道路啓開）作業【#令和6年能登半島地震　道路啓開】\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen></iframe>",
         "_markerType": "Icon",
         "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/538.png",
         "_iconSize": [
@@ -327,7 +327,7 @@
       "type": "Feature",
       "properties": {
         "name": "大谷トンネル被害状況調査",
-        "啓開作業等": "<iframe width=\"912\" height=\"513\" src=\"https://www.youtube.com/embed/spJdQDF14Ec\" title=\"国道249号大谷トンネルの崩落状況を調査【#令和6年能登半島地震　緊急復旧】\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen></iframe>",
+        "啓開作業等": "<iframe width=\"400px\" height=\"225px\" src=\"https://www.youtube.com/embed/spJdQDF14Ec\" title=\"国道249号大谷トンネルの崩落状況を調査【#令和6年能登半島地震　緊急復旧】\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen></iframe>",
         "_markerType": "Icon",
         "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/563.png",
         "_iconSize": [
