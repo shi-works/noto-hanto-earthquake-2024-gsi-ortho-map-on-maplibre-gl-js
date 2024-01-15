@@ -303,6 +303,18 @@
             overflow-y: auto;
         }
 
+        .custom-emergency-restored-section-popup .maplibregl-popup-content {
+            padding: 12px 15px;
+            font: 14px/16px Arial, Helvetica, sans-serif;
+            color: #333;
+            background: rgba(255, 255, 255, 0.9);
+            box-shadow: 0 1px 6px rgba(0, 0, 0, 0.75);
+            border-radius: 8px;
+            width: 300px;
+            height: 90px;
+            overflow-y: auto;
+        }
+
         .corner-text {
             position: fixed;
             top: 0;
@@ -2696,6 +2708,7 @@
             }
         });
 
+        /*
         // 被災状況（空撮）ポップアップ表示
         afterMap.on('click', 'damage_situation_aerial_photography-symbol', async (e) => {
             var lng = e.features[0].geometry.coordinates[0];
@@ -2717,6 +2730,7 @@
                 )
                 .addTo(afterMap);
         });
+        */
 
         // 復旧到達地点ポップアップ表示
         afterMap.on('click', 'recovery_point-symbol', async (e) => {
@@ -2728,6 +2742,26 @@
                 .setLngLat(e.lngLat)
                 .setHTML(
                     '<div style="border-bottom:1px solid #000;"><strong>name:' + name + '</strong></div>' +
+                    '<div><a href="https://www.google.com/maps?q=' + lat + ',' + lng + '&hl=ja" target="_blank">🌎Google Maps</a></div>' +
+                    '<div><a href="https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=' + lat + ',' + lng + '&hl=ja" target="_blank">📷Street View</a></div>'
+                )
+                .addTo(afterMap);
+        });
+
+        // 緊急復旧済み区間ポップアップ表示
+        afterMap.on('click', 'emergency_restored_section-line', async (e) => {
+            var lng = e.features[0].geometry.coordinates[0];
+            var lat = e.features[0].geometry.coordinates[1];
+            var name = e.features[0].properties['name'];
+            var length = e.features[0].properties['総延長'];
+            var source = e.features[0].properties['データ出典'];
+
+            new maplibregl.Popup({ className: 'custom-emergency-restored-section-popup' })
+                .setLngLat(e.lngLat)
+                .setHTML(
+                    '<div style="border-bottom:1px solid #000;"><strong>name:' + name + '</strong></div>' +
+                    '総延長：' + length + '<br>' +
+                    'データ出典：' + source +
                     '<div><a href="https://www.google.com/maps?q=' + lat + ',' + lng + '&hl=ja" target="_blank">🌎Google Maps</a></div>' +
                     '<div><a href="https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=' + lat + ',' + lng + '&hl=ja" target="_blank">📷Street View</a></div>'
                 )
