@@ -37,7 +37,7 @@ https://github.com/shi-works/noto-hanto-earthquake-2024-gsi-ortho-map-on-maplibr
 ### 国土交通省
 - 令和6年能登半島地震 道路復旧見える化マップ
     - 出典：https://www.mlit.go.jp/road/r6noto/index2.html
-    - 掲載情報：緊急復旧済み区間、復旧到達地点、啓開前・啓開後比較箇所、主な被災箇所、ETC2.0速度データ(平均速度)
+    - 掲載情報：緊急復旧済み区間、復旧到達地点、啓開作業状況、啓開前・啓開後比較箇所、主な被災箇所、ETC2.0速度データ(平均速度)
 
 ### 東京大学渡邉英徳研究室
 - 被災後のSAR画像：20240106撮影
