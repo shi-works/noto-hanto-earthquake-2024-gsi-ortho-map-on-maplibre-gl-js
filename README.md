@@ -75,6 +75,7 @@ https://github.com/shi-works/noto-hanto-earthquake-2024-gsi-ortho-map-on-maplibr
     - ライセンス：「[産総研地質調査総合センターウェブサイト利用規約](https://www.gsj.jp/license/license.html)」に従い、商用を含む自由な二次利用が可能です。この規約はCC BY 4.0と互換です。
 - 森林総合研究所 CS立体図(能登(石川県))
     - 出典：https://www2.ffpri.go.jp/soilmap/data-src.html
+    - ライセンス：[森林土壌デジタルマップ・利用規約](https://www2.ffpri.go.jp/soilmap/#)参照。
 
 ### 人口分布データ
 - 令和2年簡易100mメッシュ人口データ（石川県、富山県）（FlatGeobuf形式）
