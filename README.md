@@ -47,6 +47,8 @@ https://github.com/shi-works/noto-hanto-earthquake-2024-gsi-ortho-map-on-maplibr
     - 主な被災箇所：https://shi-works.github.io/noto-hanto-earthquake-2024-gsi-ortho-map-on-maplibre-gl-js/data/mlit/damaged_area.geojson
     - ETC2.0速度データ(平均速度)：https://shi-works.github.io/noto-hanto-earthquake-2024-gsi-ortho-map-on-maplibre-gl-js/data/mlit/ETC2.0_speed_data.geojson
 
+- 上記の公開データのライセンス：[リンク・著作権・免責事項（政府標準利用規約（第2.0版）準拠）](https://www.mlit.go.jp/link.html)
+
 ### 東京大学渡邉英徳研究室
 - 被災後のSAR画像：20240106撮影
     - 出典：https://github.com/wtnv-lab/20240102_Noto_Earthquake_SAR_Umbra/
