@@ -23,6 +23,7 @@ jobs:
           curl -o data/mlit/recovery_point.geojson https://www.mlit.go.jp/road/r6noto/map/json/recovery_point.geojson
           curl -o data/mlit/ETC2.0_speed_data.geojson https://www.mlit.go.jp/road/r6noto/map/json/ETC2.0_speed_data.geojson
           curl -o data/mlit/emergency_restored_section.geojson https://www.mlit.go.jp/road/r6noto/map/json/emergency_restored_section.geojson
+          curl -o data/mlit/sagyou.geojson https://www.mlit.go.jp/road/r6noto/map/json/sagyou.geojson
           curl -o data/mlit/img/usage_guide.png https://www.mlit.go.jp/road/r6noto/map/img/usage_guide.png
 
       - name: Commit and Push Changes
