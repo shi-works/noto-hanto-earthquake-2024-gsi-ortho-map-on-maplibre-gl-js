@@ -66,8 +66,10 @@ https://github.com/shi-works/noto-hanto-earthquake-2024-gsi-ortho-map-on-maplibr
 ### 背景地図及び地形データ
 - 国土地理院 最適化ベクトルタイル
     - 出典：https://github.com/gsi-cyberjapan/optimal_bvmap
+    - ライセンス：[国土地理院コンテンツ利用規約](https://www.gsi.go.jp/kikakuchousei/kikakuchousei40182.html)に従い、出典明示により、転載も含め使用可
 - 国土地理院 地理院タイル（陰影起伏図）
     - 出典：https://maps.gsi.go.jp/development/ichiran.html#hillshademap
+    - ライセンス：[国土地理院コンテンツ利用規約](https://www.gsi.go.jp/kikakuchousei/kikakuchousei40182.html)に従い、出典明示により、転載も含め使用可
 - 産業技術総合研究所 シームレス標高タイル（統合DEM）
     - 出典：https://tiles.gsj.jp/tiles/elev/tiles.html
 - 森林総合研究所 CS立体図(能登(石川県))
