@@ -261,6 +261,43 @@
             height: auto;
         }
 
+        .custom-sagyou-popup .maplibregl-popup-content {
+            padding: 12px 15px;
+            font: 14px/16px Arial, Helvetica, sans-serif;
+            color: #333;
+            background: rgba(255, 255, 255, 0.9);
+            box-shadow: 0 1px 6px rgba(0, 0, 0, 0.75);
+            border-radius: 8px;
+            width: 300px;
+            height: 350px;
+            overflow-y: auto;
+        }
+
+        .custom-sagyou-popup img {
+            width: 100%;
+            /* 画像の幅をポップアップの幅に合わせる */
+            height: auto;
+            /* 画像の高さはアスペクト比を保持して自動調整 */
+            object-fit: cover;
+            /* 画像をトリミングせずにフィットさせる */
+            margin-bottom: 10px;
+            /* 画像間の余白 */
+        }
+
+        .custom-sagyou-popup iframe {
+            width: 100%;
+            /* 動画の幅をポップアップの幅に合わせる */
+            height: auto;
+            /* 動画の高さを自動調整 */
+        }
+
+        .custom-sagyou-popup .maplibregl-popup-content .popup-image {
+            max-width: 100%;
+            max-height: 180px;
+            /* 画像の最大高さを設定 */
+            height: auto;
+        }
+
         .custom-damaged-area-popup .maplibregl-popup-content {
             padding: 12px 15px;
             font: 14px/16px Arial, Helvetica, sans-serif;
@@ -269,7 +306,7 @@
             box-shadow: 0 1px 6px rgba(0, 0, 0, 0.75);
             border-radius: 8px;
             width: 270px;
-            height: 50px;
+            height: 90px;
             overflow-y: auto;
         }
 
@@ -1682,6 +1719,84 @@
                 }
             });
 
+            // 啓開作業状況ソース
+            afterMap.addSource("sagyou", {
+                type: "geojson",
+                data: 'https://shi-works.github.io/noto-hanto-earthquake-2024-gsi-ortho-map-on-maplibre-gl-js/data/mlit/sagyou.geojson',
+                attribution: '<a href="https://www.mlit.go.jp/road/r6noto/index2.html" target="_blank">令和6年能登半島地震 道路復旧見える化マップ(国土交通省)</a>',
+            });
+
+            // PNGソース追加
+            afterMap.loadImage('https://maps.gsi.go.jp/portal/sys/v4/symbols/482.png',
+                function (error, image) {
+                    if (error) throw error;
+                    afterMap.addImage('sagyou_symbol_482', image);
+                }
+            );
+
+            // PNGソース追加
+            afterMap.loadImage('https://maps.gsi.go.jp/portal/sys/v4/symbols/494.png',
+                function (error, image) {
+                    if (error) throw error;
+                    afterMap.addImage('sagyou_symbol_494', image);
+                }
+            );
+
+            // PNGソース追加
+            afterMap.loadImage('https://maps.gsi.go.jp/portal/sys/v4/symbols/538.png',
+                function (error, image) {
+                    if (error) throw error;
+                    afterMap.addImage('sagyou_symbol_538', image);
+                }
+            );
+
+            // PNGソース追加
+            afterMap.loadImage('https://maps.gsi.go.jp/portal/sys/v4/symbols/563.png',
+                function (error, image) {
+                    if (error) throw error;
+                    afterMap.addImage('sagyou_symbol_563', image);
+                }
+            );
+
+            // PNGソース追加
+            afterMap.loadImage('https://maps.gsi.go.jp/portal/sys/v4/symbols/570.png',
+                function (error, image) {
+                    if (error) throw error;
+                    afterMap.addImage('sagyou_symbol_570', image);
+                }
+            );
+
+            // 啓開作業状況シンボルレイヤ
+            afterMap.addLayer({
+                'id': 'sagyou-symbol',
+                "type": "symbol",
+                'source': 'sagyou',
+                minzoom: 1,
+                maxzoom: 23,
+                "layout": {
+                    'icon-image': [
+                        'match',
+                        ['get', '_iconUrl'],
+                        'https://maps.gsi.go.jp/portal/sys/v4/symbols/482.png', 'sagyou_symbol_482',
+                        'https://maps.gsi.go.jp/portal/sys/v4/symbols/494.png', 'sagyou_symbol_494',
+                        'https://maps.gsi.go.jp/portal/sys/v4/symbols/538.png', 'sagyou_symbol_538',
+                        'https://maps.gsi.go.jp/portal/sys/v4/symbols/563.png', 'sagyou_symbol_563',
+                        'https://maps.gsi.go.jp/portal/sys/v4/symbols/570.png', 'sagyou_symbol_570',
+                        'sagyou_symbol_482'
+                    ],
+                    "icon-size": [
+                        'interpolate',
+                        ['linear'],
+                        ['zoom'],
+                        1, 0.1,  // ズームレベル1でサイズは0.1
+                        12, 1.2  // ズームレベル12でサイズは1.2
+                    ],
+                    "icon-allow-overlap": true, // シンボルの重なりを許可
+                    'visibility': 'none'
+                }
+            });
+
+
             // 復旧到達地点ソース
             afterMap.addSource("recovery_point", {
                 type: "geojson",
@@ -1713,7 +1828,6 @@
                 minzoom: 1,
                 maxzoom: 23,
                 "layout": {
-                    'icon-image': 'recovery_point_087',
                     'icon-image': [
                         'match',
                         ['get', '_iconUrl'],
@@ -2233,6 +2347,7 @@
                 afterMap.setLayoutProperty('emergency_restored_section-line', 'visibility', 'visible');
                 afterMap.setLayoutProperty('ETC2.0_speed_data-line', 'visibility', 'visible');
                 afterMap.setLayoutProperty('before_after-symbol', 'visibility', 'visible');
+                afterMap.setLayoutProperty('sagyou-symbol', 'visibility', 'visible');
                 afterMap.setLayoutProperty('recovery_point-symbol', 'visibility', 'visible');
                 afterMap.setLayoutProperty('damaged_area-symbol', 'visibility', 'visible');
                 afterMap.setLayoutProperty('damage_situation_aerial_photography-symbol', 'visibility', 'visible');
@@ -2243,6 +2358,7 @@
                 afterMap.setLayoutProperty('emergency_restored_section-line', 'visibility', 'none');
                 afterMap.setLayoutProperty('ETC2.0_speed_data-line', 'visibility', 'none');
                 afterMap.setLayoutProperty('before_after-symbol', 'visibility', 'none');
+                afterMap.setLayoutProperty('sagyou-symbol', 'visibility', 'none');
                 afterMap.setLayoutProperty('recovery_point-symbol', 'visibility', 'none');
                 afterMap.setLayoutProperty('damaged_area-symbol', 'visibility', 'none');
                 afterMap.setLayoutProperty('damage_situation_aerial_photography-symbol', 'visibility', 'none');
@@ -2678,6 +2794,53 @@
                 .addTo(afterMap);
         });
 
+        // 啓開作業状況ポップアップ表示
+        afterMap.on('click', 'sagyou-symbol', async (e) => {
+            var lng = e.features[0].geometry.coordinates[0];
+            var lat = e.features[0].geometry.coordinates[1];
+            var name = e.features[0].properties['name'];
+
+            var keikaiValue = e.features[0].properties['啓開作業等'];
+            var parser = new DOMParser();
+            var doc = parser.parseFromString(keikaiValue, 'text/html');
+
+            var contentHtml = '';
+
+            if (doc.querySelector('iframe')) { // 動画の場合
+                var iframeSrc = doc.querySelector('iframe').src;
+                contentHtml = '<iframe src="' + iframeSrc + '" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe>';
+            } else {
+                // すべての画像を取得
+                var images = doc.querySelectorAll('img');
+
+                // ベースURL
+                var baseUrl = "https://www.mlit.go.jp/road/r6noto/map/";
+
+                // すべての画像を処理
+                images.forEach(img => {
+                    var relativeSrc = img.getAttribute('src');
+                    // 相対パスから'./'を取り除く
+                    if (relativeSrc.startsWith('./')) {
+                        relativeSrc = relativeSrc.substring(2);
+                    }
+                    var imgSrc = baseUrl + relativeSrc;
+                    contentHtml += '<a href="' + imgSrc + '" target="_blank"><img src="' + imgSrc + '" alt="画像" style="max-width:100%;height:auto;"></a>';
+                });
+            }
+
+            // ポップアップを作成
+            new maplibregl.Popup({ className: 'custom-sagyou-popup' })
+                .setLngLat(e.lngLat)
+                .setHTML(
+                    '<div style="border-bottom:1px solid #000;"><strong>name:' + name + '</strong></div>' +
+                    '啓開作業等：' + '<br>' +
+                    contentHtml +
+                    '<div><a href="https://www.google.com/maps?q=' + lat + ',' + lng + '&hl=ja" target="_blank">🌎Google Maps</a></div>' +
+                    '<div><a href="https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=' + lat + ',' + lng + '&hl=ja" target="_blank">📷Street View</a></div>'
+                )
+                .addTo(afterMap);
+        });
+
         // 主な被災箇所ポップアップ表示
         afterMap.on('click', 'damaged_area-symbol', async (e) => {
             var lng = e.features[0].geometry.coordinates[0];
@@ -2693,7 +2856,9 @@
                     .setHTML(
                         '<div style="border-bottom:1px solid #000;"><strong>name:' + name + '</strong></div>' +
                         '路線名：' + rosen + '<br>' +
-                        '被災規模：' + damaged
+                        '被災規模：' + damaged +
+                        '<div><a href="https://www.google.com/maps?q=' + lat + ',' + lng + '&hl=ja" target="_blank">🌎Google Maps</a></div>' +
+                        '<div><a href="https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=' + lat + ',' + lng + '&hl=ja" target="_blank">📷Street View</a></div>'
                     )
                     .addTo(afterMap);
             } else if (damaged === undefined) {
@@ -2702,7 +2867,9 @@
                     .setHTML(
                         '<div style="border-bottom:1px solid #000;"><strong>name:' + name + '</strong></div>' +
                         '路線名：' + rosen + '<br>' +
-                        '地名（推定）：' + chimei
+                        '地名（推定）：' + chimei +
+                        '<div><a href="https://www.google.com/maps?q=' + lat + ',' + lng + '&hl=ja" target="_blank">🌎Google Maps</a></div>' +
+                        '<div><a href="https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=' + lat + ',' + lng + '&hl=ja" target="_blank">📷Street View</a></div>'
                     )
                     .addTo(afterMap);
             }
