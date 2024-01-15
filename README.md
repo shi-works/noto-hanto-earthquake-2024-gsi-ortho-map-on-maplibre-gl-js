@@ -38,7 +38,8 @@ https://github.com/shi-works/noto-hanto-earthquake-2024-gsi-ortho-map-on-maplibr
 - 令和6年能登半島地震 道路復旧見える化マップ
     - 出典：https://www.mlit.go.jp/road/r6noto/index2.html
     - 掲載情報：緊急復旧済み区間、復旧到達地点、啓開作業状況、啓開前・啓開後比較箇所、主な被災箇所、ETC2.0速度データ(平均速度)
-    - GeoJSON形式のデータを国交省のサーバよりダウンロードして、GitHub Pagesでホストしています。データは1時間毎に更新されます。
+    - GeoJSON形式のデータを国交省のサーバよりダウンロードして、GitHub Pagesでホストしています。
+    - データは1時間毎に更新されます。
     - 緊急復旧済み区間：https://shi-works.github.io/noto-hanto-earthquake-2024-gsi-ortho-map-on-maplibre-gl-js/data/mlit/emergency_restored_section.geojson
     - 復旧到達地点：https://shi-works.github.io/noto-hanto-earthquake-2024-gsi-ortho-map-on-maplibre-gl-js/data/mlit/recovery_point.geojson
     - 啓開作業状況：https://shi-works.github.io/noto-hanto-earthquake-2024-gsi-ortho-map-on-maplibre-gl-js/data/mlit/sagyou.geojson
