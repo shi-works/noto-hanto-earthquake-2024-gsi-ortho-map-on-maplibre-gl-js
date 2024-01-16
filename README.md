@@ -79,7 +79,7 @@ https://github.com/shi-works/noto-hanto-earthquake-2024-gsi-ortho-map-on-maplibr
     - ライセンス：[森林土壌デジタルマップ・利用規約](https://www2.ffpri.go.jp/soilmap/#)参照。
 
 ### 人口分布データ
-- 令和2年簡易100mメッシュ人口データ（石川県、富山県）（FlatGeobuf形式）
+- 令和2年簡易100mメッシュ人口データ（石川県、富山県）（PMTiles形式）
     - 出典：https://github.com/shi-works/noto-hanto-earthquake-2024-100m-mesh-pop-data
         - 原初データ出典：[地域分析に有用なデータの提供, 地域・交通データ研究所代表（東京大学空間情報科学研究センター客員研究員）西澤明](https://gtfs-gis.jp/teikyo/index.html)
     - 概要：地域・交通データ研究所にて公開されている令和2年簡易100mメッシュ人口データをFlatGeobuf形式に変換したデータです。
