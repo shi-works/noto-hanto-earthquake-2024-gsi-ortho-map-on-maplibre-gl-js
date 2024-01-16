@@ -308,7 +308,8 @@
         "type": "Point",
         "coordinates": [
           136.803262,
-          37.314787
+          37.314787,
+          48.6
         ]
       }
     },
@@ -333,7 +334,8 @@
         "type": "Point",
         "coordinates": [
           136.830521,
-          37.341134
+          37.341134,
+          135
         ]
       }
     },
@@ -358,7 +360,8 @@
         "type": "Point",
         "coordinates": [
           136.926016,
-          37.395066
+          37.395066,
+          8.3
         ]
       }
     },
@@ -383,7 +386,8 @@
         "type": "Point",
         "coordinates": [
           136.92877,
-          37.396021
+          37.396021,
+          11.9
         ]
       }
     },
@@ -408,7 +412,8 @@
         "type": "Point",
         "coordinates": [
           137.019432,
-          37.432797
+          37.432797,
+          4
         ]
       }
     },
@@ -433,7 +438,8 @@
         "type": "Point",
         "coordinates": [
           137.018349,
-          37.432969
+          37.432969,
+          1.5
         ]
       }
     },
@@ -458,7 +464,183 @@
         "type": "Point",
         "coordinates": [
           136.794894,
-          37.340972
+          37.340972,
+          133.2
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "国道249号輪島市縄又付近",
+        "啓開前": "<img width=\"100%\" src=\"./img/before_after/240106_R249_nawamata2.png\">",
+        "啓開後": "<img width=\"100%\" src=\"./img/before_after/240107_R249_nawamata2.png\">",
+        "_markerType": "Icon",
+        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/482.png",
+        "_iconSize": [
+          30,
+          30
+        ],
+        "_iconAnchor": [
+          15,
+          15
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.848367,
+          37.344952
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "国道249号輪島市縄又付近",
+        "啓開前": "<img width=\"100%\" src=\"./img/before_after/240106_R249_nawamata3.png\">",
+        "啓開後": "<img width=\"100%\" src=\"./img/before_after/240111_R249_nawamata3.png\">",
+        "_markerType": "Icon",
+        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/482.png",
+        "_iconSize": [
+          30,
+          30
+        ],
+        "_iconAnchor": [
+          15,
+          15
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.845222,
+          37.343598
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "国道249号輪島市深見付近",
+        "啓開前": "<img width=\"100%\" src=\"./img/before_after/240113_R249_fukami2.png\">",
+        "啓開後": "<img width=\"100%\" src=\"./img/before_after/240114_R249_fukami2.png\">",
+        "_markerType": "Icon",
+        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/482.png",
+        "_iconSize": [
+          30,
+          30
+        ],
+        "_iconAnchor": [
+          15,
+          15
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.963877,
+          37.410886
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "県道285号珠洲市若山町鈴内付近",
+        "啓開前": "<img width=\"100%\" src=\"./img/before_after/240107_K285_suzunai2.png\">",
+        "啓開後": "<img width=\"100%\" src=\"./img/before_after/240112_K285_suzunai2.png\">",
+        "_markerType": "Icon",
+        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/482.png",
+        "_iconSize": [
+          30,
+          30
+        ],
+        "_iconAnchor": [
+          15,
+          15
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.232245,
+          37.477413
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "県道285号珠洲市若山町鈴内付近",
+        "啓開前": "<img width=\"100%\" src=\"./img/before_after/240112_K285_suzunai3.png\">",
+        "啓開後": "<img width=\"100%\" src=\"./img/before_after/240112_K285_suzunai3-2.png\">",
+        "_markerType": "Icon",
+        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/482.png",
+        "_iconSize": [
+          30,
+          30
+        ],
+        "_iconAnchor": [
+          15,
+          15
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.232529,
+          37.477743
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "珠洲広域農道珠洲市若山町延武付近",
+        "啓開前": "<img width=\"100%\" src=\"./img/before_after/240111_suzukoikinodo_nobutake.png\">",
+        "啓開後": "<img width=\"100%\" src=\"./img/before_after/240115_suzukoikinodo_nobutake.png\">",
+        "_markerType": "Icon",
+        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/482.png",
+        "_iconSize": [
+          30,
+          30
+        ],
+        "_iconAnchor": [
+          15,
+          15
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.21724,
+          37.459107
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "県道277号珠洲市里町付近",
+        "啓開前": "<img width=\"100%\" src=\"./img/before_after/240112_K277_sato.png\">",
+        "啓開後": "<img width=\"100%\" src=\"./img/before_after/240113_K277_sato.png\">",
+        "_markerType": "Icon",
+        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/482.png",
+        "_iconSize": [
+          30,
+          30
+        ],
+        "_iconAnchor": [
+          15,
+          15
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.039426,
+          37.424575
         ]
       }
     }
