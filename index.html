@@ -415,6 +415,7 @@
             <option value="20240102">空中写真(2024年01月02日撮影)</option>
             <option value="20240105">空中写真(2024年01月05日撮影)</option>
             <option value="20240111">空中写真(2024年01月11日撮影)</option>
+            <option value="20240114">空中写真(2024年01月14日撮影)</option>
             <option value="20240106">SAR画像(2024年01月06日撮影)</option>
         </select>
     </div>
@@ -424,7 +425,7 @@
         <input type="checkbox" id="populationLayerCheckbox">
         <label for="populationLayerCheckbox">令和2年100mﾒｯｼｭ人口(石川県・富山県)</label><br>
         <input type="checkbox" id="IsolatedAreaLayerCheckbox">
-        <label for="IsolatedAreaLayerCheckbox">石川県孤立集落人数(1/13時点)</label><br>
+        <label for="IsolatedAreaLayerCheckbox">石川県孤立集落人数(1/15時点)</label><br>
         <input type="checkbox" id="OpenShelterNanaoshiLayerCheckbox">
         <label for="OpenShelterNanaoshiLayerCheckbox">石川県七尾市避難所開設情報</label>
     </div>
@@ -594,13 +595,13 @@
 
         // 孤立集落人数色分け用のフィルタ準備
         let i1 = ["all", [">=", ['to-number', ["get", "number"]], 0], ["<", ['to-number', ["get", "number"]], 1]];
-        let i2 = ["all", [">=", ['to-number', ["get", "number"]], 1], ["<", ['to-number', ["get", "number"]], 50]];
-        let i3 = ["all", [">=", ['to-number', ["get", "number"]], 50], ["<", ['to-number', ["get", "number"]], 100]];
-        let i4 = ["all", [">=", ['to-number', ["get", "number"]], 100], ["<", ['to-number', ["get", "number"]], 150]];
-        let i5 = ["all", [">=", ['to-number', ["get", "number"]], 150], ["<", ['to-number', ["get", "number"]], 200]];
-        let i6 = ["all", [">=", ['to-number', ["get", "number"]], 200], ["<", ['to-number', ["get", "number"]], 250]];
-        let i7 = ["all", [">=", ['to-number', ["get", "number"]], 250], ["<", ['to-number', ["get", "number"]], 300]];
-        let i8 = ["all", [">=", ['to-number', ["get", "number"]], 300], ["<", ['to-number', ["get", "number"]], 1000000]];
+        let i2 = ["all", [">=", ['to-number', ["get", "number"]], 1], ["<", ['to-number', ["get", "number"]], 20]];
+        let i3 = ["all", [">=", ['to-number', ["get", "number"]], 20], ["<", ['to-number', ["get", "number"]], 40]];
+        let i4 = ["all", [">=", ['to-number', ["get", "number"]], 40], ["<", ['to-number', ["get", "number"]], 60]];
+        let i5 = ["all", [">=", ['to-number', ["get", "number"]], 60], ["<", ['to-number', ["get", "number"]], 80]];
+        let i6 = ["all", [">=", ['to-number', ["get", "number"]], 80], ["<", ['to-number', ["get", "number"]], 100]];
+        let i7 = ["all", [">=", ['to-number', ["get", "number"]], 100], ["<", ['to-number', ["get", "number"]], 150]];
+        let i8 = ["all", [">=", ['to-number', ["get", "number"]], 150], ["<", ['to-number', ["get", "number"]], 1000000]];
 
         // 孤立集落人数色分け用色の準備
         let isolated_colors = [
@@ -669,6 +670,72 @@
             afterMap.setTerrain({ 'source': 'aist-dem', 'exaggeration': 1 });
 
             var opacity_value = 1;
+
+            // 令和6年能登半島地震 輪島東地区　正射画像（2024年1月14日撮影）ソース
+            afterMap.addSource("wazimahigashi-0114", {
+                type: 'raster',
+                tiles: [
+                    'https://maps.gsi.go.jp/xyz/20240102noto_wazimahigashi_0114do/{z}/{x}/{y}.png',
+                ],
+                attribution: '<a href="https://maps.gsi.go.jp/development/ichiran.html" target="_blank">地理院タイル</a>'
+            });
+
+            // 令和6年能登半島地震 輪島東地区　正射画像（2024年1月14日撮影）レイヤ
+            afterMap.addLayer({
+                id: "wazimahigashi-0114",
+                type: "raster",
+                source: "wazimahigashi-0114",
+                paint: {
+                    "raster-opacity": opacity_value
+                },
+                layout: {
+                    'visibility': 'none'
+                }
+            });
+
+            // 令和6年能登半島地震 穴水地区　正射画像（2024年1月14日撮影）ソース
+            afterMap.addSource("anamizu_0114", {
+                type: 'raster',
+                tiles: [
+                    'https://maps.gsi.go.jp/xyz/20240102noto_anamizu_0114do/{z}/{x}/{y}.png',
+                ],
+                attribution: '<a href="https://maps.gsi.go.jp/development/ichiran.html" target="_blank">地理院タイル</a>'
+            });
+
+            // 令和6年能登半島地震 穴水地区　正射画像（2024年1月14日撮影）レイヤ
+            afterMap.addLayer({
+                id: "anamizu_0114",
+                type: "raster",
+                source: "anamizu_0114",
+                paint: {
+                    "raster-opacity": opacity_value
+                },
+                layout: {
+                    'visibility': 'none'
+                }
+            });
+
+            // 令和6年能登半島地震 珠洲地区　正射画像（2024年1月14日撮影）ソース
+            afterMap.addSource("suzu_0114", {
+                type: 'raster',
+                tiles: [
+                    'https://maps.gsi.go.jp/xyz/20240102noto_suzu_0114do/{z}/{x}/{y}.png',
+                ],
+                attribution: '<a href="https://maps.gsi.go.jp/development/ichiran.html" target="_blank">地理院タイル</a>'
+            });
+
+            // 令和6年能登半島地震 珠洲地区　正射画像（2024年1月14日撮影）レイヤ
+            afterMap.addLayer({
+                id: "suzu_0114",
+                type: "raster",
+                source: "suzu_0114",
+                paint: {
+                    "raster-opacity": opacity_value
+                },
+                layout: {
+                    'visibility': 'none'
+                }
+            });
 
             // 令和6年能登半島地震 輪島中地区　正射画像（2024年1月11日撮影）ソース
             afterMap.addSource("wazimanaka-0111", {
@@ -1480,8 +1547,8 @@
             // 石川県 孤立集落人数ポリゴンソース
             afterMap.addSource("Number_of_isolated_area", {
                 type: "geojson",
-                data: './data/Number_of_isolated_area0113_EPSG4326.geojson',
-                attribution: '<a href="https://www.pref.ishikawa.lg.jp/saigai/202401jishin-taisakuhonbu.html#honbu" target="_blank">石川県 災害対策本部員会議資料（孤立集落人数 1月13日時点）</a>',
+                data: './data/Number_of_isolated_area0115_EPSG4326.geojson',
+                attribution: '<a href="https://www.pref.ishikawa.lg.jp/saigai/202401jishin-taisakuhonbu.html#honbu" target="_blank">石川県 災害対策本部員会議資料（孤立集落人数 1月15日時点）</a>',
             });
 
             // 石川県 孤立集落人数ポリゴンレイヤ
@@ -1590,8 +1657,8 @@
             // 石川県 孤立集落人数重心ソース
             afterMap.addSource("Number_of_isolated_area_centroid", {
                 type: "geojson",
-                data: './data/Number_of_isolated_area0113_centroid_EPSG4326.geojson',
-                attribution: '<a href="https://www.pref.ishikawa.lg.jp/saigai/202401jishin-taisakuhonbu.html#honbu" target="_blank">石川県 災害対策本部員会議資料（孤立集落人数 1月13日時点）</a>',
+                data: './data/Number_of_isolated_area0115_centroid_EPSG4326.geojson',
+                attribution: '<a href="https://www.pref.ishikawa.lg.jp/saigai/202401jishin-taisakuhonbu.html#honbu" target="_blank">石川県 災害対策本部員会議資料（孤立集落人数 1月15日時点）</a>',
             });
 
             // 石川県 孤立集落人数ラベルレイヤ
@@ -2147,6 +2214,21 @@
                 parseInt(e.target.value, 10) / 100
             );
             afterMap.setPaintProperty(
+                'wazimahigashi-0114',
+                'raster-opacity',
+                parseInt(e.target.value, 10) / 100
+            );
+            afterMap.setPaintProperty(
+                'anamizu_0114',
+                'raster-opacity',
+                parseInt(e.target.value, 10) / 100
+            );
+            afterMap.setPaintProperty(
+                'suzu_0114',
+                'raster-opacity',
+                parseInt(e.target.value, 10) / 100
+            );
+            afterMap.setPaintProperty(
                 '2024-01-06-00-17-46_UMBRA-06_GEC',
                 'raster-opacity',
                 parseInt(e.target.value, 10) / 100
@@ -2240,6 +2322,9 @@
                 afterMap.setLayoutProperty('wazimanaka-0111', 'visibility', 'none');
                 afterMap.setLayoutProperty('wazimanishi-0111', 'visibility', 'none');
                 afterMap.setLayoutProperty('anamizu-0111', 'visibility', 'none');
+                afterMap.setLayoutProperty('wazimahigashi-0114', 'visibility', 'none');
+                afterMap.setLayoutProperty('anamizu_0114', 'visibility', 'none');
+                afterMap.setLayoutProperty('suzu_0114', 'visibility', 'none');
                 afterMap.setLayoutProperty('2024-01-06-00-17-46_UMBRA-06_GEC', 'visibility', 'none');
                 afterMap.setLayoutProperty('2024-01-06-00-25-02_UMBRA-05_GEC', 'visibility', 'none');
                 afterMap.setLayoutProperty('2024-01-06-00-25-36_UMBRA-05_GEC', 'visibility', 'none');
@@ -2262,6 +2347,9 @@
                 afterMap.setLayoutProperty('wazimanaka-0111', 'visibility', 'none');
                 afterMap.setLayoutProperty('wazimanishi-0111', 'visibility', 'none');
                 afterMap.setLayoutProperty('anamizu-0111', 'visibility', 'none');
+                afterMap.setLayoutProperty('wazimahigashi-0114', 'visibility', 'none');
+                afterMap.setLayoutProperty('anamizu_0114', 'visibility', 'none');
+                afterMap.setLayoutProperty('suzu_0114', 'visibility', 'none');
                 afterMap.setLayoutProperty('2024-01-06-00-17-46_UMBRA-06_GEC', 'visibility', 'none');
                 afterMap.setLayoutProperty('2024-01-06-00-25-02_UMBRA-05_GEC', 'visibility', 'none');
                 afterMap.setLayoutProperty('2024-01-06-00-25-36_UMBRA-05_GEC', 'visibility', 'none');
@@ -2284,6 +2372,34 @@
                 afterMap.setLayoutProperty('wazimanaka-0111', 'visibility', 'visible');
                 afterMap.setLayoutProperty('wazimanishi-0111', 'visibility', 'visible');
                 afterMap.setLayoutProperty('anamizu-0111', 'visibility', 'visible');
+                afterMap.setLayoutProperty('wazimahigashi-0114', 'visibility', 'none');
+                afterMap.setLayoutProperty('anamizu_0114', 'visibility', 'none');
+                afterMap.setLayoutProperty('suzu_0114', 'visibility', 'none');
+                afterMap.setLayoutProperty('2024-01-06-00-17-46_UMBRA-06_GEC', 'visibility', 'none');
+                afterMap.setLayoutProperty('2024-01-06-00-25-02_UMBRA-05_GEC', 'visibility', 'none');
+                afterMap.setLayoutProperty('2024-01-06-00-25-36_UMBRA-05_GEC', 'visibility', 'none');
+                afterMap.setLayoutProperty('2024-01-06-00-26-09_UMBRA-05_GEC', 'visibility', 'none');
+                afterMap.setLayoutProperty('2024-01-06-00-26-38_UMBRA-05_GEC', 'visibility', 'none');
+                afterMap.setLayoutProperty('2024-01-06-00-58-32_UMBRA-04_GEC', 'visibility', 'none');
+                afterMap.setLayoutProperty('2024-01-06-00-59-09_UMBRA-04_GEC', 'visibility', 'none');
+                afterMap.setLayoutProperty('2024-01-06-01-40-36_UMBRA-07_GEC', 'visibility', 'none');
+                afterMap.setLayoutProperty('2024-01-06-01-41-14_UMBRA-07_GEC', 'visibility', 'none');
+                afterMap.setLayoutProperty('2024-01-06-11-34-13_UMBRA-04_GEC', 'visibility', 'none');
+                afterMap.setLayoutProperty('2024-01-06-11-34-47_UMBRA-04_GEC', 'visibility', 'none');
+            } else if (OrthoName === '20240114') {
+                afterMap.setLayoutProperty('wazimahigashi-0102', 'visibility', 'none');
+                afterMap.setLayoutProperty('wazimanaka-0102', 'visibility', 'none');
+                afterMap.setLayoutProperty('suzu-0102', 'visibility', 'none');
+                afterMap.setLayoutProperty('nanao-0105', 'visibility', 'none');
+                afterMap.setLayoutProperty('anamizu-0105', 'visibility', 'none');
+                afterMap.setLayoutProperty('wazimanaka-0105', 'visibility', 'none');
+                afterMap.setLayoutProperty('suzu-0105', 'visibility', 'none');
+                afterMap.setLayoutProperty('wazimanaka-0111', 'visibility', 'none');
+                afterMap.setLayoutProperty('wazimanishi-0111', 'visibility', 'none');
+                afterMap.setLayoutProperty('anamizu-0111', 'visibility', 'none');
+                afterMap.setLayoutProperty('wazimahigashi-0114', 'visibility', 'visible');
+                afterMap.setLayoutProperty('anamizu_0114', 'visibility', 'visible');
+                afterMap.setLayoutProperty('suzu_0114', 'visibility', 'visible');
                 afterMap.setLayoutProperty('2024-01-06-00-17-46_UMBRA-06_GEC', 'visibility', 'none');
                 afterMap.setLayoutProperty('2024-01-06-00-25-02_UMBRA-05_GEC', 'visibility', 'none');
                 afterMap.setLayoutProperty('2024-01-06-00-25-36_UMBRA-05_GEC', 'visibility', 'none');
@@ -2306,6 +2422,9 @@
                 afterMap.setLayoutProperty('wazimanaka-0111', 'visibility', 'none');
                 afterMap.setLayoutProperty('wazimanishi-0111', 'visibility', 'none');
                 afterMap.setLayoutProperty('anamizu-0111', 'visibility', 'none');
+                afterMap.setLayoutProperty('wazimahigashi-0114', 'visibility', 'none');
+                afterMap.setLayoutProperty('anamizu_0114', 'visibility', 'none');
+                afterMap.setLayoutProperty('suzu_0114', 'visibility', 'none');
                 afterMap.setLayoutProperty('2024-01-06-00-17-46_UMBRA-06_GEC', 'visibility', 'visible');
                 afterMap.setLayoutProperty('2024-01-06-00-25-02_UMBRA-05_GEC', 'visibility', 'visible');
                 afterMap.setLayoutProperty('2024-01-06-00-25-36_UMBRA-05_GEC', 'visibility', 'visible');
@@ -2597,6 +2716,8 @@
             var number_0111 = e.features[0].properties['人数_1/11_15時現在'];
             var number_0112 = e.features[0].properties['人数_1/12_15時現在'];
             var number_0113 = e.features[0].properties['人数_1/13_15時現在'];
+            var number_0114 = e.features[0].properties['人数_1/14_15時現在'];
+            var number_0115 = e.features[0].properties['人数_1/15_15時現在'];
 
             if (number_0107 === undefined) { number_0107 = "-" };
             if (number_0108 === undefined) { number_0108 = "-" };
@@ -2605,6 +2726,8 @@
             if (number_0111 === undefined) { number_0111 = "-" };
             if (number_0112 === undefined) { number_0112 = "-" };
             if (number_0113 === undefined) { number_0113 = "-" };
+            if (number_0114 === undefined) { number_0113 = "-" };
+            if (number_0115 === undefined) { number_0113 = "-" };
 
             new maplibregl.Popup()
                 .setLngLat(e.lngLat)
@@ -2655,8 +2778,16 @@
                     '<td>孤立集落人数(1/13_15時現在)：</td>' +
                     '<td><b>' + number_0113 + '人' + '</b></td>' +
                     '</tr>' +
+                    '<tr>' +
+                    '<td>孤立集落人数(1/14_15時現在)：</td>' +
+                    '<td><b>' + number_0114 + '人' + '</b></td>' +
+                    '</tr>' +
+                    '<tr>' +
+                    '<td>孤立集落人数(1/15_15時現在)：</td>' +
+                    '<td><b>' + number_0115 + '人' + '</b></td>' +
+                    '</tr>' +
                     '</table>' +
-                    '出典）' + '<a href="https://www.pref.ishikawa.lg.jp/saigai/202401jishin-taisakuhonbu.html#honbu">石川県 災害対策本部員会議資料（1月13日）</a>'
+                    '出典）' + '<a href="https://www.pref.ishikawa.lg.jp/saigai/202401jishin-taisakuhonbu.html#honbu">石川県 災害対策本部員会議資料（1月15日）</a>'
                 )
                 .addTo(afterMap);
         });
