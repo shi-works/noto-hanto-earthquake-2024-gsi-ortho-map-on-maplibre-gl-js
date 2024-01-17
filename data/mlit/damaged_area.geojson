@@ -6,6 +6,106 @@
       "properties": {
         "name": "復旧済（国道249号）",
         "路線名": "国道249号",
+        "地名（推定）": "輪島市深見町",
+        "_markerType": "Icon",
+        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/699.png",
+        "_iconSize": [
+          20,
+          20
+        ],
+        "_iconAnchor": [
+          10,
+          10
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.964407,
+          37.411056
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "復旧済（国道249号）",
+        "路線名": "国道249号",
+        "地名（推定）": "輪島市深見町",
+        "_markerType": "Icon",
+        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/699.png",
+        "_iconSize": [
+          20,
+          20
+        ],
+        "_iconAnchor": [
+          10,
+          10
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.965501,
+          37.411363
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "復旧済（国道249号）",
+        "路線名": "国道249号",
+        "地名（推定）": "輪島市深見町",
+        "_markerType": "Icon",
+        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/699.png",
+        "_iconSize": [
+          20,
+          20
+        ],
+        "_iconAnchor": [
+          10,
+          10
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.96739,
+          37.410869
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "復旧済（国道249号）",
+        "路線名": "国道249号",
+        "地名（推定）": "輪島市深見町",
+        "_markerType": "Icon",
+        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/699.png",
+        "_iconSize": [
+          20,
+          20
+        ],
+        "_iconAnchor": [
+          10,
+          10
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.97064,
+          37.410511
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "復旧済（国道249号）",
+        "路線名": "国道249号",
         "地名（推定）": "志賀町草江",
         "_markerType": "Icon",
         "_iconUrl": "https://www.jartic-ri2maps.org/symbols/699.png",
@@ -697,106 +797,6 @@
         "coordinates": [
           136.916513,
           37.394403
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "⑲打越１",
-        "路線名": "国道249号",
-        "被災規模": "小～中",
-        "_markerType": "Icon",
-        "_iconUrl": "https://www.jartic-ri2maps.org/symbols/096.png",
-        "_iconSize": [
-          20,
-          20
-        ],
-        "_iconAnchor": [
-          10,
-          10
-        ]
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          136.9674,
-          37.410886
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "⑳打越２",
-        "路線名": "国道249号",
-        "被災規模": "小～中",
-        "_markerType": "Icon",
-        "_iconUrl": "https://www.jartic-ri2maps.org/symbols/096.png",
-        "_iconSize": [
-          20,
-          20
-        ],
-        "_iconAnchor": [
-          10,
-          10
-        ]
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          136.965491,
-          37.411363
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "㉑打越３",
-        "路線名": "国道249号",
-        "被災規模": "小～中",
-        "_markerType": "Icon",
-        "_iconUrl": "https://www.jartic-ri2maps.org/symbols/096.png",
-        "_iconSize": [
-          20,
-          20
-        ],
-        "_iconAnchor": [
-          10,
-          10
-        ]
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          136.964386,
-          37.411039
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "⑱大谷内",
-        "路線名": "国道249号",
-        "被災規模": "小～中",
-        "_markerType": "Icon",
-        "_iconUrl": "https://www.jartic-ri2maps.org/symbols/096.png",
-        "_iconSize": [
-          20,
-          20
-        ],
-        "_iconAnchor": [
-          10,
-          10
-        ]
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          136.970651,
-          37.410519
         ]
       }
     },

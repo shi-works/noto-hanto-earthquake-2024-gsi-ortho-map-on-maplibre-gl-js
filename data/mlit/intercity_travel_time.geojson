@@ -33,6 +33,10 @@
         "_iconSize": [
           40,
           40
+        ],
+        "_iconAnchor": [
+          20,
+          20
         ]
       },
       "geometry": {
@@ -47,12 +51,40 @@
     {
       "type": "Feature",
       "properties": {
+        "name": "輪島市",
+        "_markerType": "Icon",
+        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/088.png",
+        "_iconSize": [
+          40,
+          40
+        ],
+        "_iconAnchor": [
+          20,
+          20
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.904648,
+          37.393696,
+          0
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "name": "七尾市（徳田大津）",
         "_markerType": "Icon",
         "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/088.png",
         "_iconSize": [
           40,
           40
+        ],
+        "_iconAnchor": [
+          20,
+          20
         ]
       },
       "geometry": {
@@ -73,6 +105,10 @@
         "_iconSize": [
           40,
           40
+        ],
+        "_iconAnchor": [
+          20,
+          20
         ]
       },
       "geometry": {
@@ -80,26 +116,6 @@
         "coordinates": [
           136.899219,
           37.24379,
-          0
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "輪島市",
-        "_markerType": "Icon",
-        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/088.png",
-        "_iconSize": [
-          40,
-          40
-        ]
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          136.904648,
-          37.393696,
           0
         ]
       }
@@ -123,9 +139,9 @@
       },
       "properties": {
         "name": "穴水町から輪島市までの所要時間",
-        "1月14日 午前": "約1時間10分",
         "1月15日 午前": "約50分",
         "1月16日 午前": "約50分",
+        "1月17日 午前": "約1時間10分",
         "_color": "#145aff",
         "_opacity": 1,
         "_weight": 10,
@@ -155,9 +171,9 @@
       },
       "properties": {
         "name": "穴水町から珠洲市までの所要時間",
-        "1月14日 午前": "約1時間50分",
         "1月15日 午前": "約1時間30分",
         "1月16日 午前": "約1時間40分",
+        "1月17日 午前": "約1時間20分",
         "_color": "#145aff",
         "_opacity": 1,
         "_weight": 10,
@@ -172,9 +188,9 @@
       "type": "Feature",
       "properties": {
         "name": "穴水町から能登町までの所要時間",
-        "1月14日 午前": "約1時間30分",
         "1月15日 午前": "約1時間10分",
         "1月16日 午前": "約1時間20分",
+        "1月17日 午前": "約1時間",
         "_color": "#145aff",
         "_opacity": 1,
         "_weight": 10,
@@ -213,9 +229,9 @@
       },
       "properties": {
         "name": "七尾市(徳田大津)から穴水町までの所要時間",
-        "1月14日 午前": "約1時間40分",
         "1月15日 午前": "約1時間20分",
         "1月16日 午前": "約1時間30分",
+        "1月17日 午前": "約2時間",
         "_color": "#145aff",
         "_opacity": 1,
         "_weight": 10,

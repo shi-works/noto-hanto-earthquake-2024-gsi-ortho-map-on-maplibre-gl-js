@@ -379,31 +379,6 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "国道249号輪島市名舟付近",
-        "啓開作業等": "<img width=\"100%\" src=\"./img/sagyou/240113_R249_nafune4.png\">",
-        "_markerType": "Icon",
-        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/482.png",
-        "_iconSize": [
-          30,
-          30
-        ],
-        "_iconAnchor": [
-          15,
-          15
-        ]
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          137.013429,
-          37.431145,
-          4.6
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
         "name": "国道249号輪島市渋田付近",
         "啓開作業等": "<img width=\"100%\" src=\"./img/sagyou/240114_R249_shibuta.png\">",
         "_markerType": "Icon",

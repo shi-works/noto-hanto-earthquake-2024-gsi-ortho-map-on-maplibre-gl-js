@@ -6,107 +6,7 @@
       "properties": {
         "name": "到達地点（国道249号）",
         "路線名": "国道249号",
-        "地名（推定）": "珠洲市○○",
-        "_markerType": "Icon",
-        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/319.png",
-        "_iconSize": [
-          30,
-          30
-        ],
-        "_iconAnchor": [
-          15,
-          15
-        ]
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          137.107431,
-          37.481804
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "到達地点（石川県道40号）",
-        "路線名": "石川県道40号（珠洲里線）",
-        "地名（推定）": "輪島市○○",
-        "_markerType": "Icon",
-        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/319.png",
-        "_iconSize": [
-          30,
-          30
-        ],
-        "_iconAnchor": [
-          15,
-          15
-        ]
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          137.123496,
-          37.433878
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "到達地点（石川県道40号）",
-        "路線名": "石川県道40号（珠洲里線）",
-        "地名（推定）": "輪島市町野町○○",
-        "_markerType": "Icon",
-        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/319.png",
-        "_iconSize": [
-          30,
-          30
-        ],
-        "_iconAnchor": [
-          15,
-          15
-        ]
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          137.10744,
-          37.43147
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "到達地点（国道249号）",
-        "路線名": "国道249号",
-        "地名（推定）": "輪島市○○",
-        "_markerType": "Icon",
-        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/319.png",
-        "_iconSize": [
-          30,
-          30
-        ],
-        "_iconAnchor": [
-          15,
-          15
-        ]
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          137.031687,
-          37.434081
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "到達地点（国道249号）",
-        "路線名": "国道249号",
-        "地名（推定）": "輪島市○○",
+        "地名（推定）": "輪島市野田町",
         "_markerType": "Icon",
         "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/319.png",
         "_iconSize": [
@@ -131,57 +31,7 @@
       "properties": {
         "name": "到達地点（国道249号）",
         "路線名": "国道249号",
-        "地名（推定）": "輪島市○○",
-        "_markerType": "Icon",
-        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/319.png",
-        "_iconSize": [
-          30,
-          30
-        ],
-        "_iconAnchor": [
-          15,
-          15
-        ]
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          136.943252,
-          37.400724
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "到達地点（石川県道285号）",
-        "路線名": "石川県道285号（高屋井田線）",
-        "地名（推定）": "珠洲市○○",
-        "_markerType": "Icon",
-        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/319.png",
-        "_iconSize": [
-          30,
-          30
-        ],
-        "_iconAnchor": [
-          15,
-          15
-        ]
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          137.228765,
-          37.505839
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "到達地点（国道249号）",
-        "路線名": "国道249号",
-        "地名（推定）": "輪島市○○",
+        "地名（推定）": "輪島市門前町西円山",
         "_markerType": "Icon",
         "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/319.png",
         "_iconSize": [
@@ -206,7 +56,7 @@
       "properties": {
         "name": "到達地点（国道249号）",
         "路線名": "国道249号",
-        "地名（推定）": "輪島市門前町○○",
+        "地名（推定）": "輪島市門前町浦上",
         "_markerType": "Icon",
         "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/319.png",
         "_iconSize": [
@@ -231,7 +81,7 @@
       "properties": {
         "name": "到達地点（石川県道38号）",
         "路線名": "石川県道38号（輪島浦上線）",
-        "地名（推定）": "輪島市○○",
+        "地名（推定）": "輪島市上山町",
         "_markerType": "Icon",
         "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/319.png",
         "_iconSize": [
@@ -254,9 +104,9 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "到達地点（国道249号）",
-        "路線名": "国道249号",
-        "地名（推定）": "輪島市○○",
+        "name": "到達地点（石川県道40号）",
+        "路線名": "石川県道40号（珠洲里線）",
+        "地名（推定）": "輪島市町野町鈴屋",
         "_markerType": "Icon",
         "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/319.png",
         "_iconSize": [
@@ -271,8 +121,33 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          136.963407,
-          37.410538
+          137.10744,
+          37.43147
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "到達地点（石川県道40号）",
+        "路線名": "石川県道40号（珠洲里線）",
+        "地名（推定）": "輪島市町野町寺山",
+        "_markerType": "Icon",
+        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/319.png",
+        "_iconSize": [
+          30,
+          30
+        ],
+        "_iconAnchor": [
+          15,
+          15
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.123496,
+          37.433878
         ]
       }
     },
@@ -281,7 +156,32 @@
       "properties": {
         "name": "到達地点（国道249号）",
         "路線名": "国道249号",
-        "地名（推定）": "輪島市○○",
+        "地名（推定）": "珠洲市仁江町",
+        "_markerType": "Icon",
+        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/319.png",
+        "_iconSize": [
+          30,
+          30
+        ],
+        "_iconAnchor": [
+          15,
+          15
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.107431,
+          37.481804
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "到達地点（国道249号）",
+        "路線名": "国道249号",
+        "地名（推定）": "輪島市町野町曽々木",
         "_markerType": "Icon",
         "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/319.png",
         "_iconSize": [
@@ -304,9 +204,84 @@
     {
       "type": "Feature",
       "properties": {
+        "name": "到達地点（国道249号）",
+        "路線名": "国道249号",
+        "地名（推定）": "輪島市里町",
+        "_markerType": "Icon",
+        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/319.png",
+        "_iconSize": [
+          30,
+          30
+        ],
+        "_iconAnchor": [
+          15,
+          15
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.031687,
+          37.434081
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "到達地点（石川県道285号）",
+        "路線名": "石川県道285号（高屋井田線）",
+        "地名（推定）": "珠洲市笹波町",
+        "_markerType": "Icon",
+        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/319.png",
+        "_iconSize": [
+          30,
+          30
+        ],
+        "_iconAnchor": [
+          15,
+          15
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.228696,
+          37.506248
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "到達地点（国道249号）",
+        "路線名": "国道249号",
+        "地名（推定）": "輪島市白米町",
+        "_markerType": "Icon",
+        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/319.png",
+        "_iconSize": [
+          30,
+          30
+        ],
+        "_iconAnchor": [
+          15,
+          15
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.998503,
+          37.424068
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "name": "沿岸部への到達地点８（輪島市七浦）",
         "_markerType": "Icon",
-        "_iconUrl": "https://www.jartic-ri2maps.org/symbols/087.png",
+        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/087.png",
         "_iconSize": [
           40,
           40
@@ -329,7 +304,7 @@
       "properties": {
         "name": "沿岸部への到達地点１（輪島）",
         "_markerType": "Icon",
-        "_iconUrl": "https://www.jartic-ri2maps.org/symbols/087.png",
+        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/087.png",
         "_iconSize": [
           40,
           40
@@ -352,7 +327,7 @@
       "properties": {
         "name": "沿岸部への到達地点９（海上より：輪島市深江町）",
         "_markerType": "Icon",
-        "_iconUrl": "https://www.jartic-ri2maps.org/symbols/087.png",
+        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/087.png",
         "_iconSize": [
           40,
           40
@@ -375,7 +350,7 @@
       "properties": {
         "name": "沿岸部への到達地点２（輪島市名舟町）",
         "_markerType": "Icon",
-        "_iconUrl": "https://www.jartic-ri2maps.org/symbols/087.png",
+        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/087.png",
         "_iconSize": [
           40,
           40
@@ -398,7 +373,7 @@
       "properties": {
         "name": "沿岸部への到達地点３（輪島市町野町）",
         "_markerType": "Icon",
-        "_iconUrl": "https://www.jartic-ri2maps.org/symbols/087.png",
+        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/087.png",
         "_iconSize": [
           40,
           40
@@ -421,7 +396,7 @@
       "properties": {
         "name": "沿岸部への到達地点７（海上より：輪島市町野町）",
         "_markerType": "Icon",
-        "_iconUrl": "https://www.jartic-ri2maps.org/symbols/087.png",
+        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/087.png",
         "_iconSize": [
           40,
           40
@@ -444,7 +419,7 @@
       "properties": {
         "name": "沿岸部への到達地点６（珠洲市大谷町）",
         "_markerType": "Icon",
-        "_iconUrl": "https://www.jartic-ri2maps.org/symbols/087.png",
+        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/087.png",
         "_iconSize": [
           40,
           40
@@ -467,7 +442,7 @@
       "properties": {
         "name": "沿岸部への到達地点４（珠洲市笹波町）",
         "_markerType": "Icon",
-        "_iconUrl": "https://www.jartic-ri2maps.org/symbols/087.png",
+        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/087.png",
         "_iconSize": [
           40,
           40
@@ -490,7 +465,7 @@
       "properties": {
         "name": "沿岸部への到達地点５（珠洲市三崎町）",
         "_markerType": "Icon",
-        "_iconUrl": "https://www.jartic-ri2maps.org/symbols/087.png",
+        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/087.png",
         "_iconSize": [
           40,
           40
