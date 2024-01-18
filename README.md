@@ -47,6 +47,7 @@ https://github.com/shi-works/noto-hanto-earthquake-2024-gsi-ortho-map-on-maplibr
     - 啓開前・啓開後比較箇所：https://shi-works.github.io/noto-hanto-earthquake-2024-gsi-ortho-map-on-maplibre-gl-js/data/mlit/before_after.geojson
     - 主な被災箇所：https://shi-works.github.io/noto-hanto-earthquake-2024-gsi-ortho-map-on-maplibre-gl-js/data/mlit/damaged_area.geojson
     - ETC2.0速度データ(平均速度)：https://shi-works.github.io/noto-hanto-earthquake-2024-gsi-ortho-map-on-maplibre-gl-js/data/mlit/ETC2.0_speed_data.geojson
+    - 支援拠点の道の駅：https://shi-works.github.io/noto-hanto-earthquake-2024-gsi-ortho-map-on-maplibre-gl-js/data/mlit/michinoeki.geojson
 
 - 上記の公開データのライセンス：[リンク・著作権・免責事項（政府標準利用規約（第2.0版）準拠）](https://www.mlit.go.jp/link.html)
 
