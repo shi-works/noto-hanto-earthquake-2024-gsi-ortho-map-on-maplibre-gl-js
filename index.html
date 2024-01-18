@@ -352,6 +352,25 @@
             overflow-y: auto;
         }
 
+        .custom-michinoeki-popup .maplibregl-popup-content {
+            padding: 12px 15px;
+            font: 14px/16px Arial, Helvetica, sans-serif;
+            color: #333;
+            background: rgba(255, 255, 255, 0.9);
+            box-shadow: 0 1px 6px rgba(0, 0, 0, 0.75);
+            border-radius: 8px;
+            width: 300px;
+            height: 300px;
+            overflow-y: auto;
+        }
+
+        .custom-michinoeki-popup .maplibregl-popup-content .popup-image {
+            max-width: 100%;
+            max-height: 180px;
+            /* 画像の最大高さを設定 */
+            height: auto;
+        }
+
         .corner-text {
             position: fixed;
             top: 0;
@@ -2036,6 +2055,43 @@
             });
             */
 
+            // 支援拠点の道の駅ソース
+            afterMap.addSource("michinoeki", {
+                type: "geojson",
+                data: 'https://shi-works.github.io/noto-hanto-earthquake-2024-gsi-ortho-map-on-maplibre-gl-js/data/mlit/michinoeki.geojson',
+                attribution: '<a href="https://www.mlit.go.jp/road/r6noto/index2.html" target="_blank">令和6年能登半島地震 道路復旧見える化マップ(国土交通省)</a>',
+            });
+
+            // PNGソース（道の駅）追加
+            afterMap.loadImage('https://shi-works.github.io/noto-hanto-earthquake-2024-gsi-ortho-map-on-maplibre-gl-js/data/mlit/img/474.png',
+                function (error, image) {
+                    if (error) throw error;
+                    afterMap.addImage('michinoeki_474', image);
+                }
+            );
+
+            // 主な被災箇所シンボルレイヤ
+            afterMap.addLayer({
+                'id': 'michinoeki-symbol',
+                "type": "symbol",
+                'source': 'michinoeki',
+                minzoom: 1,
+                maxzoom: 23,
+                "layout": {
+                    'icon-image': 'michinoeki_474',
+                    "icon-size": [
+                        'interpolate',
+                        ['linear'],
+                        ['zoom'],
+                        1, 0.1,  // ズームレベル1でサイズは0.1
+                        12, 1.2  // ズームレベル12でサイズは1.2
+                    ],
+                    "icon-allow-overlap": true, // シンボルの重なりを許可
+                    'visibility': 'none'
+                }
+            });
+
+
         });
 
         // 石川県七尾市避難所開設情報
@@ -2483,6 +2539,7 @@
                 afterMap.setLayoutProperty('recovery_point-symbol', 'visibility', 'visible');
                 afterMap.setLayoutProperty('damaged_area-symbol', 'visibility', 'visible');
                 afterMap.setLayoutProperty('damage_situation_aerial_photography-symbol', 'visibility', 'visible');
+                afterMap.setLayoutProperty('michinoeki-symbol', 'visibility', 'visible');
                 legend_road.style.display = 'block';
                 legend_button.style.display = 'block';
             } else {
@@ -2494,6 +2551,7 @@
                 afterMap.setLayoutProperty('recovery_point-symbol', 'visibility', 'none');
                 afterMap.setLayoutProperty('damaged_area-symbol', 'visibility', 'none');
                 afterMap.setLayoutProperty('damage_situation_aerial_photography-symbol', 'visibility', 'none');
+                afterMap.setLayoutProperty('michinoeki-symbol', 'visibility', 'none');
                 legend_road.style.display = 'none';
                 legend_button.style.display = 'none';
             }
@@ -3086,6 +3144,36 @@
                 .addTo(afterMap);
         });
         */
+
+        // 支援拠点の道の駅ポップアップ表示
+        afterMap.on('click', 'michinoeki-symbol', async (e) => {
+            var lng = e.features[0].geometry.coordinates[0];
+            var lat = e.features[0].geometry.coordinates[1];
+            var name = e.features[0].properties['name'];
+            var usage_status = e.features[0].properties['活用状況：'];
+
+            // ベースURL
+            var baseUrl = "https://www.mlit.go.jp/road/r6noto/map";
+
+            // '啓開前''啓開後'の値からファイル名を抽出
+            var photoValue = e.features[0].properties['現地写真：'];
+            var photofilename = photoValue.match(/src=\"\.\/img\/michinoeki\/(.*?)\"/)[1];
+
+            // 完全なURLを生成
+            var imageUrl = baseUrl + "/img/michinoeki/" + photofilename;
+
+            new maplibregl.Popup({ className: 'custom-michinoeki-popup' })
+                .setLngLat(e.lngLat)
+                .setHTML(
+                    '<div style="border-bottom:1px solid #000;"><strong>name:' + name + '</strong></div>' +
+                    '活用状況：' + usage_status + '<br>' +
+                    '現地写真：' + '<br>' +
+                    '<div><a href="' + imageUrl + '" target="_blank"><img class="popup-image" src="' + imageUrl + '" alt="画像"></a></div>' +
+                    '<div><a href="https://www.google.com/maps?q=' + lat + ',' + lng + '&hl=ja" target="_blank">🌎Google Maps</a></div>' +
+                    '<div><a href="https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=' + lat + ',' + lng + '&hl=ja" target="_blank">📷Street View</a></div>'
+                )
+                .addTo(afterMap);
+        });
 
     </script>
 </body>
