@@ -106,7 +106,7 @@
 
         .legend-road {
             position: absolute;
-            top: 195px;
+            top: 185px;
             right: 10px;
             z-index: 1;
             background: white;
@@ -121,13 +121,13 @@
         }
 
         .legend-road img {
-            width: 370px;
-            height: 200px;
+            width: 444px;
+            height: 240px;
         }
 
         .toggle-button-2 {
             position: absolute;
-            top: 200px;
+            top: 190px;
             right: 20px;
             background-color: transparent;
             border: none;
@@ -1716,7 +1716,7 @@
                         '#656565'
                     ],
                     'line-width': 8,
-                    'line-opacity': 0.6
+                    'line-opacity': 1
                 }
             });
 
@@ -1747,7 +1747,7 @@
                         '#0000ff', '#0000ff',
                         '#656565'
                     ],
-                    'line-width': 4
+                    'line-width': 3
                 }
             });
 
@@ -1802,6 +1802,7 @@
                 }
             );
 
+            /*
             // PNGソース追加
             afterMap.loadImage('https://maps.gsi.go.jp/portal/sys/v4/symbols/494.png',
                 function (error, image) {
@@ -1833,6 +1834,16 @@
                     afterMap.addImage('sagyou_symbol_570', image);
                 }
             );
+            */
+
+
+            // PNGソース追加
+            afterMap.loadImage('https://shi-works.github.io/noto-hanto-earthquake-2024-gsi-ortho-map-on-maplibre-gl-js/data/mlit/img/icon_movie.png',
+                function (error, image) {
+                    if (error) throw error;
+                    afterMap.addImage('sagyou_symbol_icon_movie', image);
+                }
+            );
 
             // 啓開作業状況シンボルレイヤ
             afterMap.addLayer({
@@ -1846,10 +1857,11 @@
                         'match',
                         ['get', '_iconUrl'],
                         'https://maps.gsi.go.jp/portal/sys/v4/symbols/482.png', 'sagyou_symbol_482',
-                        'https://maps.gsi.go.jp/portal/sys/v4/symbols/494.png', 'sagyou_symbol_494',
-                        'https://maps.gsi.go.jp/portal/sys/v4/symbols/538.png', 'sagyou_symbol_538',
-                        'https://maps.gsi.go.jp/portal/sys/v4/symbols/563.png', 'sagyou_symbol_563',
-                        'https://maps.gsi.go.jp/portal/sys/v4/symbols/570.png', 'sagyou_symbol_570',
+                        // 'https://maps.gsi.go.jp/portal/sys/v4/symbols/494.png', 'sagyou_symbol_494',
+                        // 'https://maps.gsi.go.jp/portal/sys/v4/symbols/538.png', 'sagyou_symbol_538',
+                        // 'https://maps.gsi.go.jp/portal/sys/v4/symbols/563.png', 'sagyou_symbol_563',
+                        // 'https://maps.gsi.go.jp/portal/sys/v4/symbols/570.png', 'sagyou_symbol_570',
+                        'https://www.mlit.go.jp/road/r6noto/map/img/icon_movie.png', 'sagyou_symbol_icon_movie',
                         'sagyou_symbol_482'
                     ],
                     "icon-size": [
@@ -1899,8 +1911,8 @@
                     'icon-image': [
                         'match',
                         ['get', '_iconUrl'],
-                        'https://www.jartic-ri2maps.org/symbols/087.png', 'recovery_point_087',
-                        'https://www.jartic-ri2maps.org/symbols/319.png', 'recovery_point_319',
+                        'https://maps.gsi.go.jp/portal/sys/v4/symbols/087.png', 'recovery_point_087',
+                        'https://maps.gsi.go.jp/portal/sys/v4/symbols/319.png', 'recovery_point_319',
                         'recovery_point_087'
                     ],
                     "icon-size": [
