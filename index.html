@@ -195,6 +195,7 @@
             cursor: ew-resize;
         }
 
+        /*ポップアップ テンプレート*/
         .maplibregl-popup .maplibregl-popup-content {
             padding: 8px 10px;
             font: 12px/14px Arial, Helvetica, sans-serif;
@@ -242,6 +243,151 @@
             font: 12px/14px Arial, Helvetica, sans-serif;
         }
 
+        /*100mメッシュ人口*/
+        .custom-100m-mesh-pop2020-popup .maplibregl-popup-content {
+            padding: 8px 10px;
+            font: 12px/14px Arial, Helvetica, sans-serif;
+            color: black;
+            background: rgba(255, 255, 255, 0.9);
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.9);
+            border-radius: 5px;
+            width: 280px;
+            height: 220px;
+            /*overflow: scroll;*/
+        }
+
+        .custom-100m-mesh-pop2020-popup .maplibregl-popup-content .shinouchimei-title {
+            color: red;
+            font-size: larger;
+        }
+
+        .custom-100m-mesh-pop2020-popup .maplibregl-popup-content .pop-info th {
+            width: 100px;
+        }
+
+        /* 1列目 (左側) を右寄せにする */
+        .custom-100m-mesh-pop2020-popup .maplibregl-popup-content .pop-info td:nth-child(1) {
+            text-align: right;
+            width: 100px;
+            white-space: nowrap;
+            /* 折り返しを防ぐ */
+        }
+
+        /* 2列目 (右側) のセルの幅を広げる */
+        .custom-100m-mesh-pop2020-popup .maplibregl-popup-content .pop-info td:nth-child(2) {
+            text-align: left;
+            width: 150px;
+            white-space: nowrap;
+            /* 折り返しを防ぐ */
+        }
+
+        .custom-100m-mesh-pop2020-popup .maplibregl-popup-content .pop-info b {
+            text-align: right;
+        }
+
+        .custom-100m-mesh-pop2020-popup .maplibregl-popup-content .pop-info,
+        .custom-100m-mesh-pop2020-popup .maplibregl-popup-content .pop-info th,
+        .custom-100m-mesh-pop2020-popup .maplibregl-popup-content .pop-info td {
+            font: 12px/14px Arial, Helvetica, sans-serif;
+        }
+
+        /*孤立集落人数*/
+        .custom-Number-of-isolated-area-popup .maplibregl-popup-content {
+            padding: 8px 10px;
+            font: 12px/14px Arial, Helvetica, sans-serif;
+            color: black;
+            background: rgba(255, 255, 255, 0.9);
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.9);
+            border-radius: 5px;
+            width: 280px;
+            height: 290px;
+            /*overflow: scroll;*/
+        }
+
+        .custom-Number-of-isolated-area-popup .maplibregl-popup-content .shinouchimei-title {
+            color: red;
+            font-size: larger;
+        }
+
+        .custom-Number-of-isolated-area-popup .maplibregl-popup-content .pop-info th {
+            width: 100px;
+        }
+
+        /* 1列目 (左側) を右寄せにする */
+        .custom-Number-of-isolated-area-popup .maplibregl-popup-content .pop-info td:nth-child(1) {
+            text-align: right;
+            width: 100px;
+            white-space: nowrap;
+            /* 折り返しを防ぐ */
+        }
+
+        /* 2列目 (右側) のセルの幅を広げる */
+        .custom-Number-of-isolated-area-popup .maplibregl-popup-content .pop-info td:nth-child(2) {
+            text-align: left;
+            width: 150px;
+            white-space: nowrap;
+            /* 折り返しを防ぐ */
+        }
+
+        .custom-Number-of-isolated-area-popup .maplibregl-popup-content .pop-info b {
+            text-align: right;
+        }
+
+        .custom-Number-of-isolated-area-popup .maplibregl-popup-content .pop-info,
+        .custom-Number-of-isolated-area-popup .maplibregl-popup-content .pop-info th,
+        .custom-Number-of-isolated-area-popup .maplibregl-popup-content .pop-info td {
+            font: 12px/14px Arial, Helvetica, sans-serif;
+        }
+
+        /*七尾市避難所開設情報*/
+        .custom-open-shelter-Nanao-popup .maplibregl-popup-content {
+            padding: 8px 10px;
+            font: 12px/14px Arial, Helvetica, sans-serif;
+            color: black;
+            background: rgba(255, 255, 255, 0.9);
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.9);
+            border-radius: 5px;
+            width: 300px;
+            height: 250px;
+            overflow: scroll;
+        }
+
+        .custom-open-shelter-Nanao-popup .maplibregl-popup-content .shinouchimei-title {
+            color: red;
+            font-size: larger;
+        }
+
+        .custom-open-shelter-Nanao-popup .maplibregl-popup-content .pop-info th {
+            width: 100px;
+        }
+
+        /* 1列目 (左側) を右寄せにする */
+        .custom-open-shelter-Nanao-popup .maplibregl-popup-content .pop-info td:nth-child(1) {
+            text-align: right;
+            width: 100px;
+            white-space: nowrap;
+            /* 折り返しを防ぐ */
+        }
+
+        /* 2列目 (右側) のセルの幅を広げる */
+        .custom-open-shelter-Nanao-popup .maplibregl-popup-content .pop-info td:nth-child(2) {
+            text-align: left;
+            width: 150px;
+            white-space: nowrap;
+            /* 折り返しを防ぐ */
+        }
+
+        .custom-open-shelter-Nanao-popup .maplibregl-popup-content .pop-info b {
+            text-align: right;
+        }
+
+        .custom-open-shelter-Nanao-popup .maplibregl-popup-content .pop-info,
+        .custom-open-shelter-Nanao-popup .maplibregl-popup-content .pop-info th,
+        .custom-open-shelter-Nanao-popup .maplibregl-popup-content .pop-info td {
+            font: 12px/14px Arial, Helvetica, sans-serif;
+        }
+
+        /*啓開前・啓開後比較箇所*/
         .custom-before-after-popup .maplibregl-popup-content {
             padding: 12px 15px;
             font: 14px/16px Arial, Helvetica, sans-serif;
@@ -261,6 +407,7 @@
             height: auto;
         }
 
+        /*啓開作業状況*/
         .custom-sagyou-popup .maplibregl-popup-content {
             padding: 12px 15px;
             font: 14px/16px Arial, Helvetica, sans-serif;
@@ -298,6 +445,7 @@
             height: auto;
         }
 
+        /*主な被災箇所*/
         .custom-damaged-area-popup .maplibregl-popup-content {
             padding: 12px 15px;
             font: 14px/16px Arial, Helvetica, sans-serif;
@@ -310,6 +458,7 @@
             overflow-y: auto;
         }
 
+        /*被災状況（空撮）*/
         .custom-damage-situation-aerial-photography-popup .maplibregl-popup-content {
             padding: 12px 15px;
             font: 14px/16px Arial, Helvetica, sans-serif;
@@ -328,6 +477,7 @@
             height: auto;
         }
 
+        /*復旧到達地点*/
         .custom-recovery-point-popup .maplibregl-popup-content {
             padding: 12px 15px;
             font: 14px/16px Arial, Helvetica, sans-serif;
@@ -340,6 +490,8 @@
             overflow-y: auto;
         }
 
+        /*緊急復旧済み区間*/
+        /*
         .custom-emergency-restored-section-popup .maplibregl-popup-content {
             padding: 12px 15px;
             font: 14px/16px Arial, Helvetica, sans-serif;
@@ -351,7 +503,9 @@
             height: 90px;
             overflow-y: auto;
         }
+        */
 
+        /*支援拠点の道の駅*/
         .custom-michinoeki-popup .maplibregl-popup-content {
             padding: 12px 15px;
             font: 14px/16px Arial, Helvetica, sans-serif;
@@ -2654,7 +2808,7 @@
             var Pop75over = e.features[0].properties['Pop75over'];
             var Pop85over = e.features[0].properties['Pop85over'];
 
-            new maplibregl.Popup()
+            new maplibregl.Popup({ className: 'custom-100m-mesh-pop2020-popup' })
                 .setLngLat(e.lngLat)
                 .setHTML(
                     '<div style="solid #000; font-size: 1.2em; color: #0065CB;"><strong>簡易100mメッシュ人口</strong></div>' +
@@ -2725,7 +2879,7 @@
             var Pop75over = e.features[0].properties['Pop75over'];
             var Pop85over = e.features[0].properties['Pop85over'];
 
-            new maplibregl.Popup()
+            new maplibregl.Popup({ className: 'custom-100m-mesh-pop2020-popup' })
                 .setLngLat(e.lngLat)
                 .setHTML(
                     '<div style="solid #000; font-size: 1.2em; color: #0065CB;"><strong>簡易100mメッシュ人口</strong></div>' +
@@ -2803,7 +2957,7 @@
             if (number_0116 === undefined) { number_0116 = "-" };
             if (number_0117 === undefined) { number_0117 = "-" };
 
-            new maplibregl.Popup()
+            new maplibregl.Popup({ className: 'custom-Number-of-isolated-area-popup' })
                 .setLngLat(e.lngLat)
                 .setHTML(
                     '<div style="solid #000; font-size: 1.2em; color: #CB0065;"><strong>孤立集落人数</strong></div>' +
@@ -2907,7 +3061,7 @@
             if (capacity === undefined) { capacity = "-" };
             if (target_town_council === undefined) { target_town_council = "-" };
 
-            new maplibregl.Popup()
+            new maplibregl.Popup({ className: 'custom-open-shelter-Nanao-popup' })
                 .setLngLat(e.lngLat)
                 .setHTML(
                     /*
@@ -2960,11 +3114,11 @@
                     '</tr>' +
                     */
                     '<tr>' +
-                    '<td>想定収容：<br>人数</td>' +
+                    '<td>想定収容人数：</td>' +
                     '<td><b>' + capacity + '</b></td>' +
                     '</tr>' +
                     '<tr>' +
-                    '<td>対象となる：<br>町会・自治会</td>' +
+                    '<td>対象となる町会・自治会：</td>' +
                     '<td><b>' + target_town_council + '</b></td>' +
                     '</tr>' +
                     '</table>' +
