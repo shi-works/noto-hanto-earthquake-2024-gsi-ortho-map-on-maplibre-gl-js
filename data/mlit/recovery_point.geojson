@@ -196,8 +196,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          137.086518,
-          37.465624
+          137.08054,
+          37.461193
         ]
       }
     },
@@ -273,6 +273,31 @@
         "coordinates": [
           136.998503,
           37.424068
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "到達地点（珠洲広域農道）",
+        "路線名": "珠洲広域農道",
+        "地名（推定）": "珠洲市若山町中",
+        "_markerType": "Icon",
+        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/319.png",
+        "_iconSize": [
+          30,
+          30
+        ],
+        "_iconAnchor": [
+          15,
+          15
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.201182,
+          37.455604
         ]
       }
     },
