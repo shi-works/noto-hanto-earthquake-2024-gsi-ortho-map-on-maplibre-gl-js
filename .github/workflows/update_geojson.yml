@@ -26,6 +26,7 @@ jobs:
           curl -o data/mlit/sagyou.geojson https://www.mlit.go.jp/road/r6noto/map/json/sagyou.geojson
           curl -o data/mlit/intercity_travel_time.geojson https://www.mlit.go.jp/road/r6noto/map/json/intercity_travel_time.geojson
           curl -o data/mlit/population_mesh_data.geojson https://www.mlit.go.jp/road/r6noto/map/json/population_mesh_data.geojson
+          curl -o data/mlit/michinoeki.geojson https://www.mlit.go.jp/road/r6noto/map/json/michinoeki.geojson
           curl -o data/mlit/img/usage_guide.png https://www.mlit.go.jp/road/r6noto/map/img/usage_guide.png
 
       - name: Commit and Push Changes
