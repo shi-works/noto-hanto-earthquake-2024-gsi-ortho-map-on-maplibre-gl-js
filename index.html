@@ -203,7 +203,7 @@
             box-shadow: 0 0 15px rgba(0, 0, 0, 0.9);
             border-radius: 5px;
             width: 280px;
-            height: 270px;
+            height: 290px;
             /*overflow: scroll;*/
         }
 
@@ -440,13 +440,13 @@
     </div>
     <div id="checkbox-area">
         <input type="checkbox" id="RoadRestorationVisualizationLayerCheckbox">
-        <label for="RoadRestorationVisualizationLayerCheckbox">国土交通省 道路復旧見える化マップ</label><br>
+        <label for="RoadRestorationVisualizationLayerCheckbox">国土交通省 道路復旧見える化マップ(自動更新)</label><br>
         <input type="checkbox" id="populationLayerCheckbox">
         <label for="populationLayerCheckbox">令和2年100mﾒｯｼｭ人口(石川県・富山県)</label><br>
         <input type="checkbox" id="IsolatedAreaLayerCheckbox">
-        <label for="IsolatedAreaLayerCheckbox">石川県孤立集落人数(1/16時点)</label><br>
+        <label for="IsolatedAreaLayerCheckbox">石川県孤立集落人数(1/17時点)</label><br>
         <input type="checkbox" id="OpenShelterNanaoshiLayerCheckbox">
-        <label for="OpenShelterNanaoshiLayerCheckbox">石川県七尾市避難所開設情報</label>
+        <label for="OpenShelterNanaoshiLayerCheckbox">石川県七尾市避難所開設情報(自動更新)</label>
     </div>
     <div class="map-overlay top">
         <div class="map-overlay-inner">
@@ -1566,7 +1566,7 @@
             // 石川県 孤立集落人数ポリゴンソース
             afterMap.addSource("Number_of_isolated_area", {
                 type: "geojson",
-                data: './data/Number_of_isolated_area0116_EPSG4326.geojson',
+                data: './data/Number_of_isolated_area0117_EPSG4326.geojson',
                 attribution: '<a href="https://www.pref.ishikawa.lg.jp/saigai/202401jishin-taisakuhonbu.html#honbu" target="_blank">石川県 災害対策本部員会議資料（孤立集落人数）</a>',
             });
 
@@ -1676,7 +1676,7 @@
             // 石川県 孤立集落人数重心ソース
             afterMap.addSource("Number_of_isolated_area_centroid", {
                 type: "geojson",
-                data: './data/Number_of_isolated_area0116_centroid_EPSG4326.geojson',
+                data: './data/Number_of_isolated_area0117_centroid_EPSG4326.geojson',
                 attribution: '<a href="https://www.pref.ishikawa.lg.jp/saigai/202401jishin-taisakuhonbu.html#honbu" target="_blank">石川県 災害対策本部員会議資料（孤立集落人数）</a>',
             });
 
@@ -2789,6 +2789,7 @@
             var number_0114 = e.features[0].properties['人数_1/14_15時現在'];
             var number_0115 = e.features[0].properties['人数_1/15_15時現在'];
             var number_0116 = e.features[0].properties['人数_1/16_15時現在'];
+            var number_0117 = e.features[0].properties['人数_1/17_15時現在'];
 
             if (number_0107 === undefined) { number_0107 = "-" };
             if (number_0108 === undefined) { number_0108 = "-" };
@@ -2800,6 +2801,7 @@
             if (number_0114 === undefined) { number_0114 = "-" };
             if (number_0115 === undefined) { number_0115 = "-" };
             if (number_0116 === undefined) { number_0116 = "-" };
+            if (number_0117 === undefined) { number_0117 = "-" };
 
             new maplibregl.Popup()
                 .setLngLat(e.lngLat)
@@ -2862,8 +2864,12 @@
                     '<td>孤立集落人数(1/16_15時現在)：</td>' +
                     '<td><b>' + number_0116 + '人' + '</b></td>' +
                     '</tr>' +
+                    '<tr>' +
+                    '<td>孤立集落人数(1/17_15時現在)：</td>' +
+                    '<td><b>' + number_0117 + '人' + '</b></td>' +
+                    '</tr>' +
                     '</table>' +
-                    '出典）' + '<a href="https://www.pref.ishikawa.lg.jp/saigai/202401jishin-taisakuhonbu.html#honbu">石川県 災害対策本部員会議資料（1月15日）</a>'
+                    '出典）' + '<a href="https://www.pref.ishikawa.lg.jp/saigai/202401jishin-taisakuhonbu.html#honbu">石川県 災害対策本部員会議資料</a>'
                 )
                 .addTo(afterMap);
         });
