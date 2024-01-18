@@ -65,20 +65,6 @@ https://github.com/shi-works/noto-hanto-earthquake-2024-gsi-ortho-map-on-maplibr
 
 - 上記の公開データのライセンス：令和6年能登半島地震変動地形調査グループ（日本地理学会）、[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/deed.ja)
 
-### 背景地図及び地形データ
-- 国土地理院 最適化ベクトルタイル
-    - 出典：https://github.com/gsi-cyberjapan/optimal_bvmap
-    - ライセンス：[国土地理院コンテンツ利用規約](https://www.gsi.go.jp/kikakuchousei/kikakuchousei40182.html)に従い、出典明示により、転載も含め使用可
-- 国土地理院 地理院タイル（陰影起伏図）
-    - 出典：https://maps.gsi.go.jp/development/ichiran.html#hillshademap
-    - ライセンス：[国土地理院コンテンツ利用規約](https://www.gsi.go.jp/kikakuchousei/kikakuchousei40182.html)に従い、出典明示により、転載も含め使用可
-- 産業技術総合研究所 シームレス標高タイル（統合DEM）
-    - 出典：https://tiles.gsj.jp/tiles/elev/tiles.html
-    - ライセンス：「[産総研地質調査総合センターウェブサイト利用規約](https://www.gsj.jp/license/license.html)」に従い、商用を含む自由な二次利用が可能です。この規約はCC BY 4.0と互換です。
-- 森林総合研究所 CS立体図(能登(石川県))
-    - 出典：https://www2.ffpri.go.jp/soilmap/data-src.html
-    - ライセンス：[森林土壌デジタルマップ・利用規約](https://www2.ffpri.go.jp/soilmap/#)参照。
-
 ### 人口分布データ
 - 令和2年簡易100mメッシュ人口データ（石川県、富山県）（PMTiles形式）
     - 出典：https://github.com/shi-works/noto-hanto-earthquake-2024-100m-mesh-pop-data
@@ -99,3 +85,17 @@ https://github.com/shi-works/noto-hanto-earthquake-2024-gsi-ortho-map-on-maplibr
         - 原初データ出典：[七尾市 避難所一覧/開設中の避難所状況](https://www.city.nanao.lg.jp/bosai/mail/202401021200.html)、[石川県 指定緊急避難所一覧](https://www.pref.ishikawa.lg.jp/opendata/shakaikiban_index.html)、[七尾市 10_指定緊急避難所施設一覧](https://www.city.nanao.lg.jp/koho/shise/koho/opendata/index.html)
     - 概要：石川県七尾市のWebサイトにて公開されている[開設中の避難所情報](https://www.city.nanao.lg.jp/bosai/mail/202401021200.html)を、[ぴっかりん（@ra0kley）](https://twitter.com/ra0kley)様が石川県および七尾市が公開しているオープンデータをもとに位置情報などを付加して、GISデータ化したデータです。
     - ライセンス：[@ra0kley](https://twitter.com/ra0kley)、[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)
+
+### 背景地図及び地形データ
+- 国土地理院 最適化ベクトルタイル
+    - 出典：https://github.com/gsi-cyberjapan/optimal_bvmap
+    - ライセンス：[国土地理院コンテンツ利用規約](https://www.gsi.go.jp/kikakuchousei/kikakuchousei40182.html)に従い、出典明示により、転載も含め使用可
+- 国土地理院 地理院タイル（陰影起伏図）
+    - 出典：https://maps.gsi.go.jp/development/ichiran.html#hillshademap
+    - ライセンス：[国土地理院コンテンツ利用規約](https://www.gsi.go.jp/kikakuchousei/kikakuchousei40182.html)に従い、出典明示により、転載も含め使用可
+- 産業技術総合研究所 シームレス標高タイル（統合DEM）
+    - 出典：https://tiles.gsj.jp/tiles/elev/tiles.html
+    - ライセンス：「[産総研地質調査総合センターウェブサイト利用規約](https://www.gsj.jp/license/license.html)」に従い、商用を含む自由な二次利用が可能です。この規約はCC BY 4.0と互換です。
+- 森林総合研究所 CS立体図(能登(石川県))
+    - 出典：https://www2.ffpri.go.jp/soilmap/data-src.html
+    - ライセンス：[森林土壌デジタルマップ・利用規約](https://www2.ffpri.go.jp/soilmap/#)参照。
