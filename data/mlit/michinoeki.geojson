@@ -1,0 +1,83 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "道の駅「千枚田ポケットパーク」",
+        "活用状況：": "啓開活動拠点",
+        "現地写真：": "<img width=\"100%\" src=\"./img/michinoeki/240111_senmaida.jpg\">",
+        "_markerType": "Icon",
+        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/474.png",
+        "_iconSize": [
+          30,
+          30
+        ],
+        "_iconAnchor": [
+          15,
+          15
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.997631,
+          37.424166,
+          60
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "道の駅「のと里山空港」",
+        "活用状況：": "国土交通省現地支援センター",
+        "現地写真：": "<img width=\"100%\" src=\"./img/michinoeki/240117_notosatoyama.jpg\">",
+        "_markerType": "Icon",
+        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/474.png",
+        "_iconSize": [
+          30,
+          30
+        ],
+        "_iconAnchor": [
+          15,
+          15
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.9571283,
+          37.2950414,
+          217
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "道の駅「あなみず」",
+        "活用状況：": "国土交通省コンテナ型トイレ設置",
+        "現地写真：": "<img width=\"100%\" src=\"./img/michinoeki/240115_anamizu.jpeg\">",
+        "_markerType": "Icon",
+        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/474.png",
+        "_iconSize": [
+          30,
+          30
+        ],
+        "_iconAnchor": [
+          15,
+          15
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.9056837,
+          37.2283748,
+          3.4
+        ]
+      }
+    }
+  ]
+}
