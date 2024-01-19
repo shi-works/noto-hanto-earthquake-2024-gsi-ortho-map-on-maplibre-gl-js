@@ -862,7 +862,8 @@
         "type": "Point",
         "coordinates": [
           136.823838,
-          37.337599
+          37.337599,
+          178
         ]
       }
     },
@@ -887,7 +888,8 @@
         "type": "Point",
         "coordinates": [
           136.82566,
-          37.338805
+          37.338805,
+          168
         ]
       }
     },
@@ -911,7 +913,8 @@
         "type": "Point",
         "coordinates": [
           137.101668,
-          37.400144
+          37.400144,
+          14
         ]
       }
     },
@@ -936,7 +939,8 @@
         "type": "Point",
         "coordinates": [
           137.199415,
-          37.398486
+          37.398486,
+          34
         ]
       }
     },
@@ -961,7 +965,84 @@
         "type": "Point",
         "coordinates": [
           136.869716,
-          37.347967
+          37.347967,
+          69
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "珠洲道路能登町天坂付近",
+        "撮影日": "2024/01/16",
+        "緊急車両の通行状況": "<img width=\"100%\" src=\"./img/sagyou/240116_K57_tenzaka.png\"><img width=\"100%\" src=\"./img/sagyou/240116_K57_tenzaka-2.png\">",
+        "_markerType": "Icon",
+        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/537.png",
+        "_iconSize": [
+          30,
+          30
+        ],
+        "_iconAnchor": [
+          15,
+          15
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.10094,
+          37.35151,
+          64
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "珠洲道路能登町中斉付近",
+        "撮影日": "2024/01/16",
+        "緊急車両の通行状況": "<img width=\"100%\" src=\"./img/sagyou/240116_K275_nakasai.png\">",
+        "_markerType": "Icon",
+        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/562.png",
+        "_iconSize": [
+          30,
+          30
+        ],
+        "_iconAnchor": [
+          15,
+          15
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.01946,
+          37.334539,
+          228
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "のと里山空港における災害対策支援",
+        "啓開作業等": "<iframe width=\"100%\" src=\"https://www.youtube.com/embed/fpEA1xY8LiM\" title=\"のと里山空港にTEC-FORCEが「道路啓開支援センター」を開設【令和6年能登半島地震　災害対策支援】\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen></iframe>",
+        "_markerType": "Icon",
+        "_iconUrl": "https://www.mlit.go.jp/road/r6noto/map/img/icon_movie.png",
+        "_iconSize": [
+          30,
+          30
+        ],
+        "_iconAnchor": [
+          15,
+          15
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.957579,
+          37.294794
         ]
       }
     }
