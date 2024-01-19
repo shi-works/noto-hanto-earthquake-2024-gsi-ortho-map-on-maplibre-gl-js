@@ -16,6 +16,10 @@ https://github.com/shi-works/noto-hanto-earthquake-2024-gsi-ortho-map-on-maplibr
     - 出典：https://maps.gsi.go.jp/development/ichiran.html#t20240102_noto_suzu_0105do
 - 被災後の空中写真（正射画像）：輪島中地区、穴水地区、輪島西地区、20240111撮影
     - 出典：https://maps.gsi.go.jp/development/ichiran.html#t20240102noto_wazimanaka_0111do
+- 被災後の空中写真（正射画像）：珠洲地区、輪島東地区、穴水地区、20240114撮影
+    - 出典：https://maps.gsi.go.jp/development/ichiran.html#t20240102noto_suzu_0114do
+- 被災後の空中写真（正射画像）：輪島西地区、穴水地区、七尾地区、20240117撮影
+    - 出典：https://maps.gsi.go.jp/development/ichiran.html#t20240102noto_wazimanishi_0117do
 - 斜面崩壊・堆積分布データ（2024年1月19日更新）
     - 出典：https://www.gsi.go.jp/BOUSAI/20240101_noto_earthquake.html#2
     - 概要：国土地理院が1月2日、5日、11日、14日及び17日に撮影した空中写真（正射画像）・（珠洲地区、輪島東地区、輪島中地区、輪島西地区、穴水地区、七尾地区）から、令和6年能登半島地震によって生じたと考えられる斜面崩壊地及び土砂堆積箇所の範囲について判読（一部は再度判読）したものです。
