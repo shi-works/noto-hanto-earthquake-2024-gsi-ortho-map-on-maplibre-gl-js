@@ -891,6 +891,28 @@
                 }
             });
 
+            // 令和6年能登半島地震 七尾地区　正射画像（2024年1月17日撮影）ソース
+            afterMap.addSource("nanao_0117", {
+                type: 'raster',
+                tiles: [
+                    'https://cyberjapandata.gsi.go.jp/xyz/20240102noto_nanao_0117do/{z}/{x}/{y}.png',
+                ],
+                attribution: '<a href="https://maps.gsi.go.jp/development/ichiran.html" target="_blank">地理院タイル</a>'
+            });
+
+            // 令和6年能登半島地震 七尾地区　正射画像（2024年1月17日撮影）レイヤ
+            afterMap.addLayer({
+                id: "nanao_0117",
+                type: "raster",
+                source: "nanao_0117",
+                paint: {
+                    "raster-opacity": opacity_value
+                },
+                layout: {
+                    'visibility': 'none'
+                }
+            });
+
             // 令和6年能登半島地震 輪島東地区　正射画像（2024年1月14日撮影）ソース
             afterMap.addSource("wazimahigashi-0114", {
                 type: 'raster',
@@ -2508,6 +2530,11 @@
                 parseInt(e.target.value, 10) / 100
             );
             afterMap.setPaintProperty(
+                'nanao_0117',
+                'raster-opacity',
+                parseInt(e.target.value, 10) / 100
+            );
+            afterMap.setPaintProperty(
                 '2024-01-06-00-17-46_UMBRA-06_GEC',
                 'raster-opacity',
                 parseInt(e.target.value, 10) / 100
@@ -2606,6 +2633,7 @@
                 afterMap.setLayoutProperty('suzu_0114', 'visibility', 'none');
                 afterMap.setLayoutProperty('wazimanishi_0117', 'visibility', 'none');
                 afterMap.setLayoutProperty('anamizu_0117', 'visibility', 'none');
+                afterMap.setLayoutProperty('nanao_0117', 'visibility', 'none');
                 afterMap.setLayoutProperty('2024-01-06-00-17-46_UMBRA-06_GEC', 'visibility', 'none');
                 afterMap.setLayoutProperty('2024-01-06-00-25-02_UMBRA-05_GEC', 'visibility', 'none');
                 afterMap.setLayoutProperty('2024-01-06-00-25-36_UMBRA-05_GEC', 'visibility', 'none');
@@ -2633,6 +2661,7 @@
                 afterMap.setLayoutProperty('suzu_0114', 'visibility', 'none');
                 afterMap.setLayoutProperty('wazimanishi_0117', 'visibility', 'none');
                 afterMap.setLayoutProperty('anamizu_0117', 'visibility', 'none');
+                afterMap.setLayoutProperty('nanao_0117', 'visibility', 'none');
                 afterMap.setLayoutProperty('2024-01-06-00-17-46_UMBRA-06_GEC', 'visibility', 'none');
                 afterMap.setLayoutProperty('2024-01-06-00-25-02_UMBRA-05_GEC', 'visibility', 'none');
                 afterMap.setLayoutProperty('2024-01-06-00-25-36_UMBRA-05_GEC', 'visibility', 'none');
@@ -2660,6 +2689,7 @@
                 afterMap.setLayoutProperty('suzu_0114', 'visibility', 'none');
                 afterMap.setLayoutProperty('wazimanishi_0117', 'visibility', 'none');
                 afterMap.setLayoutProperty('anamizu_0117', 'visibility', 'none');
+                afterMap.setLayoutProperty('nanao_0117', 'visibility', 'none');
                 afterMap.setLayoutProperty('2024-01-06-00-17-46_UMBRA-06_GEC', 'visibility', 'none');
                 afterMap.setLayoutProperty('2024-01-06-00-25-02_UMBRA-05_GEC', 'visibility', 'none');
                 afterMap.setLayoutProperty('2024-01-06-00-25-36_UMBRA-05_GEC', 'visibility', 'none');
@@ -2687,6 +2717,7 @@
                 afterMap.setLayoutProperty('suzu_0114', 'visibility', 'visible');
                 afterMap.setLayoutProperty('wazimanishi_0117', 'visibility', 'none');
                 afterMap.setLayoutProperty('anamizu_0117', 'visibility', 'none');
+                afterMap.setLayoutProperty('nanao_0117', 'visibility', 'none');
                 afterMap.setLayoutProperty('2024-01-06-00-17-46_UMBRA-06_GEC', 'visibility', 'none');
                 afterMap.setLayoutProperty('2024-01-06-00-25-02_UMBRA-05_GEC', 'visibility', 'none');
                 afterMap.setLayoutProperty('2024-01-06-00-25-36_UMBRA-05_GEC', 'visibility', 'none');
@@ -2714,6 +2745,7 @@
                 afterMap.setLayoutProperty('suzu_0114', 'visibility', 'none');
                 afterMap.setLayoutProperty('wazimanishi_0117', 'visibility', 'visible');
                 afterMap.setLayoutProperty('anamizu_0117', 'visibility', 'visible');
+                afterMap.setLayoutProperty('nanao_0117', 'visibility', 'visible');
                 afterMap.setLayoutProperty('2024-01-06-00-17-46_UMBRA-06_GEC', 'visibility', 'none');
                 afterMap.setLayoutProperty('2024-01-06-00-25-02_UMBRA-05_GEC', 'visibility', 'none');
                 afterMap.setLayoutProperty('2024-01-06-00-25-36_UMBRA-05_GEC', 'visibility', 'none');
@@ -2741,6 +2773,7 @@
                 afterMap.setLayoutProperty('suzu_0114', 'visibility', 'none');
                 afterMap.setLayoutProperty('wazimanishi_0117', 'visibility', 'none');
                 afterMap.setLayoutProperty('anamizu_0117', 'visibility', 'none');
+                afterMap.setLayoutProperty('nanao_0117', 'visibility', 'none');
                 afterMap.setLayoutProperty('2024-01-06-00-17-46_UMBRA-06_GEC', 'visibility', 'visible');
                 afterMap.setLayoutProperty('2024-01-06-00-25-02_UMBRA-05_GEC', 'visibility', 'visible');
                 afterMap.setLayoutProperty('2024-01-06-00-25-36_UMBRA-05_GEC', 'visibility', 'visible');
