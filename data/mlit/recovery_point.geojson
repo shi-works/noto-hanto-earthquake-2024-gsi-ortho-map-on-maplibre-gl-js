@@ -4,6 +4,156 @@
     {
       "type": "Feature",
       "properties": {
+        "name": "到達地点（石川県道28号）",
+        "路線名": "石川県道26号（珠洲穴水線）",
+        "地名（推定）": "珠洲市宝立町柏原",
+        "_markerType": "Icon",
+        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/319.png",
+        "_iconSize": [
+          30,
+          30
+        ],
+        "_iconAnchor": [
+          15,
+          15
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.199626,
+          37.398494
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "到達地点（輪島市道）",
+        "路線名": "輪島市道房田1号線",
+        "地名（推定）": "輪島市房田町",
+        "_markerType": "Icon",
+        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/319.png",
+        "_iconSize": [
+          30,
+          30
+        ],
+        "_iconAnchor": [
+          15,
+          15
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.862777,
+          37.370314
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "到達地点（志賀町道）",
+        "路線名": "志賀町道鹿頭酒見線",
+        "地名（推定）": "志賀町酒見",
+        "_markerType": "Icon",
+        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/319.png",
+        "_iconSize": [
+          30,
+          30
+        ],
+        "_iconAnchor": [
+          15,
+          15
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.688791,
+          37.167211
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "到達地点（志賀町道）",
+        "路線名": "志賀町道輪島荒屋線",
+        "地名（推定）": "志賀町給分",
+        "_markerType": "Icon",
+        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/319.png",
+        "_iconSize": [
+          30,
+          30
+        ],
+        "_iconAnchor": [
+          15,
+          15
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.733852,
+          37.162475
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "到達地点（輪島市道）",
+        "路線名": "輪島市道",
+        "地名（推定）": "輪島市門前町久川",
+        "_markerType": "Icon",
+        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/319.png",
+        "_iconSize": [
+          30,
+          30
+        ],
+        "_iconAnchor": [
+          15,
+          15
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.753521,
+          37.204731
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "到達地点（石川県道51号）",
+        "路線名": "石川県道51号（輪島富来線）",
+        "地名（推定）": "輪島市別所谷町",
+        "_markerType": "Icon",
+        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/319.png",
+        "_iconSize": [
+          30,
+          30
+        ],
+        "_iconAnchor": [
+          15,
+          15
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.869822,
+          37.347985
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "name": "到達地点（国道249号）",
         "路線名": "国道249号",
         "地名（推定）": "輪島市野田町",
@@ -271,8 +421,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          136.998503,
-          37.424068
+          137.004741,
+          37.428343
         ]
       }
     },
