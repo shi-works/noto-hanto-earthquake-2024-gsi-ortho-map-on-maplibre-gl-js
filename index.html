@@ -589,12 +589,15 @@
             <option value="20240105">空中写真(2024年01月05日撮影)</option>
             <option value="20240111">空中写真(2024年01月11日撮影)</option>
             <option value="20240114">空中写真(2024年01月14日撮影)</option>
+            <option value="20240117">空中写真(2024年01月17日撮影)</option>
             <option value="20240106">SAR画像(2024年01月06日撮影)</option>
         </select>
     </div>
     <div id="checkbox-area">
+        <!--
         <input type="checkbox" id="RoadRestorationVisualizationLayerCheckbox">
         <label for="RoadRestorationVisualizationLayerCheckbox">国土交通省 道路復旧見える化マップ(自動更新)</label><br>
+        -->
         <input type="checkbox" id="populationLayerCheckbox">
         <label for="populationLayerCheckbox">令和2年100mﾒｯｼｭ人口(石川県・富山県)</label><br>
         <input type="checkbox" id="IsolatedAreaLayerCheckbox">
@@ -843,6 +846,50 @@
             afterMap.setTerrain({ 'source': 'aist-dem', 'exaggeration': 1 });
 
             var opacity_value = 1;
+
+            // 令和6年能登半島地震 輪島西地区　正射画像（2024年1月17日撮影）ソース
+            afterMap.addSource("wazimanishi_0117", {
+                type: 'raster',
+                tiles: [
+                    'https://cyberjapandata.gsi.go.jp/xyz/20240102noto_wazimanishi_0117do/{z}/{x}/{y}.png',
+                ],
+                attribution: '<a href="https://maps.gsi.go.jp/development/ichiran.html" target="_blank">地理院タイル</a>'
+            });
+
+            // 令和6年能登半島地震 輪島西地区　正射画像（2024年1月17日撮影）レイヤ
+            afterMap.addLayer({
+                id: "wazimanishi_0117",
+                type: "raster",
+                source: "wazimanishi_0117",
+                paint: {
+                    "raster-opacity": opacity_value
+                },
+                layout: {
+                    'visibility': 'none'
+                }
+            });
+
+            // 令和6年能登半島地震 穴水地区　正射画像（2024年1月17日撮影）ソース
+            afterMap.addSource("anamizu_0117", {
+                type: 'raster',
+                tiles: [
+                    'https://cyberjapandata.gsi.go.jp/xyz/20240102noto_anamizu_0117do/{z}/{x}/{y}.png',
+                ],
+                attribution: '<a href="https://maps.gsi.go.jp/development/ichiran.html" target="_blank">地理院タイル</a>'
+            });
+
+            // 令和6年能登半島地震 穴水地区　正射画像（2024年1月17日撮影）レイヤ
+            afterMap.addLayer({
+                id: "anamizu_0117",
+                type: "raster",
+                source: "anamizu_0117",
+                paint: {
+                    "raster-opacity": opacity_value
+                },
+                layout: {
+                    'visibility': 'none'
+                }
+            });
 
             // 令和6年能登半島地震 輪島東地区　正射画像（2024年1月14日撮影）ソース
             afterMap.addSource("wazimahigashi-0114", {
@@ -1423,17 +1470,17 @@
             });
 
             // 斜面崩壊・堆積分布データ（穴水地区）ソース
-            afterMap.addSource("hokai_all_20240106_anamizu", {
+            afterMap.addSource("hokai_all_20240118_anamizu", {
                 type: "geojson",
-                data: './data/hokai_all_20240106_anamizu.geojson',
+                data: './data/hokai_all_20240118_anamizu.geojson',
                 attribution: '<a href="https://www.gsi.go.jp/BOUSAI/20240101_noto_earthquake.html">国土地理院 令和6年(2024年)能登半島地震に関する情報（斜面崩壊・堆積分布データ、津波浸水域、輪島市中心の火災焼失範囲）</a>'
             });
 
             // 斜面崩壊・堆積分布データ（穴水地区）ラインレイヤ
             afterMap.addLayer({
-                'id': 'hokai_all_20240106_anamizu-line',
+                'id': 'hokai_all_20240118_anamizu-line',
                 "type": "line",
-                'source': 'hokai_all_20240106_anamizu',
+                'source': 'hokai_all_20240118_anamizu',
                 'paint': {
                     'line-color': '#FF0000',
                     'line-width': 2
@@ -1442,9 +1489,9 @@
 
             // 斜面崩壊・堆積分布データ（穴水地区）ポリゴンレイヤ
             afterMap.addLayer({
-                'id': 'hokai_all_20240106_anamizu-fill',
+                'id': 'hokai_all_20240118_anamizu-fill',
                 "type": "fill",
-                'source': 'hokai_all_20240106_anamizu',
+                'source': 'hokai_all_20240118_anamizu',
                 'paint': {
                     'fill-color': '#FF0000',
                     'fill-opacity': 0.2
@@ -1452,17 +1499,17 @@
             });
 
             // 斜面崩壊・堆積分布データ（七尾地区）ソース
-            afterMap.addSource("hokai_all_20240109_nanao", {
+            afterMap.addSource("hokai_all_20240118_nanao", {
                 type: "geojson",
-                data: './data/hokai_all_20240109_nanao.geojson',
+                data: './data/hokai_all_20240118_nanao.geojson',
                 attribution: '<a href="https://www.gsi.go.jp/BOUSAI/20240101_noto_earthquake.html">国土地理院 令和6年(2024年)能登半島地震に関する情報（斜面崩壊・堆積分布データ、津波浸水域、輪島市中心の火災焼失範囲）</a>'
             });
 
             // 斜面崩壊・堆積分布データ（七尾地区）ラインレイヤ
             afterMap.addLayer({
-                'id': 'hokai_all_20240109_nanao-line',
+                'id': 'hokai_all_20240118_nanao-line',
                 "type": "line",
-                'source': 'hokai_all_20240109_nanao',
+                'source': 'hokai_all_20240118_nanao',
                 'paint': {
                     'line-color': '#FF0000',
                     'line-width': 2
@@ -1471,9 +1518,9 @@
 
             // 斜面崩壊・堆積分布データ（七尾地区）ポリゴンレイヤ
             afterMap.addLayer({
-                'id': 'hokai_all_20240109_nanao-fill',
+                'id': 'hokai_all_20240118_nanao-fill',
                 "type": "fill",
-                'source': 'hokai_all_20240109_nanao',
+                'source': 'hokai_all_20240118_nanao',
                 'paint': {
                     'fill-color': '#FF0000',
                     'fill-opacity': 0.2
@@ -2451,6 +2498,16 @@
                 parseInt(e.target.value, 10) / 100
             );
             afterMap.setPaintProperty(
+                'wazimanishi_0117',
+                'raster-opacity',
+                parseInt(e.target.value, 10) / 100
+            );
+            afterMap.setPaintProperty(
+                'anamizu_0117',
+                'raster-opacity',
+                parseInt(e.target.value, 10) / 100
+            );
+            afterMap.setPaintProperty(
                 '2024-01-06-00-17-46_UMBRA-06_GEC',
                 'raster-opacity',
                 parseInt(e.target.value, 10) / 100
@@ -2547,6 +2604,8 @@
                 afterMap.setLayoutProperty('wazimahigashi-0114', 'visibility', 'none');
                 afterMap.setLayoutProperty('anamizu_0114', 'visibility', 'none');
                 afterMap.setLayoutProperty('suzu_0114', 'visibility', 'none');
+                afterMap.setLayoutProperty('wazimanishi_0117', 'visibility', 'none');
+                afterMap.setLayoutProperty('anamizu_0117', 'visibility', 'none');
                 afterMap.setLayoutProperty('2024-01-06-00-17-46_UMBRA-06_GEC', 'visibility', 'none');
                 afterMap.setLayoutProperty('2024-01-06-00-25-02_UMBRA-05_GEC', 'visibility', 'none');
                 afterMap.setLayoutProperty('2024-01-06-00-25-36_UMBRA-05_GEC', 'visibility', 'none');
@@ -2572,6 +2631,8 @@
                 afterMap.setLayoutProperty('wazimahigashi-0114', 'visibility', 'none');
                 afterMap.setLayoutProperty('anamizu_0114', 'visibility', 'none');
                 afterMap.setLayoutProperty('suzu_0114', 'visibility', 'none');
+                afterMap.setLayoutProperty('wazimanishi_0117', 'visibility', 'none');
+                afterMap.setLayoutProperty('anamizu_0117', 'visibility', 'none');
                 afterMap.setLayoutProperty('2024-01-06-00-17-46_UMBRA-06_GEC', 'visibility', 'none');
                 afterMap.setLayoutProperty('2024-01-06-00-25-02_UMBRA-05_GEC', 'visibility', 'none');
                 afterMap.setLayoutProperty('2024-01-06-00-25-36_UMBRA-05_GEC', 'visibility', 'none');
@@ -2597,6 +2658,8 @@
                 afterMap.setLayoutProperty('wazimahigashi-0114', 'visibility', 'none');
                 afterMap.setLayoutProperty('anamizu_0114', 'visibility', 'none');
                 afterMap.setLayoutProperty('suzu_0114', 'visibility', 'none');
+                afterMap.setLayoutProperty('wazimanishi_0117', 'visibility', 'none');
+                afterMap.setLayoutProperty('anamizu_0117', 'visibility', 'none');
                 afterMap.setLayoutProperty('2024-01-06-00-17-46_UMBRA-06_GEC', 'visibility', 'none');
                 afterMap.setLayoutProperty('2024-01-06-00-25-02_UMBRA-05_GEC', 'visibility', 'none');
                 afterMap.setLayoutProperty('2024-01-06-00-25-36_UMBRA-05_GEC', 'visibility', 'none');
@@ -2622,6 +2685,35 @@
                 afterMap.setLayoutProperty('wazimahigashi-0114', 'visibility', 'visible');
                 afterMap.setLayoutProperty('anamizu_0114', 'visibility', 'visible');
                 afterMap.setLayoutProperty('suzu_0114', 'visibility', 'visible');
+                afterMap.setLayoutProperty('wazimanishi_0117', 'visibility', 'none');
+                afterMap.setLayoutProperty('anamizu_0117', 'visibility', 'none');
+                afterMap.setLayoutProperty('2024-01-06-00-17-46_UMBRA-06_GEC', 'visibility', 'none');
+                afterMap.setLayoutProperty('2024-01-06-00-25-02_UMBRA-05_GEC', 'visibility', 'none');
+                afterMap.setLayoutProperty('2024-01-06-00-25-36_UMBRA-05_GEC', 'visibility', 'none');
+                afterMap.setLayoutProperty('2024-01-06-00-26-09_UMBRA-05_GEC', 'visibility', 'none');
+                afterMap.setLayoutProperty('2024-01-06-00-26-38_UMBRA-05_GEC', 'visibility', 'none');
+                afterMap.setLayoutProperty('2024-01-06-00-58-32_UMBRA-04_GEC', 'visibility', 'none');
+                afterMap.setLayoutProperty('2024-01-06-00-59-09_UMBRA-04_GEC', 'visibility', 'none');
+                afterMap.setLayoutProperty('2024-01-06-01-40-36_UMBRA-07_GEC', 'visibility', 'none');
+                afterMap.setLayoutProperty('2024-01-06-01-41-14_UMBRA-07_GEC', 'visibility', 'none');
+                afterMap.setLayoutProperty('2024-01-06-11-34-13_UMBRA-04_GEC', 'visibility', 'none');
+                afterMap.setLayoutProperty('2024-01-06-11-34-47_UMBRA-04_GEC', 'visibility', 'none');
+            } else if (OrthoName === '20240117') {
+                afterMap.setLayoutProperty('wazimahigashi-0102', 'visibility', 'none');
+                afterMap.setLayoutProperty('wazimanaka-0102', 'visibility', 'none');
+                afterMap.setLayoutProperty('suzu-0102', 'visibility', 'none');
+                afterMap.setLayoutProperty('nanao-0105', 'visibility', 'none');
+                afterMap.setLayoutProperty('anamizu-0105', 'visibility', 'none');
+                afterMap.setLayoutProperty('wazimanaka-0105', 'visibility', 'none');
+                afterMap.setLayoutProperty('suzu-0105', 'visibility', 'none');
+                afterMap.setLayoutProperty('wazimanaka-0111', 'visibility', 'none');
+                afterMap.setLayoutProperty('wazimanishi-0111', 'visibility', 'none');
+                afterMap.setLayoutProperty('anamizu-0111', 'visibility', 'none');
+                afterMap.setLayoutProperty('wazimahigashi-0114', 'visibility', 'none');
+                afterMap.setLayoutProperty('anamizu_0114', 'visibility', 'none');
+                afterMap.setLayoutProperty('suzu_0114', 'visibility', 'none');
+                afterMap.setLayoutProperty('wazimanishi_0117', 'visibility', 'visible');
+                afterMap.setLayoutProperty('anamizu_0117', 'visibility', 'visible');
                 afterMap.setLayoutProperty('2024-01-06-00-17-46_UMBRA-06_GEC', 'visibility', 'none');
                 afterMap.setLayoutProperty('2024-01-06-00-25-02_UMBRA-05_GEC', 'visibility', 'none');
                 afterMap.setLayoutProperty('2024-01-06-00-25-36_UMBRA-05_GEC', 'visibility', 'none');
@@ -2647,6 +2739,8 @@
                 afterMap.setLayoutProperty('wazimahigashi-0114', 'visibility', 'none');
                 afterMap.setLayoutProperty('anamizu_0114', 'visibility', 'none');
                 afterMap.setLayoutProperty('suzu_0114', 'visibility', 'none');
+                afterMap.setLayoutProperty('wazimanishi_0117', 'visibility', 'none');
+                afterMap.setLayoutProperty('anamizu_0117', 'visibility', 'none');
                 afterMap.setLayoutProperty('2024-01-06-00-17-46_UMBRA-06_GEC', 'visibility', 'visible');
                 afterMap.setLayoutProperty('2024-01-06-00-25-02_UMBRA-05_GEC', 'visibility', 'visible');
                 afterMap.setLayoutProperty('2024-01-06-00-25-36_UMBRA-05_GEC', 'visibility', 'visible');
@@ -2680,6 +2774,7 @@
 
         });
 
+        /*
         // 国土交通省 道路復旧見える化マップの表示・非表示切り替え制御
         document.getElementById('RoadRestorationVisualizationLayerCheckbox').addEventListener('change', function (e) {
             var legend_road = document.getElementById('legend-road');
@@ -2739,6 +2834,7 @@
             });
 
         });
+        */
 
         // 100mメッシュ人口の表示・非表示切り替え制御
         document.getElementById('populationLayerCheckbox').addEventListener('change', function (e) {
@@ -3128,6 +3224,7 @@
                 .addTo(afterMap);
         });
 
+        /*
         // 啓開前・啓開後比較箇所ポップアップ表示
         afterMap.on('click', 'before_after-symbol', async (e) => {
             var lng = e.features[0].geometry.coordinates[0];
@@ -3242,6 +3339,7 @@
                     .addTo(afterMap);
             }
         });
+        */
 
         /*
         // 被災状況（空撮）ポップアップ表示
@@ -3267,6 +3365,7 @@
         });
         */
 
+        /*
         // 復旧到達地点ポップアップ表示
         afterMap.on('click', 'recovery_point-symbol', async (e) => {
             var lng = e.features[0].geometry.coordinates[0];
@@ -3282,6 +3381,7 @@
                 )
                 .addTo(afterMap);
         });
+        */
 
         /*
         // 緊急復旧済み区間ポップアップ表示
@@ -3305,6 +3405,7 @@
         });
         */
 
+        /*
         // 支援拠点の道の駅ポップアップ表示
         afterMap.on('click', 'michinoeki-symbol', async (e) => {
             var lng = e.features[0].geometry.coordinates[0];
@@ -3334,6 +3435,7 @@
                 )
                 .addTo(afterMap);
         });
+        */
 
     </script>
 </body>
