@@ -594,10 +594,8 @@
         </select>
     </div>
     <div id="checkbox-area">
-        <!--
         <input type="checkbox" id="RoadRestorationVisualizationLayerCheckbox">
         <label for="RoadRestorationVisualizationLayerCheckbox">国土交通省 道路復旧見える化マップ(自動更新)</label><br>
-        -->
         <input type="checkbox" id="populationLayerCheckbox">
         <label for="populationLayerCheckbox">令和2年100mﾒｯｼｭ人口(石川県・富山県)</label><br>
         <input type="checkbox" id="IsolatedAreaLayerCheckbox">
@@ -2807,7 +2805,6 @@
 
         });
 
-        /*
         // 国土交通省 道路復旧見える化マップの表示・非表示切り替え制御
         document.getElementById('RoadRestorationVisualizationLayerCheckbox').addEventListener('change', function (e) {
             var legend_road = document.getElementById('legend-road');
@@ -2867,7 +2864,6 @@
             });
 
         });
-        */
 
         // 100mメッシュ人口の表示・非表示切り替え制御
         document.getElementById('populationLayerCheckbox').addEventListener('change', function (e) {
@@ -3269,35 +3265,46 @@
                 .addTo(afterMap);
         });
 
-        /*
         // 啓開前・啓開後比較箇所ポップアップ表示
         afterMap.on('click', 'before_after-symbol', async (e) => {
             var lng = e.features[0].geometry.coordinates[0];
             var lat = e.features[0].geometry.coordinates[1];
             var name = e.features[0].properties['name'];
 
-            // ベースURL
             var baseUrl = "https://www.mlit.go.jp/road/r6noto/map";
 
-            // '啓開前''啓開後'の値からファイル名を抽出
             var beforeValue = e.features[0].properties['啓開前'];
             var beforefilename = beforeValue.match(/src=\"\.\/img\/before_after\/(.*?)\"/)[1];
+            var imageBeforeUrl = baseUrl + "/img/before_after/" + beforefilename;
+
+            var startValue = e.features[0].properties['啓開作業'];
+            var startfilename, imageStartUrl, startHtml = '';
+
+            if (startValue && startValue !== '') {
+                startfilename = startValue.match(/src=\"\.\/img\/before_after\/(.*?)\"/)[1];
+                imageStartUrl = baseUrl + "/img/before_after/" + startfilename;
+                startHtml = '啓開作業：' + '<br>' +
+                    '<div><a href="' + imageStartUrl + '" target="_blank"><img class="popup-image" src="' + imageStartUrl + '" alt="画像"></a></div>';
+            }
 
             var afterValue = e.features[0].properties['啓開後'];
-            var afterfilename = afterValue.match(/src=\"\.\/img\/before_after\/(.*?)\"/)[1];
-
-            // 完全なURLを生成
-            var imageBeforeUrl = baseUrl + "/img/before_after/" + beforefilename;
-            var imageAfterUrl = baseUrl + "/img/before_after/" + afterfilename;
+            var afterfilename, imageAfterUrl, afterHtml = '';
+            if (afterValue && afterValue !== '') {
+                afterfilename = afterValue.match(/src=\"\.\/img\/before_after\/(.*?)\"/)[1];
+                imageAfterUrl = baseUrl + "/img/before_after/" + afterfilename;
+                afterHtml = '啓開後：' + '<br>' +
+                    '<div><a href="' + imageAfterUrl + '" target="_blank"><img class="popup-image" src="' + imageAfterUrl + '" alt="画像"></a></div>';
+            }
 
             new maplibregl.Popup({ className: 'custom-before-after-popup' })
                 .setLngLat(e.lngLat)
                 .setHTML(
+                    '<div style="border-bottom:1px solid #000;"><strong>啓開前・啓開後比較箇所</strong></div>' +
                     '<div style="border-bottom:1px solid #000;"><strong>name:' + name + '</strong></div>' +
                     '啓開前：' + '<br>' +
                     '<div><a href="' + imageBeforeUrl + '" target="_blank"><img class="popup-image" src="' + imageBeforeUrl + '" alt="画像"></a></div>' +
-                    '啓開後：' + '<br>' +
-                    '<div><a href="' + imageAfterUrl + '" target="_blank"><img class="popup-image" src="' + imageAfterUrl + '" alt="画像"></a></div>' +
+                    startHtml +  // 啓開作業のHTML
+                    afterHtml +  // 啓開後のHTML
                     '<div><a href="https://www.google.com/maps?q=' + lat + ',' + lng + '&hl=ja" target="_blank">🌎Google Maps</a></div>' +
                     '<div><a href="https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=' + lat + ',' + lng + '&hl=ja" target="_blank">📷Street View</a></div>'
                 )
@@ -3310,41 +3317,55 @@
             var lat = e.features[0].geometry.coordinates[1];
             var name = e.features[0].properties['name'];
 
-            var keikaiValue = e.features[0].properties['啓開作業等'];
-            var parser = new DOMParser();
-            var doc = parser.parseFromString(keikaiValue, 'text/html');
+            // ポップアップ用のHTMLコンテンツを生成する関数
+            function generateContentHtml(propertyValue) {
+                var parser = new DOMParser();
+                var doc = parser.parseFromString(propertyValue, 'text/html');
+                var contentHtml = '';
 
-            var contentHtml = '';
-
-            if (doc.querySelector('iframe')) { // 動画の場合
-                var iframeSrc = doc.querySelector('iframe').src;
-                contentHtml = '<iframe src="' + iframeSrc + '" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe>';
-            } else {
-                // すべての画像を取得
-                var images = doc.querySelectorAll('img');
-
-                // ベースURL
-                var baseUrl = "https://www.mlit.go.jp/road/r6noto/map/";
-
-                // すべての画像を処理
-                images.forEach(img => {
-                    var relativeSrc = img.getAttribute('src');
-                    // 相対パスから'./'を取り除く
-                    if (relativeSrc.startsWith('./')) {
-                        relativeSrc = relativeSrc.substring(2);
-                    }
-                    var imgSrc = baseUrl + relativeSrc;
-                    contentHtml += '<a href="' + imgSrc + '" target="_blank"><img src="' + imgSrc + '" alt="画像" style="max-width:100%;height:auto;"></a>';
-                });
+                if (doc.querySelector('iframe')) {
+                    var iframeSrc = doc.querySelector('iframe').src;
+                    contentHtml = '<iframe src="' + iframeSrc + '" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe>';
+                } else {
+                    var images = doc.querySelectorAll('img');
+                    var baseUrl = "https://www.mlit.go.jp/road/r6noto/map/";
+                    images.forEach(img => {
+                        var relativeSrc = img.getAttribute('src');
+                        if (relativeSrc.startsWith('./')) {
+                            relativeSrc = relativeSrc.substring(2);
+                        }
+                        var imgSrc = baseUrl + relativeSrc;
+                        contentHtml += '<a href="' + imgSrc + '" target="_blank"><img src="' + imgSrc + '" alt="画像" style="max-width:100%;height:auto;"></a>';
+                    });
+                }
+                return contentHtml;
             }
 
-            // ポップアップを作成
+            // プロパティと見出しのマッピング
+            var propertiesWithHeaders = {
+                '啓開前': '啓開前：',
+                '啓開作業等': '啓開作業等：',
+                '啓開後': '啓開後：',
+                '緊急車両の通行状況': '緊急車両の通行状況：',
+                '被災状況': '被災状況：'
+            };
+            var popupContent = '';
+
+            // 各プロパティに対してHTMLコンテンツを生成
+            Object.keys(propertiesWithHeaders).forEach(prop => {
+                if (e.features[0].properties[prop]) {
+                    popupContent += '<div style="border-bottom:1px solid #000;"><strong>' + propertiesWithHeaders[prop] + '</strong></div>';
+                    popupContent += generateContentHtml(e.features[0].properties[prop]);
+                }
+            });
+
+            // ポップアップの表示
             new maplibregl.Popup({ className: 'custom-sagyou-popup' })
                 .setLngLat(e.lngLat)
                 .setHTML(
+                    '<div style="border-bottom:1px solid #000;"><strong>啓開作業状況</strong></div>' +
                     '<div style="border-bottom:1px solid #000;"><strong>name:' + name + '</strong></div>' +
-                    '啓開作業等：' + '<br>' +
-                    contentHtml +
+                    popupContent +
                     '<div><a href="https://www.google.com/maps?q=' + lat + ',' + lng + '&hl=ja" target="_blank">🌎Google Maps</a></div>' +
                     '<div><a href="https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=' + lat + ',' + lng + '&hl=ja" target="_blank">📷Street View</a></div>'
                 )
@@ -3384,7 +3405,6 @@
                     .addTo(afterMap);
             }
         });
-        */
 
         /*
         // 被災状況（空撮）ポップアップ表示
@@ -3410,7 +3430,6 @@
         });
         */
 
-        /*
         // 復旧到達地点ポップアップ表示
         afterMap.on('click', 'recovery_point-symbol', async (e) => {
             var lng = e.features[0].geometry.coordinates[0];
@@ -3426,7 +3445,6 @@
                 )
                 .addTo(afterMap);
         });
-        */
 
         /*
         // 緊急復旧済み区間ポップアップ表示
@@ -3450,37 +3468,40 @@
         });
         */
 
-        /*
         // 支援拠点の道の駅ポップアップ表示
         afterMap.on('click', 'michinoeki-symbol', async (e) => {
             var lng = e.features[0].geometry.coordinates[0];
             var lat = e.features[0].geometry.coordinates[1];
             var name = e.features[0].properties['name'];
-            var usage_status = e.features[0].properties['活用状況：'];
 
             // ベースURL
             var baseUrl = "https://www.mlit.go.jp/road/r6noto/map";
 
-            // '啓開前''啓開後'の値からファイル名を抽出
-            var photoValue = e.features[0].properties['現地写真：'];
-            var photofilename = photoValue.match(/src=\"\.\/img\/michinoeki\/(.*?)\"/)[1];
+            // '道の駅の状況'の値から全ての画像ファイル名を抽出
+            var photoValues = e.features[0].properties['道の駅の状況'];
+            var photoFilenames = [...photoValues.matchAll(/src=\"\.\/img\/michinoeki\/(.*?)\"/g)].map(match => match[1]);
 
-            // 完全なURLを生成
-            var imageUrl = baseUrl + "/img/michinoeki/" + photofilename;
+            // 画像URLのHTMLを生成
+            var imagesHtml = photoFilenames.map(filename =>
+                '<div><a href="' + baseUrl + "/img/michinoeki/" + filename + '" target="_blank">' +
+                '<img class="popup-image" src="' + baseUrl + "/img/michinoeki/" + filename + '" alt="画像"></a></div>'
+            ).join('');
+
+            // 画像タグを除いた純粋なテキスト内容を抽出
+            var statusText = photoValues.replace(/<img.*?>/g, '');
 
             new maplibregl.Popup({ className: 'custom-michinoeki-popup' })
                 .setLngLat(e.lngLat)
                 .setHTML(
                     '<div style="border-bottom:1px solid #000;"><strong>name:' + name + '</strong></div>' +
-                    '活用状況：' + usage_status + '<br>' +
+                    '<div><strong>道の駅の状況：</strong>' + statusText + '</div>' +
                     '現地写真：' + '<br>' +
-                    '<div><a href="' + imageUrl + '" target="_blank"><img class="popup-image" src="' + imageUrl + '" alt="画像"></a></div>' +
+                    imagesHtml +
                     '<div><a href="https://www.google.com/maps?q=' + lat + ',' + lng + '&hl=ja" target="_blank">🌎Google Maps</a></div>' +
                     '<div><a href="https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=' + lat + ',' + lng + '&hl=ja" target="_blank">📷Street View</a></div>'
                 )
                 .addTo(afterMap);
         });
-        */
 
     </script>
 </body>
