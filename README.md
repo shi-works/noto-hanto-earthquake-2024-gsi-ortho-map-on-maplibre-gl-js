@@ -77,7 +77,7 @@ https://github.com/shi-works/noto-hanto-earthquake-2024-gsi-ortho-map-on-maplibr
     - 概要：地域・交通データ研究所にて公開されている令和2年簡易100mメッシュ人口データをFlatGeobuf形式に変換したデータです。
     - ライセンス：[西澤明](https://gtfs-gis.jp/teikyo/index.html)、[@shi-works](https://twitter.com/shi__works)、[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/deed.ja)
 
-### 孤立集落人数データ（1月15日時点）
+### 孤立集落人数データ（1月19日時点）
 - 孤立集落人数データ（石川県）（GeoJSON形式）
     - 出典：https://x.com/GISPHN/status/1745321675393298538?s=20
         - 原初データ出典：[石川県災害対策本部員会議資料](https://www.pref.ishikawa.lg.jp/saigai/202401jishin-taisakuhonbu.html#honbu)
