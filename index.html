@@ -299,9 +299,9 @@
             background: rgba(255, 255, 255, 0.9);
             box-shadow: 0 0 15px rgba(0, 0, 0, 0.9);
             border-radius: 5px;
-            width: 280px;
-            height: 290px;
-            /*overflow: scroll;*/
+            width: 250px;
+            height: 300px;
+            overflow: scroll;
         }
 
         .custom-Number-of-isolated-area-popup .maplibregl-popup-content .shinouchimei-title {
@@ -601,7 +601,7 @@
         <input type="checkbox" id="populationLayerCheckbox">
         <label for="populationLayerCheckbox">令和2年100mﾒｯｼｭ人口(石川県・富山県)</label><br>
         <input type="checkbox" id="IsolatedAreaLayerCheckbox">
-        <label for="IsolatedAreaLayerCheckbox">石川県孤立集落人数(1/17時点)</label><br>
+        <label for="IsolatedAreaLayerCheckbox">石川県孤立集落人数(1/19時点)</label><br>
         <input type="checkbox" id="OpenShelterNanaoshiLayerCheckbox">
         <label for="OpenShelterNanaoshiLayerCheckbox">石川県七尾市避難所開設情報(自動更新)</label>
     </div>
@@ -1613,7 +1613,7 @@
             // 空中写真判読による津波浸水域（推定）（穴水地区）ソース
             afterMap.addSource("tsunami_anamizu", {
                 type: "geojson",
-                data: './data/shinsui-tsunami-area_anamizu_20240110.geojson',
+                data: './data/shinsui-tsunami-area_anamizu_20240118.geojson',
                 attribution: '<a href="https://www.gsi.go.jp/BOUSAI/20240101_noto_earthquake.html">国土地理院 令和6年(2024年)能登半島地震に関する情報（斜面崩壊・堆積分布データ、津波浸水域、輪島市中心の火災焼失範囲）</a>'
             });
 
@@ -1642,7 +1642,7 @@
             // 空中写真判読による津波浸水域（推定）（七尾地区）ソース
             afterMap.addSource("tsunami_nanao", {
                 type: "geojson",
-                data: './data/shinsui-tsunami-area_nanao_20240110.geojson',
+                data: './data/shinsui-tsunami-area_nanao_20240118.geojson',
                 attribution: '<a href="https://www.gsi.go.jp/BOUSAI/20240101_noto_earthquake.html">国土地理院 令和6年(2024年)能登半島地震に関する情報（斜面崩壊・堆積分布データ、津波浸水域、輪島市中心の火災焼失範囲）</a>'
             });
 
@@ -1789,7 +1789,7 @@
             // 石川県 孤立集落人数ポリゴンソース
             afterMap.addSource("Number_of_isolated_area", {
                 type: "geojson",
-                data: './data/Number_of_isolated_area0117_EPSG4326.geojson',
+                data: './data/Number_of_isolated_area0119_EPSG4326.geojson',
                 attribution: '<a href="https://www.pref.ishikawa.lg.jp/saigai/202401jishin-taisakuhonbu.html#honbu" target="_blank">石川県 災害対策本部員会議資料（孤立集落人数）</a>',
             });
 
@@ -1899,7 +1899,7 @@
             // 石川県 孤立集落人数重心ソース
             afterMap.addSource("Number_of_isolated_area_centroid", {
                 type: "geojson",
-                data: './data/Number_of_isolated_area0117_centroid_EPSG4326.geojson',
+                data: './data/Number_of_isolated_area0119_centroid_EPSG4326.geojson',
                 attribution: '<a href="https://www.pref.ishikawa.lg.jp/saigai/202401jishin-taisakuhonbu.html#honbu" target="_blank">石川県 災害対策本部員会議資料（孤立集落人数）</a>',
             });
 
@@ -3057,7 +3057,7 @@
                 .addTo(afterMap);
         });
 
-        // 孤立集落人数のポップアップ表示
+        // 石川県孤立集落人数のポップアップ表示
         afterMap.on('click', 'Number_of_isolated_area-fill', (e) => {
             var cityname = e.features[0].properties['自治体'];
             var syuurakuname = e.features[0].properties['孤立集落名'];
@@ -3073,6 +3073,8 @@
             var number_0115 = e.features[0].properties['人数_1/15_15時現在'];
             var number_0116 = e.features[0].properties['人数_1/16_15時現在'];
             var number_0117 = e.features[0].properties['人数_1/17_15時現在'];
+            var number_0118 = e.features[0].properties['人数_1/18_15時現在'];
+            var number_0119 = e.features[0].properties['人数_1/19_15時現在'];
 
             if (number_0107 === undefined) { number_0107 = "-" };
             if (number_0108 === undefined) { number_0108 = "-" };
@@ -3085,11 +3087,13 @@
             if (number_0115 === undefined) { number_0115 = "-" };
             if (number_0116 === undefined) { number_0116 = "-" };
             if (number_0117 === undefined) { number_0117 = "-" };
+            if (number_0118 === undefined) { number_0118 = "-" };
+            if (number_0119 === undefined) { number_0119 = "-" };
 
             new maplibregl.Popup({ className: 'custom-Number-of-isolated-area-popup' })
                 .setLngLat(e.lngLat)
                 .setHTML(
-                    '<div style="solid #000; font-size: 1.2em; color: #CB0065;"><strong>孤立集落人数</strong></div>' +
+                    '<div style="solid #000; font-size: 1.2em; color: #CB0065;"><strong>石川県孤立集落人数</strong></div>' +
                     '<table class="pop-info">' +
                     '<tr>' +
                     '<th></th>' +
@@ -3151,13 +3155,21 @@
                     '<td>孤立集落人数(1/17_15時現在)：</td>' +
                     '<td><b>' + number_0117 + '人' + '</b></td>' +
                     '</tr>' +
+                    '<tr>' +
+                    '<td>孤立集落人数(1/18_15時現在)：</td>' +
+                    '<td><b>' + number_0118 + '人' + '</b></td>' +
+                    '</tr>' +
+                    '<tr>' +
+                    '<td>孤立集落人数(1/19_15時現在)：</td>' +
+                    '<td><b>' + number_0119 + '人' + '</b></td>' +
+                    '</tr>' +
                     '</table>' +
                     '出典）' + '<a href="https://www.pref.ishikawa.lg.jp/saigai/202401jishin-taisakuhonbu.html#honbu">石川県 災害対策本部員会議資料</a>'
                 )
                 .addTo(afterMap);
         });
 
-        // 七尾市避難所開設情報のポップアップ表示
+        // 石川県七尾市避難所開設情報のポップアップ表示
         afterMap.on('click', 'open_shelter_Nanao-shi-symbol', (e) => {
             var chiku = e.features[0].properties['地区'];
             var name = e.features[0].properties['名称'];
@@ -3196,7 +3208,7 @@
                     /*
                     '<div style="solid #000; font-size: 1.2em; color: #017356;"><strong>七尾市避難所開設情報</strong></div>' +
                     */
-                    '<div style="solid #000; font-size: 1.2em; color: #017356;"><strong>' + '<a href=https://www.city.nanao.lg.jp/bosai/mail/202401021200.html>' + '七尾市避難所開設情報' + '</a>' + '</strong></div>' +
+                    '<div style="solid #000; font-size: 1.2em; color: #017356;"><strong>' + '<a href=https://www.city.nanao.lg.jp/bosai/mail/202401021200.html>' + '石川県七尾市避難所開設情報' + '</a>' + '</strong></div>' +
                     '<table class="pop-info">' +
                     '<tr>' +
                     '<th></th>' +
