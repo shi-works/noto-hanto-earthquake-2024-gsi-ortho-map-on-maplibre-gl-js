@@ -1042,7 +1042,33 @@
         "type": "Point",
         "coordinates": [
           136.957579,
-          37.294794
+          37.294794,
+          216
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "大谷ループ橋被害状況調査",
+        "啓開作業等": "<iframe width=\"100%\" src=\"https://www.youtube.com/embed/_afIzu8lFfQ\" title=\"国道249号大谷ループ橋(珠洲市馬緤町)の被災状況を調査【令和6年能登半島地震　被災状況調査】\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen></iframe>",
+        "_markerType": "Icon",
+        "_iconUrl": "https://www.mlit.go.jp/road/r6noto/map/img/icon_movie.png",
+        "_iconSize": [
+          30,
+          30
+        ],
+        "_iconAnchor": [
+          15,
+          15
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.181452,
+          37.497483,
+          58.1
         ]
       }
     }
