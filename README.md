@@ -10,11 +10,6 @@ https://github.com/shi-works/noto-hanto-earthquake-2024-gsi-ortho-map-on-maplibr
 ### 国土地理院
 - 被災前の空中写真：全国（能登半島：2010年4月～5月撮影）
     - 出典：https://maps.gsi.go.jp/development/ichiran.html#seamlessphoto
-- 被災前の空中写真：能登半島（2020年、2022年）
-    - 出典：https://info.qchizu.xyz/
-        - 原初データ出典：[令和6年能登半島地震　能登東部写真地図画像データ（発災前）](https://www.geospatial.jp/ckan/dataset/2024-notoeast-ortho)、[令和6年能登半島地震　能登西部写真地図画像データ（発災前）](https://www.geospatial.jp/ckan/dataset/2024-notowest-ortho)
-    - 測量期間：2020/7/22～2021/2/26（穴水町,志賀町,七尾市,中能登町,輪島市）、2022/7/13～2023/2/28（穴水町,七尾市,珠洲市,能登町）
-    - 概要：G空間情報センターにて公開されている、石川県提供の令和6年能登半島地震 [能登東部写真地図画像データ（発災前）](https://www.geospatial.jp/ckan/dataset/2024-notoeast-ortho)及び[能登西部写真地図画像データ（発災前）](https://www.geospatial.jp/ckan/dataset/2024-notowest-ortho)を、[山と地図（@Yama_Chizu）](https://twitter.com/Yama_Chizu)様がオルソ画像タイル化したデータです。
 - 被災後の空中写真（正射画像）：珠洲地区、輪島東地区、輪島中地区、20240102撮影
     - 出典：https://maps.gsi.go.jp/development/ichiran.html#t20240102noto_suzu_0102do
 - 被災後の空中写真（正射画像）：珠洲地区、輪島中地区、穴水地区、七尾地区、20240105撮影
@@ -42,6 +37,15 @@ https://github.com/shi-works/noto-hanto-earthquake-2024-gsi-ortho-map-on-maplibr
 - 空中写真等の画像判読による輪島市中心の火災焼失範囲（推定）（2024年1月12日更新）
     - 出典：https://www.gsi.go.jp/BOUSAI/20240101_noto_earthquake.html#17
     - 概要：国土地理院が令和6年1月2日に撮影した空中写真等を画像判読して輪島市中心の火災による焼失範囲を推定したものです。
+
+- 上記の公開データのライセンス：[Q地図タイルを表示するWebサイト等の公開](https://info.qchizu.xyz/qchizu/reprint/#toc3)に従い、出典の明示のみで申請不要で利用可能（地理院タイルの取扱と同じ）
+
+### 全国Ｑ地図
+- 被災前の空中写真：能登半島（2020年、2022年）
+    - 出典：https://info.qchizu.xyz/
+        - 原初データ出典：[令和6年能登半島地震　能登東部写真地図画像データ（発災前）](https://www.geospatial.jp/ckan/dataset/2024-notoeast-ortho)、[令和6年能登半島地震　能登西部写真地図画像データ（発災前）](https://www.geospatial.jp/ckan/dataset/2024-notowest-ortho)
+    - 測量期間：2020/7/22～2021/2/26（穴水町,志賀町,七尾市,中能登町,輪島市）、2022/7/13～2023/2/28（穴水町,七尾市,珠洲市,能登町）
+    - 概要：G空間情報センターにて公開されている、石川県提供の令和6年能登半島地震 [能登東部写真地図画像データ（発災前）](https://www.geospatial.jp/ckan/dataset/2024-notoeast-ortho)及び[能登西部写真地図画像データ（発災前）](https://www.geospatial.jp/ckan/dataset/2024-notowest-ortho)を、[山と地図（@Yama_Chizu）](https://twitter.com/Yama_Chizu)様がオルソ画像タイル化したデータです。
 
 - 上記の公開データのライセンス：[国土地理院コンテンツ利用規約](https://www.gsi.go.jp/kikakuchousei/kikakuchousei40182.html)に従い、出典明示により、転載も含め使用可
 
