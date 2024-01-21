@@ -63,7 +63,7 @@
 
         .toggle-button-1 {
             position: absolute;
-            bottom: 175px;
+            bottom: 155px;
             right: 50px;
             background-color: transparent;
             border: none;
@@ -629,12 +629,14 @@
         <div class="square"
             style='background-color: rgb(191, 0, 255, 0.2); outline: 2px solid;outline-color: rgba(191, 0, 255, 1); display: inline-block;'>
         </div>
-        <span style="margin-left: 5px;">海岸線が前進した範囲(空中写真)</span>
+        <span style="margin-left: 5px;">海岸線が前進した範囲(1/15公開)</span>
+        <!--
         <div style="height: 5px;"></div>
         <div class="square"
             style='background-color: rgb(127, 0, 255, 0.2); outline: 2px solid;outline-color: rgba(127, 0, 255, 1); display: inline-block;'>
         </div>
         <span style="margin-left: 5px;">海岸線が前進した範囲(衛星画像)</span>
+        -->
         <div style="height: 5px;"></div>
         <div class="square"
             style='background-color: rgb(255, 127, 0, 0.2); outline: 2px solid;outline-color: rgba(255, 127, 0, 1); display: inline-block;'>
@@ -1695,15 +1697,15 @@
                 }
             });
 
-            // 海岸線が前進した範囲（空中写真）ソース
+            // 海岸線が前進した範囲（空中写真・衛星画像）ソース
             afterMap.addSource("Uplift", {
                 type: "geojson",
                 // data: './data/CL_NotoNE0104.geojson',
-                data: './data/Uplift_mapping_NotoEQ_ver2.geojson',
+                data: './data/Uplift_mapping_NotoEQ_ver3.geojson',
                 attribution: '<a href="https://ajg-disaster.blogspot.com/2024/01/2024_2.html">日本地理学会 令和6年能登半島地震変動地形調査グループ（海岸線が前進した範囲）</a>'
             });
 
-            // 海岸線が前進した範囲（空中写真）ラインレイヤ
+            // 海岸線が前進した範囲（空中写真・衛星画像）ラインレイヤ
             afterMap.addLayer({
                 'id': 'Uplift-line',
                 "type": "line",
@@ -1714,7 +1716,7 @@
                 }
             });
 
-            // 海岸線が前進した範囲（空中写真）ポリゴンレイヤ
+            // 海岸線が前進した範囲（空中写真・衛星画像）ポリゴンレイヤ
             afterMap.addLayer({
                 'id': 'Uplift-fill',
                 "type": "fill",
@@ -1725,6 +1727,7 @@
                 }
             });
 
+            /*
             // 海岸線が前進した範囲（衛星画像）ソース
             afterMap.addSource("CL", {
                 type: "geojson",
@@ -1754,6 +1757,7 @@
                     'fill-opacity': 0.2
                 }
             });
+            */
 
             // 空中写真等の画像判読による輪島市中心の火災焼失範囲（推定）ソース
             afterMap.addSource("fire_wajima", {
