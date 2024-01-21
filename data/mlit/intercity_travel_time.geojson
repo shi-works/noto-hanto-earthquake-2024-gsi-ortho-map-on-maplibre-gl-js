@@ -51,30 +51,6 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "輪島市",
-        "_markerType": "Icon",
-        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/088.png",
-        "_iconSize": [
-          40,
-          40
-        ],
-        "_iconAnchor": [
-          20,
-          20
-        ]
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          136.904648,
-          37.393696,
-          0
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
         "name": "七尾市（徳田大津）",
         "_markerType": "Icon",
         "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/088.png",
@@ -126,57 +102,24 @@
         "type": "LineString",
         "coordinates": [
           [
+            136.832855,
+            37.063372,
+            0
+          ],
+          [
             136.899176,
-            37.243824,
-            0
-          ],
-          [
-            136.9046,
-            37.393702,
+            37.243722,
             0
           ]
         ]
       },
       "properties": {
-        "name": "穴水町～輪島市間の所要時間",
-        "所要時間": "<img width=\"100%\" src=\"./img/intercity_travel_time/240120anamizu-wajima.png\">",
+        "name": "七尾市(徳田大津)～穴水町間の所要時間",
+        "所要時間": "<img width=\"100%\" src=\"./img/intercity_travel_time/240121nanao-anamizu.png\">",
         "_color": "#145aff",
         "_opacity": 1,
         "_weight": 10,
-        "_dashArray": [
-          40,
-          20
-        ],
-        "_stroke": true
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [
-            136.899208,
-            37.243773,
-            0
-          ],
-          [
-            137.260721,
-            37.436946,
-            0
-          ]
-        ]
-      },
-      "properties": {
-        "name": "穴水町～珠洲市間の所要時間",
-        "所要時間": "<img width=\"100%\" src=\"./img/intercity_travel_time/240120anamizu-suzu.png\">",
-        "_color": "#145aff",
-        "_opacity": 1,
-        "_weight": 10,
-        "_dashArray": [
-          40,
-          20
-        ],
+        "_dashArray": "40,20",
         "_stroke": true
       }
     },
@@ -184,7 +127,7 @@
       "type": "Feature",
       "properties": {
         "name": "穴水町から能登町までの所要時間",
-        "所要時間": "<img width=\"100%\" src=\"./img/intercity_travel_time/240120anamizu-noto.png\">",
+        "所要時間": "<img width=\"100%\" src=\"./img/intercity_travel_time/240121anamizu-noto.png\">",
         "_color": "#145aff",
         "_opacity": 1,
         "_weight": 10,
@@ -210,25 +153,82 @@
         "type": "LineString",
         "coordinates": [
           [
-            136.832855,
-            37.063372,
+            136.899208,
+            37.243773,
             0
           ],
           [
-            136.899176,
-            37.243722,
+            137.260721,
+            37.436946,
             0
           ]
         ]
       },
       "properties": {
-        "name": "七尾市(徳田大津)～穴水町間の所要時間",
-        "所要時間": "<img width=\"100%\" src=\"./img/intercity_travel_time/240120nanao-anamizu.png\">",
+        "name": "穴水町～珠洲市間の所要時間",
+        "所要時間": "<img width=\"100%\" src=\"./img/intercity_travel_time/240121anamizu-suzu.png\">",
         "_color": "#145aff",
         "_opacity": 1,
         "_weight": 10,
-        "_dashArray": "40,20",
+        "_dashArray": [
+          40,
+          20
+        ],
         "_stroke": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            136.899176,
+            37.243824,
+            0
+          ],
+          [
+            136.9046,
+            37.393702,
+            0
+          ]
+        ]
+      },
+      "properties": {
+        "name": "穴水町～輪島市間の所要時間",
+        "所要時間": "<img width=\"100%\" src=\"./img/intercity_travel_time/240121anamizu-wajima.png\">",
+        "_color": "#145aff",
+        "_opacity": 1,
+        "_weight": 10,
+        "_dashArray": [
+          40,
+          20
+        ],
+        "_stroke": true
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "輪島市",
+        "_markerType": "Icon",
+        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/088.png",
+        "_iconSize": [
+          40,
+          40
+        ],
+        "_iconAnchor": [
+          20,
+          20
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.904648,
+          37.393696,
+          0
+        ]
       }
     }
   ]

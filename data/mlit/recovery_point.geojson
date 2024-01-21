@@ -4,6 +4,35 @@
     {
       "type": "Feature",
       "properties": {
+        "name": "沿岸部への到達地点10（珠洲市折戸町）",
+        "管理者": "",
+        "種別": "",
+        "細別": "",
+        "メモ①": "",
+        "メモ②": "",
+        "メモ③": "",
+        "_markerType": "Icon",
+        "_iconUrl": "https://www.jartic-ri2maps.org/symbols/087.png",
+        "_iconSize": [
+          40,
+          40
+        ],
+        "_iconAnchor": [
+          20,
+          20
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.282431,
+          37.526541
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "name": "沿岸部への到達地点８（輪島市七浦）",
         "_markerType": "Icon",
         "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/087.png",
@@ -159,29 +188,6 @@
         "coordinates": [
           137.17437,
           37.500908
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "沿岸部への到達地点４（珠洲市笹波町）",
-        "_markerType": "Icon",
-        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/087.png",
-        "_iconSize": [
-          40,
-          40
-        ],
-        "_iconAnchor": [
-          20,
-          20
-        ]
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          137.224506,
-          37.51473
         ]
       }
     },
@@ -630,6 +636,35 @@
         "coordinates": [
           137.201182,
           37.455604
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "沿岸部への到達地点４（珠洲市笹波町）",
+        "管理者": "",
+        "種別": "",
+        "細別": "",
+        "メモ①": "",
+        "メモ②": "",
+        "メモ③": "",
+        "_markerType": "Icon",
+        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/087.png",
+        "_iconSize": [
+          40,
+          40
+        ],
+        "_iconAnchor": [
+          20,
+          20
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.224506,
+          37.51473
         ]
       }
     }
