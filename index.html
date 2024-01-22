@@ -58,12 +58,11 @@
         .square {
             width: 15px;
             height: 15px;
-            /*border-radius: 4px;*/
         }
 
         .toggle-button-1 {
             position: absolute;
-            bottom: 155px;
+            bottom: 175px;
             right: 50px;
             background-color: transparent;
             border: none;
@@ -162,7 +161,7 @@
         .map-overlay {
             font: bold 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
             position: absolute;
-            width: 220px;
+            width: 180px;
             bottom: 20px;
             left: 40px;
             padding: 10px;
@@ -621,13 +620,13 @@
         <input type="checkbox" id="populationLayerCheckbox">
         <label for="populationLayerCheckbox">令和2年100mﾒｯｼｭ人口(石川県・富山県)</label><br>
         <input type="checkbox" id="IsolatedAreaLayerCheckbox">
-        <label for="IsolatedAreaLayerCheckbox">石川県孤立集落人数(1/19時点)</label><br>
+        <label for="IsolatedAreaLayerCheckbox">石川県孤立集落人数(1/21時点)</label><br>
         <input type="checkbox" id="OpenShelterNanaoshiLayerCheckbox">
         <label for="OpenShelterNanaoshiLayerCheckbox">石川県七尾市避難所開設情報(自動更新)</label>
     </div>
     <div class="map-overlay top">
         <div class="map-overlay-inner">
-            <label>空中写真・SAR画像 不透明度: <span id="photo-slider-opacity-value">100%</span></label>
+            <label>空中写真等 不透明度: <span id="photo-slider-opacity-value">100%</span></label>
             <input id="photo-slider-opacity" type="range" min="0" max="100" step="1" value="100">
             <!--
             <label>CS立体図 不透明度: <span id="cs-slider-opacity-value">100%</span></label>
@@ -641,7 +640,7 @@
         <div class="square"
             style='background-color: rgb(255, 0, 0, 0.2); outline: 2px solid;outline-color: rgba(255, 0, 0, 1); display: inline-block;'>
         </div>
-        <span style="margin-left: 5px;">斜面崩壊・堆積範囲(1/19更新)</span><br>
+        <span style="margin-left: 5px;">斜面崩壊・堆積範囲(1/22更新)</span><br>
         <div style="height: 5px;"></div>
         <div class="square"
             style='background-color: rgb(0, 0, 255, 0.2); outline: 2px solid;outline-color: rgba(0, 0, 255, 1); display: inline-block;'>
@@ -664,6 +663,9 @@
             style='background-color: rgb(255, 127, 0, 0.2); outline: 2px solid;outline-color: rgba(255, 127, 0, 1); display: inline-block;'>
         </div>
         <span style="margin-left: 5px;">火災焼失範囲(輪島市中心)</span>
+        <div style="height: 5px;"></div>
+        <span><img src="https://maps.gsi.go.jp/portal/sys/v4/symbols/080.png" style="width:15px; height:15px;"></span>
+        <span>陸化したと思われる港(1/18更新)</span>
     </div>
     <div id="legend-pop" style="display:none;" class='legend-pop'>
         <h4>人口(100mﾒｯｼｭ)</h4>
@@ -722,7 +724,7 @@
             });
 
             // 産総研 シームレス標高タイルセット
-            beforeMap.setTerrain({ 'source': 'aist-dem', 'exaggeration': 1 });
+            // beforeMap.setTerrain({ 'source': 'aist-dem', 'exaggeration': 1 });
 
         });
 
@@ -865,7 +867,7 @@
             });
 
             // 産総研 シームレス標高タイルセット
-            afterMap.setTerrain({ 'source': 'aist-dem', 'exaggeration': 1 });
+            // afterMap.setTerrain({ 'source': 'aist-dem', 'exaggeration': 1 });
 
             var opacity_value = 1;
 
@@ -1458,7 +1460,7 @@
             afterMap.addSource("hokai_all_20240106_suzu-wajimaEAST", {
                 type: "geojson",
                 data: './data/hokai_all_20240106_suzu-wajimaEAST.geojson',
-                attribution: '<a href="https://www.gsi.go.jp/BOUSAI/20240101_noto_earthquake.html">国土地理院 令和6年(2024年)能登半島地震に関する情報（斜面崩壊・堆積分布データ、津波浸水域、輪島市中心の火災焼失範囲）</a>'
+                attribution: '<a href="https://www.gsi.go.jp/BOUSAI/20240101_noto_earthquake.html">国土地理院 令和6年(2024年)能登半島地震に関する情報（斜面崩壊・堆積分布データ、津波浸水域、輪島市中心の火災焼失範囲、陸化したと思われる港）</a>'
             });
 
             // 斜面崩壊・堆積分布データ（珠洲地区、輪島東地区）ラインレイヤ
@@ -1488,7 +1490,7 @@
                 type: "geojson",
                 // data: './data/hokai_all_20240106_wajimaCENTRAL.geojson',
                 data: './data/hokai_all_20240115_wajimaCENTRAL_Re2.geojson',
-                attribution: '<a href="https://www.gsi.go.jp/BOUSAI/20240101_noto_earthquake.html">国土地理院 令和6年(2024年)能登半島地震に関する情報（斜面崩壊・堆積分布データ、津波浸水域、輪島市中心の火災焼失範囲）</a>'
+                attribution: '<a href="https://www.gsi.go.jp/BOUSAI/20240101_noto_earthquake.html">国土地理院 令和6年(2024年)能登半島地震に関する情報（斜面崩壊・堆積分布データ、津波浸水域、輪島市中心の火災焼失範囲、陸化したと思われる港）</a>'
             });
 
             // 斜面崩壊・堆積分布データ（輪島中地区）ラインレイヤ
@@ -1517,7 +1519,7 @@
             afterMap.addSource("hokai_all_20240118_anamizu", {
                 type: "geojson",
                 data: './data/hokai_all_20240118_anamizu.geojson',
-                attribution: '<a href="https://www.gsi.go.jp/BOUSAI/20240101_noto_earthquake.html">国土地理院 令和6年(2024年)能登半島地震に関する情報（斜面崩壊・堆積分布データ、津波浸水域、輪島市中心の火災焼失範囲）</a>'
+                attribution: '<a href="https://www.gsi.go.jp/BOUSAI/20240101_noto_earthquake.html">国土地理院 令和6年(2024年)能登半島地震に関する情報（斜面崩壊・堆積分布データ、津波浸水域、輪島市中心の火災焼失範囲、陸化したと思われる港）</a>'
             });
 
             // 斜面崩壊・堆積分布データ（穴水地区）ラインレイヤ
@@ -1546,7 +1548,7 @@
             afterMap.addSource("hokai_all_20240118_nanao", {
                 type: "geojson",
                 data: './data/hokai_all_20240118_nanao.geojson',
-                attribution: '<a href="https://www.gsi.go.jp/BOUSAI/20240101_noto_earthquake.html">国土地理院 令和6年(2024年)能登半島地震に関する情報（斜面崩壊・堆積分布データ、津波浸水域、輪島市中心の火災焼失範囲）</a>'
+                attribution: '<a href="https://www.gsi.go.jp/BOUSAI/20240101_noto_earthquake.html">国土地理院 令和6年(2024年)能登半島地震に関する情報（斜面崩壊・堆積分布データ、津波浸水域、輪島市中心の火災焼失範囲、陸化したと思われる港）</a>'
             });
 
             // 斜面崩壊・堆積分布データ（七尾地区）ラインレイヤ
@@ -1572,17 +1574,17 @@
             });
 
             // 斜面崩壊・堆積分布データ（輪島西地区）ソース
-            afterMap.addSource("hokai_all_20240112_wajimaWEST", {
+            afterMap.addSource("hokai_20240122_wajimaWEST", {
                 type: "geojson",
-                data: './data/hokai_all_20240112_wajimaWEST.geojson',
-                attribution: '<a href="https://www.gsi.go.jp/BOUSAI/20240101_noto_earthquake.html">国土地理院 令和6年(2024年)能登半島地震に関する情報（斜面崩壊・堆積分布データ、津波浸水域、輪島市中心の火災焼失範囲）</a>'
+                data: './data/hokai_20240122_wajimaWEST.geojson',
+                attribution: '<a href="https://www.gsi.go.jp/BOUSAI/20240101_noto_earthquake.html">国土地理院 令和6年(2024年)能登半島地震に関する情報（斜面崩壊・堆積分布データ、津波浸水域、輪島市中心の火災焼失範囲、陸化したと思われる港）</a>'
             });
 
             // 斜面崩壊・堆積分布データ（輪島西地区）ラインレイヤ
             afterMap.addLayer({
-                'id': 'hokai_all_20240112_wajimaWEST-line',
+                'id': 'hokai_20240122_wajimaWEST-line',
                 "type": "line",
-                'source': 'hokai_all_20240112_wajimaWEST',
+                'source': 'hokai_20240122_wajimaWEST',
                 'paint': {
                     'line-color': '#FF0000',
                     'line-width': 2
@@ -1591,9 +1593,9 @@
 
             // 斜面崩壊・堆積分布データ（輪島西地区）ポリゴンレイヤ
             afterMap.addLayer({
-                'id': 'hokai_all_20240112_wajimaWEST-fill',
+                'id': 'hokai_20240122_wajimaWEST-fill',
                 "type": "fill",
-                'source': 'hokai_all_20240112_wajimaWEST',
+                'source': 'hokai_20240122_wajimaWEST',
                 'paint': {
                     'fill-color': '#FF0000',
                     'fill-opacity': 0.2
@@ -1607,7 +1609,7 @@
                 // data: './data/shinsui-tsunami_noto_suzu-wajimaEAST_20240104_rev.geojson',
                 // data: './data/shinsui-tsunami-area_suzu-wajimaEAST-Re_20240109.geojson',
                 data: './data/shinsui-tsunami-area_suzu-wajimaEAST-Re2_20240110.geojson',
-                attribution: '<a href="https://www.gsi.go.jp/BOUSAI/20240101_noto_earthquake.html">国土地理院 令和6年(2024年)能登半島地震に関する情報（斜面崩壊・堆積分布データ、津波浸水域、輪島市中心の火災焼失範囲）</a>'
+                attribution: '<a href="https://www.gsi.go.jp/BOUSAI/20240101_noto_earthquake.html">国土地理院 令和6年(2024年)能登半島地震に関する情報（斜面崩壊・堆積分布データ、津波浸水域、輪島市中心の火災焼失範囲、陸化したと思われる港）</a>'
             });
 
             // 空中写真判読による津波浸水域（推定）（珠洲地区、輪島東地区）ラインレイヤ
@@ -1636,7 +1638,7 @@
             afterMap.addSource("tsunami_anamizu", {
                 type: "geojson",
                 data: './data/shinsui-tsunami-area_anamizu_20240118.geojson',
-                attribution: '<a href="https://www.gsi.go.jp/BOUSAI/20240101_noto_earthquake.html">国土地理院 令和6年(2024年)能登半島地震に関する情報（斜面崩壊・堆積分布データ、津波浸水域、輪島市中心の火災焼失範囲）</a>'
+                attribution: '<a href="https://www.gsi.go.jp/BOUSAI/20240101_noto_earthquake.html">国土地理院 令和6年(2024年)能登半島地震に関する情報（斜面崩壊・堆積分布データ、津波浸水域、輪島市中心の火災焼失範囲、陸化したと思われる港）</a>'
             });
 
             // 空中写真判読による津波浸水域（推定）（穴水地区）ラインレイヤ
@@ -1665,7 +1667,7 @@
             afterMap.addSource("tsunami_nanao", {
                 type: "geojson",
                 data: './data/shinsui-tsunami-area_nanao_20240118.geojson',
-                attribution: '<a href="https://www.gsi.go.jp/BOUSAI/20240101_noto_earthquake.html">国土地理院 令和6年(2024年)能登半島地震に関する情報（斜面崩壊・堆積分布データ、津波浸水域、輪島市中心の火災焼失範囲）</a>'
+                attribution: '<a href="https://www.gsi.go.jp/BOUSAI/20240101_noto_earthquake.html">国土地理院 令和6年(2024年)能登半島地震に関する情報（斜面崩壊・堆積分布データ、津波浸水域、輪島市中心の火災焼失範囲、陸化したと思われる港）</a>'
             });
 
             // 空中写真判読による津波浸水域（推定）（七尾地区）ラインレイヤ
@@ -1694,7 +1696,7 @@
             afterMap.addSource("tsunami_wajimaWEST", {
                 type: "geojson",
                 data: './data/shinsui-tsunami-area_wajimaWEST_20240112.geojson',
-                attribution: '<a href="https://www.gsi.go.jp/BOUSAI/20240101_noto_earthquake.html">国土地理院 令和6年(2024年)能登半島地震に関する情報（斜面崩壊・堆積分布データ、津波浸水域、輪島市中心の火災焼失範囲）</a>'
+                attribution: '<a href="https://www.gsi.go.jp/BOUSAI/20240101_noto_earthquake.html">国土地理院 令和6年(2024年)能登半島地震に関する情報（斜面崩壊・堆積分布データ、津波浸水域、輪島市中心の火災焼失範囲、陸化したと思われる港）</a>'
             });
 
             // 空中写真判読による津波浸水域（推定）（輪島西地区）ラインレイヤ
@@ -1785,7 +1787,7 @@
             afterMap.addSource("fire_wajima", {
                 type: "geojson",
                 data: './data/20240112_輪島市火災範囲（推定）.geojson',
-                attribution: '<a href="https://www.gsi.go.jp/BOUSAI/20240101_noto_earthquake.html">国土地理院 令和6年(2024年)能登半島地震に関する情報（斜面崩壊・堆積分布データ、津波浸水域、輪島市中心の火災焼失範囲）</a>'
+                attribution: '<a href="https://www.gsi.go.jp/BOUSAI/20240101_noto_earthquake.html">国土地理院 令和6年(2024年)能登半島地震に関する情報（斜面崩壊・堆積分布データ、津波浸水域、輪島市中心の火災焼失範囲、陸化したと思われる港）</a>'
             });
 
             // 空中写真等の画像判読による輪島市中心の火災焼失範囲（推定）ラインレイヤ
@@ -1810,10 +1812,83 @@
                 }
             });
 
+            // 陸化したと思われる港ソース
+            afterMap.addSource("uplift-port", {
+                type: "geojson",
+                data: './data/漁港の隆起_Ver3.0.geojson',
+                attribution: '<a href="https://www.gsi.go.jp/BOUSAI/20240101_noto_earthquake.html" target="_blank">国土地理院 令和6年(2024年)能登半島地震に関する情報（斜面崩壊・堆積分布データ、津波浸水域、輪島市中心の火災焼失範囲、陸化したと思われる港）</a>',
+            });
+
+            // PNGソース追加
+            afterMap.loadImage('https://maps.gsi.go.jp/portal/sys/v4/symbols/080.png',
+                function (error, image) {
+                    if (error) throw error;
+                    afterMap.addImage('port_symbol_080', image);
+                }
+            );
+
+            // PNGソース追加
+            afterMap.loadImage('https://maps.gsi.go.jp/portal/sys/v4/symbols/082.png',
+                function (error, image) {
+                    if (error) throw error;
+                    afterMap.addImage('port_symbol_082', image);
+                }
+            );
+
+            // 陸化したと思われる港シンボルレイヤ
+            afterMap.addLayer({
+                'id': 'uplift-port-symbol',
+                "type": "symbol",
+                'source': 'uplift-port',
+                minzoom: 1,
+                maxzoom: 23,
+                "layout": {
+                    'icon-image': [
+                        'match',
+                        ['get', '_iconUrl'],
+                        'https://maps.gsi.go.jp/portal/sys/v4/symbols/080.png', 'port_symbol_080',
+                        'https://maps.gsi.go.jp/portal/sys/v4/symbols/082.png', 'port_symbol_082',
+                        'port_symbol_080'
+                    ],
+                    "icon-size": [
+                        'interpolate',
+                        ['linear'],
+                        ['zoom'],
+                        1, 0.1,  // ズームレベル1でサイズは0.1
+                        12, 1  // ズームレベル12でサイズは1.2
+                    ],
+                    "icon-allow-overlap": true, // シンボルの重なりを許可
+                    'visibility': 'visible'
+                }
+            });
+
+            // 陸化したと思われる港ラベルレイヤ
+            afterMap.addLayer({
+                'id': 'uplift-port-labels',
+                'type': 'symbol',
+                'source': 'uplift-port',
+                minzoom: 9,
+                maxzoom: 18,
+                'layout': {
+                    'text-field': ['get', 'name'],
+                    'text-font': ['Open Sans Bold', 'Arial Unicode MS Bold'],
+                    'text-size': 12,
+                    'text-anchor': 'center',
+                    'text-justify': 'center',
+                    'text-offset': [0, -1.3],
+                    'text-allow-overlap': true
+                },
+                'paint': {
+                    'text-color': 'rgba(0, 0, 0, 1)',
+                    'text-halo-color': 'rgba(255, 255, 255, 1)',
+                    'text-halo-width': 2
+                }
+            });
+
             // 石川県 孤立集落人数ポリゴンソース
             afterMap.addSource("Number_of_isolated_area", {
                 type: "geojson",
-                data: './data/Number_of_isolated_area0119_EPSG4326.geojson',
+                data: './data/Number_of_isolated_area0121_EPSG4326.geojson',
                 attribution: '<a href="https://www.pref.ishikawa.lg.jp/saigai/202401jishin-taisakuhonbu.html#honbu" target="_blank">石川県 災害対策本部員会議資料（孤立集落人数）</a>',
             });
 
@@ -1923,7 +1998,7 @@
             // 石川県 孤立集落人数重心ソース
             afterMap.addSource("Number_of_isolated_area_centroid", {
                 type: "geojson",
-                data: './data/Number_of_isolated_area0119_centroid_EPSG4326.geojson',
+                data: './data/Number_of_isolated_area0121_centroid_EPSG4326.geojson',
                 attribution: '<a href="https://www.pref.ishikawa.lg.jp/saigai/202401jishin-taisakuhonbu.html#honbu" target="_blank">石川県 災害対策本部員会議資料（孤立集落人数）</a>',
             });
 
@@ -3121,6 +3196,7 @@
             var number_0117 = e.features[0].properties['人数_1/17_15時現在'];
             var number_0118 = e.features[0].properties['人数_1/18_15時現在'];
             var number_0119 = e.features[0].properties['人数_1/19_15時現在'];
+            var number_0121 = e.features[0].properties['人数_1/21_15時現在'];
 
             if (number_0107 === undefined) { number_0107 = "-" };
             if (number_0108 === undefined) { number_0108 = "-" };
@@ -3135,6 +3211,7 @@
             if (number_0117 === undefined) { number_0117 = "-" };
             if (number_0118 === undefined) { number_0118 = "-" };
             if (number_0119 === undefined) { number_0119 = "-" };
+            if (number_0121 === undefined) { number_0121 = "-" };
 
             new maplibregl.Popup({ className: 'custom-Number-of-isolated-area-popup' })
                 .setLngLat(e.lngLat)
@@ -3208,6 +3285,10 @@
                     '<tr>' +
                     '<td>孤立集落人数(1/19_15時現在)：</td>' +
                     '<td><b>' + number_0119 + '人' + '</b></td>' +
+                    '</tr>' +
+                    '<tr>' +
+                    '<td>孤立集落人数(1/21_15時現在)：</td>' +
+                    '<td><b>' + number_0121 + '人' + '</b></td>' +
                     '</tr>' +
                     '</table>' +
                     '出典）' + '<a href="https://www.pref.ishikawa.lg.jp/saigai/202401jishin-taisakuhonbu.html#honbu">石川県 災害対策本部員会議資料</a>'
