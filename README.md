@@ -38,6 +38,11 @@ https://github.com/shi-works/noto-hanto-earthquake-2024-gsi-ortho-map-on-maplibr
     - 出典：https://www.gsi.go.jp/BOUSAI/20240101_noto_earthquake.html#17
     - 概要：国土地理院が令和6年1月2日に撮影した空中写真等を画像判読して輪島市中心の火災による焼失範囲を推定したものです。
 
+- 空中写真で確認した、陸化したと思われる港等（1月18日更新）
+    - 出典：https://www.gsi.go.jp/BOUSAI/20240101_noto_earthquake.html#17
+    - 概要：下記HPより港の名称を取得して、空中写真で確認した「隆起の影響で著しく水がなくなっている港データ」を作成。
+    - 第九管区海上保安本部海洋情報部HP：「[航空機から見た石川県の港湾と海岸線](https://www1.kaiho.mlit.go.jp/KAN9/tori-naru/ishikawa-sakuin.htm#ishikawa-plan)」
+
 - 上記の公開データのライセンス：[国土地理院コンテンツ利用規約](https://www.gsi.go.jp/kikakuchousei/kikakuchousei40182.html)に従い、出典明示により、転載も含め使用可
 
 ### 全国Ｑ地図
@@ -86,7 +91,7 @@ https://github.com/shi-works/noto-hanto-earthquake-2024-gsi-ortho-map-on-maplibr
     - 概要：地域・交通データ研究所にて公開されている令和2年簡易100mメッシュ人口データをFlatGeobuf形式に変換したデータです。
     - ライセンス：[西澤明](https://gtfs-gis.jp/teikyo/index.html)、[@shi-works](https://twitter.com/shi__works)、[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/deed.ja)
 
-### 孤立集落人数データ（1月19日時点）
+### 孤立集落人数データ（1月21日時点）
 - 孤立集落人数データ（石川県）（GeoJSON形式）
     - 出典：https://x.com/GISPHN/status/1745321675393298538?s=20
         - 原初データ出典：[石川県災害対策本部員会議資料](https://www.pref.ishikawa.lg.jp/saigai/202401jishin-taisakuhonbu.html#honbu)
