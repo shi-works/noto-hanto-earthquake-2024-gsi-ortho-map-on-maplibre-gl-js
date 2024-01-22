@@ -5,14 +5,8 @@
       "type": "Feature",
       "properties": {
         "name": "沿岸部への到達地点10（珠洲市折戸町）",
-        "管理者": "",
-        "種別": "",
-        "細別": "",
-        "メモ①": "",
-        "メモ②": "",
-        "メモ③": "",
         "_markerType": "Icon",
-        "_iconUrl": "https://www.jartic-ri2maps.org/symbols/087.png",
+        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/087.png",
         "_iconSize": [
           40,
           40
@@ -25,8 +19,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          137.282431,
-          37.526541
+          137.282495,
+          37.526558
         ]
       }
     },
@@ -194,6 +188,29 @@
     {
       "type": "Feature",
       "properties": {
+        "name": "沿岸部への到達地点４（珠洲市笹波町）",
+        "_markerType": "Icon",
+        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/087.png",
+        "_iconSize": [
+          40,
+          40
+        ],
+        "_iconAnchor": [
+          20,
+          20
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.224506,
+          37.51473
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "name": "沿岸部への到達地点５（珠洲市三崎町）",
         "_markerType": "Icon",
         "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/087.png",
@@ -211,6 +228,31 @@
         "coordinates": [
           137.339594,
           37.484598
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "到達地点（石川県道269号）",
+        "路線名": "石川県道269号（滝又三井線）",
+        "地名（推定）": "輪島市空熊町",
+        "_markerType": "Icon",
+        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/319.png",
+        "_iconSize": [
+          30,
+          30
+        ],
+        "_iconAnchor": [
+          15,
+          15
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.88673,
+          37.309364
         ]
       }
     },
@@ -636,35 +678,6 @@
         "coordinates": [
           137.201182,
           37.455604
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "沿岸部への到達地点４（珠洲市笹波町）",
-        "管理者": "",
-        "種別": "",
-        "細別": "",
-        "メモ①": "",
-        "メモ②": "",
-        "メモ③": "",
-        "_markerType": "Icon",
-        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/087.png",
-        "_iconSize": [
-          40,
-          40
-        ],
-        "_iconAnchor": [
-          20,
-          20
-        ]
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          137.224506,
-          37.51473
         ]
       }
     }
