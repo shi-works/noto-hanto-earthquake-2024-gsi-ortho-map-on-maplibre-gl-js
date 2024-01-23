@@ -4,236 +4,6 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "沿岸部への到達地点10（珠洲市折戸町）",
-        "_markerType": "Icon",
-        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/087.png",
-        "_iconSize": [
-          40,
-          40
-        ],
-        "_iconAnchor": [
-          20,
-          20
-        ]
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          137.282495,
-          37.526558
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "沿岸部への到達地点８（輪島市七浦）",
-        "_markerType": "Icon",
-        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/087.png",
-        "_iconSize": [
-          40,
-          40
-        ],
-        "_iconAnchor": [
-          20,
-          20
-        ]
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          136.749616,
-          37.343379
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "沿岸部への到達地点１（輪島）",
-        "_markerType": "Icon",
-        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/087.png",
-        "_iconSize": [
-          40,
-          40
-        ],
-        "_iconAnchor": [
-          20,
-          20
-        ]
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          136.904647,
-          37.39367
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "沿岸部への到達地点９（海上より：輪島市深江町）",
-        "_markerType": "Icon",
-        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/087.png",
-        "_iconSize": [
-          40,
-          40
-        ],
-        "_iconAnchor": [
-          20,
-          20
-        ]
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          136.973612,
-          37.41305
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "沿岸部への到達地点２（輪島市名舟町）",
-        "_markerType": "Icon",
-        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/087.png",
-        "_iconSize": [
-          40,
-          40
-        ],
-        "_iconAnchor": [
-          20,
-          20
-        ]
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          137.027911,
-          37.432273
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "沿岸部への到達地点３（輪島市町野町）",
-        "_markerType": "Icon",
-        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/087.png",
-        "_iconSize": [
-          40,
-          40
-        ],
-        "_iconAnchor": [
-          20,
-          20
-        ]
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          137.07294,
-          37.452972
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "沿岸部への到達地点６（海上より：輪島市町野町）",
-        "_markerType": "Icon",
-        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/087.png",
-        "_iconSize": [
-          40,
-          40
-        ],
-        "_iconAnchor": [
-          20,
-          20
-        ]
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          137.068691,
-          37.458508
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "沿岸部への到達地点７（珠洲市大谷町）",
-        "_markerType": "Icon",
-        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/087.png",
-        "_iconSize": [
-          40,
-          40
-        ],
-        "_iconAnchor": [
-          20,
-          20
-        ]
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          137.17437,
-          37.500908
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "沿岸部への到達地点４（珠洲市笹波町）",
-        "_markerType": "Icon",
-        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/087.png",
-        "_iconSize": [
-          40,
-          40
-        ],
-        "_iconAnchor": [
-          20,
-          20
-        ]
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          137.224506,
-          37.51473
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "沿岸部への到達地点５（珠洲市三崎町）",
-        "_markerType": "Icon",
-        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/087.png",
-        "_iconSize": [
-          40,
-          40
-        ],
-        "_iconAnchor": [
-          20,
-          20
-        ]
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          137.339594,
-          37.484598
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
         "name": "到達地点（石川県道269号）",
         "路線名": "石川県道269号（滝又三井線）",
         "地名（推定）": "輪島市空熊町",
@@ -251,8 +21,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          136.88673,
-          37.309364
+          136.868742,
+          37.316385
         ]
       }
     },
@@ -278,56 +48,6 @@
         "coordinates": [
           137.199626,
           37.398494
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "到達地点（輪島市道）",
-        "路線名": "輪島市道房田1号線",
-        "地名（推定）": "輪島市房田町",
-        "_markerType": "Icon",
-        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/319.png",
-        "_iconSize": [
-          30,
-          30
-        ],
-        "_iconAnchor": [
-          15,
-          15
-        ]
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          136.862777,
-          37.370314
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "到達地点（志賀町道）",
-        "路線名": "志賀町道鹿頭酒見線",
-        "地名（推定）": "志賀町酒見",
-        "_markerType": "Icon",
-        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/319.png",
-        "_iconSize": [
-          30,
-          30
-        ],
-        "_iconAnchor": [
-          15,
-          15
-        ]
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          136.688791,
-          37.167211
         ]
       }
     },
@@ -678,6 +398,286 @@
         "coordinates": [
           137.201182,
           37.455604
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "到達地点（志賀町道）",
+        "路線名": "志賀町道鹿頭酒見線",
+        "地名（推定）": "志賀町小窪",
+        "_markerType": "Icon",
+        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/319.png",
+        "_iconSize": [
+          30,
+          30
+        ],
+        "_iconAnchor": [
+          15,
+          15
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.686586,
+          37.171715
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "到達地点（林道）",
+        "路線名": "林道小池線",
+        "地名（推定）": "輪島市下山町",
+        "_markerType": "Icon",
+        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/319.png",
+        "_iconSize": [
+          30,
+          30
+        ],
+        "_iconAnchor": [
+          15,
+          15
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.838013,
+          37.370923
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "沿岸部への到達地点10（珠洲市折戸町）",
+        "_markerType": "Icon",
+        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/087.png",
+        "_iconSize": [
+          40,
+          40
+        ],
+        "_iconAnchor": [
+          20,
+          20
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.282495,
+          37.526558
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "沿岸部への到達地点８（輪島市七浦）",
+        "_markerType": "Icon",
+        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/087.png",
+        "_iconSize": [
+          40,
+          40
+        ],
+        "_iconAnchor": [
+          20,
+          20
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.749616,
+          37.343379
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "沿岸部への到達地点１（輪島）",
+        "_markerType": "Icon",
+        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/087.png",
+        "_iconSize": [
+          40,
+          40
+        ],
+        "_iconAnchor": [
+          20,
+          20
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.904647,
+          37.39367
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "沿岸部への到達地点９（海上より：輪島市深江町）",
+        "_markerType": "Icon",
+        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/087.png",
+        "_iconSize": [
+          40,
+          40
+        ],
+        "_iconAnchor": [
+          20,
+          20
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.973612,
+          37.41305
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "沿岸部への到達地点２（輪島市名舟町）",
+        "_markerType": "Icon",
+        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/087.png",
+        "_iconSize": [
+          40,
+          40
+        ],
+        "_iconAnchor": [
+          20,
+          20
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.027911,
+          37.432273
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "沿岸部への到達地点３（輪島市町野町）",
+        "_markerType": "Icon",
+        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/087.png",
+        "_iconSize": [
+          40,
+          40
+        ],
+        "_iconAnchor": [
+          20,
+          20
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.07294,
+          37.452972
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "沿岸部への到達地点６（海上より：輪島市町野町）",
+        "_markerType": "Icon",
+        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/087.png",
+        "_iconSize": [
+          40,
+          40
+        ],
+        "_iconAnchor": [
+          20,
+          20
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.068691,
+          37.458508
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "沿岸部への到達地点７（珠洲市大谷町）",
+        "_markerType": "Icon",
+        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/087.png",
+        "_iconSize": [
+          40,
+          40
+        ],
+        "_iconAnchor": [
+          20,
+          20
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.17437,
+          37.500908
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "沿岸部への到達地点４（珠洲市笹波町）",
+        "_markerType": "Icon",
+        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/087.png",
+        "_iconSize": [
+          40,
+          40
+        ],
+        "_iconAnchor": [
+          20,
+          20
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.224506,
+          37.51473
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "沿岸部への到達地点５（珠洲市三崎町）",
+        "_markerType": "Icon",
+        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/087.png",
+        "_iconSize": [
+          40,
+          40
+        ],
+        "_iconAnchor": [
+          20,
+          20
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.339594,
+          37.484598
         ]
       }
     }

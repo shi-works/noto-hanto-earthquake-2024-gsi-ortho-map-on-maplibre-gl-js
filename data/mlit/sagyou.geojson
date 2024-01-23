@@ -1071,6 +1071,462 @@
           58.1
         ]
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "能越自動車道のと三井IC～のと里山空港IC",
+        "撮影日": "2024/01/17",
+        "啓開作業等": "<img width=\"100%\" src=\"./img/sagyou/240117_wajimadoro1.jpg\">",
+        "撮影日": "2024/01/17",
+        "啓開後": "<img width=\"100%\" src=\"./img/sagyou/240117_wajimadoro1-2.jpg\">",
+        "_markerType": "Icon",
+        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/482.png",
+        "_iconSize": [
+          30,
+          30
+        ],
+        "_iconAnchor": [
+          15,
+          15
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.910901,
+          37.321546
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "能越自動車道のと三井IC～のと里山空港IC",
+        "撮影日": "2024/01/12",
+        "啓開作業等": "<img width=\"100%\" src=\"./img/sagyou/240112_wajimadoro3.png\">",
+        "撮影日": "2024/01/13",
+        "啓開後": "<img width=\"100%\" src=\"./img/sagyou/240113_wajimadoro3.jpg\">",
+        "_markerType": "Icon",
+        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/482.png",
+        "_iconSize": [
+          30,
+          30
+        ],
+        "_iconAnchor": [
+          15,
+          15
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.908125,
+          37.31503
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "能越自動車道のと三井IC～のと里山空港IC",
+        "撮影日": "2024/01/13",
+        "啓開作業等": "<img width=\"100%\" src=\"./img/sagyou/240113_wajimadoro7.jpg\">",
+        "撮影日": "2024/01/13",
+        "啓開後": "<img width=\"100%\" src=\"./img/sagyou/240113_wajimadoro7-2.jpg\">",
+        "_markerType": "Icon",
+        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/482.png",
+        "_iconSize": [
+          30,
+          30
+        ],
+        "_iconAnchor": [
+          15,
+          15
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.90629,
+          37.308858
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "能越自動車道のと三井IC～のと里山空港IC",
+        "撮影日": "2024/01/14",
+        "啓開後": "<img width=\"100%\" src=\"./img/sagyou/240114_wajimadoro19.jpg\">",
+        "_markerType": "Icon",
+        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/482.png",
+        "_iconSize": [
+          30,
+          30
+        ],
+        "_iconAnchor": [
+          15,
+          15
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.921352,
+          37.294851
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "能越自動車道のと三井IC～のと里山空港IC",
+        "撮影日": "2024/01/15",
+        "啓開作業等": "<img width=\"100%\" src=\"./img/sagyou/240115_wajimadoro27.jpg\">",
+        "_markerType": "Icon",
+        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/482.png",
+        "_iconSize": [
+          30,
+          30
+        ],
+        "_iconAnchor": [
+          15,
+          15
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.924857,
+          37.288448
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "能越自動車道穴水ＩＣアクセス路",
+        "撮影日": "2024/01/20",
+        "啓開作業等": "<img width=\"100%\" src=\"./img/sagyou/240121_anamizuic.jpg\"><img width=\"100%\" src=\"./img/sagyou/240121_anamizuic-2.jpg\">",
+        "_markerType": "Icon",
+        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/482.png",
+        "_iconSize": [
+          30,
+          30
+        ],
+        "_iconAnchor": [
+          15,
+          15
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.898833,
+          37.24306
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "能越自動車道のと里山空港IC～穴水IC",
+        "撮影日": "2024/01/19",
+        "啓開作業等": "<img width=\"100%\" src=\"./img/sagyou/240119_anamizudoro6.jpg\">",
+        "_markerType": "Icon",
+        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/482.png",
+        "_iconSize": [
+          30,
+          30
+        ],
+        "_iconAnchor": [
+          15,
+          15
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.924342,
+          37.273417
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "能越自動車道のと里山空港IC～穴水IC",
+        "撮影日": "2024/01/19",
+        "啓開作業等": "<img width=\"100%\" src=\"./img/sagyou/240119_anamizudoro16.jpg\">",
+        "_markerType": "Icon",
+        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/482.png",
+        "_iconSize": [
+          30,
+          30
+        ],
+        "_iconAnchor": [
+          15,
+          15
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.91709,
+          37.26395
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "能越自動車道のと里山空港IC～穴水IC",
+        "撮影日": "2024/01/18",
+        "啓開作業等": "<img width=\"100%\" src=\"./img/sagyou/240118_anamizudoro15.jpg\">",
+        "_markerType": "Icon",
+        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/482.png",
+        "_iconSize": [
+          30,
+          30
+        ],
+        "_iconAnchor": [
+          15,
+          15
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.919019,
+          37.266798
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "能越自動車道のと里山空港IC～穴水IC",
+        "撮影日": "2024/01/17",
+        "啓開作業等": "<img width=\"100%\" src=\"./img/sagyou/240117_anamizudoro51.jpg\">",
+        "_markerType": "Icon",
+        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/482.png",
+        "_iconSize": [
+          30,
+          30
+        ],
+        "_iconAnchor": [
+          15,
+          15
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.896829,
+          37.236543
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "能越自動車道のと里山空港IC～穴水IC",
+        "撮影日": "2024/01/15",
+        "啓開作業等": "<img width=\"100%\" src=\"./img/sagyou/240115_anamizudoro56.jpg\">",
+        "_markerType": "Icon",
+        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/482.png",
+        "_iconSize": [
+          30,
+          30
+        ],
+        "_iconAnchor": [
+          15,
+          15
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.895738,
+          37.235964
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "輪島市門前町西円山付近の林道",
+        "撮影日": "2024/01/22",
+        "被災状況": "<img width=\"100%\" src=\"./img/sagyou/240122_rindo_nishimaruyama.png\"><img width=\"100%\" src=\"./img/sagyou/240122_rindo_nishimaruyama-2.jpg\">",
+        "_markerType": "Icon",
+        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/482.png",
+        "_iconSize": [
+          30,
+          30
+        ],
+        "_iconAnchor": [
+          15,
+          15
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.822807,
+          37.343084
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "輪島市門前町西円山付近の林道",
+        "撮影日": "2024/01/22",
+        "被災状況": "<img width=\"100%\" src=\"./img/sagyou/240122_rindo_nishimaruyama2.png\">",
+        "_markerType": "Icon",
+        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/482.png",
+        "_iconSize": [
+          30,
+          30
+        ],
+        "_iconAnchor": [
+          15,
+          15
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.822238,
+          37.341702
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "輪島市門前町西円山付近の林道",
+        "撮影日": "2024/01/22",
+        "被災状況": "<img width=\"100%\" src=\"./img/sagyou/240122_rindo_nishimaruyama3.png\">",
+        "_markerType": "Icon",
+        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/482.png",
+        "_iconSize": [
+          30,
+          30
+        ],
+        "_iconAnchor": [
+          15,
+          15
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.819473,
+          37.33949
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "輪島市道房田1号",
+        "撮影日": "2024/01/19",
+        "啓開作業等": "<img width=\"100%\" src=\"./img/sagyou/240119_wajimashido_fusada1go1.png\">",
+        "_markerType": "Icon",
+        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/482.png",
+        "_iconSize": [
+          30,
+          30
+        ],
+        "_iconAnchor": [
+          15,
+          15
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.860233,
+          37.36923
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "輪島市道房田1号",
+        "撮影日": "2024/01/19",
+        "被災状況": "<img width=\"100%\" src=\"./img/sagyou/240119_wajimashido_fusada1go2.png\">",
+        "_markerType": "Icon",
+        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/482.png",
+        "_iconSize": [
+          30,
+          30
+        ],
+        "_iconAnchor": [
+          15,
+          15
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.859654,
+          37.369365
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "輪島市道房田1号",
+        "撮影日": "2024/01/19",
+        "被災状況": "<img width=\"100%\" src=\"./img/sagyou/240119_wajimashido_fusada1go3.png\">",
+        "_markerType": "Icon",
+        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/482.png",
+        "_iconSize": [
+          30,
+          30
+        ],
+        "_iconAnchor": [
+          15,
+          15
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.858371,
+          37.369659
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "輪島市道房田1号",
+        "撮影日": "2024/01/19",
+        "啓開作業等": "<img width=\"100%\" src=\"./img/sagyou/240119_wajimashido_fusada1go4.jpg\">",
+        "_markerType": "Icon",
+        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/482.png",
+        "_iconSize": [
+          30,
+          30
+        ],
+        "_iconAnchor": [
+          15,
+          15
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.837889,
+          37.370031
+        ]
+      }
     }
   ]
 }
