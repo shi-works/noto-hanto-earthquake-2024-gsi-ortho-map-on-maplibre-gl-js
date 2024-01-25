@@ -115,7 +115,7 @@
       },
       "properties": {
         "name": "七尾市(徳田大津)～穴水町間の所要時間",
-        "所要時間": "<img width=\"100%\" src=\"./img/intercity_travel_time/240124nanao-anamizu.jpg\">",
+        "所要時間": "<img width=\"100%\" src=\"./img/intercity_travel_time/240125nanao-anamizu.png\">",
         "_color": "#0000ff",
         "_opacity": 1,
         "_weight": 10,
@@ -142,7 +142,7 @@
       },
       "properties": {
         "name": "穴水町～珠洲市間の所要時間",
-        "所要時間": "<img width=\"100%\" src=\"./img/intercity_travel_time/240124anamizu-suzu.jpg\">",
+        "所要時間": "<img width=\"100%\" src=\"./img/intercity_travel_time/240125anamizu-suzu.png\">",
         "_color": "#0000ff",
         "_opacity": 1,
         "_weight": 10,
@@ -157,7 +157,7 @@
       "type": "Feature",
       "properties": {
         "name": "金沢市(今町)～七尾市（徳田大津）間の所要時間",
-        "所要時間": "<img width=\"100%\" src=\"./img/intercity_travel_time/240124kanazawa-nanao.png\">",
+        "所要時間": "<img width=\"100%\" src=\"./img/intercity_travel_time/240125kanazawa-nanao.png\">",
         "_color": "#0000ff",
         "_opacity": 1,
         "_weight": 10,
@@ -220,7 +220,7 @@
       },
       "properties": {
         "name": "穴水町～輪島市間の所要時間",
-        "所要時間": "<img width=\"100%\" src=\"./img/intercity_travel_time/240124anamizu-wajima.jpg\">",
+        "所要時間": "<img width=\"100%\" src=\"./img/intercity_travel_time/240125anamizu-wajima.png\">",
         "_color": "#0000ff",
         "_opacity": 1,
         "_weight": 10,
@@ -258,7 +258,7 @@
       "type": "Feature",
       "properties": {
         "name": "穴水町から能登町までの所要時間",
-        "所要時間": "<img width=\"100%\" src=\"./img/intercity_travel_time/240124anamizu-noto.jpg\">",
+        "所要時間": "<img width=\"100%\" src=\"./img/intercity_travel_time/240125anamizu-noto.png\">",
         "_color": "#0000ff",
         "_opacity": 1,
         "_weight": 10,
