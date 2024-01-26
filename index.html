@@ -465,15 +465,15 @@
             background: rgba(255, 255, 255, 0.9);
             box-shadow: 0 1px 6px rgba(0, 0, 0, 0.75);
             border-radius: 8px;
-            width: 300px;
-            height: 300px;
+            width: 250px;
+            height: 280px;
             overflow-y: auto;
         }
 
         .custom-michinoeki-popup .maplibregl-popup-content .popup-image {
             max-width: 100%;
             max-height: 180px;
-            height: auto;
+            /*height: auto;*/
         }
     </style>
     <div id="comparison-container">
@@ -3207,8 +3207,9 @@
             new maplibregl.Popup({ className: 'custom-michinoeki-popup' })
                 .setLngLat(e.lngLat)
                 .setHTML(
-                    '<div style="border-bottom:1px solid #000;"><strong>name:' + name + '</strong></div>' +
-                    '<div><strong>道の駅の状況：</strong>' + statusText + '</div>' +
+                    '<div style="border-bottom:1px solid #000;"><strong>道の駅の状況</strong></div>' +
+                    '<div><strong>' + name + '</strong></div>' +
+                    '<div>道の駅の状況：' + statusText + '</div>' +
                     '現地写真：' + '<br>' +
                     imagesHtml +
                     '<div><a href="https://www.google.com/maps?q=' + lat + ',' + lng + '&hl=ja" target="_blank">🌎Google Maps</a></div>' +
