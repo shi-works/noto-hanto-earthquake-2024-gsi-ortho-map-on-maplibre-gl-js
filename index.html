@@ -514,23 +514,27 @@
                 <div class="checkbox-button-container">
                     <div class="column">
                         <div>
-                            <input type="checkbox" id="20240102" value="20240102" checked>
+                            <input type="checkbox" id="20240102-20240117" value="20240102-20240117" checked>
+                            <label for="20240102-20240117">空中写真(全期間合成)</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="20240102" value="20240102">
                             <label for="20240102">空中写真(2024年01月02日撮影)</label>
                         </div>
                         <div>
-                            <input type="checkbox" id="20240105" value="20240105" checked>
+                            <input type="checkbox" id="20240105" value="20240105">
                             <label for="20240105">空中写真(2024年01月05日撮影)</label>
                         </div>
                         <div>
-                            <input type="checkbox" id="20240111" value="20240111" checked>
+                            <input type="checkbox" id="20240111" value="20240111">
                             <label for="20240111">空中写真(2024年01月11日撮影)</label>
                         </div>
                         <div>
-                            <input type="checkbox" id="20240114" value="20240114" checked>
+                            <input type="checkbox" id="20240114" value="20240114">
                             <label for="20240114">空中写真(2024年01月14日撮影)</label>
                         </div>
                         <div>
-                            <input type="checkbox" id="20240117" value="20240117" checked>
+                            <input type="checkbox" id="20240117" value="20240117">
                             <label for="20240117">空中写真(2024年01月17日撮影)</label>
                         </div>
                         <div>
@@ -776,7 +780,7 @@
 
             var opacity_value = 1;
 
-            // ============================== 正射画像 ==============================
+            // ============================== 正射画像（撮影日別）==============================
 
             // 令和6年能登半島地震 輪島中地区　正射画像（2024年1月2日撮影）ソース
             afterMap.addSource("wazimanaka-0102", {
@@ -794,6 +798,9 @@
                 source: "wazimanaka-0102",
                 paint: {
                     "raster-opacity": opacity_value
+                },
+                layout: {
+                    'visibility': 'none'
                 }
             });
 
@@ -813,6 +820,9 @@
                 source: "suzu-0102",
                 paint: {
                     "raster-opacity": opacity_value
+                },
+                layout: {
+                    'visibility': 'none'
                 }
             });
 
@@ -832,6 +842,9 @@
                 source: "wazimahigashi-0102",
                 paint: {
                     "raster-opacity": opacity_value
+                },
+                layout: {
+                    'visibility': 'none'
                 }
             });
 
@@ -853,51 +866,7 @@
                     "raster-opacity": opacity_value
                 },
                 layout: {
-                    'visibility': 'visible'
-                }
-            });
-
-            // 令和6年能登半島地震 輪島中地区　正射画像（2024年1月5日撮影）ソース
-            afterMap.addSource("wazimanaka-0105", {
-                type: 'raster',
-                tiles: [
-                    'https://cyberjapandata.gsi.go.jp/xyz/20240102_noto_wazimanaka_0105do/{z}/{x}/{y}.png',
-                ],
-                attribution: '<a href="https://maps.gsi.go.jp/development/ichiran.html" target="_blank">地理院タイル</a>'
-            });
-
-            // 令和6年能登半島地震 輪島中地区　正射画像（2024年1月5日撮影）レイヤ
-            afterMap.addLayer({
-                id: "wazimanaka-0105",
-                type: "raster",
-                source: "wazimanaka-0105",
-                paint: {
-                    "raster-opacity": opacity_value
-                },
-                layout: {
-                    'visibility': 'visible'
-                }
-            });
-
-            // 令和6年能登半島地震 穴水地区　正射画像（2024年1月5日撮影）ソース
-            afterMap.addSource("anamizu-0105", {
-                type: 'raster',
-                tiles: [
-                    'https://cyberjapandata.gsi.go.jp/xyz/20240102_noto_anamizu_0105do/{z}/{x}/{y}.png',
-                ],
-                attribution: '<a href="https://maps.gsi.go.jp/development/ichiran.html" target="_blank">地理院タイル</a>'
-            });
-
-            // 令和6年能登半島地震 穴水地区　正射画像（2024年1月5日撮影）レイヤ
-            afterMap.addLayer({
-                id: "anamizu-0105",
-                type: "raster",
-                source: "anamizu-0105",
-                paint: {
-                    "raster-opacity": opacity_value
-                },
-                layout: {
-                    'visibility': 'visible'
+                    'visibility': 'none'
                 }
             });
 
@@ -919,7 +888,51 @@
                     "raster-opacity": opacity_value
                 },
                 layout: {
-                    'visibility': 'visible'
+                    'visibility': 'none'
+                }
+            });
+
+            // 令和6年能登半島地震 輪島中地区　正射画像（2024年1月5日撮影）ソース
+            afterMap.addSource("wazimanaka-0105", {
+                type: 'raster',
+                tiles: [
+                    'https://cyberjapandata.gsi.go.jp/xyz/20240102_noto_wazimanaka_0105do/{z}/{x}/{y}.png',
+                ],
+                attribution: '<a href="https://maps.gsi.go.jp/development/ichiran.html" target="_blank">地理院タイル</a>'
+            });
+
+            // 令和6年能登半島地震 輪島中地区　正射画像（2024年1月5日撮影）レイヤ
+            afterMap.addLayer({
+                id: "wazimanaka-0105",
+                type: "raster",
+                source: "wazimanaka-0105",
+                paint: {
+                    "raster-opacity": opacity_value
+                },
+                layout: {
+                    'visibility': 'none'
+                }
+            });
+
+            // 令和6年能登半島地震 穴水地区　正射画像（2024年1月5日撮影）ソース
+            afterMap.addSource("anamizu-0105", {
+                type: 'raster',
+                tiles: [
+                    'https://cyberjapandata.gsi.go.jp/xyz/20240102_noto_anamizu_0105do/{z}/{x}/{y}.png',
+                ],
+                attribution: '<a href="https://maps.gsi.go.jp/development/ichiran.html" target="_blank">地理院タイル</a>'
+            });
+
+            // 令和6年能登半島地震 穴水地区　正射画像（2024年1月5日撮影）レイヤ
+            afterMap.addLayer({
+                id: "anamizu-0105",
+                type: "raster",
+                source: "anamizu-0105",
+                paint: {
+                    "raster-opacity": opacity_value
+                },
+                layout: {
+                    'visibility': 'none'
                 }
             });
 
@@ -941,7 +954,7 @@
                     "raster-opacity": opacity_value
                 },
                 layout: {
-                    'visibility': 'visible'
+                    'visibility': 'none'
                 }
             });
 
@@ -963,7 +976,7 @@
                     "raster-opacity": opacity_value
                 },
                 layout: {
-                    'visibility': 'visible'
+                    'visibility': 'none'
                 }
             });
 
@@ -985,12 +998,12 @@
                     "raster-opacity": opacity_value
                 },
                 layout: {
-                    'visibility': 'visible'
+                    'visibility': 'none'
                 }
             });
 
             // 令和6年能登半島地震 珠洲地区　正射画像（2024年1月14日撮影）ソース
-            afterMap.addSource("suzu_0114", {
+            afterMap.addSource("suzu-0114", {
                 type: 'raster',
                 tiles: [
                     'https://cyberjapandata.gsi.go.jp/xyz/20240102noto_suzu_0114do/{z}/{x}/{y}.png',
@@ -1000,14 +1013,14 @@
 
             // 令和6年能登半島地震 珠洲地区　正射画像（2024年1月14日撮影）レイヤ
             afterMap.addLayer({
-                id: "suzu_0114",
+                id: "suzu-0114",
                 type: "raster",
-                source: "suzu_0114",
+                source: "suzu-0114",
                 paint: {
                     "raster-opacity": opacity_value
                 },
                 layout: {
-                    'visibility': 'visible'
+                    'visibility': 'none'
                 }
             });
 
@@ -1029,12 +1042,12 @@
                     "raster-opacity": opacity_value
                 },
                 layout: {
-                    'visibility': 'visible'
+                    'visibility': 'none'
                 }
             });
 
             // 令和6年能登半島地震 穴水地区　正射画像（2024年1月14日撮影）ソース
-            afterMap.addSource("anamizu_0114", {
+            afterMap.addSource("anamizu-0114", {
                 type: 'raster',
                 tiles: [
                     'https://cyberjapandata.gsi.go.jp/xyz/20240102noto_anamizu_0114do/{z}/{x}/{y}.png',
@@ -1044,63 +1057,19 @@
 
             // 令和6年能登半島地震 穴水地区　正射画像（2024年1月14日撮影）レイヤ
             afterMap.addLayer({
-                id: "anamizu_0114",
+                id: "anamizu-0114",
                 type: "raster",
-                source: "anamizu_0114",
+                source: "anamizu-0114",
                 paint: {
                     "raster-opacity": opacity_value
                 },
                 layout: {
-                    'visibility': 'visible'
-                }
-            });
-
-            // 令和6年能登半島地震 輪島西地区　正射画像（2024年1月17日撮影）ソース
-            afterMap.addSource("wazimanishi_0117", {
-                type: 'raster',
-                tiles: [
-                    'https://cyberjapandata.gsi.go.jp/xyz/20240102noto_wazimanishi_0117do/{z}/{x}/{y}.png',
-                ],
-                attribution: '<a href="https://maps.gsi.go.jp/development/ichiran.html" target="_blank">地理院タイル</a>'
-            });
-
-            // 令和6年能登半島地震 輪島西地区　正射画像（2024年1月17日撮影）レイヤ
-            afterMap.addLayer({
-                id: "wazimanishi_0117",
-                type: "raster",
-                source: "wazimanishi_0117",
-                paint: {
-                    "raster-opacity": opacity_value
-                },
-                layout: {
-                    'visibility': 'visible'
-                }
-            });
-
-            // 令和6年能登半島地震 穴水地区　正射画像（2024年1月17日撮影）ソース
-            afterMap.addSource("anamizu_0117", {
-                type: 'raster',
-                tiles: [
-                    'https://cyberjapandata.gsi.go.jp/xyz/20240102noto_anamizu_0117do/{z}/{x}/{y}.png',
-                ],
-                attribution: '<a href="https://maps.gsi.go.jp/development/ichiran.html" target="_blank">地理院タイル</a>'
-            });
-
-            // 令和6年能登半島地震 穴水地区　正射画像（2024年1月17日撮影）レイヤ
-            afterMap.addLayer({
-                id: "anamizu_0117",
-                type: "raster",
-                source: "anamizu_0117",
-                paint: {
-                    "raster-opacity": opacity_value
-                },
-                layout: {
-                    'visibility': 'visible'
+                    'visibility': 'none'
                 }
             });
 
             // 令和6年能登半島地震 七尾地区　正射画像（2024年1月17日撮影）ソース
-            afterMap.addSource("nanao_0117", {
+            afterMap.addSource("nanao-0117", {
                 type: 'raster',
                 tiles: [
                     'https://cyberjapandata.gsi.go.jp/xyz/20240102noto_nanao_0117do/{z}/{x}/{y}.png',
@@ -1110,9 +1079,172 @@
 
             // 令和6年能登半島地震 七尾地区　正射画像（2024年1月17日撮影）レイヤ
             afterMap.addLayer({
-                id: "nanao_0117",
+                id: "nanao-0117",
                 type: "raster",
-                source: "nanao_0117",
+                source: "nanao-0117",
+                paint: {
+                    "raster-opacity": opacity_value
+                },
+                layout: {
+                    'visibility': 'none'
+                }
+            });
+
+            // 令和6年能登半島地震 穴水地区　正射画像（2024年1月17日撮影）ソース
+            afterMap.addSource("anamizu-0117", {
+                type: 'raster',
+                tiles: [
+                    'https://cyberjapandata.gsi.go.jp/xyz/20240102noto_anamizu_0117do/{z}/{x}/{y}.png',
+                ],
+                attribution: '<a href="https://maps.gsi.go.jp/development/ichiran.html" target="_blank">地理院タイル</a>'
+            });
+
+            // 令和6年能登半島地震 穴水地区　正射画像（2024年1月17日撮影）レイヤ
+            afterMap.addLayer({
+                id: "anamizu-0117",
+                type: "raster",
+                source: "anamizu-0117",
+                paint: {
+                    "raster-opacity": opacity_value
+                },
+                layout: {
+                    'visibility': 'none'
+                }
+            });
+
+            // 令和6年能登半島地震 輪島西地区　正射画像（2024年1月17日撮影）ソース
+            afterMap.addSource("wazimanishi-0117", {
+                type: 'raster',
+                tiles: [
+                    'https://cyberjapandata.gsi.go.jp/xyz/20240102noto_wazimanishi_0117do/{z}/{x}/{y}.png',
+                ],
+                attribution: '<a href="https://maps.gsi.go.jp/development/ichiran.html" target="_blank">地理院タイル</a>'
+            });
+
+            // 令和6年能登半島地震 輪島西地区　正射画像（2024年1月17日撮影）レイヤ
+            afterMap.addLayer({
+                id: "wazimanishi-0117",
+                type: "raster",
+                source: "wazimanishi-0117",
+                paint: {
+                    "raster-opacity": opacity_value
+                },
+                layout: {
+                    'visibility': 'none'
+                }
+            });
+
+            // ============================== 正射画像（全期間合成）==============================
+
+            // 令和6年能登半島地震 珠洲地区　正射画像（2024年1月2日撮影）レイヤ
+            afterMap.addLayer({
+                id: "suzu-0102-g",
+                type: "raster",
+                source: "suzu-0102",
+                paint: {
+                    "raster-opacity": opacity_value
+                },
+                layout: {
+                    'visibility': 'visible'
+                }
+            });
+
+            // 和6年能登半島地震 珠洲地区　正射画像（2024年1月5日撮影）レイヤ
+            afterMap.addLayer({
+                id: "suzu-0105-g",
+                type: "raster",
+                source: "suzu-0105",
+                paint: {
+                    "raster-opacity": opacity_value
+                },
+                layout: {
+                    'visibility': 'visible'
+                }
+            });
+
+            // 令和6年能登半島地震 輪島中地区　正射画像（2024年1月11日撮影）レイヤ
+            afterMap.addLayer({
+                id: "wazimanaka-0111-g",
+                type: "raster",
+                source: "wazimanaka-0111",
+                paint: {
+                    "raster-opacity": opacity_value
+                },
+                layout: {
+                    'visibility': 'visible'
+                }
+            });
+
+            // 令和6年能登半島地震 輪島東地区　正射画像（2024年1月2日撮影）レイヤ
+            afterMap.addLayer({
+                id: "wazimahigashi-0102-g",
+                type: "raster",
+                source: "wazimahigashi-0102",
+                paint: {
+                    "raster-opacity": opacity_value
+                },
+                layout: {
+                    'visibility': 'visible'
+                }
+            });
+
+            // 令和6年能登半島地震 輪島西地区　正射画像（2024年1月11日撮影）レイヤ
+            afterMap.addLayer({
+                id: "wazimanishi-0111-g",
+                type: "raster",
+                source: "wazimanishi-0111",
+                paint: {
+                    "raster-opacity": opacity_value
+                },
+                layout: {
+                    'visibility': 'visible'
+                }
+            });
+
+            // 令和6年能登半島地震 輪島西地区　正射画像（2024年1月17日撮影）レイヤ
+            afterMap.addLayer({
+                id: "wazimanishi-0117-g",
+                type: "raster",
+                source: "wazimanishi-0117",
+                paint: {
+                    "raster-opacity": opacity_value
+                },
+                layout: {
+                    'visibility': 'visible'
+                }
+            });
+
+            // 令和6年能登半島地震 穴水地区　正射画像（2024年1月17日撮影）レイヤ
+            afterMap.addLayer({
+                id: "anamizu-0117-g",
+                type: "raster",
+                source: "anamizu-0117",
+                paint: {
+                    "raster-opacity": opacity_value
+                },
+                layout: {
+                    'visibility': 'visible'
+                }
+            });
+
+            // 令和6年能登半島地震 七尾地区　正射画像（2024年1月5日撮影）レイヤ
+            afterMap.addLayer({
+                id: "nanao-0105-g",
+                type: "raster",
+                source: "nanao-0105",
+                paint: {
+                    "raster-opacity": opacity_value
+                },
+                layout: {
+                    'visibility': 'visible'
+                }
+            });
+
+            // 令和6年能登半島地震 七尾地区　正射画像（2024年1月17日撮影）レイヤ
+            afterMap.addLayer({
+                id: "nanao-0117-g",
+                type: "raster",
+                source: "nanao-0117",
                 paint: {
                     "raster-opacity": opacity_value
                 },
@@ -2287,6 +2419,33 @@
 
         // 国土地理院 発災後の空中写真の表示・非表示切り替え制御
 
+        // 全期間合成（2024年01月02日撮影～2024年01月17日撮影）
+        document.getElementById('20240102-20240117').addEventListener('change', function (e) {
+            if (e.target.checked) {
+                // チェックボックスがON - レイヤーを表示
+                afterMap.setLayoutProperty('suzu-0102-g', 'visibility', 'visible');
+                afterMap.setLayoutProperty('suzu-0105-g', 'visibility', 'visible');
+                afterMap.setLayoutProperty('wazimanaka-0111-g', 'visibility', 'visible');
+                afterMap.setLayoutProperty('wazimahigashi-0102-g', 'visibility', 'visible');
+                afterMap.setLayoutProperty('wazimanishi-0111-g', 'visibility', 'visible');
+                afterMap.setLayoutProperty('wazimanishi-0117-g', 'visibility', 'visible');
+                afterMap.setLayoutProperty('anamizu-0117-g', 'visibility', 'visible');
+                afterMap.setLayoutProperty('nanao-0105-g', 'visibility', 'visible');
+                afterMap.setLayoutProperty('nanao-0117-g', 'visibility', 'visible');
+            } else {
+                // チェックボックスがOFF - レイヤーを非表示
+                afterMap.setLayoutProperty('suzu-0102-g', 'visibility', 'none');
+                afterMap.setLayoutProperty('suzu-0105-g', 'visibility', 'none');
+                afterMap.setLayoutProperty('wazimanaka-0111-g', 'visibility', 'none');
+                afterMap.setLayoutProperty('wazimahigashi-0102-g', 'visibility', 'none');
+                afterMap.setLayoutProperty('wazimanishi-0111-g', 'visibility', 'none');
+                afterMap.setLayoutProperty('wazimanishi-0117-g', 'visibility', 'none');
+                afterMap.setLayoutProperty('anamizu-0117-g', 'visibility', 'none');
+                afterMap.setLayoutProperty('nanao-0105-g', 'visibility', 'none');
+                afterMap.setLayoutProperty('nanao-0117-g', 'visibility', 'none');
+            }
+        });
+
         // 2024年01月02日撮影
         document.getElementById('20240102').addEventListener('change', function (e) {
             if (e.target.checked) {
@@ -2339,13 +2498,13 @@
             if (e.target.checked) {
                 // チェックボックスがON - レイヤーを表示
                 afterMap.setLayoutProperty('wazimahigashi-0114', 'visibility', 'visible');
-                afterMap.setLayoutProperty('anamizu_0114', 'visibility', 'visible');
-                afterMap.setLayoutProperty('suzu_0114', 'visibility', 'visible');
+                afterMap.setLayoutProperty('anamizu-0114', 'visibility', 'visible');
+                afterMap.setLayoutProperty('suzu-0114', 'visibility', 'visible');
             } else {
                 // チェックボックスがOFF - レイヤーを非表示
                 afterMap.setLayoutProperty('wazimahigashi-0114', 'visibility', 'none');
-                afterMap.setLayoutProperty('anamizu_0114', 'visibility', 'none');
-                afterMap.setLayoutProperty('suzu_0114', 'visibility', 'none');
+                afterMap.setLayoutProperty('anamizu-0114', 'visibility', 'none');
+                afterMap.setLayoutProperty('suzu-0114', 'visibility', 'none');
             }
         });
 
@@ -2353,14 +2512,14 @@
         document.getElementById('20240117').addEventListener('change', function (e) {
             if (e.target.checked) {
                 // チェックボックスがON - レイヤーを表示
-                afterMap.setLayoutProperty('wazimanishi_0117', 'visibility', 'visible');
-                afterMap.setLayoutProperty('anamizu_0117', 'visibility', 'visible');
-                afterMap.setLayoutProperty('nanao_0117', 'visibility', 'visible');
+                afterMap.setLayoutProperty('wazimanishi-0117', 'visibility', 'visible');
+                afterMap.setLayoutProperty('anamizu-0117', 'visibility', 'visible');
+                afterMap.setLayoutProperty('nanao-0117', 'visibility', 'visible');
             } else {
                 // チェックボックスがOFF - レイヤーを非表示
-                afterMap.setLayoutProperty('wazimanishi_0117', 'visibility', 'none');
-                afterMap.setLayoutProperty('anamizu_0117', 'visibility', 'none');
-                afterMap.setLayoutProperty('nanao_0117', 'visibility', 'none');
+                afterMap.setLayoutProperty('wazimanishi-0117', 'visibility', 'none');
+                afterMap.setLayoutProperty('anamizu-0117', 'visibility', 'none');
+                afterMap.setLayoutProperty('nanao-0117', 'visibility', 'none');
             }
         });
 
