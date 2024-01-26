@@ -229,31 +229,6 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "到達地点（石川県道40号）",
-        "路線名": "石川県道40号（珠洲里線）",
-        "地名（推定）": "輪島市町野町寺山",
-        "_markerType": "Icon",
-        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/319.png",
-        "_iconSize": [
-          30,
-          30
-        ],
-        "_iconAnchor": [
-          15,
-          15
-        ]
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          137.123496,
-          37.433878
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
         "name": "到達地点（国道249号）",
         "路線名": "国道249号",
         "地名（推定）": "珠洲市仁江町",
@@ -404,31 +379,6 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "到達地点（志賀町道）",
-        "路線名": "志賀町道鹿頭酒見線",
-        "地名（推定）": "志賀町小窪",
-        "_markerType": "Icon",
-        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/319.png",
-        "_iconSize": [
-          30,
-          30
-        ],
-        "_iconAnchor": [
-          15,
-          15
-        ]
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          136.686586,
-          37.171715
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
         "name": "到達地点（林道）",
         "路線名": "林道小池線",
         "地名（推定）": "輪島市下山町",
@@ -448,6 +398,56 @@
         "coordinates": [
           136.838013,
           37.370923
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "到達地点（石川県道40号）",
+        "路線名": "石川県道40号（珠洲里線）",
+        "地名（推定）": "珠洲市若山町上山",
+        "_markerType": "Icon",
+        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/319.png",
+        "_iconSize": [
+          30,
+          30
+        ],
+        "_iconAnchor": [
+          15,
+          15
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.136412,
+          37.442666
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "到達地点（志賀町道）",
+        "路線名": "志賀町道鹿頭酒見線",
+        "地名（推定）": "志賀町小窪",
+        "_markerType": "Icon",
+        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/319.png",
+        "_iconSize": [
+          30,
+          30
+        ],
+        "_iconAnchor": [
+          15,
+          15
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.683655,
+          37.174782
         ]
       }
     },
