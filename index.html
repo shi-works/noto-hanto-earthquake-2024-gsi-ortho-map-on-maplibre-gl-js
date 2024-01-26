@@ -361,13 +361,13 @@
             border-radius: 8px;
             width: 250px;
             height: 450px;
-            overflow-y: auto;
+            /*overflow-y: auto;*/
         }
 
         .custom-before-after-popup .maplibregl-popup-content .popup-image {
             max-width: 100%;
             max-height: 180px;
-            height: auto;
+            /*height: auto;*/
         }
 
         /*啓開作業状況*/
@@ -378,26 +378,22 @@
             background: rgba(255, 255, 255, 0.9);
             box-shadow: 0 1px 6px rgba(0, 0, 0, 0.75);
             border-radius: 8px;
-            width: 300px;
-            height: 350px;
-            overflow-y: auto;
+            width: 250px;
+            height: 450px;
+            /*overflow-y: auto;*/
         }
 
         .custom-sagyou-popup img {
-            width: 100%;
-            height: auto;
-            object-fit: cover;
-            margin-bottom: 10px;
+            max-width: 100%;
+            max-height: 180px;
+            /*width: 100%;*/
+            /*height: auto;*/
+            /*object-fit: cover;*/
+            /*margin-bottom: 10px;*/
         }
 
         .custom-sagyou-popup iframe {
             width: 100%;
-            height: auto;
-        }
-
-        .custom-sagyou-popup .maplibregl-popup-content .popup-image {
-            max-width: 100%;
-            max-height: 180px;
             height: auto;
         }
 
@@ -2253,6 +2249,54 @@
                 'raster-opacity',
                 parseInt(e.target.value, 10) / 100
             );
+
+            // 全期間合成（2024年01月02日撮影～2024年01月17日撮影）
+            afterMap.setPaintProperty(
+                'suzu-0102-g',
+                'raster-opacity',
+                parseInt(e.target.value, 10) / 100
+            );
+            afterMap.setPaintProperty(
+                'suzu-0105-g',
+                'raster-opacity',
+                parseInt(e.target.value, 10) / 100
+            );
+            afterMap.setPaintProperty(
+                'wazimanaka-0111-g',
+                'raster-opacity',
+                parseInt(e.target.value, 10) / 100
+            );
+            afterMap.setPaintProperty(
+                'wazimahigashi-0102-g',
+                'raster-opacity',
+                parseInt(e.target.value, 10) / 100
+            );
+            afterMap.setPaintProperty(
+                'wazimanishi-0111-g',
+                'raster-opacity',
+                parseInt(e.target.value, 10) / 100
+            );
+            afterMap.setPaintProperty(
+                'wazimanishi-0117-g',
+                'raster-opacity',
+                parseInt(e.target.value, 10) / 100
+            );
+            afterMap.setPaintProperty(
+                'anamizu-0117-g',
+                'raster-opacity',
+                parseInt(e.target.value, 10) / 100
+            );
+            afterMap.setPaintProperty(
+                'nanao-0105-g',
+                'raster-opacity',
+                parseInt(e.target.value, 10) / 100
+            );
+            afterMap.setPaintProperty(
+                'nanao-0117-g',
+                'raster-opacity',
+                parseInt(e.target.value, 10) / 100
+            );
+            // 撮影日別
             afterMap.setPaintProperty(
                 'wazimahigashi-0102',
                 'raster-opacity',
@@ -2309,82 +2353,27 @@
                 parseInt(e.target.value, 10) / 100
             );
             afterMap.setPaintProperty(
-                'anamizu_0114',
+                'anamizu-0114',
                 'raster-opacity',
                 parseInt(e.target.value, 10) / 100
             );
             afterMap.setPaintProperty(
-                'suzu_0114',
+                'suzu-0114',
                 'raster-opacity',
                 parseInt(e.target.value, 10) / 100
             );
             afterMap.setPaintProperty(
-                'wazimanishi_0117',
+                'wazimanishi-0117',
                 'raster-opacity',
                 parseInt(e.target.value, 10) / 100
             );
             afterMap.setPaintProperty(
-                'anamizu_0117',
+                'anamizu-0117',
                 'raster-opacity',
                 parseInt(e.target.value, 10) / 100
             );
             afterMap.setPaintProperty(
-                'nanao_0117',
-                'raster-opacity',
-                parseInt(e.target.value, 10) / 100
-            );
-            afterMap.setPaintProperty(
-                '2024-01-06-00-17-46_UMBRA-06_GEC',
-                'raster-opacity',
-                parseInt(e.target.value, 10) / 100
-            );
-            afterMap.setPaintProperty(
-                '2024-01-06-00-25-02_UMBRA-05_GEC',
-                'raster-opacity',
-                parseInt(e.target.value, 10) / 100
-            );
-            afterMap.setPaintProperty(
-                '2024-01-06-00-25-36_UMBRA-05_GEC',
-                'raster-opacity',
-                parseInt(e.target.value, 10) / 100
-            );
-            afterMap.setPaintProperty(
-                '2024-01-06-00-26-09_UMBRA-05_GEC',
-                'raster-opacity',
-                parseInt(e.target.value, 10) / 100
-            );
-            afterMap.setPaintProperty(
-                '2024-01-06-00-26-38_UMBRA-05_GEC',
-                'raster-opacity',
-                parseInt(e.target.value, 10) / 100
-            );
-            afterMap.setPaintProperty(
-                '2024-01-06-00-58-32_UMBRA-04_GEC',
-                'raster-opacity',
-                parseInt(e.target.value, 10) / 100
-            );
-            afterMap.setPaintProperty(
-                '2024-01-06-00-59-09_UMBRA-04_GEC',
-                'raster-opacity',
-                parseInt(e.target.value, 10) / 100
-            );
-            afterMap.setPaintProperty(
-                '2024-01-06-01-40-36_UMBRA-07_GEC',
-                'raster-opacity',
-                parseInt(e.target.value, 10) / 100
-            );
-            afterMap.setPaintProperty(
-                '2024-01-06-01-41-14_UMBRA-07_GEC',
-                'raster-opacity',
-                parseInt(e.target.value, 10) / 100
-            );
-            afterMap.setPaintProperty(
-                '2024-01-06-11-34-13_UMBRA-04_GEC',
-                'raster-opacity',
-                parseInt(e.target.value, 10) / 100
-            );
-            afterMap.setPaintProperty(
-                '2024-01-06-11-34-47_UMBRA-04_GEC',
+                'nanao-0117',
                 'raster-opacity',
                 parseInt(e.target.value, 10) / 100
             );
@@ -3022,7 +3011,7 @@
                 .setLngLat(e.lngLat)
                 .setHTML(
                     '<div style="border-bottom:1px solid #000;"><strong>啓開前・啓開後比較箇所</strong></div>' +
-                    '<div style="border-bottom:1px solid #000;"><strong>name:' + name + '</strong></div>' +
+                    '<div><strong>' + name + '</strong></div>' +
                     '啓開前：' + '<br>' +
                     '<div><a href="' + imageBeforeUrl + '" target="_blank"><img class="popup-image" src="' + imageBeforeUrl + '" alt="画像"></a></div>' +
                     startHtml +  // 啓開作業のHTML
@@ -3076,7 +3065,7 @@
             // 各プロパティに対してHTMLコンテンツを生成
             Object.keys(propertiesWithHeaders).forEach(prop => {
                 if (e.features[0].properties[prop]) {
-                    popupContent += '<div style="border-bottom:1px solid #000;"><strong>' + propertiesWithHeaders[prop] + '</strong></div>';
+                    popupContent += '<div>' + propertiesWithHeaders[prop] + '</div>';
                     popupContent += generateContentHtml(e.features[0].properties[prop]);
                 }
             });
@@ -3086,7 +3075,7 @@
                 .setLngLat(e.lngLat)
                 .setHTML(
                     '<div style="border-bottom:1px solid #000;"><strong>啓開作業状況</strong></div>' +
-                    '<div style="border-bottom:1px solid #000;"><strong>name:' + name + '</strong></div>' +
+                    '<div><strong>' + name + '</strong></div>' +
                     popupContent +
                     '<div><a href="https://www.google.com/maps?q=' + lat + ',' + lng + '&hl=ja" target="_blank">🌎Google Maps</a></div>' +
                     '<div><a href="https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=' + lat + ',' + lng + '&hl=ja" target="_blank">📷Street View</a></div>'
