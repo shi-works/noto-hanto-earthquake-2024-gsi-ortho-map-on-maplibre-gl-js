@@ -406,7 +406,7 @@
             box-shadow: 0 1px 6px rgba(0, 0, 0, 0.75);
             border-radius: 8px;
             width: 270px;
-            height: 90px;
+            height: 120px;
             overflow-y: auto;
         }
 
@@ -437,8 +437,8 @@
             background: rgba(255, 255, 255, 0.9);
             box-shadow: 0 1px 6px rgba(0, 0, 0, 0.75);
             border-radius: 8px;
-            width: 300px;
-            height: 60px;
+            width: 280px;
+            height: 70px;
             overflow-y: auto;
         }
 
@@ -3096,7 +3096,8 @@
                 new maplibregl.Popup({ className: 'custom-damaged-area-popup' })
                     .setLngLat(e.lngLat)
                     .setHTML(
-                        '<div style="border-bottom:1px solid #000;"><strong>name:' + name + '</strong></div>' +
+                        '<div style="border-bottom:1px solid #000;"><strong>主な被災箇所</strong></div>' +
+                        '<div><strong>' + name + '</strong></div>' +
                         '路線名：' + rosen + '<br>' +
                         '被災規模：' + damaged +
                         '<div><a href="https://www.google.com/maps?q=' + lat + ',' + lng + '&hl=ja" target="_blank">🌎Google Maps</a></div>' +
@@ -3107,7 +3108,8 @@
                 new maplibregl.Popup({ className: 'custom-damaged-area-popup' })
                     .setLngLat(e.lngLat)
                     .setHTML(
-                        '<div style="border-bottom:1px solid #000;"><strong>name:' + name + '</strong></div>' +
+                        '<div style="border-bottom:1px solid #000;"><strong>主な被災箇所</strong></div>' +
+                        '<div><strong>' + name + '</strong></div>' +
                         '路線名：' + rosen + '<br>' +
                         '地名（推定）：' + chimei +
                         '<div><a href="https://www.google.com/maps?q=' + lat + ',' + lng + '&hl=ja" target="_blank">🌎Google Maps</a></div>' +
@@ -3150,7 +3152,8 @@
             new maplibregl.Popup({ className: 'custom-recovery-point-popup' })
                 .setLngLat(e.lngLat)
                 .setHTML(
-                    '<div style="border-bottom:1px solid #000;"><strong>name:' + name + '</strong></div>' +
+                    '<div style="border-bottom:1px solid #000;"><strong>復旧到達地点</strong></div>' +
+                    '<div><strong>' + name + '</strong></div>' +
                     '<div><a href="https://www.google.com/maps?q=' + lat + ',' + lng + '&hl=ja" target="_blank">🌎Google Maps</a></div>' +
                     '<div><a href="https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=' + lat + ',' + lng + '&hl=ja" target="_blank">📷Street View</a></div>'
                 )
