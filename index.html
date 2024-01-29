@@ -1923,6 +1923,22 @@
                 }
             );
 
+            // PNGソース追加
+            afterMap.loadImage('https://maps.gsi.go.jp/portal/sys/v4/symbols/537.png',
+                function (error, image) {
+                    if (error) throw error;
+                    afterMap.addImage('sagyou_symbol_537', image);
+                }
+            );
+
+            // PNGソース追加
+            afterMap.loadImage('https://maps.gsi.go.jp/portal/sys/v4/symbols/562.png',
+                function (error, image) {
+                    if (error) throw error;
+                    afterMap.addImage('sagyou_symbol_562', image);
+                }
+            );
+
             // 啓開作業状況シンボルレイヤ
             afterMap.addLayer({
                 'id': 'sagyou-symbol',
@@ -1940,6 +1956,8 @@
                         // 'https://maps.gsi.go.jp/portal/sys/v4/symbols/563.png', 'sagyou_symbol_563',
                         // 'https://maps.gsi.go.jp/portal/sys/v4/symbols/570.png', 'sagyou_symbol_570',
                         'https://www.mlit.go.jp/road/r6noto/map/img/icon_movie.png', 'sagyou_symbol_icon_movie',
+                        'https://maps.gsi.go.jp/portal/sys/v4/symbols/537.png', 'sagyou_symbol_537',
+                        'https://maps.gsi.go.jp/portal/sys/v4/symbols/562.png', 'sagyou_symbol_562',
                         'sagyou_symbol_482'
                     ],
                     "icon-size": [
@@ -3027,6 +3045,9 @@
             var lng = e.features[0].geometry.coordinates[0];
             var lat = e.features[0].geometry.coordinates[1];
             var name = e.features[0].properties['name'];
+            var photo_date = e.features[0].properties['撮影日'];
+
+            if (photo_date === undefined) { photo_date = "-" }
 
             // ポップアップ用のHTMLコンテンツを生成する関数
             function generateContentHtml(propertyValue) {
@@ -3076,6 +3097,7 @@
                 .setHTML(
                     '<div style="border-bottom:1px solid #000;"><strong>啓開作業状況</strong></div>' +
                     '<div><strong>' + name + '</strong></div>' +
+                    '<div>撮影日：' + photo_date + '</div>' +
                     popupContent +
                     '<div><a href="https://www.google.com/maps?q=' + lat + ',' + lng + '&hl=ja" target="_blank">🌎Google Maps</a></div>' +
                     '<div><a href="https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=' + lat + ',' + lng + '&hl=ja" target="_blank">📷Street View</a></div>'
