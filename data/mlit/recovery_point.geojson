@@ -4,306 +4,6 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "到達地点（石川県道269号）",
-        "路線名": "石川県道269号（滝又三井線）",
-        "地名（推定）": "輪島市空熊町",
-        "_markerType": "Icon",
-        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/319.png",
-        "_iconSize": [
-          30,
-          30
-        ],
-        "_iconAnchor": [
-          15,
-          15
-        ]
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          136.868742,
-          37.316385
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "到達地点（石川県道28号）",
-        "路線名": "石川県道26号（珠洲穴水線）",
-        "地名（推定）": "珠洲市宝立町柏原",
-        "_markerType": "Icon",
-        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/319.png",
-        "_iconSize": [
-          30,
-          30
-        ],
-        "_iconAnchor": [
-          15,
-          15
-        ]
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          137.199626,
-          37.398494
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "到達地点（志賀町道）",
-        "路線名": "志賀町道輪島荒屋線",
-        "地名（推定）": "志賀町給分",
-        "_markerType": "Icon",
-        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/319.png",
-        "_iconSize": [
-          30,
-          30
-        ],
-        "_iconAnchor": [
-          15,
-          15
-        ]
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          136.733852,
-          37.162475
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "到達地点（石川県道51号）",
-        "路線名": "石川県道51号（輪島富来線）",
-        "地名（推定）": "輪島市別所谷町",
-        "_markerType": "Icon",
-        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/319.png",
-        "_iconSize": [
-          30,
-          30
-        ],
-        "_iconAnchor": [
-          15,
-          15
-        ]
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          136.869858,
-          37.348921
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "到達地点（国道249号）",
-        "路線名": "国道249号",
-        "地名（推定）": "輪島市門前町西円山",
-        "_markerType": "Icon",
-        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/319.png",
-        "_iconSize": [
-          30,
-          30
-        ],
-        "_iconAnchor": [
-          15,
-          15
-        ]
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          136.829844,
-          37.340818
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "到達地点（林道）",
-        "路線名": "林道小池線",
-        "地名（推定）": "輪島市下山町",
-        "_markerType": "Icon",
-        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/319.png",
-        "_iconSize": [
-          30,
-          30
-        ],
-        "_iconAnchor": [
-          15,
-          15
-        ]
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          136.838013,
-          37.370923
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "到達地点（輪島市道）",
-        "路線名": "輪島市道（道下深見線）",
-        "地名（推定）": "輪島市門前町鹿磯",
-        "_markerType": "Icon",
-        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/319.png",
-        "_iconSize": [
-          30,
-          30
-        ],
-        "_iconAnchor": [
-          15,
-          15
-        ]
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          136.728437,
-          37.294284
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "到達地点（石川県道280号）",
-        "路線名": "石川県道280号（若山上戸線）",
-        "地名（推定）": "珠洲市上戸町南方",
-        "_markerType": "Icon",
-        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/319.png",
-        "_iconSize": [
-          30,
-          30
-        ],
-        "_iconAnchor": [
-          15,
-          15
-        ]
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          137.225246,
-          37.42089
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "到達地点（石川県道38号）",
-        "路線名": "石川県道38号（輪島浦上線）",
-        "地名（推定）": "輪島市上山町",
-        "_markerType": "Icon",
-        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/319.png",
-        "_iconSize": [
-          30,
-          30
-        ],
-        "_iconAnchor": [
-          15,
-          15
-        ]
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          136.796865,
-          37.347908
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "到達地点（石川県道38号）",
-        "路線名": "石川県道38号（輪島浦上線）",
-        "地名（推定）": "輪島市光浦町",
-        "_markerType": "Icon",
-        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/319.png",
-        "_iconSize": [
-          30,
-          30
-        ],
-        "_iconAnchor": [
-          15,
-          15
-        ]
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          136.863749,
-          37.404008
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "到達地点（輪島市道）",
-        "路線名": "輪島市道（嶽登山線）",
-        "地名（推定）": "輪島市惣領町",
-        "_markerType": "Icon",
-        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/319.png",
-        "_iconSize": [
-          30,
-          30
-        ],
-        "_iconAnchor": [
-          15,
-          15
-        ]
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          136.953335,
-          37.384387
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "到達地点（石川県道272号）",
-        "路線名": "石川県道272号（上黒丸大谷線）",
-        "地名（推定）": "珠洲市大谷町",
-        "_markerType": "Icon",
-        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/319.png",
-        "_iconSize": [
-          30,
-          30
-        ],
-        "_iconAnchor": [
-          15,
-          15
-        ]
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          137.174402,
-          37.500789
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
         "name": "沿岸部への到達地点10（珠洲市折戸町）",
         "_markerType": "Icon",
         "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/087.png",
@@ -528,6 +228,331 @@
         "coordinates": [
           137.339594,
           37.484598
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "作業箇所（珠洲市道）",
+        "路線名": "珠洲市道（740号線）",
+        "地名（推定）": "珠洲市宝立町春日野",
+        "_markerType": "Icon",
+        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/319.png",
+        "_iconSize": [
+          30,
+          30
+        ],
+        "_iconAnchor": [
+          15,
+          15
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.244279,
+          37.411022
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "作業箇所（石川県道269号）",
+        "路線名": "石川県道269号（滝又三井線）",
+        "地名（推定）": "輪島市空熊町",
+        "_markerType": "Icon",
+        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/319.png",
+        "_iconSize": [
+          30,
+          30
+        ],
+        "_iconAnchor": [
+          15,
+          15
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.868742,
+          37.316385
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "作業箇所（石川県道28号）",
+        "路線名": "石川県道26号（珠洲穴水線）",
+        "地名（推定）": "珠洲市宝立町柏原",
+        "_markerType": "Icon",
+        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/319.png",
+        "_iconSize": [
+          30,
+          30
+        ],
+        "_iconAnchor": [
+          15,
+          15
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.199626,
+          37.398494
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "作業箇所（志賀町道）",
+        "路線名": "志賀町道（輪島荒屋線）",
+        "地名（推定）": "志賀町給分",
+        "_markerType": "Icon",
+        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/319.png",
+        "_iconSize": [
+          30,
+          30
+        ],
+        "_iconAnchor": [
+          15,
+          15
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.733852,
+          37.162475
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "作業箇所（石川県道51号）",
+        "路線名": "石川県道51号（輪島富来線）",
+        "地名（推定）": "輪島市別所谷町",
+        "_markerType": "Icon",
+        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/319.png",
+        "_iconSize": [
+          30,
+          30
+        ],
+        "_iconAnchor": [
+          15,
+          15
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.869858,
+          37.348921
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "作業箇所（国道249号）",
+        "路線名": "国道249号",
+        "地名（推定）": "輪島市門前町西円山",
+        "_markerType": "Icon",
+        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/319.png",
+        "_iconSize": [
+          30,
+          30
+        ],
+        "_iconAnchor": [
+          15,
+          15
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.829844,
+          37.340818
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "作業箇所（林道）",
+        "路線名": "林道小池線",
+        "地名（推定）": "輪島市下山町",
+        "_markerType": "Icon",
+        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/319.png",
+        "_iconSize": [
+          30,
+          30
+        ],
+        "_iconAnchor": [
+          15,
+          15
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.838013,
+          37.370923
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "作業箇所（輪島市道）",
+        "路線名": "輪島市道（道下深見線）",
+        "地名（推定）": "輪島市門前町鹿磯",
+        "_markerType": "Icon",
+        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/319.png",
+        "_iconSize": [
+          30,
+          30
+        ],
+        "_iconAnchor": [
+          15,
+          15
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.728437,
+          37.294284
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "作業箇所（石川県道280号）",
+        "路線名": "石川県道280号（若山上戸線）",
+        "地名（推定）": "珠洲市上戸町南方",
+        "_markerType": "Icon",
+        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/319.png",
+        "_iconSize": [
+          30,
+          30
+        ],
+        "_iconAnchor": [
+          15,
+          15
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.225246,
+          37.42089
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "作業箇所（石川県道38号）",
+        "路線名": "石川県道38号（輪島浦上線）",
+        "地名（推定）": "輪島市上山町",
+        "_markerType": "Icon",
+        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/319.png",
+        "_iconSize": [
+          30,
+          30
+        ],
+        "_iconAnchor": [
+          15,
+          15
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.796865,
+          37.347908
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "作業箇所（石川県道38号）",
+        "路線名": "石川県道38号（輪島浦上線）",
+        "地名（推定）": "輪島市光浦町",
+        "_markerType": "Icon",
+        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/319.png",
+        "_iconSize": [
+          30,
+          30
+        ],
+        "_iconAnchor": [
+          15,
+          15
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.863749,
+          37.404008
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "作業箇所（輪島市道）",
+        "路線名": "輪島市道（嶽登山線）",
+        "地名（推定）": "輪島市惣領町",
+        "_markerType": "Icon",
+        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/319.png",
+        "_iconSize": [
+          30,
+          30
+        ],
+        "_iconAnchor": [
+          15,
+          15
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.953335,
+          37.384387
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "作業箇所（石川県道272号）",
+        "路線名": "石川県道272号（上黒丸大谷線）",
+        "地名（推定）": "珠洲市大谷町",
+        "_markerType": "Icon",
+        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/319.png",
+        "_iconSize": [
+          30,
+          30
+        ],
+        "_iconAnchor": [
+          15,
+          15
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.174402,
+          37.500789
         ]
       }
     }
