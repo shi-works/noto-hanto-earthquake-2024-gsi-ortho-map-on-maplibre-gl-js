@@ -6,7 +6,7 @@
       "properties": {
         "name": "被災箇所（のと里山海道）",
         "被災規模": "大",
-        "被災状況": "<img width=\"100%\" src=\"./img/240122_notosatoyama_damage/notosatoyama_br1.jpg\"><img width=\"100%\" src=\"./img/240122_notosatoyama_damage/notosatoyama_br2.jpg\">",
+        "被災状況": "<img width=\"100%\" src=\"./img/240122_notosatoyama_damage/notosatoyama_br1.png\"><img width=\"100%\" src=\"./img/240122_notosatoyama_damage/notosatoyama_br2.png\">",
         "_markerType": "Icon",
         "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/092.png",
         "_iconSize": [
@@ -55,7 +55,6 @@
       "properties": {
         "name": "被災箇所（のと里山海道）",
         "被災規模": "大",
-        "被災状況": "",
         "_markerType": "Icon",
         "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/092.png",
         "_iconSize": [
@@ -712,9 +711,10 @@
       "properties": {
         "name": "被災箇所（能越自動車道）",
         "被災規模": "大",
+        "備考": "片側1車線復旧済",
         "被災状況": "<img width=\"100%\" src=\"./img/240122_noetsu_damage/anamizudoro_i.jpg\">",
         "_markerType": "Icon",
-        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/092.png",
+        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/699.png",
         "_iconSize": [
           20,
           20
@@ -737,9 +737,10 @@
       "properties": {
         "name": "被災箇所（能越自動車道）",
         "被災規模": "大",
+        "備考": "片側1車線復旧済",
         "被災状況": "<img width=\"100%\" src=\"./img/240122_noetsu_damage/anamizudoro_h.jpg\">",
         "_markerType": "Icon",
-        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/092.png",
+        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/699.png",
         "_iconSize": [
           20,
           20
@@ -762,9 +763,10 @@
       "properties": {
         "name": "被災箇所（能越自動車道）",
         "被災規模": "大",
+        "備考": "片側1車線復旧済",
         "被災状況": "<img width=\"100%\" src=\"./img/240122_noetsu_damage/anamizudoro_g.jpg\">",
         "_markerType": "Icon",
-        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/092.png",
+        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/699.png",
         "_iconSize": [
           20,
           20
@@ -787,9 +789,10 @@
       "properties": {
         "name": "被災箇所（能越自動車道）",
         "被災規模": "大",
+        "備考": "片側1車線復旧済",
         "被災状況": "<img width=\"100%\" src=\"./img/240122_noetsu_damage/anamizudoro_c.jpg\">",
         "_markerType": "Icon",
-        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/092.png",
+        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/699.png",
         "_iconSize": [
           20,
           20
@@ -812,9 +815,10 @@
       "properties": {
         "name": "被災箇所（能越自動車道）",
         "被災規模": "大",
+        "備考": "片側1車線復旧済",
         "被災状況": "<img width=\"100%\" src=\"./img/240122_noetsu_damage/anamizudoro_d.jpg\">",
         "_markerType": "Icon",
-        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/092.png",
+        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/699.png",
         "_iconSize": [
           20,
           20
@@ -837,9 +841,10 @@
       "properties": {
         "name": "被災箇所（能越自動車道）",
         "被災規模": "大",
+        "備考": "片側1車線復旧済",
         "被災状況": "<img width=\"100%\" src=\"./img/240122_noetsu_damage/anamizudoro_a.jpg\">",
         "_markerType": "Icon",
-        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/092.png",
+        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/699.png",
         "_iconSize": [
           20,
           20
@@ -862,8 +867,9 @@
       "properties": {
         "name": "被災箇所（能越自動車道）",
         "被災規模": "大",
+        "備考": "片側1車線復旧済",
         "_markerType": "Icon",
-        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/092.png",
+        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/699.png",
         "_iconSize": [
           20,
           20
