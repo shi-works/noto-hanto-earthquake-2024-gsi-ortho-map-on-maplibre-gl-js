@@ -534,6 +534,26 @@
                             <label for="20240117">空中写真(2024年01月17日撮影)</label>
                         </div>
                         <div>
+                            <input type="checkbox" id="hokai" value="hokai" checked>
+                            <label for="hokai">斜面崩壊・堆積範囲(1月22日更新)</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="tsunami" value="tsunami" checked>
+                            <label for="tsunami">津波浸水範囲(1月19日更新)</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="Uplift" value="Uplift" checked>
+                            <label for="Uplift">海岸線が前進した範囲(1月15日公開)</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="fire" value="fire" checked>
+                            <label for="fire">輪島市中心の火災焼失範囲(1月12日更新)</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="uplift-port" value="uplift-port" checked>
+                            <label for="uplift-port">陸化したと思われる港(1月18日更新)</label>
+                        </div>
+                        <div>
                             <input type="checkbox" id="road-map" value="road-map">
                             <label for="road-map">国交省 道路復旧見える化マップ</label>
                             <label id="open-legend-road" style="text-decoration: underline; cursor: pointer;">凡例</label>
@@ -2527,6 +2547,99 @@
                 afterMap.setLayoutProperty('wazimanishi-0117', 'visibility', 'none');
                 afterMap.setLayoutProperty('anamizu-0117', 'visibility', 'none');
                 afterMap.setLayoutProperty('nanao-0117', 'visibility', 'none');
+            }
+        });
+
+        // 斜面崩壊・堆積範囲
+        document.getElementById('hokai').addEventListener('change', function (e) {
+            if (e.target.checked) {
+                // チェックボックスがON - レイヤーを表示
+                afterMap.setLayoutProperty('hokai_all_20240106_suzu-wajimaEAST-line', 'visibility', 'visible');
+                afterMap.setLayoutProperty('hokai_all_20240106_suzu-wajimaEAST-fill', 'visibility', 'visible');
+                afterMap.setLayoutProperty('hokai_all_20240115_wajimaCENTRAL-line', 'visibility', 'visible');
+                afterMap.setLayoutProperty('hokai_all_20240115_wajimaCENTRAL-fill', 'visibility', 'visible');
+                afterMap.setLayoutProperty('hokai_all_20240118_anamizu-line', 'visibility', 'visible');
+                afterMap.setLayoutProperty('hokai_all_20240118_anamizu-fill', 'visibility', 'visible');
+                afterMap.setLayoutProperty('hokai_all_20240118_nanao-line', 'visibility', 'visible');
+                afterMap.setLayoutProperty('hokai_all_20240118_nanao-fill', 'visibility', 'visible');
+                afterMap.setLayoutProperty('hokai_20240122_wajimaWEST-line', 'visibility', 'visible');
+                afterMap.setLayoutProperty('hokai_20240122_wajimaWEST-fill', 'visibility', 'visible');
+            } else {
+                // チェックボックスがOFF - レイヤーを非表示
+                afterMap.setLayoutProperty('hokai_all_20240106_suzu-wajimaEAST-line', 'visibility', 'none');
+                afterMap.setLayoutProperty('hokai_all_20240106_suzu-wajimaEAST-fill', 'visibility', 'none');
+                afterMap.setLayoutProperty('hokai_all_20240115_wajimaCENTRAL-line', 'visibility', 'none');
+                afterMap.setLayoutProperty('hokai_all_20240115_wajimaCENTRAL-fill', 'visibility', 'none');
+                afterMap.setLayoutProperty('hokai_all_20240118_anamizu-line', 'visibility', 'none');
+                afterMap.setLayoutProperty('hokai_all_20240118_anamizu-fill', 'visibility', 'none');
+                afterMap.setLayoutProperty('hokai_all_20240118_nanao-line', 'visibility', 'none');
+                afterMap.setLayoutProperty('hokai_all_20240118_nanao-fill', 'visibility', 'none');
+                afterMap.setLayoutProperty('hokai_20240122_wajimaWEST-line', 'visibility', 'none');
+                afterMap.setLayoutProperty('hokai_20240122_wajimaWEST-fill', 'visibility', 'none');
+            }
+        });
+
+        // 津波浸水範囲
+        document.getElementById('tsunami').addEventListener('change', function (e) {
+            if (e.target.checked) {
+                // チェックボックスがON - レイヤーを表示
+                afterMap.setLayoutProperty('tsunami_suzu-wajimaEAST-line', 'visibility', 'visible');
+                afterMap.setLayoutProperty('tsunami_suzu-wajimaEAST-fill', 'visibility', 'visible');
+                afterMap.setLayoutProperty('tsunami_anamizu-line', 'visibility', 'visible');
+                afterMap.setLayoutProperty('tsunami_anamizu-fill', 'visibility', 'visible');
+                afterMap.setLayoutProperty('tsunami_nanao-line', 'visibility', 'visible');
+                afterMap.setLayoutProperty('tsunami_nanao-fill', 'visibility', 'visible');
+                afterMap.setLayoutProperty('tsunami_wajimaWEST-line', 'visibility', 'visible');
+                afterMap.setLayoutProperty('tsunami_wajimaWEST-fill', 'visibility', 'visible');
+            } else {
+                // チェックボックスがOFF - レイヤーを非表示
+                afterMap.setLayoutProperty('tsunami_suzu-wajimaEAST-line', 'visibility', 'none');
+                afterMap.setLayoutProperty('tsunami_suzu-wajimaEAST-fill', 'visibility', 'none');
+                afterMap.setLayoutProperty('tsunami_anamizu-line', 'visibility', 'none');
+                afterMap.setLayoutProperty('tsunami_anamizu-fill', 'visibility', 'none');
+                afterMap.setLayoutProperty('tsunami_nanao-line', 'visibility', 'none');
+                afterMap.setLayoutProperty('tsunami_nanao-fill', 'visibility', 'none');
+                afterMap.setLayoutProperty('tsunami_wajimaWEST-line', 'visibility', 'none');
+                afterMap.setLayoutProperty('tsunami_wajimaWEST-fill', 'visibility', 'none');
+            }
+        });
+
+        // 海岸線が前進した範囲
+        document.getElementById('Uplift').addEventListener('change', function (e) {
+            if (e.target.checked) {
+                // チェックボックスがON - レイヤーを表示
+                afterMap.setLayoutProperty('Uplift-line', 'visibility', 'visible');
+                afterMap.setLayoutProperty('Uplift-fill', 'visibility', 'visible');
+            } else {
+                // チェックボックスがOFF - レイヤーを非表示
+                afterMap.setLayoutProperty('Uplift-line', 'visibility', 'none');
+                afterMap.setLayoutProperty('Uplift-fill', 'visibility', 'none');
+            }
+        });
+
+        // 輪島市中心の火災焼失範囲
+        document.getElementById('fire').addEventListener('change', function (e) {
+            if (e.target.checked) {
+                // チェックボックスがON - レイヤーを表示
+                afterMap.setLayoutProperty('fire_wajima-line', 'visibility', 'visible');
+                afterMap.setLayoutProperty('fire_wajima-fill', 'visibility', 'visible');
+            } else {
+                // チェックボックスがOFF - レイヤーを非表示
+                afterMap.setLayoutProperty('fire_wajima-line', 'visibility', 'none');
+                afterMap.setLayoutProperty('fire_wajima-fill', 'visibility', 'none');
+            }
+        });
+
+        // 陸化したと思われる港
+        document.getElementById('uplift-port').addEventListener('change', function (e) {
+            if (e.target.checked) {
+                // チェックボックスがON - レイヤーを表示
+                afterMap.setLayoutProperty('uplift-port-symbol', 'visibility', 'visible');
+                afterMap.setLayoutProperty('uplift-port-labels', 'visibility', 'visible');
+            } else {
+                // チェックボックスがOFF - レイヤーを非表示
+                afterMap.setLayoutProperty('uplift-port-symbol', 'visibility', 'none');
+                afterMap.setLayoutProperty('uplift-port-labels', 'visibility', 'none');
             }
         });
 
