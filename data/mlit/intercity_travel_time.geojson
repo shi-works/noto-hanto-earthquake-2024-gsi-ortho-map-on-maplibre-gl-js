@@ -27,30 +27,6 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "珠洲市",
-        "_markerType": "Icon",
-        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/088.png",
-        "_iconSize": [
-          40,
-          40
-        ],
-        "_iconAnchor": [
-          20,
-          20
-        ]
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          137.260723,
-          37.436925,
-          0
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
         "name": "七尾市（徳田大津）",
         "_markerType": "Icon",
         "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/088.png",
@@ -145,31 +121,52 @@
     },
     {
       "type": "Feature",
+      "properties": {
+        "name": "金沢市(今町)～七尾市（徳田大津）間の所要時間",
+        "所要時間": "<img width=\"100%\" src=\"./img/intercity_travel_time/240202kanazawa-nanao.png\">",
+        "_color": "#0000ff",
+        "_opacity": 1,
+        "_weight": 10,
+        "_dashArray": "40,20"
+      },
       "geometry": {
         "type": "LineString",
         "coordinates": [
           [
-            136.899208,
-            37.243773,
+            136.832614,
+            37.062711
+          ],
+          [
+            136.700757,
+            36.629598
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            136.832855,
+            37.063372,
             0
           ],
           [
-            137.260721,
-            37.436946,
+            136.899176,
+            37.243722,
             0
           ]
         ]
       },
       "properties": {
-        "name": "穴水町～珠洲市間の所要時間",
-        "所要時間": "<img width=\"100%\" src=\"./img/intercity_travel_time/240201anamizu-suzu.png\">",
+        "name": "七尾市(徳田大津)～穴水町間の所要時間",
+        "所要時間": "<img width=\"100%\" src=\"./img/intercity_travel_time/240202nanao-anamizu.png\">",
         "_color": "#0000ff",
         "_opacity": 1,
         "_weight": 10,
-        "_dashArray": [
-          40,
-          20
-        ],
+        "_dashArray": "40,20",
         "_stroke": true
       }
     },
@@ -177,7 +174,7 @@
       "type": "Feature",
       "properties": {
         "name": "穴水町から能登町までの所要時間",
-        "所要時間": "<img width=\"100%\" src=\"./img/intercity_travel_time/240201anamizu-noto.png\">",
+        "所要時間": "<img width=\"100%\" src=\"./img/intercity_travel_time/240202anamizu-noto.png\">",
         "_color": "#0000ff",
         "_opacity": 1,
         "_weight": 10,
@@ -216,7 +213,7 @@
       },
       "properties": {
         "name": "穴水町～輪島市間の所要時間",
-        "所要時間": "<img width=\"100%\" src=\"./img/intercity_travel_time/240201anamizu-wajima.png\">",
+        "所要時間": "<img width=\"100%\" src=\"./img/intercity_travel_time/240202anamizu-wajima.png\">",
         "_color": "#0000ff",
         "_opacity": 1,
         "_weight": 10,
@@ -229,53 +226,56 @@
     },
     {
       "type": "Feature",
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [
-            136.832855,
-            37.063372,
-            0
-          ],
-          [
-            136.899176,
-            37.243722,
-            0
-          ]
+      "properties": {
+        "name": "珠洲市",
+        "_markerType": "Icon",
+        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/088.png",
+        "_iconSize": [
+          40,
+          40
+        ],
+        "_iconAnchor": [
+          20,
+          20
         ]
       },
-      "properties": {
-        "name": "七尾市(徳田大津)～穴水町間の所要時間",
-        "所要時間": "<img width=\"100%\" src=\"./img/intercity_travel_time/240201nanao-anamizu.png\">",
-        "_color": "#0000ff",
-        "_opacity": 1,
-        "_weight": 10,
-        "_dashArray": "40,20",
-        "_stroke": true
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.260723,
+          37.436925,
+          0
+        ]
       }
     },
     {
       "type": "Feature",
-      "properties": {
-        "name": "金沢市(今町)～七尾市（徳田大津）間の所要時間",
-        "所要時間": "<img width=\"100%\" src=\"./img/intercity_travel_time/240201kanazawa-nanao.png\">",
-        "_color": "#0000ff",
-        "_opacity": 1,
-        "_weight": 10,
-        "_dashArray": "40,20"
-      },
       "geometry": {
         "type": "LineString",
         "coordinates": [
           [
-            136.832614,
-            37.062711
+            136.899208,
+            37.243773,
+            0
           ],
           [
-            136.700757,
-            36.629598
+            137.260721,
+            37.436946,
+            0
           ]
         ]
+      },
+      "properties": {
+        "name": "穴水町～珠洲市間の所要時間",
+        "所要時間": "<img width=\"100%\" src=\"./img/intercity_travel_time/240202anamizu-suzu.png\">",
+        "_color": "#0000ff",
+        "_opacity": 1,
+        "_weight": 10,
+        "_dashArray": [
+          40,
+          20
+        ],
+        "_stroke": true
       }
     }
   ]
