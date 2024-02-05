@@ -229,31 +229,6 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "作業箇所（輪島市道）",
-        "路線名": "輪島市道（嶽登山線）",
-        "地名（推定）": "輪島市惣領町",
-        "_markerType": "Icon",
-        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/319.png",
-        "_iconSize": [
-          30,
-          30
-        ],
-        "_iconAnchor": [
-          15,
-          15
-        ]
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          136.953335,
-          37.384387
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
         "name": "作業箇所（石川県道272号）",
         "路線名": "石川県道272号（上黒丸大谷線）",
         "地名（推定）": "珠洲市大谷町",
@@ -273,6 +248,30 @@
         "coordinates": [
           137.174402,
           37.500789
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "作業箇所（輪島市道）",
+        "地名（推定）": "輪島市三井町興徳寺",
+        "_markerType": "Icon",
+        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/319.png",
+        "_iconSize": [
+          30,
+          30
+        ],
+        "_iconAnchor": [
+          15,
+          15
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.900184,
+          37.319842
         ]
       }
     },
