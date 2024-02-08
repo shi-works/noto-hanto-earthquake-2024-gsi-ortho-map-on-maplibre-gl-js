@@ -28,7 +28,9 @@ jobs:
           curl -o data/mlit/population_mesh_data.geojson https://www.mlit.go.jp/road/r6noto/map/json/population_mesh_data.geojson
           curl -o data/mlit/michinoeki.geojson https://www.mlit.go.jp/road/r6noto/map/json/michinoeki.geojson
           curl -o data/mlit/img/usage_guide.png https://www.mlit.go.jp/road/r6noto/map/img/usage_guide.png
-
+          curl -o data/mlit/municipal_road_investigation.geojson https://www.mlit.go.jp/road/r6noto/map/json/municipal_road_investigation.geojson
+          curl -o data/mlit/spherical_image.geojson https://www.mlit.go.jp/road/r6noto/map/json/spherical_image.geojson
+          
       - name: Commit and Push Changes
         run: |
           git config --global user.email "y.shiwaku.5519@gmail.com"
