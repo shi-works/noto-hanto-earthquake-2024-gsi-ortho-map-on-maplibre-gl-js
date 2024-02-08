@@ -1,0 +1,161 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "市町道路の状況把握結果（TEC-FORCE活動報告）",
+        "地区名": "輪島市大屋・輪島・河原田・鵠巣地区",
+        "現地調査班": "国土交通省 四国地方整備局",
+        "調査結果": "<a href=\"https://www.hrr.mlit.go.jp/press/2023/1/dourobuhoukokuwajima_01_ooyawajimakawaradakounosu.pdf\" target=\"_blank\">（PDF形式：42.2MB）</a>",
+        "_markerType": "Icon",
+        "_iconUrl": "https://www.mlit.go.jp/road/r6noto/map/img/municipal_road_investigation/chikunaiicon.png",
+        "_iconSize": [
+          30,
+          30
+        ],
+        "_iconAnchor": [
+          15,
+          15
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.896687,
+          37.380116
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "市町道路の状況把握結果（TEC-FORCE活動報告）",
+        "地区名": "輪島市河原田地区",
+        "現地調査班": "国土交通省 中国地方整備局",
+        "調査結果": "<a href=\"https://www.hrr.mlit.go.jp/press/2023/1/dourobuhoukokuwajima_01_kawarada.pdf\" target=\"_blank\">（PDF形式：13.0MB）</a>",
+        "_markerType": "Icon",
+        "_iconUrl": "https://www.mlit.go.jp/road/r6noto/map/img/municipal_road_investigation/chikunaiicon.png",
+        "_iconSize": [
+          30,
+          30
+        ],
+        "_iconAnchor": [
+          15,
+          15
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.933594,
+          37.359447
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "市町道路の状況把握結果（TEC-FORCE活動報告）",
+        "地区名": "輪島市三井地区",
+        "現地調査班": "国土交通省 中国地方整備局",
+        "調査結果": "<a href=\"https://www.hrr.mlit.go.jp/press/2023/1/dourobuhoukokuwajima_01_mii.pdf\" target=\"_blank\">（PDF形式：17.9MB）</a>",
+        "_markerType": "Icon",
+        "_iconUrl": "https://www.mlit.go.jp/road/r6noto/map/img/municipal_road_investigation/chikunaiicon.png",
+        "_iconSize": [
+          30,
+          30
+        ],
+        "_iconAnchor": [
+          15,
+          15
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.94149,
+          37.311199
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "市町道路の状況把握結果（TEC-FORCE活動報告）",
+        "地区名": "輪島市門前地区",
+        "現地調査班": "国土交通省 九州地方整備局",
+        "調査結果": "<a href=\"https://www.hrr.mlit.go.jp/press/2023/1/dourobuhoukokuwajima_01_monzen.pdf\" target=\"_blank\">（PDF形式：29.8MB）</a>",
+        "_markerType": "Icon",
+        "_iconUrl": "https://www.mlit.go.jp/road/r6noto/map/img/municipal_road_investigation/chikunaiicon.png",
+        "_iconSize": [
+          30,
+          30
+        ],
+        "_iconAnchor": [
+          15,
+          15
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.785278,
+          37.282658
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "市町道路の状況把握結果（TEC-FORCE活動報告）",
+        "地区名": "輪島市南志見地区",
+        "現地調査班": "国土交通省 九州地方整備局",
+        "調査結果": "<a href=\"https://www.hrr.mlit.go.jp/press/2023/1/dourobuhoukokuwajima_01_najimi.pdf\" target=\"_blank\">（PDF形式：15MB）</a>",
+        "_markerType": "Icon",
+        "_iconUrl": "https://www.mlit.go.jp/road/r6noto/map/img/municipal_road_investigation/chikunaiicon.png",
+        "_iconSize": [
+          30,
+          30
+        ],
+        "_iconAnchor": [
+          15,
+          15
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.037621,
+          37.414482
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "市町道路の状況把握結果（TEC-FORCE活動報告）",
+        "地区名": "輪島市町野地区",
+        "現地調査班": "国土交通省 九州地方整備局",
+        "調査結果": "<a href=\"https://www.hrr.mlit.go.jp/press/2023/1/dourobuhoukokuwajima_01_machino.pdf\" target=\"_blank\">（PDF形式：29.8MB）</a>",
+        "_markerType": "Icon",
+        "_iconUrl": "https://www.mlit.go.jp/road/r6noto/map/img/municipal_road_investigation/chikunaiicon.png",
+        "_iconSize": [
+          30,
+          30
+        ],
+        "_iconAnchor": [
+          15,
+          15
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.10062,
+          37.421026
+        ]
+      }
+    }
+  ]
+}
