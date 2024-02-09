@@ -180,7 +180,7 @@
       "type": "Feature",
       "properties": {
         "name": "道の駅「ころ柿の里しか」",
-        "道の駅の状況": "営業休止中<img width=\"100%\" src=\"./img/michinoeki/240119_korogaki_1.png\"><img width=\"100%\" src=\"./img/michinoeki/240119_korogaki_2.png\">",
+        "道の駅の状況": "農産物直売所 営業中<img width=\"100%\" src=\"./img/michinoeki/240119_korogaki_1.png\"><img width=\"100%\" src=\"./img/michinoeki/240119_korogaki_2.png\">",
         "_markerType": "Icon",
         "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/474.png",
         "_iconSize": [
@@ -205,7 +205,7 @@
       "type": "Feature",
       "properties": {
         "name": "道の駅「のと里山空港」",
-        "道の駅の状況": "営業休止中、トイレ利用可、国土交通省現地支援センター<img width=\"100%\" src=\"./img/michinoeki/240116_notosatoyama.png\"><img width=\"100%\" src=\"./img/michinoeki/240117_notosatoyama.png\">",
+        "道の駅の状況": "営業中、トイレ利用可、国土交通省現地支援センター<img width=\"100%\" src=\"./img/michinoeki/240116_notosatoyama.png\"><img width=\"100%\" src=\"./img/michinoeki/240117_notosatoyama.png\">",
         "_markerType": "Icon",
         "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/474.png",
         "_iconSize": [
