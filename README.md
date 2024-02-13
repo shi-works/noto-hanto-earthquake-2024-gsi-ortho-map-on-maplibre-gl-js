@@ -57,7 +57,7 @@ https://github.com/shi-works/noto-hanto-earthquake-2024-gsi-ortho-map-on-maplibr
 ### 国土交通省
 - 令和6年能登半島地震 道路復旧見える化マップ
     - 出典：https://www.mlit.go.jp/road/r6noto/index2.html
-    - 掲載情報：緊急復旧済み区間、復旧到達地点、啓開作業状況、啓開前・啓開後比較箇所、主な被災箇所、ETC2.0速度データ(平均速度)
+    - 掲載情報：緊急復旧済み区間、復旧到達地点、啓開作業状況、啓開前・啓開後比較箇所、主な被災箇所、ETC2.0速度データ(平均速度)、支援拠点の道の駅、市町道路の状況把握結果（TEC-FORCE活動報告）、被災状況（360度画像/三次元点群データ）
     - GeoJSON形式のデータを国交省のサーバよりダウンロードして、[GitHubリポジトリ](https://github.com/shi-works/noto-hanto-earthquake-2024-gsi-ortho-map-on-maplibre-gl-js/tree/main/data/mlit)でホストしています。
     - データは1時間毎に更新されます。
     - 緊急復旧済み区間：https://shi-works.github.io/noto-hanto-earthquake-2024-gsi-ortho-map-on-maplibre-gl-js/data/mlit/emergency_restored_section.geojson
@@ -67,6 +67,8 @@ https://github.com/shi-works/noto-hanto-earthquake-2024-gsi-ortho-map-on-maplibr
     - 主な被災箇所：https://shi-works.github.io/noto-hanto-earthquake-2024-gsi-ortho-map-on-maplibre-gl-js/data/mlit/damaged_area.geojson
     - ETC2.0速度データ(平均速度)：https://shi-works.github.io/noto-hanto-earthquake-2024-gsi-ortho-map-on-maplibre-gl-js/data/mlit/ETC2.0_speed_data.geojson
     - 支援拠点の道の駅：https://shi-works.github.io/noto-hanto-earthquake-2024-gsi-ortho-map-on-maplibre-gl-js/data/mlit/michinoeki.geojson
+    - 市町道路の状況把握結果（TEC-FORCE活動報告）：https://shi-works.github.io/noto-hanto-earthquake-2024-gsi-ortho-map-on-maplibre-gl-js/data/mlit/municipal_road_investigation.geojson
+    - 被災状況（360度画像/三次元点群データ）：https://shi-works.github.io/noto-hanto-earthquake-2024-gsi-ortho-map-on-maplibre-gl-js/data/mlit/spherical_image.geojson
 
 - 上記の公開データのライセンス：[リンク・著作権・免責事項（政府標準利用規約（第2.0版）準拠）](https://www.mlit.go.jp/link.html)
 <!-- 
