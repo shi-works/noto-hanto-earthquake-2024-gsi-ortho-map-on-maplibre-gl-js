@@ -43,6 +43,10 @@ https://github.com/shi-works/noto-hanto-earthquake-2024-gsi-ortho-map-on-maplibr
     - 概要：下記HPより港の名称を取得して、空中写真で確認した「隆起の影響で著しく水がなくなっている港データ」を作成。
     - 第九管区海上保安本部海洋情報部HP：「[航空機から見た石川県の港湾と海岸線](https://www1.kaiho.mlit.go.jp/KAN9/tori-naru/ishikawa-sakuin.htm#ishikawa-plan)」
 
+- 亀裂分布データ（2月14日公表）
+    - 出典：https://www.gsi.go.jp/BOUSAI/20240101_noto_earthquake.html#4
+    - 概要：地震によって生じたと考えられる地表の亀裂箇所について空中写真を判読して作成。
+
 - 上記の公開データのライセンス：[国土地理院コンテンツ利用規約](https://www.gsi.go.jp/kikakuchousei/kikakuchousei40182.html)に従い、出典明示により、転載も含め使用可
 
 ### 全国Ｑ地図
