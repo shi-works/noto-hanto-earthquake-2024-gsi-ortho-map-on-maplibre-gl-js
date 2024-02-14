@@ -579,6 +579,10 @@
                                 <label for="uplift-port">陸化したと思われる港(1月18日更新)</label>
                             </div>
                             <div>
+                                <input type="checkbox" id="cracks" value="cracks" checked />
+                                <label for="cracks">亀裂場所(2月14日公表)</label>
+                            </div>
+                            <div>
                                 <input type="checkbox" id="road-map" value="road-map" />
                                 <label for="road-map">国交省 道路復旧見える化マップ</label>
                                 <label id="open-legend-road" style="text-decoration: underline; cursor: pointer">凡例</label>
@@ -620,6 +624,9 @@
             <div style="height: 5px"></div>
             <div class="square" style="background-color: rgb(255, 127, 0, 0.1); outline: 2px solid; outline-color: rgba(255, 127, 0, 1); display: inline-block"></div>
             <span style="margin-left: 5px">火災焼失範囲(輪島市中心)</span>
+            <div style="height: 5px"></div>
+            <div style="height: 3px; width: 12px; background-color: rgba(255, 0, 191, 1); display: inline-block"></div>
+            <span style="margin-left: 5px">亀裂場所</span>
             <div style="height: 5px"></div>
             <span><img src="https://maps.gsi.go.jp/portal/sys/v4/symbols/080.png" style="width: 15px; height: 15px" /></span>
             <span>陸化したと思われる港</span>
@@ -1640,6 +1647,26 @@
                     },
                 });
 
+                // ============================== 亀裂場所 ==============================
+
+                // 亀裂場所ソース
+                afterMap.addSource('cracks', {
+                    type: 'geojson',
+                    data: 'https://shi-works.github.io/noto-hanto-earthquake-2024-gsi-ortho-map-on-maplibre-gl-js/data/noto_cracks_20240214.geojson',
+                    attribution: '<a href="https://www.gsi.go.jp/BOUSAI/20240101_noto_earthquake.html">国土地理院 令和6年(2024年)能登半島地震に関する情報</a>',
+                });
+
+                // 亀裂場所ラインレイヤ
+                afterMap.addLayer({
+                    id: 'cracks-lines',
+                    type: 'line',
+                    source: 'cracks',
+                    paint: {
+                        'line-color': 'rgba(255, 0, 191, 1)',
+                        'line-width': 5,
+                    },
+                });
+
                 // ============================== 石川県孤立集落人数（ポリゴン） ==============================
 
                 // 石川県孤立集落人数ポリゴンソース
@@ -2502,6 +2529,17 @@
                     // チェックボックスがOFF - レイヤーを非表示
                     afterMap.setLayoutProperty('uplift-port-symbol', 'visibility', 'none');
                     afterMap.setLayoutProperty('uplift-port-labels', 'visibility', 'none');
+                }
+            });
+
+            // 亀裂場所
+            document.getElementById('cracks').addEventListener('change', function (e) {
+                if (e.target.checked) {
+                    // チェックボックスがON - レイヤーを表示
+                    afterMap.setLayoutProperty('cracks-lines', 'visibility', 'visible');
+                } else {
+                    // チェックボックスがOFF - レイヤーを非表示
+                    afterMap.setLayoutProperty('cracks-lines', 'visibility', 'none');
                 }
             });
 
