@@ -55,7 +55,7 @@
       "type": "Feature",
       "properties": {
         "name": "道の駅「桜峠」",
-        "道の駅の状況": "営業休止中<img width=\"100%\" src=\"./img/michinoeki/240116_sakuratoge.png\"><img width=\"100%\" src=\"./img/michinoeki/240116_sakuratoge_2.png\">",
+        "道の駅の状況": "営業中（営業時間短縮）、仮設トイレ利用可<img width=\"100%\" src=\"./img/michinoeki/240116_sakuratoge.png\"><img width=\"100%\" src=\"./img/michinoeki/240116_sakuratoge_2.png\">",
         "_markerType": "Icon",
         "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/474.png",
         "_iconSize": [
@@ -105,7 +105,7 @@
       "type": "Feature",
       "properties": {
         "name": "道の駅「赤神」",
-        "道の駅の状況": "営業休止中",
+        "道の駅の状況": "営業休止中、仮設トイレ利用可",
         "_markerType": "Icon",
         "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/474.png",
         "_iconSize": [
@@ -130,7 +130,7 @@
       "type": "Feature",
       "properties": {
         "name": "道の駅「とぎ海街道」",
-        "道の駅の状況": "営業休止中<img width=\"100%\" src=\"./img/michinoeki/240119_togiumi.png\"><img width=\"100%\" src=\"./img/michinoeki/240120_togiumi.png\">",
+        "道の駅の状況": "営業休止中、トイレ利用可<img width=\"100%\" src=\"./img/michinoeki/240119_togiumi.png\"><img width=\"100%\" src=\"./img/michinoeki/240120_togiumi.png\">",
         "_markerType": "Icon",
         "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/474.png",
         "_iconSize": [
@@ -155,7 +155,7 @@
       "type": "Feature",
       "properties": {
         "name": "道の駅「輪島」",
-        "道の駅の状況": "営業休止中",
+        "道の駅の状況": "営業休止中、仮設トイレ利用可",
         "_markerType": "Icon",
         "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/474.png",
         "_iconSize": [
@@ -355,7 +355,7 @@
       "type": "Feature",
       "properties": {
         "name": "道の駅「あなみず」",
-        "道の駅の状況": "営業休止中、トイレ利用可、国土交通省コンテナ型トイレ設置<img width=\"100%\" src=\"./img/michinoeki/240115_anamizu.png\">",
+        "道の駅の状況": "営業休止中、トイレ利用可<img width=\"100%\" src=\"./img/michinoeki/240115_anamizu.png\">",
         "_markerType": "Icon",
         "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/474.png",
         "_iconSize": [
