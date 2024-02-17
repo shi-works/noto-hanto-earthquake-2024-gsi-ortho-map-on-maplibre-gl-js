@@ -31,299 +31,6 @@
       "properties": {
         "name": "被災箇所（のと里山海道）",
         "被災規模": "大",
-        "_markerType": "Icon",
-        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/092.png",
-        "_iconSize": [
-          20,
-          20
-        ],
-        "_iconAnchor": [
-          10,
-          10
-        ]
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          136.857011,
-          37.188305
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "被災箇所（のと里山海道）",
-        "被災規模": "大",
-        "_markerType": "Icon",
-        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/092.png",
-        "_iconSize": [
-          20,
-          20
-        ],
-        "_iconAnchor": [
-          10,
-          10
-        ]
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          136.853975,
-          37.185343
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "被災箇所（のと里山海道）",
-        "被災規模": "大",
-        "被災状況": "<img width=\"100%\" src=\"./img/240122_notosatoyama_damage/notosatoyama_1.jpg\">",
-        "_markerType": "Icon",
-        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/092.png",
-        "_iconSize": [
-          20,
-          20
-        ],
-        "_iconAnchor": [
-          10,
-          10
-        ]
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          136.869757,
-          37.202321
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "被災箇所（のと里山海道）",
-        "被災規模": "大",
-        "_markerType": "Icon",
-        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/092.png",
-        "_iconSize": [
-          20,
-          20
-        ],
-        "_iconAnchor": [
-          10,
-          10
-        ]
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          136.84845,
-          37.157512
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "被災箇所（のと里山海道）",
-        "被災規模": "大",
-        "_markerType": "Icon",
-        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/092.png",
-        "_iconSize": [
-          20,
-          20
-        ],
-        "_iconAnchor": [
-          10,
-          10
-        ]
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          136.85729,
-          37.173859
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "被災箇所（のと里山海道）",
-        "被災規模": "大",
-        "_markerType": "Icon",
-        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/092.png",
-        "_iconSize": [
-          20,
-          20
-        ],
-        "_iconAnchor": [
-          10,
-          10
-        ]
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          136.857548,
-          37.169003
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "被災箇所（のと里山海道）",
-        "被災規模": "大",
-        "_markerType": "Icon",
-        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/092.png",
-        "_iconSize": [
-          20,
-          20
-        ],
-        "_iconAnchor": [
-          10,
-          10
-        ]
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          136.856947,
-          37.163737
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "被災箇所（のと里山海道）",
-        "被災規模": "大",
-        "被災状況": "<img width=\"100%\" src=\"./img/240122_notosatoyama_damage/notosatoyama_2.jpg\">",
-        "_markerType": "Icon",
-        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/092.png",
-        "_iconSize": [
-          20,
-          20
-        ],
-        "_iconAnchor": [
-          10,
-          10
-        ]
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          136.852741,
-          37.158743
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "被災箇所（のと里山海道）",
-        "被災規模": "大",
-        "被災状況": "<img width=\"100%\" src=\"./img/240122_notosatoyama_damage/notosatoyama_3.jpg\">",
-        "_markerType": "Icon",
-        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/092.png",
-        "_iconSize": [
-          20,
-          20
-        ],
-        "_iconAnchor": [
-          10,
-          10
-        ]
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          136.849705,
-          37.149474
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "被災箇所（のと里山海道）",
-        "被災規模": "大",
-        "_markerType": "Icon",
-        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/092.png",
-        "_iconSize": [
-          20,
-          20
-        ],
-        "_iconAnchor": [
-          10,
-          10
-        ]
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          136.849394,
-          37.146224
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "被災箇所（のと里山海道）",
-        "被災規模": "大",
-        "被災状況": "<img width=\"100%\" src=\"./img/240122_notosatoyama_damage/notosatoyama_4.jpg\">",
-        "_markerType": "Icon",
-        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/092.png",
-        "_iconSize": [
-          20,
-          20
-        ],
-        "_iconAnchor": [
-          10,
-          10
-        ]
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          136.850515,
-          37.140614
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "被災箇所（のと里山海道）",
-        "被災規模": "大",
-        "被災状況": "<img width=\"100%\" src=\"./img/240122_notosatoyama_damage/notosatoyama_5.jpg\">",
-        "_markerType": "Icon",
-        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/092.png",
-        "_iconSize": [
-          20,
-          20
-        ],
-        "_iconAnchor": [
-          10,
-          10
-        ]
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          136.847377,
-          37.136355
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "被災箇所（のと里山海道）",
-        "被災規模": "大",
         "備考": "片側1車線復旧済",
         "被災状況": "<img width=\"100%\" src=\"./img/240122_notosatoyama_damage/notosatoyama_11.jpg\">",
         "_markerType": "Icon",
@@ -368,82 +75,6 @@
         "coordinates": [
           136.816462,
           37.099807
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "被災箇所（のと里山海道）",
-        "被災規模": "大",
-        "備考": "片側1車線復旧済",
-        "被災状況": "<img width=\"100%\" src=\"./img/240122_notosatoyama_damage/notosatoyama_9.jpg\">",
-        "_markerType": "Icon",
-        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/699.png",
-        "_iconSize": [
-          20,
-          20
-        ],
-        "_iconAnchor": [
-          10,
-          10
-        ]
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          136.829304,
-          37.134148
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "被災箇所（のと里山海道）",
-        "被災規模": "大",
-        "被災状況": "<img width=\"100%\" src=\"./img/240122_notosatoyama_damage/notosatoyama_6.jpg\">",
-        "_markerType": "Icon",
-        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/092.png",
-        "_iconSize": [
-          20,
-          20
-        ],
-        "_iconAnchor": [
-          10,
-          10
-        ]
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          136.839824,
-          37.139451
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "被災箇所（のと里山海道）",
-        "被災規模": "大",
-        "被災状況": "<img width=\"100%\" src=\"./img/240122_notosatoyama_damage/notosatoyama_7.jpg\">",
-        "_markerType": "Icon",
-        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/092.png",
-        "_iconSize": [
-          20,
-          20
-        ],
-        "_iconAnchor": [
-          10,
-          10
-        ]
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          136.836176,
-          37.13839
         ]
       }
     },
@@ -2408,6 +2039,389 @@
         "coordinates": [
           136.97064,
           37.410511
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "被災箇所（のと里山海道）",
+        "被災規模": "大",
+        "備考": "片側1車線復旧済",
+        "被災状況": "<img width=\"100%\" src=\"./img/240122_notosatoyama_damage/notosatoyama_9.jpg\">",
+        "_markerType": "Icon",
+        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/699.png",
+        "_iconSize": [
+          20,
+          20
+        ],
+        "_iconAnchor": [
+          10,
+          10
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.829304,
+          37.134148
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "被災箇所（のと里山海道）",
+        "被災規模": "大",
+        "備考": "片側1車線復旧済",
+        "被災状況": "<img width=\"100%\" src=\"./img/240122_notosatoyama_damage/notosatoyama_7.jpg\">",
+        "_markerType": "Icon",
+        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/699.png",
+        "_iconSize": [
+          20,
+          20
+        ],
+        "_iconAnchor": [
+          10,
+          10
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.836176,
+          37.13839
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "被災箇所（のと里山海道）",
+        "被災規模": "大",
+        "備考": "片側1車線復旧済",
+        "被災状況": "<img width=\"100%\" src=\"./img/240122_notosatoyama_damage/notosatoyama_6.jpg\">",
+        "_markerType": "Icon",
+        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/699.png",
+        "_iconSize": [
+          20,
+          20
+        ],
+        "_iconAnchor": [
+          10,
+          10
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.839824,
+          37.139451
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "被災箇所（のと里山海道）",
+        "被災規模": "大",
+        "備考": "片側1車線復旧済",
+        "被災状況": "<img width=\"100%\" src=\"./img/240122_notosatoyama_damage/notosatoyama_5.jpg\">",
+        "_markerType": "Icon",
+        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/699.png",
+        "_iconSize": [
+          20,
+          20
+        ],
+        "_iconAnchor": [
+          10,
+          10
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.847377,
+          37.136355
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "被災箇所（のと里山海道）",
+        "被災規模": "大",
+        "備考": "片側1車線復旧済",
+        "被災状況": "<img width=\"100%\" src=\"./img/240122_notosatoyama_damage/notosatoyama_4.jpg\">",
+        "_markerType": "Icon",
+        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/699.png",
+        "_iconSize": [
+          20,
+          20
+        ],
+        "_iconAnchor": [
+          10,
+          10
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.850515,
+          37.140614
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "被災箇所（のと里山海道）",
+        "被災規模": "大",
+        "備考": "片側1車線復旧済",
+        "被災状況": "<img width=\"100%\" src=\"./img/240122_notosatoyama_damage/notosatoyama_3.jpg\">",
+        "_markerType": "Icon",
+        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/699.png",
+        "_iconSize": [
+          20,
+          20
+        ],
+        "_iconAnchor": [
+          10,
+          10
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.849705,
+          37.149474
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "被災箇所（のと里山海道）",
+        "被災規模": "大",
+        "備考": "片側1車線復旧済",
+        "_markerType": "Icon",
+        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/699.png",
+        "_iconSize": [
+          20,
+          20
+        ],
+        "_iconAnchor": [
+          10,
+          10
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.849394,
+          37.146224
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "被災箇所（のと里山海道）",
+        "被災規模": "大",
+        "備考": "片側1車線復旧済",
+        "_markerType": "Icon",
+        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/699.png",
+        "_iconSize": [
+          20,
+          20
+        ],
+        "_iconAnchor": [
+          10,
+          10
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.84845,
+          37.157512
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "被災箇所（のと里山海道）",
+        "被災規模": "大",
+        "備考": "片側1車線復旧済",
+        "被災状況": "<img width=\"100%\" src=\"./img/240122_notosatoyama_damage/notosatoyama_2.jpg\">",
+        "_markerType": "Icon",
+        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/699.png",
+        "_iconSize": [
+          20,
+          20
+        ],
+        "_iconAnchor": [
+          10,
+          10
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.852741,
+          37.158743
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "被災箇所（のと里山海道）",
+        "被災規模": "大",
+        "備考": "片側1車線復旧済",
+        "_markerType": "Icon",
+        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/699.png",
+        "_iconSize": [
+          20,
+          20
+        ],
+        "_iconAnchor": [
+          10,
+          10
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.856947,
+          37.163737
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "被災箇所（のと里山海道）",
+        "被災規模": "大",
+        "備考": "片側1車線復旧済",
+        "_markerType": "Icon",
+        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/699.png",
+        "_iconSize": [
+          20,
+          20
+        ],
+        "_iconAnchor": [
+          10,
+          10
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.857548,
+          37.169003
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "被災箇所（のと里山海道）",
+        "被災規模": "大",
+        "備考": "片側1車線復旧済",
+        "_markerType": "Icon",
+        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/699.png",
+        "_iconSize": [
+          20,
+          20
+        ],
+        "_iconAnchor": [
+          10,
+          10
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.85729,
+          37.173859
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "被災箇所（のと里山海道）",
+        "被災規模": "大",
+        "備考": "片側1車線復旧済",
+        "_markerType": "Icon",
+        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/699.png",
+        "_iconSize": [
+          20,
+          20
+        ],
+        "_iconAnchor": [
+          10,
+          10
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.853975,
+          37.185343
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "被災箇所（のと里山海道）",
+        "被災規模": "大",
+        "備考": "片側1車線復旧済",
+        "_markerType": "Icon",
+        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/699.png",
+        "_iconSize": [
+          20,
+          20
+        ],
+        "_iconAnchor": [
+          10,
+          10
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.857011,
+          37.188305
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "被災箇所（のと里山海道）",
+        "被災規模": "大",
+        "備考": "片側1車線復旧済",
+        "被災状況": "<img width=\"100%\" src=\"./img/240122_notosatoyama_damage/notosatoyama_1.jpg\">",
+        "_markerType": "Icon",
+        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/699.png",
+        "_iconSize": [
+          20,
+          20
+        ],
+        "_iconAnchor": [
+          10,
+          10
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.869757,
+          37.202321
         ]
       }
     }
