@@ -1149,11 +1149,26 @@
                     },
                 });
 
+                /*
                 // 和6年能登半島地震 珠洲地区　正射画像（2024年1月5日撮影）レイヤ
                 afterMap.addLayer({
                     id: 'suzu-0105-g',
                     type: 'raster',
                     source: 'suzu-0105',
+                    paint: {
+                        'raster-opacity': opacity_value,
+                    },
+                    layout: {
+                        visibility: 'visible',
+                    },
+                });
+                */
+
+                // 令和6年能登半島地震 珠洲地区　正射画像（2024年1月14日撮影）レイヤ
+                afterMap.addLayer({
+                    id: 'suzu-0114-g',
+                    type: 'raster',
+                    source: 'suzu-0114',
                     paint: {
                         'raster-opacity': opacity_value,
                     },
@@ -2279,7 +2294,8 @@
 
                 // 全期間合成（2024年01月02日撮影～2024年01月17日撮影）
                 afterMap.setPaintProperty('suzu-0102-g', 'raster-opacity', parseInt(e.target.value, 10) / 100);
-                afterMap.setPaintProperty('suzu-0105-g', 'raster-opacity', parseInt(e.target.value, 10) / 100);
+                // afterMap.setPaintProperty('suzu-0105-g', 'raster-opacity', parseInt(e.target.value, 10) / 100);
+                afterMap.setPaintProperty('suzu-0114-g', 'raster-opacity', parseInt(e.target.value, 10) / 100);
                 afterMap.setPaintProperty('wazimanaka-0111-g', 'raster-opacity', parseInt(e.target.value, 10) / 100);
                 afterMap.setPaintProperty('wazimahigashi-0102-g', 'raster-opacity', parseInt(e.target.value, 10) / 100);
                 afterMap.setPaintProperty('wazimanishi-0111-g', 'raster-opacity', parseInt(e.target.value, 10) / 100);
