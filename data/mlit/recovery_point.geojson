@@ -4,31 +4,6 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "作業箇所（石川県道28号）",
-        "路線名": "石川県道26号（珠洲穴水線）",
-        "地名（推定）": "珠洲市宝立町柏原",
-        "_markerType": "Icon",
-        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/319.png",
-        "_iconSize": [
-          30,
-          30
-        ],
-        "_iconAnchor": [
-          15,
-          15
-        ]
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          137.199626,
-          37.398494
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
         "name": "作業箇所（輪島市道）",
         "路線名": "輪島市道（道下深見線）",
         "地名（推定）": "輪島市門前町鹿磯",
@@ -104,30 +79,6 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "作業箇所（輪島市道）",
-        "地名（推定）": "輪島市三井町興徳寺",
-        "_markerType": "Icon",
-        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/319.png",
-        "_iconSize": [
-          30,
-          30
-        ],
-        "_iconAnchor": [
-          15,
-          15
-        ]
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          136.900184,
-          37.319842
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
         "name": "作業箇所（志賀町道）",
         "路線名": "志賀町道（輪島荒屋線）",
         "地名（推定）": "志賀町栢木",
@@ -147,56 +98,6 @@
         "coordinates": [
           136.72142,
           37.178851
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "作業箇所（石川県道51号）",
-        "路線名": "石川県道51号（輪島富来線）",
-        "地名（推定）": "輪島市滝又町",
-        "_markerType": "Icon",
-        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/319.png",
-        "_iconSize": [
-          30,
-          30
-        ],
-        "_iconAnchor": [
-          15,
-          15
-        ]
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          136.869349,
-          37.329082
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "作業箇所（石川県道269号）",
-        "路線名": "石川県道269号（滝又三井線）",
-        "地名（推定）": "輪島市空熊町",
-        "_markerType": "Icon",
-        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/319.png",
-        "_iconSize": [
-          30,
-          30
-        ],
-        "_iconAnchor": [
-          15,
-          15
-        ]
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          136.86729,
-          37.323605
         ]
       }
     },
