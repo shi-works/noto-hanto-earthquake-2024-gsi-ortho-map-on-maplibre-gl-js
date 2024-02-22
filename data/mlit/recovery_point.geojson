@@ -54,31 +54,6 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "作業箇所（志賀町道）",
-        "路線名": "志賀町道（輪島荒屋線）",
-        "地名（推定）": "志賀町栢木",
-        "_markerType": "Icon",
-        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/319.png",
-        "_iconSize": [
-          30,
-          30
-        ],
-        "_iconAnchor": [
-          15,
-          15
-        ]
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          136.72142,
-          37.178851
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
         "name": "到達済み箇所（国道249号）",
         "路線名": "国道249号",
         "地名（推定）": "輪島市門前町浦上",
