@@ -1358,6 +1358,7 @@
     {
       "type": "Feature",
       "properties": {
+        "name": "",
         "_color": "#990000",
         "_opacity": 0.502,
         "_weight": 5
@@ -1419,6 +1420,7 @@
     {
       "type": "Feature",
       "properties": {
+        "name": "",
         "_color": "#990000",
         "_opacity": 0.502,
         "_weight": 5
@@ -19498,6 +19500,7 @@
     {
       "type": "Feature",
       "properties": {
+        "name": "",
         "総延長": "510.46m",
         "データ出典": "（一財）DRM協会",
         "_color": "#990000",
@@ -25749,6 +25752,7 @@
     {
       "type": "Feature",
       "properties": {
+        "name": "",
         "総延長": "356.58m",
         "データ出典": "（一財）DRM協会",
         "_color": "#0000FF",
@@ -27772,6 +27776,7 @@
     {
       "type": "Feature",
       "properties": {
+        "name": "",
         "総延長": "4959.91m",
         "データ出典": "（一財）DRM協会",
         "_color": "#990000",
@@ -30831,6 +30836,7 @@
     {
       "type": "Feature",
       "properties": {
+        "name": "",
         "総延長": "1419.21m",
         "データ出典": "（一財）DRM協会",
         "_color": "#990000",
@@ -40038,6 +40044,7 @@
     {
       "type": "Feature",
       "properties": {
+        "name": "",
         "_color": "#990000",
         "_opacity": 0.502,
         "_weight": 5
@@ -40091,6 +40098,7 @@
     {
       "type": "Feature",
       "properties": {
+        "name": "",
         "_color": "#990000",
         "_opacity": 0.502,
         "_weight": 5
@@ -52524,6 +52532,7 @@
     {
       "type": "Feature",
       "properties": {
+        "name": "",
         "総延長": "572.24m",
         "データ出典": "（一財）DRM協会",
         "_color": "#990000",
@@ -55681,6 +55690,7 @@
     {
       "type": "Feature",
       "properties": {
+        "name": "",
         "_color": "#6AA84F",
         "_opacity": 0.902,
         "_weight": 5
@@ -68810,6 +68820,7 @@
     {
       "type": "Feature",
       "properties": {
+        "name": "",
         "総延長": "2011.04m",
         "データ出典": "（一財）DRM協会",
         "_color": "#990000",
@@ -79448,6 +79459,7 @@
     {
       "type": "Feature",
       "properties": {
+        "name": "",
         "総延長": "1193.82m",
         "データ出典": "（一財）DRM協会",
         "_color": "#990000",
@@ -83895,6 +83907,7 @@
     {
       "type": "Feature",
       "properties": {
+        "name": "",
         "総延長": "282.44m",
         "データ出典": "（一財）DRM協会",
         "_color": "#990000",
@@ -83950,6 +83963,7 @@
     {
       "type": "Feature",
       "properties": {
+        "name": "",
         "総延長": "209.82m",
         "データ出典": "（一財）DRM協会",
         "_color": "#990000",
@@ -91057,9 +91071,10 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "北行き通行可・南行き通行止（能越自動車道）",
-        "速度規制": "北行き　40キロ規制",
+        "name": "通行止め解除予定（能越自動車道）",
         "通行の制限等": "穴水IC→のと三井IC　北行き（輪島方面）のみ通行可／南行き通行止め",
+        "制限の変更予定": "2月27日13時以降　対面通行可（南行き通行止め解除）",
+        "速度規制": "北行き　40キロ規制",
         "_color": "#000000",
         "_opacity": 0.502,
         "_weight": 5
@@ -91169,13 +91184,14 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "北行き通行可・南行き通行止（能越自動車道）",
-        "速度規制": "北行き　40キロ規制",
+        "name": "通行止め解除予定（能越自動車道）",
         "通行の制限等": "穴水IC→のと三井IC　北行き（輪島方面）のみ通行可／南行き通行止め",
-        "_color": "#0000FF",
-        "_opacity": 0.902,
-        "_weight": 5,
-        "_dashArray": "10,10"
+        "制限の変更予定": "2月27日14時以降　対面通行可（南行き通行止め解除）",
+        "速度規制": "北行き　40キロ規制",
+        "_dashArray": "1,10",
+        "_color": "#00FFFF",
+        "_opacity": 1.000,
+        "_weight": 5
       },
       "geometry": {
         "type": "LineString",
@@ -92810,14 +92826,15 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "通行止（石川県道303号（柏木穴水線））",
+        "name": "通行止め解除予定（石川県道303号（柏木穴水線））",
         "総延長": "5526.17m",
         "データ出典": "（一財）DRM協会",
-        "通行の制限等": "穴水町此木→のと里山空港IC間　応急工事のため通行止め",
-        "_color": "#000000",
-        "_opacity": 0.502,
-        "_weight": 5,
-        "_dashArray": "20,10"
+        "通行の制限等": "穴水町此木～のと里山空港IC間　応急工事のため通行止め",
+        "制限の変更予定": "2月27日13時以降　対面通行可（通行止め解除）",
+        "_dashArray": "1,10",
+        "_color": "#00FFFF",
+        "_opacity": 1.000,
+        "_weight": 5
       },
       "geometry": {
         "type": "LineString",
@@ -94180,8 +94197,8 @@
         "name": "北行き一般車両通行止（柳田IC→徳田大津IC）（のと里山海道）",
         "総延長": "21030.28m",
         "データ出典": "（一財）DRM協会",
-        "速度規制": "上下線　40キロ規制",
         "通行の制限等": "柳田IC→徳田大津IC　北行き（穴水方面）緊急車両等に限り通行可",
+        "速度規制": "上下線　40キロ規制",
         "_color": "#FF00FF",
         "_opacity": 0.698,
         "_weight": 5
@@ -96302,8 +96319,8 @@
         "name": "北行き一般車両通行止（柳田IC→徳田大津IC）（のと里山海道）",
         "総延長": "478.88m",
         "データ出典": "（一財）DRM協会",
-        "速度規制": "上下線　40キロ規制",
         "通行の制限等": "柳田IC→徳田大津IC　北行き（穴水方面）緊急車両等に限り通行可",
+        "速度規制": "上下線　40キロ規制",
         "_color": "#FF00FF",
         "_opacity": 0.698,
         "_weight": 5
@@ -96376,8 +96393,8 @@
         "name": "北行き一般車両通行止・南行き通行止（横田IC～越の原IC）（のと里山海道）",
         "総延長": "10860.68m",
         "データ出典": "（一財）DRM協会",
-        "速度規制": "北行き　40キロ規制",
         "通行の制限等": "（柳田IC→）徳田大津IC→越の原IC　北行き（穴水方面）緊急車両等に限り通行可／越の原IC→徳田大津IC　南行き（七尾・金沢方面）通行止め",
+        "速度規制": "北行き　40キロ規制",
         "_color": "#000000",
         "_opacity": 0.502,
         "_weight": 5
@@ -97794,12 +97811,12 @@
         "name": "北行き一般車両通行止・南行き通行止（横田IC～越の原IC）（のと里山海道）",
         "総延長": "10965.82m",
         "データ出典": "（一財）DRM協会",
-        "速度規制": "北行き　40キロ規制",
         "通行の制限等": "（柳田IC→）徳田大津IC→越の原IC　北行き（穴水方面）緊急車両等に限り通行可／越の原IC→徳田大津IC　南行き（七尾・金沢方面）通行止め",
+        "速度規制": "北行き　40キロ規制",
+        "_dashArray": "10,10",
         "_color": "#FF00FF",
-        "_opacity": 1,
-        "_weight": 5,
-        "_dashArray": "10,10"
+        "_opacity": 1.000,
+        "_weight": 5
       },
       "geometry": {
         "type": "LineString",
@@ -99189,8 +99206,8 @@
         "name": "北行き一般車両通行止・南行き通行止（横田IC～越の原IC）（のと里山海道）",
         "総延長": "11897.28m",
         "データ出典": "（一財）DRM協会",
-        "速度規制": "北行き　40キロ規制",
         "通行の制限等": "（柳田IC→）徳田大津IC→越の原IC　北行き（穴水方面）緊急車両等に限り通行可／越の原IC→徳田大津IC　南行き（七尾・金沢方面）通行止め",
+        "速度規制": "北行き　40キロ規制",
         "_color": "#000000",
         "_opacity": 0.502,
         "_weight": 5
@@ -100543,12 +100560,12 @@
         "name": "北行き一般車両通行止・南行き通行止（横田IC～越の原IC）（のと里山海道）",
         "総延長": "11572.17m",
         "データ出典": "（一財）DRM協会",
-        "速度規制": "北行き　40キロ規制",
         "通行の制限等": "（柳田IC→）徳田大津IC→越の原IC　北行き（穴水方面）緊急車両等に限り通行可／越の原IC→徳田大津IC　南行き（七尾・金沢方面）通行止め",
+        "速度規制": "北行き　40キロ規制",
+        "_dashArray": "10,10",
         "_color": "#FF00FF",
-        "_opacity": 1,
-        "_weight": 5,
-        "_dashArray": "10,10"
+        "_opacity": 1.000,
+        "_weight": 5
       },
       "geometry": {
         "type": "LineString",
@@ -101894,12 +101911,12 @@
         "name": "北行き一般車両通行止・南行き通行止（横田IC～越の原IC）（のと里山海道）",
         "総延長": "257.63m",
         "データ出典": "（一財）DRM協会",
-        "速度規制": "北行き　40キロ規制",
         "通行の制限等": "（柳田IC→）徳田大津IC→越の原IC　北行き（穴水方面）緊急車両等に限り通行可／越の原IC→徳田大津IC　南行き（七尾・金沢方面）通行止め",
+        "速度規制": "北行き　40キロ規制",
+        "_dashArray": "10,10",
         "_color": "#FF00FF",
-        "_opacity": 1,
-        "_weight": 5,
-        "_dashArray": "10,10"
+        "_opacity": 1.000,
+        "_weight": 5
       },
       "geometry": {
         "type": "LineString",
@@ -102298,10 +102315,10 @@
         "総延長": "6656.16m",
         "データ出典": "（一財）DRM協会",
         "通行の制限等": "穴水IC→のと三井IC　北行き（輪島方面）のみ通行可（南行きは通行止め）",
+        "_dashArray": "10,10",
         "_color": "#0000FF",
         "_opacity": 0.902,
-        "_weight": 5,
-        "_dashArray": "10,10"
+        "_weight": 5
       },
       "geometry": {
         "type": "LineString",
@@ -102952,10 +102969,10 @@
         "総延長": "205.21m",
         "データ出典": "（一財）DRM協会",
         "通行の制限等": "一般車両通行不可",
+        "_dashArray": "1,10",
         "_color": "#0000FF",
         "_opacity": 0.502,
-        "_weight": 5,
-        "_dashArray": "1,10"
+        "_weight": 5
       },
       "geometry": {
         "type": "LineString",
@@ -102986,10 +103003,10 @@
         "総延長": "2035.83m",
         "データ出典": "（一財）DRM協会",
         "通行の制限等": "一般車両通行不可",
+        "_dashArray": "1,10",
         "_color": "#0000FF",
         "_opacity": 0.502,
-        "_weight": 5,
-        "_dashArray": "1,10"
+        "_weight": 5
       },
       "geometry": {
         "type": "LineString",
@@ -103108,10 +103125,10 @@
         "総延長": "764.22m",
         "データ出典": "（一財）DRM協会",
         "通行の制限等": "一般車両通行不可",
+        "_dashArray": "1,10",
         "_color": "#0000FF",
         "_opacity": 0.502,
-        "_weight": 5,
-        "_dashArray": "1,10"
+        "_weight": 5
       },
       "geometry": {
         "type": "LineString",
@@ -103178,10 +103195,10 @@
         "総延長": "964.95m",
         "データ出典": "（一財）DRM協会",
         "通行の制限等": "一般車両通行不可",
+        "_dashArray": "1,10",
         "_color": "#0000FF",
         "_opacity": 0.502,
-        "_weight": 5,
-        "_dashArray": "1,10"
+        "_weight": 5
       },
       "geometry": {
         "type": "LineString",
@@ -103432,10 +103449,10 @@
         "総延長": "1070.51m",
         "データ出典": "（一財）DRM協会",
         "通行の制限等": "一般車両通行不可",
+        "_dashArray": "1,10",
         "_color": "#0000FF",
         "_opacity": 0.502,
-        "_weight": 5,
-        "_dashArray": "1,10"
+        "_weight": 5
       },
       "geometry": {
         "type": "LineString",
@@ -103718,11 +103735,12 @@
     {
       "type": "Feature",
       "properties": {
+        "name": "",
         "通行の制限等": "一般車両通行不可",
+        "_dashArray": "1,10",
         "_color": "#0000FF",
         "_opacity": 0.502,
-        "_weight": 5,
-        "_dashArray": "1,10"
+        "_weight": 5
       },
       "geometry": {
         "type": "LineString",
@@ -103849,10 +103867,10 @@
         "総延長": "3088.79m",
         "データ出典": "（一財）DRM協会",
         "通行の制限等": "一般車両通行不可",
+        "_dashArray": "1,10",
         "_color": "#0000FF",
         "_opacity": 0.502,
-        "_weight": 5,
-        "_dashArray": "1,10"
+        "_weight": 5
       },
       "geometry": {
         "type": "LineString",
@@ -104429,10 +104447,10 @@
       "properties": {
         "name": "石川県道38号（輪島浦上線）",
         "通行の制限等": "一般車両通行不可",
+        "_dashArray": "1,10",
         "_color": "#0000FF",
         "_opacity": 0.502,
-        "_weight": 5,
-        "_dashArray": "1,10"
+        "_weight": 5
       },
       "geometry": {
         "type": "LineString",
@@ -104459,10 +104477,10 @@
         "総延長": "1473.28m",
         "データ出典": "（一財）DRM協会",
         "通行の制限等": "一般車両通行不可",
+        "_dashArray": "1,10",
         "_color": "#990000",
         "_opacity": 0.502,
-        "_weight": 5,
-        "_dashArray": "1,10"
+        "_weight": 5
       },
       "geometry": {
         "type": "LineString",
@@ -104725,10 +104743,10 @@
         "総延長": "1172.76m",
         "データ出典": "（一財）DRM協会",
         "通行の制限等": "一般車両通行不可",
+        "_dashArray": "1,10",
         "_color": "#990000",
         "_opacity": 0.502,
-        "_weight": 5,
-        "_dashArray": "1,10"
+        "_weight": 5
       },
       "geometry": {
         "type": "LineString",
@@ -105031,10 +105049,10 @@
         "総延長": "2257.53m",
         "データ出典": "（一財）DRM協会",
         "通行の制限等": "一般車両通行不可",
+        "_dashArray": "1,10",
         "_color": "#990000",
         "_opacity": 0.502,
-        "_weight": 5,
-        "_dashArray": "1,10"
+        "_weight": 5
       },
       "geometry": {
         "type": "LineString",
@@ -105593,10 +105611,10 @@
         "総延長": "897.53m",
         "データ出典": "（一財）DRM協会",
         "通行の制限等": "一般車両通行不可",
+        "_dashArray": "1,10",
         "_color": "#0000FF",
         "_opacity": 0.502,
-        "_weight": 5,
-        "_dashArray": "1,10"
+        "_weight": 5
       },
       "geometry": {
         "type": "LineString",
@@ -105707,10 +105725,10 @@
         "総延長": "1914.82m",
         "データ出典": "（一財）DRM協会",
         "通行の制限等": "一般車両通行不可",
+        "_dashArray": "1,10",
         "_color": "#0000FF",
         "_opacity": 0.502,
-        "_weight": 5,
-        "_dashArray": "1,10"
+        "_weight": 5
       },
       "geometry": {
         "type": "LineString",
@@ -105969,10 +105987,10 @@
         "総延長": "1894.02m",
         "データ出典": "（一財）DRM協会",
         "通行の制限等": "一般車両通行不可",
+        "_dashArray": "1,10",
         "_color": "#0000FF",
         "_opacity": 0.502,
-        "_weight": 5,
-        "_dashArray": "1,10"
+        "_weight": 5
       },
       "geometry": {
         "type": "LineString",
@@ -106211,10 +106229,10 @@
         "総延長": "2573.54m",
         "データ出典": "（一財）DRM協会",
         "通行の制限等": "一般車両通行不可",
+        "_dashArray": "1,10",
         "_color": "#0000FF",
         "_opacity": 0.502,
-        "_weight": 5,
-        "_dashArray": "1,10"
+        "_weight": 5
       },
       "geometry": {
         "type": "LineString",
@@ -106573,10 +106591,10 @@
         "総延長": "291.55m",
         "データ出典": "（一財）DRM協会",
         "通行の制限等": "一般車両通行不可",
+        "_dashArray": "1,10",
         "_color": "#0000FF",
         "_opacity": 0.502,
-        "_weight": 5,
-        "_dashArray": "1,10"
+        "_weight": 5
       },
       "geometry": {
         "type": "LineString",
@@ -106627,10 +106645,10 @@
         "総延長": "799.37m",
         "データ出典": "（一財）DRM協会",
         "通行の制限等": "一般車両通行不可",
+        "_dashArray": "1,10",
         "_color": "#0000FF",
         "_opacity": 0.502,
-        "_weight": 5,
-        "_dashArray": "1,10"
+        "_weight": 5
       },
       "geometry": {
         "type": "LineString",
@@ -106789,10 +106807,10 @@
         "総延長": "1816.57m",
         "データ出典": "（一財）DRM協会",
         "通行の制限等": "一般車両通行不可",
+        "_dashArray": "1,10",
         "_color": "#0000FF",
         "_opacity": 0.502,
-        "_weight": 5,
-        "_dashArray": "1,10"
+        "_weight": 5
       },
       "geometry": {
         "type": "LineString",
@@ -106967,10 +106985,10 @@
         "総延長": "971.2m",
         "データ出典": "（一財）DRM協会",
         "通行の制限等": "一般車両通行不可",
+        "_dashArray": "1,10",
         "_color": "#0000FF",
         "_opacity": 0.502,
-        "_weight": 5,
-        "_dashArray": "1,10"
+        "_weight": 5
       },
       "geometry": {
         "type": "LineString",
@@ -107117,10 +107135,10 @@
         "総延長": "2316.34m",
         "データ出典": "（一財）DRM協会",
         "通行の制限等": "一般車両通行不可",
+        "_dashArray": "1,10",
         "_color": "#0000FF",
         "_opacity": 0.502,
-        "_weight": 5,
-        "_dashArray": "1,10"
+        "_weight": 5
       },
       "geometry": {
         "type": "LineString",
@@ -107351,10 +107369,10 @@
         "総延長": "588.13m",
         "データ出典": "（一財）DRM協会",
         "通行の制限等": "一般車両通行不可",
+        "_dashArray": "1,10",
         "_color": "#0000FF",
         "_opacity": 0.502,
-        "_weight": 5,
-        "_dashArray": "1,10"
+        "_weight": 5
       },
       "geometry": {
         "type": "LineString",
@@ -107437,10 +107455,10 @@
         "総延長": "3178.78m",
         "データ出典": "（一財）DRM協会",
         "通行の制限等": "一般車両通行不可",
+        "_dashArray": "1,10",
         "_color": "#0000FF",
         "_opacity": 0.502,
-        "_weight": 5,
-        "_dashArray": "1,10"
+        "_weight": 5
       },
       "geometry": {
         "type": "LineString",
@@ -107751,10 +107769,10 @@
         "総延長": "1161.85m",
         "データ出典": "（一財）DRM協会",
         "通行の制限等": "一般車両通行不可",
+        "_dashArray": "1,10",
         "_color": "#0000FF",
         "_opacity": 0.502,
-        "_weight": 5,
-        "_dashArray": "1,10"
+        "_weight": 5
       },
       "geometry": {
         "type": "LineString",
@@ -107877,10 +107895,10 @@
         "総延長": "1423.99m",
         "データ出典": "（一財）DRM協会",
         "通行の制限等": "一般車両通行不可",
+        "_dashArray": "1,10",
         "_color": "#990000",
         "_opacity": 0.502,
-        "_weight": 5,
-        "_dashArray": "1,10"
+        "_weight": 5
       },
       "geometry": {
         "type": "LineString",
@@ -108315,10 +108333,10 @@
         "総延長": "4106.4m",
         "データ出典": "（一財）DRM協会",
         "通行の制限等": "一般車両通行不可",
+        "_dashArray": "1,10",
         "_color": "#0000FF",
         "_opacity": 0.502,
-        "_weight": 5,
-        "_dashArray": "1,10"
+        "_weight": 5
       },
       "geometry": {
         "type": "LineString",
@@ -109093,10 +109111,10 @@
         "総延長": "1147.03m",
         "データ出典": "（一財）DRM協会",
         "通行の制限等": "一般車両通行不可",
+        "_dashArray": "1,10",
         "_color": "#0000FF",
         "_opacity": 0.502,
-        "_weight": 5,
-        "_dashArray": "1,10"
+        "_weight": 5
       },
       "geometry": {
         "type": "LineString",
@@ -109323,10 +109341,10 @@
         "総延長": "459.19m",
         "データ出典": "（一財）DRM協会",
         "通行の制限等": "一般車両通行不可",
+        "_dashArray": "1,10",
         "_color": "#38761D",
         "_opacity": 0.502,
-        "_weight": 5,
-        "_dashArray": "1,10"
+        "_weight": 5
       },
       "geometry": {
         "type": "LineString",
@@ -109561,10 +109579,10 @@
         "総延長": "1967.76m",
         "データ出典": "（一財）DRM協会",
         "通行の制限等": "一般車両通行不可",
+        "_dashArray": "1,10",
         "_color": "#0000FF",
         "_opacity": 0.502,
-        "_weight": 5,
-        "_dashArray": "1,10"
+        "_weight": 5
       },
       "geometry": {
         "type": "LineString",
@@ -109744,13 +109762,13 @@
       "type": "Feature",
       "properties": {
         "name": "石川県道38号（輪島浦上線）",
-        "備考": "一般車両通行不可",
         "総延長": "252.06m",
         "データ出典": "（一財）DRM協会",
-        "_color": "#0000ff",
-        "_opacity": 0.5,
-        "_weight": 5,
-        "_dashArray": "1,10"
+        "_dashArray": "1,10",
+        "備考": "一般車両通行不可",
+        "_color": "#0000FF",
+        "_opacity": 0.502,
+        "_weight": 5
       },
       "geometry": {
         "type": "LineString",
@@ -109814,13 +109832,13 @@
       "type": "Feature",
       "properties": {
         "name": "石川県道38号（輪島浦上線）",
-        "備考": "一般車両通行不可",
         "総延長": "3030m",
         "データ出典": "（一財）DRM協会",
-        "_color": "#0000ff",
-        "_opacity": 0.5,
-        "_weight": 5,
-        "_dashArray": "1,10"
+        "_dashArray": "1,10",
+        "備考": "一般車両通行不可",
+        "_color": "#0000FF",
+        "_opacity": 0.502,
+        "_weight": 5
       },
       "geometry": {
         "type": "LineString",
@@ -110212,13 +110230,13 @@
       "type": "Feature",
       "properties": {
         "name": "志賀町道（輪島荒屋線）",
-        "備考": "一般車両通行不可",
         "総延長": "2595.16m",
         "データ出典": "（一財）DRM協会",
-        "_color": "#0000ff",
-        "_opacity": 0.5,
-        "_weight": 5,
-        "_dashArray": "1,10"
+        "_dashArray": "1,10",
+        "備考": "一般車両通行不可",
+        "_color": "#0000FF",
+        "_opacity": 0.502,
+        "_weight": 5
       },
       "geometry": {
         "type": "LineString",
@@ -110397,9 +110415,8 @@
         "総延長": "1916.18m",
         "データ出典": "（一財）DRM協会",
         "_color": "#990000",
-        "_opacity": 0.5,
-        "_weight": 5,
-        "_dashArray": ""
+        "_opacity": 0.502,
+        "_weight": 5
       },
       "geometry": {
         "type": "LineString",
@@ -110594,9 +110611,8 @@
         "総延長": "204.96m",
         "データ出典": "（一財）DRM協会",
         "_color": "#990000",
-        "_opacity": 0.5,
-        "_weight": 5,
-        "_dashArray": ""
+        "_opacity": 0.502,
+        "_weight": 5
       },
       "geometry": {
         "type": "LineString",
