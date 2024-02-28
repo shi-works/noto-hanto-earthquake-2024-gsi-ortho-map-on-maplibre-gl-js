@@ -1820,9 +1820,9 @@
                         visibility: 'none',
                     },
                     paint: {
-                        'line-color': ['match', ['get', '_color'], '#0000ff', '#0000ff', '#990000', '#990000', '#6aa84f', '#00B050', '#ff00ff', '#ff00ff', '#000000', '#000000', '#656565'],
+                        'line-color': ['match', ['get', '_color'], '#0000FF', '#0000FF', '#990000', '#990000', '#6AA84F', '#00B050', '#FF00FF', '#FF00FF', '#000000', '#000000', '#00FFFF', '#00FFFF', '#38761D', '#38761D', '#660000', '#660000', '#CC0000', '#CC0000', '#656565'],
                         'line-width': 8,
-                        'line-opacity': 1,
+                        'line-opacity': 0.7,
                     },
                 });
 
@@ -1968,10 +1968,16 @@
                     afterMap.addImage('recovery_point_087', image);
                 });
 
-                // PNGソース（復旧業者到達地点）追加
+                // PNGソース（国復旧業者作業箇所）追加
                 afterMap.loadImage('https://shi-works.github.io/noto-hanto-earthquake-2024-gsi-ortho-map-on-maplibre-gl-js/data/mlit/img/319.png', function (error, image) {
                     if (error) throw error;
                     afterMap.addImage('recovery_point_319', image);
+                });
+
+                // PNGソース（国復旧業者到達済み箇所）追加
+                afterMap.loadImage('https://shi-works.github.io/noto-hanto-earthquake-2024-gsi-ortho-map-on-maplibre-gl-js/data/mlit/img/802.png', function (error, image) {
+                    if (error) throw error;
+                    afterMap.addImage('recovery_point_802', image);
                 });
 
                 // 復旧到達地点シンボルレイヤ
@@ -1982,7 +1988,7 @@
                     minzoom: 1,
                     maxzoom: 23,
                     layout: {
-                        'icon-image': ['match', ['get', '_iconUrl'], 'https://maps.gsi.go.jp/portal/sys/v4/symbols/087.png', 'recovery_point_087', 'https://maps.gsi.go.jp/portal/sys/v4/symbols/319.png', 'recovery_point_319', 'recovery_point_087'],
+                        'icon-image': ['match', ['get', '_iconUrl'], 'https://maps.gsi.go.jp/portal/sys/v4/symbols/087.png', 'recovery_point_087', 'https://maps.gsi.go.jp/portal/sys/v4/symbols/319.png', 'recovery_point_319', 'https://maps.gsi.go.jp/portal/sys/v4/symbols/802.png', 'recovery_point_802', 'recovery_point_087'],
                         'icon-size': [
                             'interpolate',
                             ['linear'],
@@ -2569,7 +2575,7 @@
                     afterMap.setLayoutProperty('sagyou-symbol', 'visibility', 'visible');
                     afterMap.setLayoutProperty('recovery_point-symbol', 'visibility', 'visible');
                     afterMap.setLayoutProperty('damaged_area-symbol', 'visibility', 'visible');
-                    afterMap.setLayoutProperty('damage_situation_aerial_photography-symbol', 'visibility', 'visible');
+                    // afterMap.setLayoutProperty('damage_situation_aerial_photography-symbol', 'visibility', 'visible');
                     afterMap.setLayoutProperty('michinoeki-symbol', 'visibility', 'visible');
                     afterMap.setLayoutProperty('municipal_road_investigation-symbol', 'visibility', 'visible');
                     afterMap.setLayoutProperty('spherical_image-symbol', 'visibility', 'visible');
@@ -2581,7 +2587,7 @@
                     afterMap.setLayoutProperty('sagyou-symbol', 'visibility', 'none');
                     afterMap.setLayoutProperty('recovery_point-symbol', 'visibility', 'none');
                     afterMap.setLayoutProperty('damaged_area-symbol', 'visibility', 'none');
-                    afterMap.setLayoutProperty('damage_situation_aerial_photography-symbol', 'visibility', 'none');
+                    // afterMap.setLayoutProperty('damage_situation_aerial_photography-symbol', 'visibility', 'none');
                     afterMap.setLayoutProperty('michinoeki-symbol', 'visibility', 'none');
                     afterMap.setLayoutProperty('municipal_road_investigation-symbol', 'visibility', 'none');
                     afterMap.setLayoutProperty('spherical_image-symbol', 'visibility', 'none');
