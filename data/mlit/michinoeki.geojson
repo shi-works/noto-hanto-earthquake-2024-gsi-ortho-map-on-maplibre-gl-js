@@ -30,7 +30,7 @@
       "type": "Feature",
       "properties": {
         "name": "道の駅「いおり」",
-        "道の駅の状況": "営業休止中",
+        "道の駅の状況": "営業中、トイレ利用可",
         "_markerType": "Icon",
         "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/474.png",
         "_iconSize": [
@@ -80,7 +80,7 @@
       "type": "Feature",
       "properties": {
         "name": "道の駅「なかじまロマン峠」",
-        "道の駅の状況": "営業休止中",
+        "道の駅の状況": "一部営業中、仮設トイレ利用可",
         "_markerType": "Icon",
         "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/474.png",
         "_iconSize": [
@@ -130,7 +130,7 @@
       "type": "Feature",
       "properties": {
         "name": "道の駅「とぎ海街道」",
-        "道の駅の状況": "営業休止中、トイレ利用可<img width=\"100%\" src=\"./img/michinoeki/240119_togiumi.png\"><img width=\"100%\" src=\"./img/michinoeki/240120_togiumi.png\">",
+        "道の駅の状況": "営業中、トイレ利用可<img width=\"100%\" src=\"./img/michinoeki/240119_togiumi.png\"><img width=\"100%\" src=\"./img/michinoeki/240120_togiumi.png\">",
         "_markerType": "Icon",
         "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/474.png",
         "_iconSize": [
