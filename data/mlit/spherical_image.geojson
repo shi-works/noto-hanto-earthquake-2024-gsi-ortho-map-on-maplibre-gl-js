@@ -21,8 +21,7 @@
         "type": "Point",
         "coordinates": [
           137.107508,
-          37.485302,
-          2.1
+          37.485302
         ]
       }
     },
@@ -119,6 +118,198 @@
         "coordinates": [
           137.086609,
           37.476516
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "360度画像・三次元点群データ(九州地整作成)",
+        "リンク": "<a href=\"https://www.qsr.mlit.go.jp/infradx/SVT/240229wajimar249noda/index.html\">国道249号輪島市野田町</a>",
+        "_markerType": "Icon",
+        "_iconUrl": "https://www.mlit.go.jp/road/r6noto/map/img/icon_360.png",
+        "_iconSize": [
+          30,
+          30
+        ],
+        "_iconAnchor": [
+          15,
+          15
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.004895,
+          37.431243
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "360度画像・三次元点群データ(九州地整作成)",
+        "リンク": "<a href=\"https://www.qsr.mlit.go.jp/infradx/SVT/240229wajimar249pocket/index.html\">輪島市国道249号千枚田ポケットパーク</a>",
+        "_markerType": "Icon",
+        "_iconUrl": "https://www.mlit.go.jp/road/r6noto/map/img/icon_360.png",
+        "_iconSize": [
+          30,
+          30
+        ],
+        "_iconAnchor": [
+          15,
+          15
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.998779,
+          37.426285
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "360度画像・三次元点群データ(九州地整作成)",
+        "リンク": "<a href=\"https://www.qsr.mlit.go.jp/infradx/SVT/240228wajimar249sosogi/index.html\">珠洲市国道249号曽々木～里町</a>",
+        "_markerType": "Icon",
+        "_iconUrl": "https://www.mlit.go.jp/road/r6noto/map/img/icon_360.png",
+        "_iconSize": [
+          30,
+          30
+        ],
+        "_iconAnchor": [
+          15,
+          15
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.046426,
+          37.450479
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "360度画像・三次元点群データ(九州地整作成)",
+        "リンク": "<a href=\"https://www.qsr.mlit.go.jp/infradx/SVT/240228suzur249ohtani/index.html\">輪島市国道249号大谷</a>",
+        "_markerType": "Icon",
+        "_iconUrl": "https://www.mlit.go.jp/road/r6noto/map/img/icon_360.png",
+        "_iconSize": [
+          30,
+          30
+        ],
+        "_iconAnchor": [
+          15,
+          15
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.181447,
+          37.497436
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "360度画像・三次元点群データ(九州地整作成)",
+        "リンク": "<a href=\"https://www.qsr.mlit.go.jp/infradx/SVT/240227wajimar249nakayatn/index.html\">輪島市国道249号中屋トンネル</a>",
+        "_markerType": "Icon",
+        "_iconUrl": "https://www.mlit.go.jp/road/r6noto/map/img/icon_360.png",
+        "_iconSize": [
+          30,
+          30
+        ],
+        "_iconAnchor": [
+          15,
+          15
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.813332,
+          37.322567
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "360度画像・三次元点群データ(九州地整作成)",
+        "リンク": "<a href=\"https://www.qsr.mlit.go.jp/infradx/SVT/240301wajimakr38/index.html\">輪島市県道38号上大沢⑨⑧大沢⑦⑥赤崎⑤</a>",
+        "_markerType": "Icon",
+        "_iconUrl": "https://www.mlit.go.jp/road/r6noto/map/img/icon_360.png",
+        "_iconSize": [
+          30,
+          30
+        ],
+        "_iconAnchor": [
+          15,
+          15
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.781727,
+          37.369773
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "360度画像・三次元点群データ(九州地整作成)",
+        "リンク": "<a href=\"https://www.qsr.mlit.go.jp/infradx/SVT/240229wajimakr38/index.html\">輪島市県道38号小池①下山②③④</a>",
+        "_markerType": "Icon",
+        "_iconUrl": "https://www.mlit.go.jp/road/r6noto/map/img/icon_360.png",
+        "_iconSize": [
+          30,
+          30
+        ],
+        "_iconAnchor": [
+          15,
+          15
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.836708,
+          37.396988
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "360度画像・三次元点群データ(九州地整作成)",
+        "リンク": "<a href=\"https://www.qsr.mlit.go.jp/infradx/SVT/240228suzukr28/index.html\">珠洲市県道28号狼煙～飯田線</a>",
+        "_markerType": "Icon",
+        "_iconUrl": "https://www.mlit.go.jp/road/r6noto/map/img/icon_360.png",
+        "_iconSize": [
+          30,
+          30
+        ],
+        "_iconAnchor": [
+          15,
+          15
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.25238,
+          37.527559
         ]
       }
     }
