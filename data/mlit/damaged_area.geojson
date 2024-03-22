@@ -1,2 +1,1489 @@
-
-<HTML><HEAD><TITLE>Loading</TITLE></HEAD><BODY bgcolor="#ffffff"><H3 style="color: #ffffff">Loading</H3></BODY></HTML>
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "中屋トンネル",
+        "路線名": "国道249号",
+        "被災規模": "大（本復旧で対応）",
+        "_markerType": "Icon",
+        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/092.png",
+        "_iconSize": [
+          20,
+          20
+        ],
+        "_iconAnchor": [
+          10,
+          10
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.821928,
+          37.332563
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "被災箇所（のと里山海道）",
+        "路線名": "のと里山海道",
+        "被災規模": "大",
+        "被災状況": "<img width=\"100%\" src=\"./img/240122_notosatoyama_damage/notosatoyama_br1.png\"><img width=\"100%\" src=\"./img/240122_notosatoyama_damage/notosatoyama_br2.png\">",
+        "_markerType": "Icon",
+        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/092.png",
+        "_iconSize": [
+          20,
+          20
+        ],
+        "_iconAnchor": [
+          10,
+          10
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.891408,
+          37.226074
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "被災箇所（のと里山海道）",
+        "路線名": "のと里山海道",
+        "被災規模": "大",
+        "被災状況": "<img width=\"100%\" src=\"./img/240122_notosatoyama_damage/notosatoyama_11.jpg\">",
+        "備考": "片側1車線復旧済",
+        "_markerType": "Icon",
+        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/699.png",
+        "_iconSize": [
+          10,
+          10
+        ],
+        "_iconAnchor": [
+          5,
+          5
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.813946,
+          37.08038
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "被災箇所（のと里山海道）",
+        "路線名": "のと里山海道",
+        "被災規模": "大",
+        "被災状況": "<img width=\"100%\" src=\"./img/240122_notosatoyama_damage/notosatoyama_10.jpg\">",
+        "備考": "片側1車線復旧済",
+        "_markerType": "Icon",
+        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/699.png",
+        "_iconSize": [
+          10,
+          10
+        ],
+        "_iconAnchor": [
+          5,
+          5
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.816462,
+          37.099807
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "被災箇所（のと里山海道）",
+        "路線名": "のと里山海道",
+        "被災規模": "大",
+        "被災状況": "<img width=\"100%\" src=\"./img/240122_notosatoyama_damage/notosatoyama_8.jpg\">",
+        "備考": "片側1車線復旧済",
+        "_markerType": "Icon",
+        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/699.png",
+        "_iconSize": [
+          10,
+          10
+        ],
+        "_iconAnchor": [
+          5,
+          5
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.82622,
+          37.132814
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "被災箇所（のと里山海道）",
+        "路線名": "のと里山海道",
+        "被災規模": "大",
+        "被災状況": "<img width=\"100%\" src=\"./img/240122_notosatoyama_damage/notosatoyama_13.jpg\">",
+        "備考": "片側1車線復旧済",
+        "_markerType": "Icon",
+        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/699.png",
+        "_iconSize": [
+          10,
+          10
+        ],
+        "_iconAnchor": [
+          5,
+          5
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.826992,
+          37.071563
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "被災箇所（のと里山海道）",
+        "路線名": "のと里山海道",
+        "被災規模": "大",
+        "被災状況": "<img width=\"100%\" src=\"./img/240122_notosatoyama_damage/notosatoyama_12.jpg\">",
+        "備考": "片側1車線復旧済",
+        "_markerType": "Icon",
+        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/699.png",
+        "_iconSize": [
+          10,
+          10
+        ],
+        "_iconAnchor": [
+          5,
+          5
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.822701,
+          37.078583
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "被災箇所（能越自動車道）",
+        "路線名": "能越自動車道",
+        "被災規模": "大",
+        "被災状況": "<img width=\"100%\" src=\"./img/240122_noetsu_damage/anamizudoro_i.jpg\">",
+        "備考": "片側1車線復旧済",
+        "_markerType": "Icon",
+        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/699.png",
+        "_iconSize": [
+          10,
+          10
+        ],
+        "_iconAnchor": [
+          5,
+          5
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.901557,
+          37.239178
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "被災箇所（能越自動車道）",
+        "路線名": "能越自動車道",
+        "被災規模": "大",
+        "被災状況": "<img width=\"100%\" src=\"./img/240122_noetsu_damage/anamizudoro_h.jpg\">",
+        "備考": "片側1車線復旧済",
+        "_markerType": "Icon",
+        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/699.png",
+        "_iconSize": [
+          10,
+          10
+        ],
+        "_iconAnchor": [
+          5,
+          5
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.913102,
+          37.252245
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "被災箇所（能越自動車道）",
+        "路線名": "能越自動車道",
+        "被災規模": "大",
+        "被災状況": "<img width=\"100%\" src=\"./img/240122_noetsu_damage/anamizudoro_g.jpg\">",
+        "備考": "片側1車線復旧済",
+        "_markerType": "Icon",
+        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/699.png",
+        "_iconSize": [
+          10,
+          10
+        ],
+        "_iconAnchor": [
+          5,
+          5
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.913445,
+          37.252911
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "被災箇所（能越自動車道）",
+        "路線名": "能越自動車道",
+        "被災規模": "大",
+        "被災状況": "<img width=\"100%\" src=\"./img/240122_noetsu_damage/anamizudoro_c.jpg\">",
+        "備考": "片側1車線復旧済",
+        "_markerType": "Icon",
+        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/699.png",
+        "_iconSize": [
+          10,
+          10
+        ],
+        "_iconAnchor": [
+          5,
+          5
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.918745,
+          37.266369
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "被災箇所（能越自動車道）",
+        "路線名": "能越自動車道",
+        "被災規模": "大",
+        "被災状況": "<img width=\"100%\" src=\"./img/240122_noetsu_damage/anamizudoro_d.jpg\">",
+        "備考": "片側1車線復旧済",
+        "_markerType": "Icon",
+        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/699.png",
+        "_iconSize": [
+          10,
+          10
+        ],
+        "_iconAnchor": [
+          5,
+          5
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.917071,
+          37.263636
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "被災箇所（能越自動車道）",
+        "路線名": "能越自動車道",
+        "被災規模": "大",
+        "被災状況": "<img width=\"100%\" src=\"./img/240122_noetsu_damage/anamizudoro_a.jpg\">",
+        "備考": "片側1車線復旧済",
+        "_markerType": "Icon",
+        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/699.png",
+        "_iconSize": [
+          10,
+          10
+        ],
+        "_iconAnchor": [
+          5,
+          5
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.924539,
+          37.273711
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "被災箇所（能越自動車道）",
+        "路線名": "能越自動車道",
+        "被災規模": "大",
+        "備考": "片側1車線復旧済",
+        "_markerType": "Icon",
+        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/699.png",
+        "_iconSize": [
+          10,
+          10
+        ],
+        "_iconAnchor": [
+          5,
+          5
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.927371,
+          37.280643
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "猿山崎",
+        "被災規模": "大",
+        "_markerType": "Icon",
+        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/092.png",
+        "_iconSize": [
+          20,
+          20
+        ],
+        "_iconAnchor": [
+          10,
+          10
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.726978,
+          37.30153
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "名舟海岸",
+        "路線名": "国道249号",
+        "被災規模": "大",
+        "_markerType": "Icon",
+        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/092.png",
+        "_iconSize": [
+          20,
+          20
+        ],
+        "_iconAnchor": [
+          10,
+          10
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.0042,
+          37.42809
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "被災箇所（のと里山海道）",
+        "路線名": "のと里山海道",
+        "被災規模": "大",
+        "被災状況": "<img width=\"100%\" src=\"./img/240122_notosatoyama_damage/notosatoyama_9.jpg\">",
+        "備考": "片側1車線復旧済",
+        "_markerType": "Icon",
+        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/699.png",
+        "_iconSize": [
+          10,
+          10
+        ],
+        "_iconAnchor": [
+          5,
+          5
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.829304,
+          37.134148
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "被災箇所（のと里山海道）",
+        "路線名": "のと里山海道",
+        "被災規模": "大",
+        "被災状況": "<img width=\"100%\" src=\"./img/240122_notosatoyama_damage/notosatoyama_7.jpg\">",
+        "備考": "片側1車線復旧済",
+        "_markerType": "Icon",
+        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/699.png",
+        "_iconSize": [
+          10,
+          10
+        ],
+        "_iconAnchor": [
+          5,
+          5
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.836176,
+          37.13839
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "被災箇所（のと里山海道）",
+        "路線名": "のと里山海道",
+        "被災規模": "大",
+        "被災状況": "<img width=\"100%\" src=\"./img/240122_notosatoyama_damage/notosatoyama_6.jpg\">",
+        "備考": "片側1車線復旧済",
+        "_markerType": "Icon",
+        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/699.png",
+        "_iconSize": [
+          10,
+          10
+        ],
+        "_iconAnchor": [
+          5,
+          5
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.839824,
+          37.139451
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "被災箇所（のと里山海道）",
+        "路線名": "のと里山海道",
+        "被災規模": "大",
+        "被災状況": "<img width=\"100%\" src=\"./img/240122_notosatoyama_damage/notosatoyama_5.jpg\">",
+        "備考": "片側1車線復旧済",
+        "_markerType": "Icon",
+        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/699.png",
+        "_iconSize": [
+          10,
+          10
+        ],
+        "_iconAnchor": [
+          5,
+          5
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.847377,
+          37.136355
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "被災箇所（のと里山海道）",
+        "路線名": "のと里山海道",
+        "被災規模": "大",
+        "被災状況": "<img width=\"100%\" src=\"./img/240122_notosatoyama_damage/notosatoyama_4.jpg\">",
+        "備考": "片側1車線復旧済",
+        "_markerType": "Icon",
+        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/699.png",
+        "_iconSize": [
+          10,
+          10
+        ],
+        "_iconAnchor": [
+          5,
+          5
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.850515,
+          37.140614
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "被災箇所（のと里山海道）",
+        "路線名": "のと里山海道",
+        "被災規模": "大",
+        "被災状況": "<img width=\"100%\" src=\"./img/240122_notosatoyama_damage/notosatoyama_3.jpg\">",
+        "備考": "片側1車線復旧済",
+        "_markerType": "Icon",
+        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/699.png",
+        "_iconSize": [
+          10,
+          10
+        ],
+        "_iconAnchor": [
+          5,
+          5
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.849705,
+          37.149474
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "被災箇所（のと里山海道）",
+        "路線名": "のと里山海道",
+        "被災規模": "大",
+        "備考": "片側1車線復旧済",
+        "_markerType": "Icon",
+        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/699.png",
+        "_iconSize": [
+          10,
+          10
+        ],
+        "_iconAnchor": [
+          5,
+          5
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.849394,
+          37.146224
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "被災箇所（のと里山海道）",
+        "路線名": "のと里山海道",
+        "被災規模": "大",
+        "備考": "片側1車線復旧済",
+        "_markerType": "Icon",
+        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/699.png",
+        "_iconSize": [
+          10,
+          10
+        ],
+        "_iconAnchor": [
+          5,
+          5
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.84845,
+          37.157512
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "被災箇所（のと里山海道）",
+        "路線名": "のと里山海道",
+        "被災規模": "大",
+        "被災状況": "<img width=\"100%\" src=\"./img/240122_notosatoyama_damage/notosatoyama_2.jpg\">",
+        "備考": "片側1車線復旧済",
+        "_markerType": "Icon",
+        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/699.png",
+        "_iconSize": [
+          10,
+          10
+        ],
+        "_iconAnchor": [
+          5,
+          5
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.852741,
+          37.158743
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "被災箇所（のと里山海道）",
+        "路線名": "のと里山海道",
+        "被災規模": "大",
+        "備考": "片側1車線復旧済",
+        "_markerType": "Icon",
+        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/699.png",
+        "_iconSize": [
+          10,
+          10
+        ],
+        "_iconAnchor": [
+          5,
+          5
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.856947,
+          37.163737
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "被災箇所（のと里山海道）",
+        "路線名": "のと里山海道",
+        "被災規模": "大",
+        "備考": "片側1車線復旧済",
+        "_markerType": "Icon",
+        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/699.png",
+        "_iconSize": [
+          10,
+          10
+        ],
+        "_iconAnchor": [
+          5,
+          5
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.857548,
+          37.169003
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "被災箇所（のと里山海道）",
+        "路線名": "のと里山海道",
+        "被災規模": "大",
+        "備考": "片側1車線復旧済",
+        "_markerType": "Icon",
+        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/699.png",
+        "_iconSize": [
+          10,
+          10
+        ],
+        "_iconAnchor": [
+          5,
+          5
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.85729,
+          37.173859
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "被災箇所（のと里山海道）",
+        "路線名": "のと里山海道",
+        "被災規模": "大",
+        "備考": "片側1車線復旧済",
+        "_markerType": "Icon",
+        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/699.png",
+        "_iconSize": [
+          10,
+          10
+        ],
+        "_iconAnchor": [
+          5,
+          5
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.853975,
+          37.185343
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "被災箇所（のと里山海道）",
+        "路線名": "のと里山海道",
+        "被災規模": "大",
+        "備考": "片側1車線復旧済",
+        "_markerType": "Icon",
+        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/699.png",
+        "_iconSize": [
+          10,
+          10
+        ],
+        "_iconAnchor": [
+          5,
+          5
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.857011,
+          37.188305
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "被災箇所（のと里山海道）",
+        "路線名": "のと里山海道",
+        "被災規模": "大",
+        "被災状況": "<img width=\"100%\" src=\"./img/240122_notosatoyama_damage/notosatoyama_1.jpg\">",
+        "備考": "片側1車線復旧済",
+        "_markerType": "Icon",
+        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/699.png",
+        "_iconSize": [
+          10,
+          10
+        ],
+        "_iconAnchor": [
+          5,
+          5
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.869757,
+          37.202321
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "復旧済（能越自動車道）",
+        "路線名": "能越自動車道",
+        "被災規模": "大",
+        "備考": "上下2車線復旧済",
+        "_markerType": "Icon",
+        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/699.png",
+        "_iconSize": [
+          10,
+          10
+        ],
+        "_iconAnchor": [
+          5,
+          5
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.906471,
+          37.310243
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "復旧済（能越自動車道）",
+        "路線名": "能越自動車道",
+        "被災規模": "大",
+        "被災状況": "<img width=\"100%\" src=\"./img/240122_noetsu_damage/wajimadoro_b.jpg\">",
+        "備考": "上下2車線復旧済",
+        "_markerType": "Icon",
+        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/699.png",
+        "_iconSize": [
+          10,
+          10
+        ],
+        "_iconAnchor": [
+          5,
+          5
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.90631,
+          37.308161
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "復旧済（能越自動車道）",
+        "路線名": "能越自動車道",
+        "被災規模": "大",
+        "被災状況": "<img width=\"100%\" src=\"./img/240122_noetsu_damage/wajimadoro_a.jpg\">",
+        "備考": "上下2車線復旧済",
+        "_markerType": "Icon",
+        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/699.png",
+        "_iconSize": [
+          10,
+          10
+        ],
+        "_iconAnchor": [
+          5,
+          5
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.907651,
+          37.314083
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "復旧済（能越自動車道）",
+        "路線名": "能越自動車道",
+        "被災規模": "大",
+        "被災状況": "<img width=\"100%\" src=\"./img/240122_noetsu_damage/wajimadoro_d.jpg\">",
+        "備考": "上下2車線復旧済",
+        "_markerType": "Icon",
+        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/699.png",
+        "_iconSize": [
+          10,
+          10
+        ],
+        "_iconAnchor": [
+          5,
+          5
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.914496,
+          37.300122
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "復旧済（能越自動車道）",
+        "路線名": "能越自動車道",
+        "被災規模": "大",
+        "被災状況": "<img width=\"100%\" src=\"./img/240122_noetsu_damage/wajimadoro_e.jpg\">",
+        "備考": "上下2車線復旧済",
+        "_markerType": "Icon",
+        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/699.png",
+        "_iconSize": [
+          10,
+          10
+        ],
+        "_iconAnchor": [
+          5,
+          5
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.917415,
+          37.298466
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "復旧済（能越自動車道）",
+        "路線名": "能越自動車道",
+        "被災規模": "大",
+        "被災状況": "<img width=\"100%\" src=\"./img/240122_noetsu_damage/wajimadoro_f.jpg\">",
+        "備考": "上下2車線復旧済",
+        "_markerType": "Icon",
+        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/699.png",
+        "_iconSize": [
+          10,
+          10
+        ],
+        "_iconAnchor": [
+          5,
+          5
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.922146,
+          37.292107
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "復旧済（能越自動車道）",
+        "路線名": "能越自動車道",
+        "被災規模": "大",
+        "被災状況": "<img width=\"100%\" src=\"./img/240122_noetsu_damage/wajimadoro_h.jpg\">",
+        "備考": "上下2車線復旧済",
+        "_markerType": "Icon",
+        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/699.png",
+        "_iconSize": [
+          10,
+          10
+        ],
+        "_iconAnchor": [
+          5,
+          5
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.92456,
+          37.288821
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "上大沢",
+        "路線名": "石川県道38号（輪島浦上線）",
+        "被災規模": "大（本復旧で対応）",
+        "_markerType": "Icon",
+        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/092.png",
+        "_iconSize": [
+          20,
+          20
+        ],
+        "_iconAnchor": [
+          10,
+          10
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.783733,
+          37.36852
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "アタケ岬",
+        "路線名": "石川県道38号（輪島浦上線）",
+        "被災規模": "大（本復旧で対応）",
+        "_markerType": "Icon",
+        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/092.png",
+        "_iconSize": [
+          20,
+          20
+        ],
+        "_iconAnchor": [
+          10,
+          10
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.792985,
+          37.377061
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "白山神社",
+        "路線名": "石川県道38号（輪島浦上線）",
+        "被災規模": "大（本復旧で対応）",
+        "_markerType": "Icon",
+        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/092.png",
+        "_iconSize": [
+          20,
+          20
+        ],
+        "_iconAnchor": [
+          10,
+          10
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.814375,
+          37.382571
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "夫婦岩展望台",
+        "路線名": "石川県道38号（輪島浦上線）",
+        "被災規模": "大（本復旧で対応）",
+        "_markerType": "Icon",
+        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/092.png",
+        "_iconSize": [
+          20,
+          20
+        ],
+        "_iconAnchor": [
+          10,
+          10
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.824617,
+          37.38656
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "三ッ岩岬",
+        "路線名": "石川県道38号（輪島浦上線）",
+        "被災規模": "大（本復旧で対応）",
+        "_markerType": "Icon",
+        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/092.png",
+        "_iconSize": [
+          20,
+          20
+        ],
+        "_iconAnchor": [
+          10,
+          10
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.833193,
+          37.390175
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "三ッ岩岬",
+        "路線名": "石川県道38号（輪島浦上線）",
+        "被災規模": "大（本復旧で対応）",
+        "_markerType": "Icon",
+        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/092.png",
+        "_iconSize": [
+          20,
+          20
+        ],
+        "_iconAnchor": [
+          10,
+          10
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.838601,
+          37.393414
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "ゾウゾウ鼻",
+        "路線名": "石川県道38号（輪島浦上線）",
+        "被災規模": "大（本復旧で対応）",
+        "_markerType": "Icon",
+        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/092.png",
+        "_iconSize": [
+          20,
+          20
+        ],
+        "_iconAnchor": [
+          10,
+          10
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.843772,
+          37.398809
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "門前町２",
+        "路線名": "国道249号",
+        "被災規模": "大",
+        "_markerType": "Icon",
+        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/092.png",
+        "_iconSize": [
+          20,
+          20
+        ],
+        "_iconAnchor": [
+          10,
+          10
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.826906,
+          37.3396
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "三ッ子浜",
+        "路線名": "国道249号",
+        "被災規模": "大（本復旧で対応）",
+        "_markerType": "Icon",
+        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/092.png",
+        "_iconSize": [
+          20,
+          20
+        ],
+        "_iconAnchor": [
+          10,
+          10
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.038608,
+          37.439054
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "三ッ子浜",
+        "路線名": "国道249号",
+        "被災規模": "大（本復旧で対応）",
+        "_markerType": "Icon",
+        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/092.png",
+        "_iconSize": [
+          20,
+          20
+        ],
+        "_iconAnchor": [
+          10,
+          10
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.042363,
+          37.441627
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "三ッ子浜",
+        "路線名": "国道249号",
+        "被災規模": "大（本復旧で対応）",
+        "_markerType": "Icon",
+        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/092.png",
+        "_iconSize": [
+          20,
+          20
+        ],
+        "_iconAnchor": [
+          10,
+          10
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.047191,
+          37.445698
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "輪島市巻坂地区",
+        "路線名": "国道249号",
+        "被災規模": "大（本復旧で対応）",
+        "_markerType": "Icon",
+        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/092.png",
+        "_iconSize": [
+          20,
+          20
+        ],
+        "_iconAnchor": [
+          10,
+          10
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.049261,
+          37.448211
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "逢坂トンネル東坑口",
+        "路線名": "国道249号",
+        "被災規模": "大（本復旧で対応）",
+        "_markerType": "Icon",
+        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/092.png",
+        "_iconSize": [
+          20,
+          20
+        ],
+        "_iconAnchor": [
+          10,
+          10
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.101865,
+          37.479669
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "中田浜",
+        "路線名": "国道249号",
+        "被災規模": "大（本復旧で対応）",
+        "_markerType": "Icon",
+        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/092.png",
+        "_iconSize": [
+          20,
+          20
+        ],
+        "_iconAnchor": [
+          10,
+          10
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.10606,
+          37.480001
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "大谷ループ橋",
+        "路線名": "国道249号",
+        "被災規模": "大（う回路確保作業中）",
+        "_markerType": "Icon",
+        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/696.png",
+        "_iconSize": [
+          20,
+          20
+        ],
+        "_iconAnchor": [
+          10,
+          10
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.182546,
+          37.498653
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "大谷ループ橋",
+        "路線名": "国道249号",
+        "被災規模": "大（本復旧で対応）",
+        "_markerType": "Icon",
+        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/092.png",
+        "_iconSize": [
+          20,
+          20
+        ],
+        "_iconAnchor": [
+          10,
+          10
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.180239,
+          37.497163
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "大谷トンネル",
+        "路線名": "国道249号",
+        "被災規模": "大（本復旧で対応）",
+        "_markerType": "Icon",
+        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/092.png",
+        "_iconSize": [
+          20,
+          20
+        ],
+        "_iconAnchor": [
+          10,
+          10
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.199798,
+          37.478792
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "町野町寺山",
+        "路線名": "石川県道40号（珠洲里線）",
+        "被災規模": "大（本復旧で対応）",
+        "_markerType": "Icon",
+        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/092.png",
+        "_iconSize": [
+          20,
+          20
+        ],
+        "_iconAnchor": [
+          10,
+          10
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.119589,
+          37.43367
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "逢坂トンネル西坑口",
+        "路線名": "国道249号",
+        "被災規模": "大（本復旧で対応）",
+        "_markerType": "Icon",
+        "_iconUrl": "https://maps.gsi.go.jp/portal/sys/v4/symbols/092.png",
+        "_iconSize": [
+          20,
+          20
+        ],
+        "_iconAnchor": [
+          10,
+          10
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.09325,
+          37.474279
+        ]
+      }
+    }
+  ]
+}
